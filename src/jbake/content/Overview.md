@@ -5,8 +5,7 @@ status=published
 ~~~~~~
 
 안녕하세용
-qweqweqwe하하하하하
-바뀌어 주세요.
+dev버전 입니다.
 
 ##TOAST Cloud Overview##
 
