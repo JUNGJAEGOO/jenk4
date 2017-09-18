@@ -1,0 +1,24 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath "me.champeau.gradle:jbake-gradle-plugin:0.2"
+    classpath "org.jbake:jbake-core:2.5.0"
+    classpath "org.freemarker:freemarker:2.3.22"
+    classpath "org.pegdown:pegdown:1.5.0"
+  }
+}
+
+apply plugin: "me.champeau.jbake"
+
+jbake {
+   clearCache = true
+}
+
+def siteDir = "&buildDir/jbake"
+
+task clean(type: Delete) {
+  delete "build/jbake"
+}
