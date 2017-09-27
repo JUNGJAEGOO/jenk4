@@ -15,6 +15,19 @@ apply plugin: "me.champeau.jbake"
 
 jbake {
    clearCache = true
+   def Date = getDate();
+   output = file('build/output'+Date)
+}
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmmss')
+    return formattedDate
+}
+
+task date(){
+def Date = getDate();
+System.out.println(getDate());
 }
 
 def siteDir = "&buildDir/jbake"
