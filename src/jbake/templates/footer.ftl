@@ -1,5 +1,5 @@
 ﻿	  
-		<!-----<div id="push"></div>----->
+		<!-- <div id="push"></div> -->
     
           </div> 
           <div class="col-md-2">
@@ -20,12 +20,10 @@
 
     <footer id="footer" class="col-md-12">
     </footer>
-    <!--  <div id="footer" class="toast_footer tc_footer main_footer">
-    </div>  -->
 
-    <!-- Le javascript
-    ================================================== -->
+    <!-- Le javascript -->
     <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/jquery-1.10.2.min.js"></script>
     <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/modernizr-custom.js"></script>
     <script type='text/javascript'>
