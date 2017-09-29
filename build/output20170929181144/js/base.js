@@ -12,7 +12,7 @@
     }
 
 	$('#list-up').click(function() {
-	  $("#sub-link-list").slideToggle();
+	혻 $("#sub-link-list").slideToggle();
 	});
 	
 	/* Toggle the `clicky` class on the body when clicking links to let us
