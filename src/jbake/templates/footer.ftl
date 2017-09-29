@@ -1,21 +1,4 @@
-﻿        </div> 
-          <div class="col-md-2">
-            <div id="side_nav_right" class="side-nav">
-                <div id="sub-link-nav" role="complementary">
-             <b id="sub-link-category-name" class="main"></b>
-            <ul class="nav">
-            <!--   <li class="active"><a href="Overview.html">Overview</a></li> -->
-            <!--  <li><a href="Getting Started.html">Getting Started</a></li> -->
-            <!--  <li><a href="Realeas Notes.html">Realeas Notes</a></li> -->
-           </ul>
-          </div>
-         
-         </div>
-        </div>
-        </div>    
-
-
-    <footer id="footer" class="col-md-12">
+﻿<footer id="footer" class="col-md-12">
     </footer>
 
     <!-- Le javascript -->
