@@ -1,98 +1,98 @@
-title=About
+ï»¿title=About
 date=2013-09-24
 type=page
 status=published
 ~~~~~~
 
-dev¹öÀü ÀÔ´Ï´Ù.
+devë²„ì „ ìž…ë‹ˆë‹¤.
 
 <h2 id="toast-cloud-overview">TOAST Cloud Overview</h2>
 
-TOAST Cloude¶õ NHN ¿£ÅÍÅ×ÀÎ¸ÕÆ®¿¡¼­ Á¦°øÇÏ´Â Å¬¶ó¿ìµå ¼­ºñ½ºÀÔ´Ï´Ù.
+TOAST Cloudeëž€ NHN ì—”í„°í…Œì¸ë¨¼íŠ¸ì—ì„œ ì œê³µí•˜ëŠ” í´ë¼ìš°ë“œ ì„œë¹„ìŠ¤ìž…ë‹ˆë‹¤.
 
-* ´©±¸³ª ½±°Ô °³¹ßÇÒ ¼ö ÀÖ´Â ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ÆÛºí¸¯ Å¬¶ó¿ìµå
-* °³¹ß¿¡¸¸ Àü³çÇÒ ¼ö ÀÖµµ·Ï ÀÎÇÁ¶ó¿¡¼­ ÇÃ·§Æû±îÁö ´Ù¾çÇÑ ¼Ö·ç¼Ç Á¦°ø
-* À¥ ºê¶ó¿ì »ó¿¡¼­ ÀÎÇÁ¶ó¿¡¼­ ÇÃ·§Æû±îÁö ¸ðµÎ °ü¸®ÇÒ ¼ö ÀÖ´Â ÄÜ¼Ö Á¦°ø
-* ÇÕ¸®Àû ºñ¿ëÀ¸·Î »ç¾÷È­¿¡ ±â¿©
+* ëˆ„êµ¬ë‚˜ ì‰½ê²Œ ê°œë°œí•  ìˆ˜ ìžˆëŠ” ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” í¼ë¸”ë¦­ í´ë¼ìš°ë“œ
+* ê°œë°œì—ë§Œ ì „ë…•í•  ìˆ˜ ìžˆë„ë¡ ì¸í”„ë¼ì—ì„œ í”Œëž«í¼ê¹Œì§€ ë‹¤ì–‘í•œ ì†”ë£¨ì…˜ ì œê³µ
+* ì›¹ ë¸Œë¼ìš° ìƒì—ì„œ ì¸í”„ë¼ì—ì„œ í”Œëž«í¼ê¹Œì§€ ëª¨ë‘ ê´€ë¦¬í•  ìˆ˜ ìžˆëŠ” ì½˜ì†” ì œê³µ
+* í•©ë¦¬ì  ë¹„ìš©ìœ¼ë¡œ ì‚¬ì—…í™”ì— ê¸°ì—¬
 
 
-<h2 id="_1">¼­ºñ½º ±¸¼º</h2>
-ÀÎÇÁ¶ó, °³¹ß, Å×½ºÆ®, ¿î¿µ°ú ±â¼úÁö¿ø, »ç¾÷È­¿¡ ÇÊ¿äÇÑ ´Ù¾çÇÑ ¼­ºñ½º¸¦ Á¦°øÇÕ´Ï´Ù.
+<h2 id="_1">ì„œë¹„ìŠ¤ êµ¬ì„±</h2>
+ì¸í”„ë¼, ê°œë°œ, í…ŒìŠ¤íŠ¸, ìš´ì˜ê³¼ ê¸°ìˆ ì§€ì›, ì‚¬ì—…í™”ì— í•„ìš”í•œ ë‹¤ì–‘í•œ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•©ë‹ˆë‹¤.
 
-|¼­ºñ½º|¼³¸í|
+|ì„œë¹„ìŠ¤|ì„¤ëª…|
 |-------|-----|
-|Infrastructure Service|Open Stack ±â¹Ý On-Demand ÀÎÇÁ¶ó ¼­ºñ½º|
-|Contents Service|ÀÌ¹ÌÁö ÀúÀå ¹× ¹èÆ÷ ÇÃ·§Æû|
-|Analystics Service|¾Û µ¥ÀÌÅÍ ºÐ¼® ¿î¿µ ÇÃ·§Æû Áö¿ø|
-|Game Service|°ÔÀÓ °³¹ß Áö¿ø|
-|Notification Service|¸ð¹ÙÀÏ Çª½¬ ¹× sms ÇÃ·§|
-|Security Service|º¸¾È ÇÃ·§Æû|
-|Common Service|°³¹ß/Å×½ºÆ®/¼­ºñ½º¿¡ ÇÊ¿äÇÑ °øÅë µµ±¸|
+|Infrastructure Service|Open Stack ê¸°ë°˜ On-Demand ì¸í”„ë¼ ì„œë¹„ìŠ¤|
+|Contents Service|ì´ë¯¸ì§€ ì €ìž¥ ë° ë°°í¬ í”Œëž«í¼|
+|Analystics Service|ì•± ë°ì´í„° ë¶„ì„ ìš´ì˜ í”Œëž«í¼ ì§€ì›|
+|Game Service|ê²Œìž„ ê°œë°œ ì§€ì›|
+|Notification Service|ëª¨ë°”ì¼ í‘¸ì‰¬ ë° sms í”Œëž«|
+|Security Service|ë³´ì•ˆ í”Œëž«í¼|
+|Common Service|ê°œë°œ/í…ŒìŠ¤íŠ¸/ì„œë¹„ìŠ¤ì— í•„ìš”í•œ ê³µí†µ ë„êµ¬|
 
 
 <h3 id="infrastructure-service">Infrastructure Service</h3>
-Å¬¶ó¿ìµå ÀÎÇÁ¶ó¸¦ ÅëÇØ Àú·ÅÇÑ ºñ¿ëÀ¸·Î ÀÎÇÁ¶ó ¸®¼Ò½º¸¦ ÇÊ¿äÇÑ ¸¸Å­ »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+í´ë¼ìš°ë“œ ì¸í”„ë¼ë¥¼ í†µí•´ ì €ë ´í•œ ë¹„ìš©ìœ¼ë¡œ ì¸í”„ë¼ ë¦¬ì†ŒìŠ¤ë¥¼ í•„ìš”í•œ ë§Œí¼ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|--------------|
-|Compute|-°ÔÀÓ ¼­¹ö, À¥¼­¹ö, DB¼­¹ö µî ¿ëµµ¿¡ µû¶ó ÀûÀýÇÑ VM ÀÎ½ºÅÏ½º »ý¼º.<br>-¿ÜÀå ÇÏµåÃ³·³ ¸¶¿îÆ®ÇÏ¿© ¾µ ¼ö ÀÖ´Â º¼·ý Á¦°ø<br>-¼­¹ö È¯°æ ½º³À¼¦À» ÀÌ¹ÌÁ¹ ÀúÀåÇÏ°í, ÀÌ¸¦ Àç»ç¿ë °¡´É.<br>-°¡»ó »ç¼³ ³×Æ®¿öÅ©¸¦ ±¸ÃàÇÒ ¼ö ÀÖ°í ¿ÜºÎ¿¡¼­ Á¢¼Ó °¡´ÉÇÑ °øÀÎ IPÁ¦°ø.<br>-´ë±Ô¸ð Æ®·¡ÇÈ ºÐ»ê Ã³¸®¸¦ À§ÇÏ¿© ·Îµå¹ë·±¼­ Áö¿ø.|
-|Object Storage|-ÆÄÀÏ °¹¼ö,Å©±â Á¦¾à ¾øÀÌ È®Àå °¡´ÉÇÑ °í°¡¿ë¼º, ¾ÈÁ¤¼ºÀ» °¡Áø REST ±â¹Ý ´ë¿ë·®<br>-½ºÅä¸®Áö ¼­ºñ½º|
-|Monitoring|-º°µµÀÇ ¼³Ä¡ ¾øÀÌ ¼­¹ö ¹× ³×Æ®¿öÅ© »ç¿ë·®À» È®ÀÎÇÒ ¼ö ÀÖ´Â °¡»ó ¸®¼Ò½º ¸ð´ÏÅÍ¸µ<br>-±â´É Á¦°ø.|
+|Compute|-ê²Œìž„ ì„œë²„, ì›¹ì„œë²„, DBì„œë²„ ë“± ìš©ë„ì— ë”°ë¼ ì ì ˆí•œ VM ì¸ìŠ¤í„´ìŠ¤ ìƒì„±.<br>-ì™¸ìž¥ í•˜ë“œì²˜ëŸ¼ ë§ˆìš´íŠ¸í•˜ì—¬ ì“¸ ìˆ˜ ìžˆëŠ” ë³¼ë¥¨ ì œê³µ<br>-ì„œë²„ í™˜ê²½ ìŠ¤ëƒ…ìƒ·ì„ ì´ë¯¸ì¡¸ ì €ìž¥í•˜ê³ , ì´ë¥¼ ìž¬ì‚¬ìš© ê°€ëŠ¥.<br>-ê°€ìƒ ì‚¬ì„¤ ë„¤íŠ¸ì›Œí¬ë¥¼ êµ¬ì¶•í•  ìˆ˜ ìžˆê³  ì™¸ë¶€ì—ì„œ ì ‘ì† ê°€ëŠ¥í•œ ê³µì¸ IPì œê³µ.<br>-ëŒ€ê·œëª¨ íŠ¸ëž˜í”½ ë¶„ì‚° ì²˜ë¦¬ë¥¼ ìœ„í•˜ì—¬ ë¡œë“œë°¸ëŸ°ì„œ ì§€ì›.|
+|Object Storage|-íŒŒì¼ ê°¯ìˆ˜,í¬ê¸° ì œì•½ ì—†ì´ í™•ìž¥ ê°€ëŠ¥í•œ ê³ ê°€ìš©ì„±, ì•ˆì •ì„±ì„ ê°€ì§„ REST ê¸°ë°˜ ëŒ€ìš©ëŸ‰<br>-ìŠ¤í† ë¦¬ì§€ ì„œë¹„ìŠ¤|
+|Monitoring|-ë³„ë„ì˜ ì„¤ì¹˜ ì—†ì´ ì„œë²„ ë° ë„¤íŠ¸ì›Œí¬ ì‚¬ìš©ëŸ‰ì„ í™•ì¸í•  ìˆ˜ ìžˆëŠ” ê°€ìƒ ë¦¬ì†ŒìŠ¤ ëª¨ë‹ˆí„°ë§<br>-ê¸°ëŠ¥ ì œê³µ.|
 
 <h3 id="contents-service">Contents Service</h3>
-ÀÌ¹ÌÁöÀÇ ÀúÀå ¹× ¹èÆ÷¸¦ Á¦°øÇÏ´Â ÇÃ·§ÆûÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ì´ë¯¸ì§€ì˜ ì €ìž¥ ë° ë°°í¬ë¥¼ ì œê³µí•˜ëŠ” í”Œëž«í¼ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|-----|
-|Image|-ÀÌ¹ÌÁöÀÇ ÀúÀå, ÆíÁý, Àü¼ÛÀ» Á¦°øÇÏ´Â ÀÌ¹ÌÁö ÇÃ·§Æû<br>-½Ç½Ã°£ ½æ³×ÀÏ »ý¼º ¹× µ¿Àû Àü¼Û.|
-|CDN|-Ä³½Ã ¼­¹ö¸¦ ÀÌ¿ëÇÑ ºü¸¥ ÄÜÅÙÃ÷ ¹èÆ÷<br>-³×Æ®¿öÅ© Àü¼Û·®, ÄÜÅÙÃ÷ ¹èÆ÷ Åë°è Á¦°ø.|
+|Image|-ì´ë¯¸ì§€ì˜ ì €ìž¥, íŽ¸ì§‘, ì „ì†¡ì„ ì œê³µí•˜ëŠ” ì´ë¯¸ì§€ í”Œëž«í¼<br>-ì‹¤ì‹œê°„ ì¸ë„¤ì¼ ìƒì„± ë° ë™ì  ì „ì†¡.|
+|CDN|-ìºì‹œ ì„œë²„ë¥¼ ì´ìš©í•œ ë¹ ë¥¸ ì½˜í…ì¸  ë°°í¬<br>-ë„¤íŠ¸ì›Œí¬ ì „ì†¡ëŸ‰, ì½˜í…ì¸  ë°°í¬ í†µê³„ ì œê³µ.|
 
 <h3 id="analytics-service">Analytics Service</h3>
-µ¥ÀÌÅÍ ºÐ¼® ¹× ¼öÁý¿¡ ÇÊ¿äÇÑ ÇÃ·§ÆûÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ë°ì´í„° ë¶„ì„ ë° ìˆ˜ì§‘ì— í•„ìš”í•œ í”Œëž«í¼ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|-----|
-|App Analytics|-´ë½Ãº¸µå, ½Ç½Ã°£ ¸ð´ÏÅÍ¸µ ÁöÇ¥, ÀÌ¿ëÀÚ/¸ÅÃâ/°ÔÀÓ »ó¼¼ ºÐ¼®.<br>-Ä¿½ºÅÒ ÀÌº¥Æ® ºÐ¼® Á¦°ø, À¯ÀÔ Ã¤³Îº° ÀÌ¿ëÀÚ Æ®·¡Å· ¹× LTV¿¡ ±â¹ÝÀ» µÐ ROI Á¦°ø.<br>-Ä·ÆäÀÎ ¸ñÀû¿¡ µû¸¥ ÀÌ¿ëÀÚ Å¸°ÙÆÃ°ú Ä·ÆäÀÎ ½ÇÇà ±â´É Á¦°ø.|
-|Log & Crash Search|-¾Û ¿À·ù ·Î±× ¼öÁý, ÀúÀå, Á¶È¸ ¹× Å©·¡½¬ ¹ß»ý ¿øÀÎ Á¤º¸ Á¦°ø ¼­ºñ½º.|
+|App Analytics|-ëŒ€ì‹œë³´ë“œ, ì‹¤ì‹œê°„ ëª¨ë‹ˆí„°ë§ ì§€í‘œ, ì´ìš©ìž/ë§¤ì¶œ/ê²Œìž„ ìƒì„¸ ë¶„ì„.<br>-ì»¤ìŠ¤í…€ ì´ë²¤íŠ¸ ë¶„ì„ ì œê³µ, ìœ ìž… ì±„ë„ë³„ ì´ìš©ìž íŠ¸ëž˜í‚¹ ë° LTVì— ê¸°ë°˜ì„ ë‘” ROI ì œê³µ.<br>-ìº íŽ˜ì¸ ëª©ì ì— ë”°ë¥¸ ì´ìš©ìž íƒ€ê²ŸíŒ…ê³¼ ìº íŽ˜ì¸ ì‹¤í–‰ ê¸°ëŠ¥ ì œê³µ.|
+|Log & Crash Search|-ì•± ì˜¤ë¥˜ ë¡œê·¸ ìˆ˜ì§‘, ì €ìž¥, ì¡°íšŒ ë° í¬ëž˜ì‰¬ ë°œìƒ ì›ì¸ ì •ë³´ ì œê³µ ì„œë¹„ìŠ¤.|
 
 
 <h3 id="game-service">Game Service</h3>
-°ÔÀÓ °³¹ß¿¡ ÇÊ¿äÇÑ ÇÃ·§ÆûÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ê²Œìž„ ê°œë°œì— í•„ìš”í•œ í”Œëž«í¼ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|-----|
-|Leaderboard|-´ë±Ô¸ð Æ®·¡ÀG¿¡¼­ ¾ÈÁ¤ÀûÀ¸·Î µ¿ÀÛÇÏ´Â ÀÏ°£, ÁÖ°£, ¿ù°£, ÀüÃ¼ ·©Å· ¼­ºñ½º|
-|Real Time Multiplayer|-·ë±â¹ÝÀÇ ½Ç½Ã°£ ¸ÖÆ¼ÇÃ·¹ÀÌ °ÔÀÓÀ» Áö¿øÇÏ´Â ³×Æ®¿öÅ© ¼­ºñ½º|
+|Leaderboard|-ëŒ€ê·œëª¨ íŠ¸ëž˜í”…ì—ì„œ ì•ˆì •ì ìœ¼ë¡œ ë™ìž‘í•˜ëŠ” ì¼ê°„, ì£¼ê°„, ì›”ê°„, ì „ì²´ ëž­í‚¹ ì„œë¹„ìŠ¤|
+|Real Time Multiplayer|-ë£¸ê¸°ë°˜ì˜ ì‹¤ì‹œê°„ ë©€í‹°í”Œë ˆì´ ê²Œìž„ì„ ì§€ì›í•˜ëŠ” ë„¤íŠ¸ì›Œí¬ ì„œë¹„ìŠ¤|
 
 
 <h3 id="notification-service">Notification Service</h3>
-¸ð¹ÙÀÏ Çª½¬ ¹× SMS ÇÃ·§ÆûÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ëª¨ë°”ì¼ í‘¸ì‰¬ ë° SMS í”Œëž«í¼ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|-----|
-|Push|-APNS / CGM / TENCENT ¸¦ ÅëÇÑ Çª½¬ Á¦°ø<br>-¸Þ½ÃÁö Àü¼Û °á°ú È®ÀÎ ±â´É Á¦°ø.|
-|SMS|-SMS / LMS / MMS ¹ß¼Û ±â´É Á¦°ø|
+|Push|-APNS / CGM / TENCENT ë¥¼ í†µí•œ í‘¸ì‰¬ ì œê³µ<br>-ë©”ì‹œì§€ ì „ì†¡ ê²°ê³¼ í™•ì¸ ê¸°ëŠ¥ ì œê³µ.|
+|SMS|-SMS / LMS / MMS ë°œì†¡ ê¸°ëŠ¥ ì œê³µ|
 
 
 <h3 id="security-service">Security Service</h3>
-º¸¾ÈÀ» °­È­ÇÒ ¼ö ÀÖ´Â ÇÃ·§ÆûÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ë³´ì•ˆì„ ê°•í™”í•  ìˆ˜ ìžˆëŠ” í”Œëž«í¼ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|-----|
-|AppGuard|-¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀÇ ÄÚµå Á¶ÀÛÀ» ¹æÁö.<br>-´Ù¾çÇÑ Á¶ÀÛ ÅøÀ» ÆÐÅÏÀÌ³ª ¿ìÈ¸°¡ Èûµç ÇàÀ§ ±â¹ÝÀ¸·Î Å½Áö, Á¦Àç|
-|Security Check|-º¸¾È Ãë¾àÁ¡ »çÀü °Ë¼ö<br>-Ãë¾àÁ¡¿¡ ´ëÇÑ ´ëÀÀ ¹æ¹ý °¡ÀÌµå|
-|CAPTCHA|-¹®ÀÚ / À½¼º CAPTCHA Á¦°ø|
-|OTP|-»ç¿ëÀÚÀÇ ½º¸¶Æ®ÆùÀ¸·Î »ç¿ë °¡´ÉÇÑ OTP Á¦°ø|
+|AppGuard|-ì• í”Œë¦¬ì¼€ì´ì…˜ì˜ ì½”ë“œ ì¡°ìž‘ì„ ë°©ì§€.<br>-ë‹¤ì–‘í•œ ì¡°ìž‘ íˆ´ì„ íŒ¨í„´ì´ë‚˜ ìš°íšŒê°€ íž˜ë“  í–‰ìœ„ ê¸°ë°˜ìœ¼ë¡œ íƒì§€, ì œìž¬|
+|Security Check|-ë³´ì•ˆ ì·¨ì•½ì  ì‚¬ì „ ê²€ìˆ˜<br>-ì·¨ì•½ì ì— ëŒ€í•œ ëŒ€ì‘ ë°©ë²• ê°€ì´ë“œ|
+|CAPTCHA|-ë¬¸ìž / ìŒì„± CAPTCHA ì œê³µ|
+|OTP|-ì‚¬ìš©ìžì˜ ìŠ¤ë§ˆíŠ¸í°ìœ¼ë¡œ ì‚¬ìš© ê°€ëŠ¥í•œ OTP ì œê³µ|
 
 
 <h3 id="common-service">Common Service</h3>
-°³¹ß, Å×½ºÆ®, ¼­ºñ½º ¿î¿µ¿¡ ÇÊ¿äÇÑ °øÅë ÇÃ·§ÆûÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ê°œë°œ, í…ŒìŠ¤íŠ¸, ì„œë¹„ìŠ¤ ìš´ì˜ì— í•„ìš”í•œ ê³µí†µ í”Œëž«í¼ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-|¼­ºñ½º Á¤º¸|¼³¸í|
+|ì„œë¹„ìŠ¤ ì •ë³´|ì„¤ëª…|
 |----------|-----|
-|Launching|-Å¬¶óÀÌ¾ðÆ® ·±Äª °ü¸® ¼­ºñ½º.<br>-Å¬¶óÀÌ¾ðÆ® ±¸µ¿ ½Ã ¼­¹öÁÖ¼Ò, Å¬¶óÀÌ¾ðÆ® ¹öÀü, °øÁö »çÇ×ÀÇ URL,´Ù¿î·Îµå URLÀ» Á¦°ø.|
-|IAP|-ÇÏ³ªÀÇ ÀÎÅÍÆäÀÌ½º·Î ¸ðµç ¸¶ÄÏÀ» ÀÌ¿ëÇÒ ¼ö ÀÖ´Â ÀÎ¾Û °áÁ¦ ¼­ºñ½º.|
-|Mobile Test|-¹°¸®ÀûÀÎ ´Ü¸»À» À¥»ó¿¡¼­ ´ë¿©|
-|Address Search|-µµ·Î¸í ÁÖ¼Ò, Áö¹ø ÁÖ¼Ò, °Ç¹°¸í °Ë»ö ±â´É Á¦°ø|
+|Launching|-í´ë¼ì´ì–¸íŠ¸ ëŸ°ì¹­ ê´€ë¦¬ ì„œë¹„ìŠ¤.<br>-í´ë¼ì´ì–¸íŠ¸ êµ¬ë™ ì‹œ ì„œë²„ì£¼ì†Œ, í´ë¼ì´ì–¸íŠ¸ ë²„ì „, ê³µì§€ ì‚¬í•­ì˜ URL,ë‹¤ìš´ë¡œë“œ URLì„ ì œê³µ.|
+|IAP|-í•˜ë‚˜ì˜ ì¸í„°íŽ˜ì´ìŠ¤ë¡œ ëª¨ë“  ë§ˆì¼“ì„ ì´ìš©í•  ìˆ˜ ìžˆëŠ” ì¸ì•± ê²°ì œ ì„œë¹„ìŠ¤.|
+|Mobile Test|-ë¬¼ë¦¬ì ì¸ ë‹¨ë§ì„ ì›¹ìƒì—ì„œ ëŒ€ì—¬|
+|Address Search|-ë„ë¡œëª… ì£¼ì†Œ, ì§€ë²ˆ ì£¼ì†Œ, ê±´ë¬¼ëª… ê²€ìƒ‰ ê¸°ëŠ¥ ì œê³µ|
 
 
