@@ -163,7 +163,7 @@ a > code:hover, a > code:focus {
         width: 213px;
     }
     .bs-sidebar.affix {
-        position: related; /* Undo the static from mobile first approach */
+        position: relative; /* Undo the static from mobile first approach */
         top: 110px;
     }
     .bs-sidebar.affix-bottom {
