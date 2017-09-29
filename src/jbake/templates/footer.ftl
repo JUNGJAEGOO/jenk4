@@ -17,7 +17,7 @@
     <script src="js/base.js"></script>
     <script src="js/bootstrap-3.0.3.min.js"></script>
     <script src="js/common-1.0.min.js"></script>
-    <script src="js/coustom.js"></script>
+    <script src="js/custom.js"></script>
     <!-- <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>  -->
 
         <script language='javascript'>
