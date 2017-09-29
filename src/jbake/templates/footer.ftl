@@ -1,7 +1,4 @@
-﻿	  
-		<!-- <div id="push"></div> -->
-    
-          </div> 
+﻿        </div> 
           <div class="col-md-2">
             <div id="side_nav_right" class="side-nav">
                 <div id="sub-link-nav" role="complementary">
