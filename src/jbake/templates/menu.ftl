@@ -1,4 +1,4 @@
-
+﻿
 <body>
 <!-- Fixed navbar -->
     <header id="header">
@@ -78,34 +78,6 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                  <a tabindex"-1" href="">AppGuard</a>
-                     <li><a href="">Overview</a></li>
-                     <li><a href="">Getting Started</a></li>
-                     <li><a href="">Release Notes</a></li>
-                  </li>
-                  <li class="dropdown-submenu">
-                  <a tabindex"-1" href="">Seucurity Check</a>
-                     <li><a href="">Overview</a></li>
-                     <li><a href="">Getting Started</a></li>
-                     <li><a href="">Release Notes</a></li> 
-                  </li>
-                  <li class="dropdown-submenu">
-                  <a tabindex"-1" href="">Seucurity Monitoring</a>
-                     <li><a href="">Overview</a></li>
-                     <li><a href="">Getting Started</a></li>
-                     <li><a href="">Release Notes</a></li> 
-                  </li>
-                  <li class="dropdown-submenu">
-                  <a tabindex"-1" href="">CAPCHA</a>
-                     <li><a href="">Overview</a></li>
-                     <li><a href="">Release Notes</a></li> 
-                  </li>
-                  <li class="dropdown-submenu">
-                  <a tabindex"-1" href="">OTP</a>
-                     <li><a href="">Overview</a></li>
-                     <li><a href="">Release Notes</a></li> 
-                  </li>
               </ul>
             </li>
 <!---------------------------- Common -------------------------->
