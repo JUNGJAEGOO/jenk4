@@ -1,10 +1,10 @@
-	  
+﻿	  
 		<!-----<div id="push"></div>----->
     
           </div> 
           <div class="col-md-2">
             <div id="side_nav_right" class="side-nav">
-                <div id="sub-link-nav" role="complemetary">
+                <div id="sub-link-nav" role="complementary">
              <b id="sub-link-category-name" class="main"></b>
            <ul class="nav">
                <li class="active"><a href="Overview.html">Overview</a></li>
@@ -28,7 +28,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/jquery-1.10.2.min.js"></script>
     <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/modernizr-custom.js"></script>
-    <script type='text.javascript'>
+    <script type='text/javascript'>
          if (!Modernizr.matchmedia){
              $.getScript("js/media.match.min.js");
          }
