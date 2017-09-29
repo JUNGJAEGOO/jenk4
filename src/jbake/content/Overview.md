@@ -3,13 +3,8 @@ date=2013-09-24
 type=page
 status=published
 ~~~~~~
-wwwwwww
-안녕하세용
-dev버전 입니다.
 
-~~~
-2017.09.28.정재구
-~~~
+dev버전 입니다.
 
 ##TOAST Cloud Overview##
 
