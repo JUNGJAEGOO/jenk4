@@ -1,6 +1,6 @@
 ﻿
 	<header id="header" class=" tc_header main_header"><div id="toastUtil" class="toast_util">
-		<a href="http://cloud.toast.com" class="toast_logo N=a:gnb.logo" target="_self"><img src="h_toastcloud.png" alt="TOAST" style="height: 11px; opacity: 0.6;"></a>
+		<a href="http://cloud.toast.com" class="toast_logo N=a:gnb.logo" target="_self"><img src="../../h_toastcloud.png" alt="TOAST" style="height: 11px; opacity: 0.6;"></a>
 		<ul class="menu_lst">
 		<li><a href="http://cloud.toast.com/support/faq/" class="d_txt N=a:gnb.cs"><span>고객센터</span></a></li>
 		<li class="lang layer "><a href="#" class="lyBtn N=a:gnb.language" onclick="event.cancelBubble=true;TCC.utils.toggleLayer({el:this, className:'on', off:false});return false;">
