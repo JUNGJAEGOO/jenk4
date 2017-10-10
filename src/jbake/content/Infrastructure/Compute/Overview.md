@@ -4,95 +4,204 @@ type=page
 status=published
 ~~~~~~
 
-dev버전 입니다.
+Infrastructure > Compute & Network는 서비스 인프라 구축에 필요한 기본 리소스인 Instance와 Network관리 기능을 제공합니다. 유연한 인프라 구성이 가능하며 사용한 만큼만 지불하므로 비용을 절감할 수 있습니다.
 
-<h2 id="toast-cloud-overview">TOAST Cloud Overview</h2>
+<h2 id="_1">주요 기능</h2>
 
-TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스입니다.
+신속한 인프라 구성이 가능하며 필요에 따라 규모를 자유롭게 변경할 수 있습니다.
+사용한만큼만 지불하므로 서버 구축에 따른 초기 비용을 절감할 수 있습니다.
+console을 통해 간편하게 이용할 수 있습니다.
 
-* 누구나 쉽게 개발할 수 있는 서비스를 제공하는 퍼블릭 클라우드
-* 개발에만 전녕할 수 있도록 인프라에서 플랫폼까지 다양한 솔루션 제공
-* 웹 브라우 상에서 인프라에서 플랫폼까지 모두 관리할 수 있는 콘솔 제공
-* 합리적 비용으로 사업화에 기여
+<h2 id="_2">용어 설명</h2>
+<h3 id="instance">Instance</h3>
+Infrastructure 서비스의 Compute 상품 중 기본이 되는 리소스로서 사용자의 필요에 따라 다양한 타입의 Instance를 사용할 수 있습니다. Instance는 하드웨어 템플릿(Flavor)과 소프트웨어 템플릿(Image)을 이용하여 생성할 수 있습니다. Flavor는 [표 1]과 같이 vCPU, RAM의 조합으로 이루어집니다.
+<table>
+    <colgroup>
+        <col style="width:16%">
+        <col style="width:7%">
+        <col style="width:13%">
+        <col style="width:7%">
+        <col style="width:7%">
+        <col style="width:10%">
+        <col style="width:10%">
+    </colgroup>
+    <thead>
+        <tr><th colspan="3" class="bd_rgt">flavor</th>
+        <th class="bd_rgt">vCPU</th>
+        <th class="bd_rgt">RAM</th>
+        <th class="bd_rgt">단위</th>
+        <th class="bd_rgt">과금액 (원/단위)</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+        <td rowspan="5" class="bd_rgt2">Basic</td>
+        <td rowspan="5" class="txt_cent bd_rgt2">u2</td>
+        <td class="bd_rgt2">u2.nano</td>
+        <td class="bd_rgt2 txt_cent">1</td>
+        <td class="bd_rgt2 txt_cent">1</td>
+        <td class="txt_cent bd_lft2 bd_rgt2" rowspan="21">사용 시간 누적</td>
+        <td class="txt_cent">4.9 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">u2.micro</td>
+        <td class="bd_rgt2 txt_cent">1</td>
+        <td class="txt_cent">2</td>
+        <td class="txt_cent">9.7 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">u2.small</td>
+        <td class="bd_rgt2 txt_cent">2</td>
+        <td class="txt_cent">2</td>
+        <td class="txt_cent">16.0 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">u2.medium</td>
+        <td class="bd_rgt2 txt_cent">2</td>
+        <td class="txt_cent">4</td>
+        <td class="txt_cent">25.0 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">u2.large</td>
+        <td class="bd_rgt2 txt_cent">4</td>
+        <td class="txt_cent">4</td>
+        <td class="txt_cent">48.1 원/시간</td>
+    </tr>
 
+    <tr>
+        <td rowspan="6" class="bd_rgt2">Standard</td>
+        <td class="txt_cent bd_rgt2">t2</td>
+        <td class="bd_rgt2">t2.tiny</td>
+        <td class="bd_rgt2 txt_cent">1</td>
+        <td class="bd_rgt2 txt_cent">1</td>
+        <td class="txt_cent">24 원/시간</td>
+    </tr>
+    <tr>
+        <td class="txt_cent bd_rgt2" rowspan="5">m2</td>
+        <td class="bd_rgt2 al_lft">m2.small</td>
+        <td class="bd_rgt2 txt_cent">1</td>
+        <td class="txt_cent">2</td>
+        <td class="txt_cent">43 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">m2.medium</td>
+        <td class="bd_rgt2 txt_cent">2</td>
+        <td class="txt_cent">4</td>
+        <td class="txt_cent">93 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">m2.large</td>
+        <td class="bd_rgt2 txt_cent">4</td>
+        <td class="txt_cent">8</td>
+        <td class="txt_cent">196 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">m2.xlarge</td>
+        <td class="bd_rgt2 txt_cent">8</td>
+        <td class="txt_cent">16</td>
+        <td class="txt_cent">399 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">m2.2xlarge</td>
+        <td class="bd_rgt2 txt_cent">16</td>
+        <td class="txt_cent">32</td>
+        <td class="txt_cent">807 원/시간</td>
+    </tr>
+    <tr>
+        <td rowspan="4" class="bd_rgt2">Compute Optimized</td>
+        <td class="txt_cent bd_rgt2" rowspan="4">c2</td>
+        <td class="bd_rgt2 al_lft">c2.small</td>
+        <td class="bd_rgt2 txt_cent">2</td>
+        <td class="txt_cent">2</td>
+        <td class="txt_cent">57 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">c2.medium</td>
+        <td class="bd_rgt2 txt_cent">4</td>
+        <td class="txt_cent">4</td>
+        <td class="txt_cent">121 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">c2.large</td>
+        <td class="bd_rgt2 txt_cent">8</td>
+        <td class="txt_cent">8</td>
+        <td class="txt_cent">250 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">c2.xlarge</td>
+        <td class="bd_rgt2 txt_cent">16</td>
+        <td class="txt_cent">16</td>
+        <td class="txt_cent">509 원/시간</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="bd_rgt2">Memory Optimized</td>
+        <td class="txt_cent bd_rgt2" rowspan="3">r2</td>
+        <td class="bd_rgt2 al_lft">r2.small</td>
+        <td class="bd_rgt2 txt_cent">2</td>
+        <td class="txt_cent">8</td>
+        <td class="txt_cent">128 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">r2.medium</td>
+        <td class="bd_rgt2 txt_cent">4</td>
+        <td class="txt_cent">16</td>
+        <td class="txt_cent">264 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">r2.large</td>
+        <td class="bd_rgt2 txt_cent">8</td>
+        <td class="txt_cent">32</td>
+        <td class="txt_cent">534 원/시간</td>
+    </tr>
 
-<h2 id="_1">서비스 구성</h2>
-인프라, 개발, 테스트, 운영과 기술지원, 사업화에 필요한 다양한 서비스를 제공합니다.
+    <tr>
+        <td rowspan="3" class="bd_rgt2">Storage Optimized</td>
+        <td class="txt_cent bd_rgt2" rowspan="3">i2</td>
+        <td class="bd_rgt2 al_lft">i2.large</td>
+        <td class="bd_rgt2 txt_cent">4</td>
+        <td class="bd_rgt2 txt_cent">8</td>
+        <td class="txt_cent">593 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">i2.xlarge</td>
+        <td class="bd_rgt2 txt_cent">8</td>
+        <td class="txt_cent">16</td>
+        <td class="txt_cent">796 원/시간</td>
+    </tr>
+    <tr>
+        <td class="bd_rgt2 al_lft">i2.2xlarge</td>
+        <td class="bd_rgt2 txt_cent">16</td>
+        <td class="txt_cent">32</td>
+        <td class="txt_cent">1,204 원/시간</td>
+    </tr>
+    </tbody>
+</table>
+[표 1 Flaver]
+<h3 id="image">Image</h3>
+소프트웨어 템플릿(Image)는 하드웨어 템플릿(Flavor)와 더불어 Instance를 구성하는 중요한 요소입니다. OS와 기본적으로 설치되는 애플리케이션의 템플릿이며 Public Image를 기본 제공합니다. 사용자는 필요에 따라 기본 제공한 Image를 이용하여 사용자화 Image를 새롭게 생성하여 사용할 수 있습니다.
 
-|서비스|설명|
-|-------|-----|
-|Infrastructure Service|Open Stack 기반 On-Demand 인프라 서비스|
-|Contents Service|이미지 저장 및 배포 플랫폼|
-|Analystics Service|앱 데이터 분석 운영 플랫폼 지원|
-|Game Service|게임 개발 지원|
-|Notification Service|모바일 푸쉬 및 sms 플랫|
-|Security Service|보안 플랫폼|
-|Common Service|개발/테스트/서비스에 필요한 공통 도구|
+|이미지 종류|설명|
+|----------|----|
+|Public Image|TOAST Cloud가 제공하는 Image로서 기본적인 보안 검증을 마친 안전한 Image입니다.|
+|Private Image|Public Image를 토대로 새롭게 생성한 사용자 고유의 Image입니다. 사용자의 필요에 따라 각종 OS 설정과 애플리케이션 설치 등을 변경하여 사용할 수 있습니다.|
+|공유 Image|Private Image는 사용자가 소유한 프로젝트 간 공유가 가능하도록 설정할 수 있습니다. 이렇게 공유한 Image를 공유 Image라고 부릅니다.|
 
+[표 2 Image 종류]
+<h3 id="block-storage">Block Storage</h3>
 
-<h3 id="infrastructure-service">Infrastructure Service</h3>
-클라우드 인프라를 통해 저렴한 비용으로 인프라 리소스를 필요한 만큼 사용할 수 있습니다.
+Block Storage는 Instance에 연결할 수 있는 Disk로서 기본으로 제공하는 Instance의 저장공간이 부족한 경우 추가로 연결 할 수 있습니다. Instance를 삭제할 경우 기본으로 제공된 Disk의 모든 데이터는 삭제되지만 Block Storage 서비스를 통해 생성된 Block Storage은 연결 된 Instance를 삭제하더라도 데이터가 삭제되지 않고 남아있습니다. 하나의 Block Storage는 여러 개의 Instance가 동시에 공유 할 수는 없으나 Instance 간 이동은 가능합니다. 또한 생성한 Block Storage를 통해 Snapshot을 만들 수도 있고, 이 Snapshot을 이용하여 새로운 Block Storage을 생성할 수 도 있습니다.
 
-|서비스 정보|설명|
-|----------|--------------|
-|Compute|-게임 서버, 웹서버, DB서버 등 용도에 따라 적절한 VM 인스턴스 생성.<br>-외장 하드처럼 마운트하여 쓸 수 있는 볼륨 제공<br>-서버 환경 스냅샷을 이미졸 저장하고, 이를 재사용 가능.<br>-가상 사설 네트워크를 구축할 수 있고 외부에서 접속 가능한 공인 IP제공.<br>-대규모 트래픽 분산 처리를 위하여 로드밸런서 지원.|
-|Object Storage|-파일 갯수,크기 제약 없이 확장 가능한 고가용성, 안정성을 가진 REST 기반 대용량<br>-스토리지 서비스|
-|Monitoring|-별도의 설치 없이 서버 및 네트워크 사용량을 확인할 수 있는 가상 리소스 모니터링<br>-기능 제공.|
+<h3 id="security-group">Security Group</h3>
 
-<h3 id="contents-service">Contents Service</h3>
-이미지의 저장 및 배포를 제공하는 플랫폼을 사용할 수 있습니다.
+Security Group은 Instance에 대한 네트워크 접속을 제어하는데 사용합니다. 하나의 Security Group 안에 여러 개의 Rule을 지정할 수 있으며 각 Rule은 들어오고(Ingress), 나가는(Egress) Network 트래픽을 적용 할 수 있습니다. 하나의 Instance 에 여러 개의 Security Group을 적용함으로써 효율적으로 트래픽 제어를 할 수 있습니다.
 
-|서비스 정보|설명|
-|----------|-----|
-|Image|-이미지의 저장, 편집, 전송을 제공하는 이미지 플랫폼<br>-실시간 썸네일 생성 및 동적 전송.|
-|CDN|-캐시 서버를 이용한 빠른 콘텐츠 배포<br>-네트워크 전송량, 콘텐츠 배포 통계 제공.|
+<h3 id="key-pair">Key-Pair</h3>
+Instance 에 접속을 하기 위해 Key-Pair 인증을 제공합니다. Instance 생성 시 반드시 Key-Pair 를 지정해야 하며 생성한 Key-Pair 가 없을 시 Key-Pair 생성 메뉴를 통해 새로운 Key-Pair 를 생성해야 합니다. 생성한 Key-Pair 는 외부에 노출되지 않도록 관리상 주의가 필요합니다.
 
-<h3 id="analytics-service">Analytics Service</h3>
-데이터 분석 및 수집에 필요한 플랫폼을 사용할 수 있습니다.
+<h3 id="network">Network</h3>
+사용자는 자신만의 가상 Network를 정의할 수 있습니다. 가상 Network내에서 Router생성을 통한 Gateway 설정과 Subnet분리를 통해 Network를 제어할 수 있습니다. 외부 연결 Network와 사용자 정의 사설 Network를 이용해 완벽한 인프라 구성이 가능합니다. 또한 Network Topology 기능을 통해 한눈에 Network설정을 확인할 수 있습니다.
 
-|서비스 정보|설명|
-|----------|-----|
-|App Analytics|-대시보드, 실시간 모니터링 지표, 이용자/매출/게임 상세 분석.<br>-커스텀 이벤트 분석 제공, 유입 채널별 이용자 트래킹 및 LTV에 기반을 둔 ROI 제공.<br>-캠페인 목적에 따른 이용자 타겟팅과 캠페인 실행 기능 제공.|
-|Log & Crash Search|-앱 오류 로그 수집, 저장, 조회 및 크래쉬 발생 원인 정보 제공 서비스.|
+<h3 id="floating-ip">Floating IP</h3>
+Instance 생성과 Load Balancer 생성시 기본적으로 Public IP를 할당하지 않습니다. 생성된 Instance 와 Load Balancer 는 외부에서 접속하기 위해 Public IP가 있어야 하는데 이때 Floating IP를 이용하여 할당받게 됩니다. Floating IP는 사용자의 계정과 연결되어 Instance를 삭제하더라도 해제되지 않으며, 같은 프로젝트 내 다른 Instance에 할당할 수 있습니다. DNS와 연결하여 사용하면 Instance 장애 시 단순히 사용하던 Floating IP를 정상 Instance에 연결하는 것만으로 빠른 장애 복구가 가능하여 지속적인 서비스를 제공할 수 있습니다.
 
-
-<h3 id="game-service">Game Service</h3>
-게임 개발에 필요한 플랫폼을 사용할 수 있습니다.
-
-|서비스 정보|설명|
-|----------|-----|
-|Leaderboard|-대규모 트래픅에서 안정적으로 동작하는 일간, 주간, 월간, 전체 랭킹 서비스|
-|Real Time Multiplayer|-룸기반의 실시간 멀티플레이 게임을 지원하는 네트워크 서비스|
-
-
-<h3 id="notification-service">Notification Service</h3>
-모바일 푸쉬 및 SMS 플랫폼을 사용할 수 있습니다.
-
-|서비스 정보|설명|
-|----------|-----|
-|Push|-APNS / CGM / TENCENT 를 통한 푸쉬 제공<br>-메시지 전송 결과 확인 기능 제공.|
-|SMS|-SMS / LMS / MMS 발송 기능 제공|
-
-
-<h3 id="security-service">Security Service</h3>
-보안을 강화할 수 있는 플랫폼을 사용할 수 있습니다.
-
-|서비스 정보|설명|
-|----------|-----|
-|AppGuard|-애플리케이션의 코드 조작을 방지.<br>-다양한 조작 툴을 패턴이나 우회가 힘든 행위 기반으로 탐지, 제재|
-|Security Check|-보안 취약점 사전 검수<br>-취약점에 대한 대응 방법 가이드|
-|CAPTCHA|-문자 / 음성 CAPTCHA 제공|
-|OTP|-사용자의 스마트폰으로 사용 가능한 OTP 제공|
-
-
-<h3 id="common-service">Common Service</h3>
-개발, 테스트, 서비스 운영에 필요한 공통 플랫폼을 사용할 수 있습니다.
-
-|서비스 정보|설명|
-|----------|-----|
-|Launching|-클라이언트 런칭 관리 서비스.<br>-클라이언트 구동 시 서버주소, 클라이언트 버전, 공지 사항의 URL,다운로드 URL을 제공.|
-|IAP|-하나의 인터페이스로 모든 마켓을 이용할 수 있는 인앱 결제 서비스.|
-|Mobile Test|-물리적인 단말을 웹상에서 대여|
-|Address Search|-도로명 주소, 지번 주소, 건물명 검색 기능 제공|
-
-
+<h3 id="load-balancer">Load Balancer</h3>
+Load Balancer를 이용해 Network 트래픽을 여러 Instance에 분산할 수 있습니다. 부하 분산뿐만 아니라 사용자가 설정한 Health Check 패턴에 따라 장애 Instance를 자동으로 검출하여 트래픽을 분산 제어함으로써 서비스의 고가용성 (High Availability)을 보장할 수 있습니다. 또한 하나의 Network 안에 서비스 별로 여러 개의 Load Balancer를 생성할 수 있습니다.
