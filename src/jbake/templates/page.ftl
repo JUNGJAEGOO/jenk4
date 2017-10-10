@@ -1,4 +1,4 @@
-﻿<#include "header.ftl">
+<#include "header.ftl">
 	<#include "menu.ftl">
  
         <div class="container" style="margin-top: 100px;">

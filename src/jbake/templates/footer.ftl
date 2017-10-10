@@ -1,4 +1,4 @@
-﻿<footer id="footer" class="col-md-12">
+<footer id="footer" class="col-md-12">
 </footer>
 
     <!-- Le javascript -->

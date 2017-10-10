@@ -1,4 +1,4 @@
-﻿(function() {
+(function() {
 	appendListToSubLinkNav();
 	
 	$(".dropdown-submenu > a").click(function(){

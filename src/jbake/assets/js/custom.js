@@ -1,4 +1,4 @@
-﻿var url_dictionary = {
+var url_dictionary = {
         alpha: {
             'customerService': "http://alpha-cloud.toast.com/support/faq/",
             'dephase': 'alpha',

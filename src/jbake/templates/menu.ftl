@@ -1,4 +1,4 @@
-﻿	<body>
+	<body>
 	<header id="header">
         </header>
         <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
