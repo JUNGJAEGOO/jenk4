@@ -15,6 +15,7 @@ console을 통해 간편하게 이용할 수 있습니다.
 <h2 id="_2">용어 설명</h2>
 <h3 id="instance">Instance</h3>
 Infrastructure 서비스의 Compute 상품 중 기본이 되는 리소스로서 사용자의 필요에 따라 다양한 타입의 Instance를 사용할 수 있습니다. Instance는 하드웨어 템플릿(Flavor)과 소프트웨어 템플릿(Image)을 이용하여 생성할 수 있습니다. Flavor는 [표 1]과 같이 vCPU, RAM의 조합으로 이루어집니다.
+
 <table>
     <colgroup>
         <col style="width:16%">
@@ -31,7 +32,8 @@ Infrastructure 서비스의 Compute 상품 중 기본이 되는 리소스로서 
         <th class="bd_rgt">RAM</th>
         <th class="bd_rgt">단위</th>
         <th class="bd_rgt">과금액 (원/단위)</th>
-    </tr></thead>
+    </tr>
+    </thead>
     <tbody>
     <tr>
         <td rowspan="5" class="bd_rgt2">Basic</td>
@@ -152,7 +154,6 @@ Infrastructure 서비스의 Compute 상품 중 기본이 되는 리소스로서 
         <td class="txt_cent">32</td>
         <td class="txt_cent">534 원/시간</td>
     </tr>
-
     <tr>
         <td rowspan="3" class="bd_rgt2">Storage Optimized</td>
         <td class="txt_cent bd_rgt2" rowspan="3">i2</td>
@@ -175,6 +176,7 @@ Infrastructure 서비스의 Compute 상품 중 기본이 되는 리소스로서 
     </tr>
     </tbody>
 </table>
+
 [표 1 Flaver]
 <h3 id="image">Image</h3>
 소프트웨어 템플릿(Image)는 하드웨어 템플릿(Flavor)와 더불어 Instance를 구성하는 중요한 요소입니다. OS와 기본적으로 설치되는 애플리케이션의 템플릿이며 Public Image를 기본 제공합니다. 사용자는 필요에 따라 기본 제공한 Image를 이용하여 사용자화 Image를 새롭게 생성하여 사용할 수 있습니다.
