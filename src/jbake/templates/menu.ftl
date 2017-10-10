@@ -32,9 +32,9 @@
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud <b class="caret"></b></a>
               <ul class="dropdown-menu">
-              <li class="active"><a href="../../Toast Cloud/Main/Overview.html">Overview</a></li>
-              <li class="active"><a href="../../Toast Cloud/Main/Getting Started.html">Getting Started</a></li>
-              <li class="active"><a href="../../Toast Cloud/Main/Release Notes.html">Release Notes</a></li>
+              <li ><a href="../../Toast Cloud/Main/Overview.html">Overview</a></li>
+              <li ><a href="../../Toast Cloud/Main/Getting Started.html">Getting Started</a></li>
+              <li ><a href="../../Toast Cloud/Main/Release Notes.html">Release Notes</a></li>
               </ul>
             </li>
 <!-- infrastrucutre -->
