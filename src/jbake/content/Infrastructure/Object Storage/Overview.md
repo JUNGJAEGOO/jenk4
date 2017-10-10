@@ -4,28 +4,6 @@ type=page
 status=published
 ~~~~~~
 
-    <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#infrastructure-object-storage-overview">Infrastructure &gt; Object Storage &gt; Overview</a></li>
-        
-    
-        <li class="main "><a href="#_1">주요 기능</a></li>
-        
-    
-        <li class="main "><a href="#_2">서비스 구조</a></li>
-        
-    
-        <li class="main "><a href="#_3">서비스 용어</a></li>
-        
-    
-    </ul>
-</div>
-					</div>
-				</div>
-   	    	</div>
-            <div class="col-md-8 content-container" role="main">
-
-
 <h2 id="infrastructure-object-storage-overview">Infrastructure &gt; Object Storage &gt; Overview</h2>
 
 <h2 id="_1">주요 기능</h2>

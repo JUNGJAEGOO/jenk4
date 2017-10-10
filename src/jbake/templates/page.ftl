@@ -7,7 +7,18 @@
 		           	<div id="side_nav_left" class="side-nav">
 	            		<div id="remotenav" class="bs-sidebar hidden-print affix well toc-list" role="complementary">
  
-           
+          
+    <ul class="nav bs-sidenav">
+    
+    
+    </ul>
+</div>
+					</div>
+				</div>
+   	    	</div>
+		<div class="col-md-8 content-container" role="main"> 
+
+ 
           ${content.body}
 
            	</div>
