@@ -29,10 +29,10 @@ var gnbParams = {
     customerService: url_dictionary[version]['customerService'],
     supportLanguage: {
         languageHandler: 'clickLanguageHandler',
-		        support: [{name: '한국어', code: 'ko_KR'}, 
+		        support: [{name: '�쒓뎅��', code: 'ko_KR'}, 
 		                  {name: 'English', code: 'en_US'},
-		                  {name: '日本語', code: 'ja_JP'},
-		                  {name: '中文', code: 'zh_CN'}]
+		                  {name: '�ζ쑍沃�', code: 'ja_JP'},
+		                  {name: '訝�뻼', code: 'zh_CN'}]
     },
     locale: getUserLocale(),
     useMain: true,
