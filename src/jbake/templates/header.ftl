@@ -7,9 +7,9 @@
         
         
         
-        <link rel="shortcut icon" href="../../favicon.ico">
+        <link rel="shortcut icon" href="../../nhnfavicon.ico">
 
-	      <title>Overview - Toast Cloud Document</title>
+	      <title>Toast Cloud Document</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
