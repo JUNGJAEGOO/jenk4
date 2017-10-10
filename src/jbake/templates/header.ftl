@@ -26,4 +26,3 @@
         <![endif]-->
 
     </head>
-    <body onclick="var target=event.target||event.srcElement;if(typeof(target.className) != 'string'){TCC.utils.hideAllLayer();return true};if(TCC.utils.hasClass(target.className.split(' '), 'lyBtn')){return true;} TCC.utils.hideAllLayer();" style>
