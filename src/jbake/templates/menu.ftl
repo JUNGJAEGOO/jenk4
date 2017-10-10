@@ -32,9 +32,9 @@
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud <b class="caret"></b></a>
               <ul class="dropdown-menu">
-              <li class="active"><a href="Overview.html">Overview</a></li>
-              <li><a href="Getting Started.html">Getting Started</a></li>
-              <li><a href="Release Notes.html">Release Notes</a></li>
+              <li class="active"><a href="../../Toast Cloud/Main/Overview.html">Overview</a></li>
+              <li class="active"><a href="../../Toast Cloud/Main/Getting Started.html">Getting Started</a></li>
+              <li class="active"><a href="../../Toast Cloud/Main/Release Notes.html">Release Notes</a></li>
               </ul>
             </li>
 <!-- infrastrucutre -->
@@ -45,50 +45,44 @@
 		<a tabindex="-1" href="">Compute & Network </a>
 		<ul class="dropdown-menu">
 			<li >
-			    <a href="Infrastructure/Compute/ko/Overview/">Overview</a>
+			    <a href="../../Infrastructure/Compute/Overview.html">Overview</a>
 			</li>
 
 			<li >
-			    <a href="Infrastructure/Compute/ko/Getting Started/">Getting Started</a>
+			    <a href="../../Infrastructure/Compute/Getting Started.html">Getting Started</a>
 			</li>
 
 			<li >
-			    <a href="Infrastructure/Compute/ko/Instances User Guide/">Instances User Guide</a>
+			    <a href="../../Infrastructure/Compute/Instances User Guide.html">Instances User Guide</a>
 			</li>
 
 			<li >
-			    <a href="Infrastructure/Compute/ko/Release Notes/">Release Notes</a>
+			    <a href="../../Infrastructure/Compute/Release Notes.html">Release Notes</a>
 			</li>
 
 		</ul>
 	    </li>
 
 	<li class="dropdown-submenu">
-    <a tabindex="-1" href="">Object Storage</a>
-    <ul class="dropdown-menu">
+    		<a tabindex="-1" href="">Object Storage</a>
+    		<ul class="dropdown-menu">
         
             
-<li >
-    <a href="../../../Infrastructure/Object Storage/ko/Overview/">Overview</a>
-</li>
-
-        
+		<li >
+    			<a href="../../Infrastructure/Object Storage/Overview.html">Overview</a>
+		</li>
             
-<li >
-    <a href="../../../Infrastructure/Object Storage/ko/Getting Started/">Getting Started</a>
-</li>
-
-        
+		<li >
+    			<a href="../../Infrastructure/Object Storage/Getting Started.html">Getting Started</a>
+		</li>
+       
+		<li >
+    			<a href="../../Infrastructure/Object Storage/Developer`s Guide.html">Developer`s Guide</a>
+		</li>
             
-<li >
-    <a href="../../../Infrastructure/Object Storage/ko/Developer`s Guide/">Developer`s Guide</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../../Infrastructure/Object Storage/ko/Release Notes/">Release Notes</a>
-</li>
+		<li >
+    			<a href="../../Infrastructure/Object Storage/Release Notes.html">Release Notes</a>
+		</li>
 
         
     </ul>
