@@ -29,7 +29,7 @@
         <div class="navbar-collapse collapse">
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud <b class="caret"></b></a>
               <ul class="dropdown-menu">
               <li ><a href="../../Toast Cloud/Main/Overview.html">Overview</a></li>
