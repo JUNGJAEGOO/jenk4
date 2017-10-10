@@ -7,17 +7,17 @@
         
         
         
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <link rel="shortcut icon" href="../../favicon.ico">
 
 	      <title>Overview - Toast Cloud Document</title>
 
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/highlight.css">
-        <link href="css/base.css" rel="stylesheet">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
 		    <!-- <link href="http://alpha-www.toast.com/share/common/css/common-1.0.min.css" rel="stylesheet"> -->
-        <link href="css/common-1.0.min.css" rel="stylesheet">
-        <link href="css/custom_tc_theme.css" rel="stylesheet">
+        <link href="../../css/common-1.0.min.css" rel="stylesheet">
+        <link href="../../css/custom_tc_theme.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
