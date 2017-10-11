@@ -41,10 +41,26 @@
 	
 	<script language='javascript'>
 	console.log(window.location.pathname);
-	$(document).ready(function() {
-	$('li.active').removeClass('active');
-	$('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
-	});
+	      var navlnks = document.querySelectorAll(".nav a");
+        Array.prototype.map.call(navlnks, function(item) {
+
+            item.addEventListener("click", function(e) {
+
+                var navlnks = document.querySelectorAll(".nav a"); 
+
+                Array.prototype.map.call(navlnks, function(item) {
+
+                    if (item.parentNode.className == "active" || item.parentNode.className == "active open" ) {
+
+                        item.parentNode.className = "";
+
+                    } 
+
+                }); 
+
+                e.currentTarget.parentNode.className = "active";
+            });
+        });
 	</script>
 	
      <!-- <script language='javascript'>
