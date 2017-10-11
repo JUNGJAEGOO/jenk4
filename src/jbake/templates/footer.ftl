@@ -40,19 +40,17 @@
 	
 	<script language='javascript'>
 	$(function() {
-    var nav = document.getElementById("sticky"),
-        anchor = nav.getElementsByTagName("a"),
-        current = window.location;
-
-    console.log("anchor = ",anchor,"current = ",current);
-
-    for (var i = 0; i < anchor.length; i++) {
-    if(anchor[i].href == current) {
-        anchor[i].className = "active";
-
+	var loc = window.location.pathname;
+	Console.log(window.location.pathname);
+	Console.log(loc);
+	Console.log(loc.split("/")[1]);
+    if ((location.pathname.split("/")[1]) !== ""){
+        $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
     }
-	}
-	});
+    else {
+    $('nav li.home-link a').addClass('active');
+    }
+});
 	</script>
 	
 	
