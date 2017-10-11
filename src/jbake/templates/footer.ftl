@@ -41,9 +41,9 @@
 	<script language='javascript'>
 	$(function() {
 	var loc = window.location.pathname;
-	Console.log(window.location.pathname);
-	Console.log(loc);
-	Console.log(loc.split("/")[1]);
+	console.log(window.location.pathname);
+	console.log(loc);
+	console.log(loc.split("/")[1]);
     if ((location.pathname.split("/")[1]) !== ""){
         $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
     }
