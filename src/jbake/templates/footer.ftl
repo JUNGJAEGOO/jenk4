@@ -38,10 +38,10 @@
         var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
         </script>
 	
-	<script language='javascript'>
+	
 
 	
-	<script>
+	<script language='javascript'>
 	console.log(window.location.pathname);
 	$(document).ready(function() {
 	$('li.active').removeClass('active');
