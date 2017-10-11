@@ -39,8 +39,6 @@
         </script>
 	
 	
-
-	
 	<script language='javascript'>
 	console.log(window.location.pathname);
 	$(document).ready(function() {
