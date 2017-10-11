@@ -4,21 +4,21 @@
     <!-- Le javascript -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="../../js/readthedocs-data.js"></script>
-    <script src="../../js/jquery-1.10.2.min.js"></script>
-    <script src="../../js/modernizr-custom.js"></script>
+    <script src="js/readthedocs-data.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
     <script type='text/javascript'>
          if (!Modernizr.matchmedia){
              $.getScript("js/media.match.min.js");
          }
     </script>
-    <script src="../../js/highlight.pack.js"></script>
-    <script src="../../js/enquire.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/enquire.min.js"></script>
     <script>var base_url = '../../..';</script>
-    <script src="../../js/base.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
-    <script src="../../js/common-1.0.min.js"></script>
-    <script src="../../js/custom.js"></script>
+    <script src=".js/base.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+    <script src="js/common-1.0.min.js"></script>
+    <script src="js/custom.js"></script>
     
 
     <!-- <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>  -->
