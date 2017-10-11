@@ -38,29 +38,20 @@
         var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
         </script>
 	
-	
 	<script language='javascript'>
-	console.log(window.location.pathname);
-	      var navlnks = document.querySelectorAll(".nav a");
-        Array.prototype.map.call(navlnks, function(item) {
-
-            item.addEventListener("click", function(e) {
-
-                var navlnks = document.querySelectorAll(".nav a"); 
-
-                Array.prototype.map.call(navlnks, function(item) {
-
-                    if (item.parentNode.className == "active" || item.parentNode.className == "active open" ) {
-
-                        item.parentNode.className = "";
-
-                    } 
-
-                }); 
-
-                e.currentTarget.parentNode.className = "active";
-            });
-        });
+	$(document).ready(function() {
+    console.log(window.location.pathname);
+    // -----------------------------------------------------------------------
+    $.each($('.navbar').find('li'), function() {
+      console.log($(this));
+        if (window.location.pathname.indexOf($(this).find('a').attr('href')) > -1)
+        {
+            $(this).toggleClass('active');
+            $(this).parent().closest( "li" ).toggleClass('active');
+        }
+    });
+    // -----------------------------------------------------------------------
+	});
 	</script>
 	
      <!-- <script language='javascript'>
