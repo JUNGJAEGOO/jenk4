@@ -39,20 +39,15 @@
         </script>
 	
 	<script language='javascript'>
-	$(function() {
-	var loc = window.location.pathname;
-	console.log(window.location.pathname);
-	console.log(loc);
-	console.log(loc.split("/")[1]);
-    if ((location.pathname.split("/")[1]) !== ""){
-        $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-    }
-    else {
-    $('nav li.home-link a').addClass('active');
-    }
-});
-	</script>
+
 	
+	<script>
+	console.log(window.location.pathname);
+	$(document).ready(function() {
+	$('li.active').removeClass('active');
+	$('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
+	});
+	</script>
 	
      <!-- <script language='javascript'>
             var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
