@@ -15,7 +15,7 @@
     <script src="js/highlight.pack.js"></script>
     <script src="js/enquire.min.js"></script>
     <script>var base_url = '../../..';</script>
-    <script src=".js/base.js"></script>
+    <script src="js/base.js"></script>
     <script src="js/bootstrap-3.0.3.min.js"></script>
     <script src="js/common-1.0.min.js"></script>
     <script src="js/custom.js"></script>
