@@ -38,15 +38,7 @@
         var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
         </script>
 	
-	<script type="text/javascript">
-    $(document).ready(function () {
-        var url = window.location;
-        var element = $('ul.dropdown a').filter(function () {
-            return this.href == url || url.href.indexOf(this.href) == 0;
-        });
-        $(element).parentsUntil('ul.dropdown', 'li').addClass('active');
-    });
-</script>
+	
 	
      <!-- <script language='javascript'>
             var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
