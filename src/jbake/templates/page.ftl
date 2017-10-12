@@ -12,7 +12,7 @@
 
 	<#include "sidebar-TCoverview.ftl">
 
-		${content.title}
+		
 		
     </ul>
 </div>
@@ -21,7 +21,7 @@
    	    	</div>
 		<div class="col-md-8 content-container" role="main"> 
 
- 
+			
           ${content.body}
 
            	</div>
