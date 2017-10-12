@@ -218,7 +218,7 @@
 <li class="<#if (content.summary="TCGameAos-init")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/aos-initialization.html">Initialization</a></li>       
 <li class="<#if (content.summary="TCGameAos-authen")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/aos-authentication.html">Auth</a></li>        
 <li class="<#if (content.summary="TCGameAos-purchase")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/aos-purchase.html">Purchase</a></li>      
-<li class="<#if (content.summary="TCGameAos-push)>active<#else></#if>"><a href="../../../Game/Gamebase/ko/aos-push.html">Push</a></li>       
+<li class="<#if (content.summary="TCGameAos-push")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/aos-push.html">Push</a></li>       
 <li class="<#if (content.summary="TCGameAos-ui")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/aos-ui.html">UI</a></li>
 </#if>
         
