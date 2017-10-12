@@ -21,7 +21,7 @@
               <li ><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
               <li ><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
               <li ><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
-			  <#if content.summary??><li>hi</li>
+			  <#if content.summary??><li>hi</li></#if>
               </ul>
             </li>
 <!-- infrastrucutre -->
