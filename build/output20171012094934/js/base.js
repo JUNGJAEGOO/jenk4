@@ -41,7 +41,7 @@
 	function appendListToSubLinkNav() {
 
         var $parent_menu = $('ul.dropdown-menu > li.active').parent().parent();
-		
+		console.log(parent_menu);
         if(!$parent_menu.length) {
             $('#side_nav_right').remove();
         }

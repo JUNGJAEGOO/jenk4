@@ -38,7 +38,31 @@
         var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
         </script>
 	
-	
+	 <script language='javascript'>
+		function appendListToSubLinkNav() {
+
+        var $parent_menu = $('ul.dropdown-menu > li.active').parent().parent();
+		
+        if(!$parent_menu.length) {
+            $('#side_nav_right').remove();
+        }
+        else {
+            var depth_stack = [];
+            while($parent_menu.is('li')) {
+                var temp = $parent_menu;
+                depth_stack.push(temp);
+                $parent_menu = $parent_menu.parent().parent();
+            }
+            var title_menu = (depth_stack.length > 1)? depth_stack[depth_stack.length-2] : depth_stack[0];
+		    $('#sub-link-category-name').text(title_menu.children("a")[0].innerText);
+			var subMenuList = $('li .active').parent().get(0).childNodes;
+			for (var i = 0; i < subMenuList.length; i++) {
+				$("#sub-link-list").append(subMenuList[i].cloneNode(true));
+				$("#sub-link-nav > ul").append(subMenuList[i].cloneNode(true));
+			}
+		}
+	}
+	</script>
 	
      <!-- <script language='javascript'>
             var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
