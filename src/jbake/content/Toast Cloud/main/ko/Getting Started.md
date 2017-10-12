@@ -4,6 +4,9 @@ type=page
 status=published
 ~~~~~~
 
+${content.title}
+${content.url}
+
 ##TOAST Cloud Overview##
 
 TOAST Cloud Push는 Android OS(GCM, TENCENT), iOS로 푸시 메세지를 전송해주는 통합 푸시 서비스다.
