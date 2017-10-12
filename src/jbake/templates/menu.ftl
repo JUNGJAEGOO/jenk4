@@ -15,7 +15,7 @@
         <div class="navbar-collapse collapse">
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
-            <li class="<#if> (content.title="TCoverview")>dropdown active<#else>dropdown</#if>">
+            <li class="<#if (content.title="TCoverview")>dropdown active<#else>dropdown</#if>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">${content.rootpath}<b class="caret"></b></a>
               <ul class="dropdown-menu">
               <li ><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
