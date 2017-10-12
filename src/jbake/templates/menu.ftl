@@ -16,7 +16,7 @@
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">${published_date}<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">${content.rootpath}<b class="caret"></b></a>
               <ul class="dropdown-menu">
               <li ><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
               <li ><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
