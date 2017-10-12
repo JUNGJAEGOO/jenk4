@@ -46,7 +46,9 @@
 			<li class="<#if (content.summary="TCcomputeWindowSFTP")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
 			<li class="<#if (content.summary="TCcomputeWindowSysprep")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
 			<li class="<#if (content.summary="TCcomputeCIDR")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
-			<li class="<#if (content.summary="TCcomputeMonitoring")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Monitoring Guide.html">Monitoring Guide</a></li>      
+			
+			<li class="<#if (content.summary="TCInframonitorGetting")>active<#else></#if>"><a href="../../../Infrastructure/Monitoring/ko/Getting Started.html">Monitoring Guide</a></li>      
+			
 			<li class="<#if (content.summary="TCcomputeDV's")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Developer's Guide.html">Developer`s Guide</a></li>
 			<li class="<#if (content.summary="TCcomputeRelease")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
 		</#if>
@@ -56,12 +58,12 @@
 	<li class="dropdown-submenu">
     		<a tabindex="-1" href="">Object Storage</a>
     		<ul class="dropdown-menu">
- 
-		<li ><a href="../../../Infrastructure/Object Storage/ko/Overview.html">Overview</a></li>
-		<li ><a href="../../../Infrastructure/Object Storage/ko/Getting Started.html">Getting Started</a></li>
-		<li ><a href="../../../Infrastructure/Object Storage/ko/Developer`s Guide.html">Developer`s Guide</a></li>
-		<li ><a href="../../../Infrastructure/Object Storage/ko/Release Notes.html">Release Notes</a></li>
-
+		<#if content.summary??>
+		<li class="<#if (content.summary="TCobjectstorageOverview")>active<#else></#if>"><a href="../../../Infrastructure/Object Storage/ko/Overview.html">Overview</a></li>
+		<li class="<#if (content.summary="TCobjectstorageGetting")>active<#else></#if>"><a href="../../../Infrastructure/Object Storage/ko/Getting Started.html">Getting Started</a></li>
+		<li class="<#if (content.summary="TCobjectstorageDV's")>active<#else></#if>"><a href="../../../Infrastructure/Object Storage/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+		<li class="<#if (content.summary="TCobjectstorageRelease")>active<#else></#if>"><a href="../../../Infrastructure/Object Storage/ko/Release Notes.html">Release Notes</a></li>
+		</#if>
         
     </ul>
   </li>

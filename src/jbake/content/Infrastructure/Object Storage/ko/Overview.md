@@ -2,7 +2,7 @@
 date=2017-10-10
 type=page
 status=published
-summary=TCobjectstorage
+summary=TCobjectstorageOverview
 big=TCInfra
 ~~~~~~
 
