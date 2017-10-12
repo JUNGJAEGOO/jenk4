@@ -3,7 +3,7 @@ date=2013-09-24
 type=page
 status=published
 big=TCOpensource
-summary=ToastUIGrid
+summary=ToastUIGridGettingStarted
 ~~~~~~
 
 ## Open Source > ToastUI Grid > Getting Started

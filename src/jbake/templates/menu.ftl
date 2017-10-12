@@ -18,10 +18,11 @@
             <#if content.big??><li class="<#if (content.big="TCoverview")>dropdown active<#else>dropdown</#if>"></#if>
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toast Cloud<b class="caret"></b></a>
               <ul class="dropdown-menu">
-              <li ><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
-              <li ><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
-              <li ><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
-			  <#if content.big??><li>hi</li></#if>
+				<#if content.summary??>
+              <li class="<#if (content.summary="TCOverview")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
+              <li class="<#if (content.summary="TCGettingStarted")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
+              <li class="<#if (content.summary="TCRelease")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
+				</#if>
               </ul>
             </li>
 <!-- infrastrucutre -->
@@ -31,23 +32,22 @@
 	    <li class="dropdown-submenu">
 		<a tabindex="-1" href="">Compute & Network </a>
 		<ul class="dropdown-menu">
-			<li class=""><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
-			<li ><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
-			<li > <a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
-			<li ><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
-			<li ><a href="../../../Infrastructure/Compute/ko/Images User Guide.html">Images User Guide</a></li>
-			<li ><a href="../../../Infrastructure/Compute/ko/Blockstorage User Guide.html">Block Storage User Guide</a></li>         
-			<li > <a href="../../../Infrastructure/Compute/ko/NAS User Guide.html">NAS (Offline) User Guide</a></li>         
-			<li > <a href="../../../Infrastructure/Compute/ko/Security Groups User Guide.html">Security Groups User Guide</a></li>    
-			<li > <a href="../../../Infrastructure/Compute/ko/Networks User Guide.html">Networks User Guide</a></li>           
-			<li > <a href="../../../Infrastructure/Compute/ko/Load Balancers User Guide.html">Load Balancers User Guide</a></li>         
-			<li > <a href="../../../Infrastructure/Compute/ko/Windows SSH Guide.html">Windows SSH Guide</a></li>   
-			<li > <a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
-			<li ><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
-			<li ><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
-			<li ><a href="../../../Infrastructure/Compute/ko/Monitoring Guide.html">Monitoring Guide</a></li>      
-			<li ><a href="../../../Infrastructure/Compute/ko/Developer`s Guide.html">Developer`s Guide</a></li>
-			<li ><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
+			<li class="<#if (content.summary="TCcomputeOverview")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
+			<li class="<#if (content.summary="TCcomputeGetting")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
+			<li class="<#if (content.summary="TCcomputeInstancesUser")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
+			<li class="<#if (content.summary="TCcomputeImagesUser")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Images User Guide.html">Images User Guide</a></li>
+			<li class="<#if (content.summary="TCcomputeBlockStorage")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Blockstorage User Guide.html">Block Storage User Guide</a></li>         
+			<li class="<#if (content.summary="TCcomputeNAS")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/NAS User Guide.html">NAS (Offline) User Guide</a></li>         
+			<li class="<#if (content.summary="TCcomputeSecurityGroups")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Security Groups User Guide.html">Security Groups User Guide</a></li>    
+			<li class="<#if (content.summary="TCcomputeNetworksUser")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Networks User Guide.html">Networks User Guide</a></li>           
+			<li class="<#if (content.summary="TCcomputeLoadBalancers")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Load Balancers User Guide.html">Load Balancers User Guide</a></li>         
+			<li class="<#if (content.summary="TCcomputeWindowSSH")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows SSH Guide.html">Windows SSH Guide</a></li>   
+			<li class="<#if (content.summary="TCcomputeWindowSFTP")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
+			<li class="<#if (content.summary="TCcomputeWindowSysprep")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
+			<li class="<#if (content.summary="TCcomputeCIDR")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
+			<li class="<#if (content.summary="TCcomputeMonitoring")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Monitoring Guide.html">Monitoring Guide</a></li>      
+			<li class="<#if (content.summary="TCcomputeDeveloper's")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+			<li class="<#if (content.summary="TCcomputeRelease")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
 
 		</ul>
 	    </li>
@@ -588,7 +588,7 @@
                     </ul>
                 </li>
 <!-- Management -->
-                         <li class="dropdown">
+                         <#if content.big??><li class="<#if (content.big="Management")>active<#else></#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -596,11 +596,11 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Managed</a>
     <ul class="dropdown-menu">
-        
-<li ><a href="../../../Management/Managed/ko/Overview/">Overview</a></li>
-<li ><a href="../../../Management/Managed/ko/Getting Started/">Getting Started</a></li>        
-<li ><a href="../../../Management/Managed/ko/Release Notes/">Release Notes</a></li>
-   
+<#if content.summary??>        
+<li class="<#if (content.summary="ManagementOverview")>active<#else></#if>"><a href="../../../Management/Managed/ko/Overview/">Overview</a></li>
+<li class="<#if (content.summary="ManagementGetting")>active<#else></#if>"><a href="../../../Management/Managed/ko/Getting Started/">Getting Started</a></li>        
+<li class="<#if (content.summary="ManagementRelease")>active<#else></#if>"><a href="../../../Management/Managed/ko/Release Notes/">Release Notes</a></li>
+</#if>
     </ul>
   </li>
 
@@ -763,10 +763,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">ToastUI Editor</a>
     <ul class="dropdown-menu">
-                
-<li ><a href="../../../Open Source/ToastUI Editor/ko/Overview.html">Overview</a></li>          
-<li ><a href="../../../Open Source/ToastUI Editor/ko/Getting Started.html">Getting Started</a></li>
-      
+ <#if content.summary??>                
+<li class="<#if (content.summary="ToastUIEditorOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Editor/ko/Overview.html">Overview</a></li>          
+<li class="<#if (content.summary="ToastUIEditorGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Editor/ko/Getting Started.html">Getting Started</a></li>
+ </#if>
     </ul>
   </li>
 
@@ -788,10 +788,12 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">ToastUI Grid</a>
     <ul class="dropdown-menu">
-                 
-<li ><a href="../../../Open Source/ToastUI Grid/ko/Overview.html">Overview</a></li>         
-<li ><a href="../../../Open Source/ToastUI Grid/ko/Getting Started.html">Getting Started</a></li>       
-<li ><a href="../../../Open Source/ToastUI Grid/ko/Features.html">Features</a></li>
+             
+<#if cotent.summary??>			 
+<li class="<#if (content.summary="ToastUIGridOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Grid/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="ToastUIGridGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Grid/ko/Getting Started.html">Getting Started</a></li>       
+<li class="<#if (content.summary="ToastUIGridFeatures")>active<#else></#if>"><a href="../../../Open Source/ToastUI Grid/ko/Features.html">Features</a></li>
+</#if>
         
     </ul>
   </li>
@@ -801,9 +803,11 @@
     <a tabindex="-1" href="">Toast Haste</a>
     <ul class="dropdown-menu">
         
-<li ><a href="../../../Open Source/Toast Haste/ko/Overview.html">Overview</a></li>          
-<li ><a href="../../../Open Source/Toast Haste/ko/Getting Started.html">Getting Started</a></li>
-    
+<#if cotent.summary??>
+<li class="<#if (content.summary="ToastHasteOverview")>active<#else></#if>"><a href="../../../Open Source/Toast Haste/ko/Overview.html">Overview</a></li>          
+<li class="<#if (content.summary="ToastHasteOverview")>active<#else></#if>"><a href="../../../Open Source/Toast Haste/ko/Getting Started.html">Getting Started</a></li>
+</#if>    
+
     </ul>
   </li>
 
@@ -817,11 +821,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        
-<li >
-    <a href="../../../Download/one/ko/Download.html">Latest version</a>
-</li>
-
+<#if cotent.summary??>                        
+<li class="<#if (content.summary="downloads")>active<#else></#if>"><a href="../../../Download/one/ko/Download.html">Latest version</a></li>
+</#if>
                     
                     </ul>
                 </li>

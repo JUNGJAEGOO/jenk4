@@ -3,7 +3,7 @@ date=2013-09-24
 type=page
 status=published
 big=TCOpensource
-summary=ToastUIEditor
+summary=ToastUIEditorGettingStarted
 ~~~~~~
 
 ## Open Source > ToastUI Editor > Getting Started

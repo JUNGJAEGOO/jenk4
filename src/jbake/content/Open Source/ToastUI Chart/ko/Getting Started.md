@@ -18,6 +18,8 @@ This is dependent on tui.code-snippet, tui.component-effects and Raphael.js.
 #### Install with Bower
 Using Bower, you can download them easily. The downloaded file will be saved in "bower_components" directory.
 If you want to know more about the Bower, please refer to the [http://bower.io/](http://bower.io/).
+<br>
+
 ```
 bower install tui-chart
 ```

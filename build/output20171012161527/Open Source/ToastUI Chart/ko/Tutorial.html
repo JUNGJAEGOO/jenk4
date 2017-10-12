@@ -805,7 +805,7 @@
         
 <li class=""><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
 <li class=""><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
-<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
+<li class="active"><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
         
     </ul>
   </li>
@@ -886,58 +886,38 @@
 		<div class="col-md-8 content-container" role="main"> 
 
 			
-          <h2>Open Source &gt; ToastUI Chart &gt; Getting started</h2><h1>Getting started</h1><h2>Download</h2><p>You should download Toast UI Chart files and associated libraries.<br/>This is dependent on tui.code-snippet, tui.component-effects and Raphael.js.</p><h4>Install with Bower</h4><p>Using Bower, you can download them easily. The downloaded file will be saved in &ldquo;bower_components&rdquo; directory.<br/>If you want to know more about the Bower, please refer to the <a href="http://bower.io/">http://bower.io/</a>.<br/><code>
-bower install tui-chart
-</code></p><h2>Include files</h2><p>Now, let&rsquo;s include the downloaded files.</p>
-<pre><code class="html">&lt;!-- include application-chart.min.css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bower_components/tui-chart/dist/chart.min.css&quot; /&gt;
-&lt;!-- include libraries --&gt;
-&lt;script src=&quot;bower_components/tui-code-snippet/code-snippet.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;bower_components/tui-component-effects/effects.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;bower_components/raphael/raphael-min.js&quot;&gt;&lt;/script&gt;
-&lt;!-- include chart.min.js --&gt;
-&lt;script src=&quot;bower_components/tui-chart/dist/chart.min.js&quot;&gt;&lt;/script&gt;
-&lt;!-- include map data (only map chart) --&gt;
-&lt;script src=&quot;bower_components/tui-chart/dist/maps/world.js&quot;&gt;&lt;/script&gt;
-</code></pre><h2>Create Chart</h2><p>If you included files, now you can create a chart.<br/>The following example is creating a bar chart.</p>
-<pre><code class="javascript">var container = document.getElementById(&#39;container-id&#39;),
-    data = {
-        categories: [&#39;cate1&#39;, &#39;cate2&#39;, &#39;cate3&#39;],
-        series: [
-            {
-                name: &#39;Legend1&#39;,
-                data: [20, 30, 50]
-            },
-            {
-                name: &#39;Legend2&#39;,
-                data: [40, 40, 60]
-            },
-            {
-                name: &#39;Legend3&#39;,
-                data: [60, 50, 10]
-            },
-            {
-                name: &#39;Legend4&#39;,
-                data: [80, 10, 70]
-            }
-        ]
-    },
-    options = {
-        chart: {
-            width: 500,
-            height: 400,
-            title: &#39;Chart Title&#39;
-        },
-        yAxis: {
-            title: &#39;Y Axis Title&#39;
-        },
-        xAxis: {
-            title: &#39;X Axis Title&#39;
-        }
-    };
-
-tui.chart.barChart(container, data, options);
-</code></pre>
+          <h2>Open Source &gt; ToastUI Chart &gt; Tutorial</h2><h1>Tutorial</h1>
+<ul>
+  <li>Chart Types
+  <ul>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-bar,column">Bar, Column chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-line,area">Line, Area chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-bubble">Bubble chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-scatter">Scatter chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-pie">Pie chart</a></li>
+    <li>Combo chart
+    <ul>
+      <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-column-line-combo">Column &amp; Line</a></li>
+      <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-line-area-combo">Line &amp; Area</a></li>
+      <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-pie-donut-combo">Pie &amp; Donut</a></li>
+    </ul></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-map">Map chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-heatmap">Heatmap chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/chart-types-treemap">Treemap chart</a></li>
+  </ul></li>
+  <li>Features
+  <ul>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-chart">Chart</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-series">Series</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-axes">Axes</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-tooltip">Tooltip</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-legend">Legend</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-circle-legend">Circle legend</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/features-plot">Plot</a></li>
+    <li><a href="https://github.com/nhnent/tui.chart/wiki/table-of-supported-options">Table of supported options</a></li>
+  </ul></li>
+  <li><a href="https://github.com/nhnent/tui.chart/wiki/theme">Theme</a></li>
+</ul>
 
            	</div>
  			<div class="col-md-2">
