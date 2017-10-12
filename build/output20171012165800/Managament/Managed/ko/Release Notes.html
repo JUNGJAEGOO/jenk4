@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../nhnfavicon.ico">
+
+	      <title>Toast Cloud Document</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+		    <!-- <link href="http://alpha-www.toast.com/share/common/css/common-1.0.min.css" rel="stylesheet"> -->
+        <link href="../../../css/common-1.0.min.css" rel="stylesheet">
+        <link href="../../../css/custom_tc_theme.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
 	<body>
 	<header id="header">
         </header>
@@ -15,41 +43,37 @@
         <div class="navbar-collapse collapse">
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
-            <#if content.big??><li class="<#if (content.big="TCoverview")>dropdown active<#else>dropdown</#if>"></#if>
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toast Cloud<b class="caret"></b></a>
               <ul class="dropdown-menu">
-				<#if content.summary??>
-              <li class="<#if (content.summary="TCOverview")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
-              <li class="<#if (content.summary="TCGettingStarted")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
-              <li class="<#if (content.summary="TCRelease")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
-				</#if>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
               </ul>
             </li>
 <!-- infrastrucutre -->
-            <#if content.big??><li class="<#if (content.big="TCInfra")>dropdown active<#else>dropdown</#if>"></#if>
+            <li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Infrastructure <b class="caret"></b></a>
 		<ul class="dropdown-menu">
 	    <li class="dropdown-submenu">
 		<a tabindex="-1" href="">Compute & Network </a>
 		<ul class="dropdown-menu">
-		<#if content.summary??>
-			<li class="<#if (content.summary="TCcomputeOverview")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
-			<li class="<#if (content.summary="TCcomputeGetting")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
-			<li class="<#if (content.summary="TCcomputeInstancesUser")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
-			<li class="<#if (content.summary="TCcomputeImagesUser")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Images User Guide.html">Images User Guide</a></li>
-			<li class="<#if (content.summary="TCcomputeBlockStorage")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Blockstorage User Guide.html">Block Storage User Guide</a></li>         
-			<li class="<#if (content.summary="TCcomputeNAS")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/NAS User Guide.html">NAS (Offline) User Guide</a></li>         
-			<li class="<#if (content.summary="TCcomputeSecurityGroups")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Security Groups User Guide.html">Security Groups User Guide</a></li>    
-			<li class="<#if (content.summary="TCcomputeNetworksUser")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Networks User Guide.html">Networks User Guide</a></li>           
-			<li class="<#if (content.summary="TCcomputeLoadBalancers")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Load Balancers User Guide.html">Load Balancers User Guide</a></li>         
-			<li class="<#if (content.summary="TCcomputeWindowSSH")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows SSH Guide.html">Windows SSH Guide</a></li>   
-			<li class="<#if (content.summary="TCcomputeWindowSFTP")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
-			<li class="<#if (content.summary="TCcomputeWindowSysprep")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
-			<li class="<#if (content.summary="TCcomputeCIDR")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
-			<li class="<#if (content.summary="TCcomputeMonitoring")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Monitoring Guide.html">Monitoring Guide</a></li>      
-			<li class="<#if (content.summary="TCcomputeDeveloper's")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Developer`s Guide.html">Developer`s Guide</a></li>
-			<li class="<#if (content.summary="TCcomputeRelease")>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
-		</#if>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Images User Guide.html">Images User Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Blockstorage User Guide.html">Block Storage User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/NAS User Guide.html">NAS (Offline) User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Security Groups User Guide.html">Security Groups User Guide</a></li>    
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Networks User Guide.html">Networks User Guide</a></li>           
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Load Balancers User Guide.html">Load Balancers User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows SSH Guide.html">Windows SSH Guide</a></li>   
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
+			<li class=""><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Monitoring Guide.html">Monitoring Guide</a></li>      
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
 		</ul>
 	    </li>
 
@@ -71,7 +95,7 @@
 
 
 <!-- Contents -->
-	<#if content.big??><li class="<#if (content.big="TCcontents")>dropdown active<#else>dropdown</#if>"></#if>
+	<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -106,7 +130,7 @@
                 </li>
             
 <!-- Anlaytics -->
-        <#if content.big??><li class="<#if (content.big="TCAnalytics")>dropdown active<#else>dropdown</#if>"></#if>
+        <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analytics <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -575,12 +599,12 @@
     <a tabindex="-1" href="">Maps</a>
     <ul class="dropdown-menu">
         
-<li ><a href="../../../Common/Maps/ko/Overview.html">Overview</a></li>      
-<li ><a href="../../../Common/Maps/ko/Getting Started.html">Getting Started</a></li>       
-<li ><a href="../../../Common/Maps/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
-<li ><a href="../../../Common/Maps/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
-<li ><a href="../../../Common/Maps/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>           
-<li ><a href="../../../Common/Maps/ko/Release Notes.html">Release Notes</a></li>
+<li ><a href="../../../Common/Maps/ko/Overview/">Overview</a></li>      
+<li ><a href="../../../Common/Maps/ko/Getting Started/">Getting Started</a></li>       
+<li ><a href="../../../Common/Maps/ko/Developer`s Guide/">Developer`s Guide</a></li>        
+<li ><a href="../../../Common/Maps/ko/Android Developer`s Guide/">Android Developer`s Guide</a></li>        
+<li ><a href="../../../Common/Maps/ko/iOS Developer`s Guide/">iOS Developer`s Guide</a></li>           
+<li ><a href="../../../Common/Maps/ko/Release Notes/">Release Notes</a></li>
         
     </ul>
   </li>
@@ -589,7 +613,7 @@
                     </ul>
                 </li>
 <!-- Management -->
-                          <#if content.big??><li class="<#if (content.big="Management")>dropdown active<#else>dropdown</#if>"></#if>
+                          <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -597,11 +621,9 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Managed</a>
     <ul class="dropdown-menu">
-<#if content.summary??>        
-<li class="<#if (content.summary="ManagementOverview")>active<#else></#if>"><a href="../../../Management/Managed/ko/Overview.html">Overview</a></li>
-<li class="<#if (content.summary="ManagementGetting")>active<#else></#if>"><a href="../../../Management/Managed/ko/Getting Started.html">Getting Started</a></li>        
-<li class="<#if (content.summary="ManagementRelease")>active<#else></#if>"><a href="../../../Management/Managed/ko/Release Notes.html">Release Notes</a></li>
-</#if>
+<li class=""><a href="../../../Management/Managed/ko/Overview/">Overview</a></li>
+<li class=""><a href="../../../Management/Managed/ko/Getting Started/">Getting Started</a></li>        
+<li class="active"><a href="../../../Management/Managed/ko/Release Notes/">Release Notes</a></li>
     </ul>
   </li>
 
@@ -756,7 +778,7 @@
             
 
 <!-- Open Source -->
-                <#if content.big??><li class="<#if (content.big="TCOpensource")>dropdown active<#else>dropdown</#if>"></#if>
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Open Source <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -764,10 +786,8 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">ToastUI Editor</a>
     <ul class="dropdown-menu">
- <#if content.summary??>                
-<li class="<#if (content.summary="ToastUIEditorOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Editor/ko/Overview.html">Overview</a></li>          
-<li class="<#if (content.summary="ToastUIEditorGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Editor/ko/Getting Started.html">Getting Started</a></li>
- </#if>
+<li class=""><a href="../../../Open Source/ToastUI Editor/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Open Source/ToastUI Editor/ko/Getting Started.html">Getting Started</a></li>
     </ul>
   </li>
 
@@ -776,11 +796,9 @@
     <a tabindex="-1" href="">ToastUI Chart</a>
     <ul class="dropdown-menu">
         
-<#if content.summary??>            
-<li class="<#if (content.summary="ToastUIChartOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
-<li class="<#if (content.summary="ToastUIChartGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
-<li class="<#if (content.summary="ToastUIChartTutorial")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
-</#if>
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
         
     </ul>
   </li>
@@ -790,11 +808,9 @@
     <a tabindex="-1" href="">ToastUI Grid</a>
     <ul class="dropdown-menu">
              
-<#if content.summary??>			 
-<li class="<#if (content.summary="ToastUIGridOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Grid/ko/Overview.html">Overview</a></li>         
-<li class="<#if (content.summary="ToastUIGridGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Grid/ko/Getting Started.html">Getting Started</a></li>       
-<li class="<#if (content.summary="ToastUIGridFeatures")>active<#else></#if>"><a href="../../../Open Source/ToastUI Grid/ko/Features.html">Features</a></li>
-</#if>
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Features.html">Features</a></li>
         
     </ul>
   </li>
@@ -804,10 +820,8 @@
     <a tabindex="-1" href="">Toast Haste</a>
     <ul class="dropdown-menu">
         
-<#if content.summary??>
-<li class="<#if (content.summary="ToastHasteOverview")>active<#else></#if>"><a href="../../../Open Source/Toast Haste/ko/Overview.html">Overview</a></li>          
-<li class="<#if (content.summary="ToastHasteOverview")>active<#else></#if>"><a href="../../../Open Source/Toast Haste/ko/Getting Started.html">Getting Started</a></li>
-</#if>    
+<li class=""><a href="../../../Open Source/Toast Haste/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Open Source/Toast Haste/ko/Getting Started.html">Getting Started</a></li>
 
     </ul>
   </li>
@@ -818,13 +832,11 @@
 
 <!-- Downloads -->
 
-               <#if content.big??><li class="<#if (content.big="TCDownloads")>dropdown active<#else>dropdown</#if>"></#if>
+               <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-<#if content.summary??>                        
-<li class="<#if (content.summary="downloads")>active<#else></#if>"><a href="../../../Download/one/ko/Download.html">Latest version</a></li>
-</#if>
+<li class=""><a href="../../../Download/one/ko/Download.html">Latest version</a></li>
                     
                     </ul>
                 </li>
@@ -832,4 +844,127 @@
     	    </ul>
         </div>
     </div>
+</div> 
+        <div class="container" style="margin-top: 100px;">
+            <div class="col-md-2">
+            	<div class="side_nav_left_wrapper">
+		           	<div id="side_nav_left" class="side-nav">
+	            		<div id="remotenav" class="bs-sidebar hidden-print affix well toc-list" role="complementary">
+ 
+    <ul class="nav bs-sidenav">
+    
+
+		<li class="main active"><a href="#toast-cloud-overview">TOAST Cloud Overview</a></li>
+        
+        <li class="main "><a href="#_1">서비스 구성</a></li>
+        
+            <li><a href="#infrastructure-service">Infrastructure Service</a></li>
+            <li><a href="#contents-service">Contents Service</a></li>
+            <li><a href="#analytics-service">Analytics Service</a></li>
+            <li><a href="#game-service">Game Service</a></li>
+            <li><a href="#notification-service">Notification Service</a></li>
+            <li><a href="#security-service">Security Service</a></li>
+            <li><a href="#common-service">Common Service</a></li>
+		
+		
+    </ul>
 </div>
+					</div>
+				</div>
+   	    	</div>
+		<div class="col-md-8 content-container" role="main"> 
+
+			
+          <h2>Management &gt; Managed &gt; Release Notes</h2><h3>2017.06.22</h3><h4>신규 상품 출시</h4>
+<ul>
+  <li>Managed 서비스는 전문 지식을 겸비한 전담 엔지니어가 구축부터 운영/백업까지 서비스를 안정적으로 관리해 드리는 서비스입니다.</li>
+  <li>IT 전문 인력이 없어도 장애 발생 시 즉각적인 조치를 취할 수 있고 사용 중인 리소스를 안정적인 상태로 유지할 수 있습니다.</li>
+</ul>
+
+           	</div>
+ 			<div class="col-md-2">
+ 				<div id="side_nav_right" class="side-nav">
+ 					<div id="sub-link-nav" role="complementary">
+    <b id="sub-link-category-name" class="main"></b>
+    <ul class="nav">
+    
+    </ul>
+</div>
+ 				</div>
+ 			</div>       
+        </div>
+
+<footer id="footer" class="col-md-12">
+</footer>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../../js/readthedocs-data.js"></script>
+    <script src="../../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../../js/modernizr-custom.js"></script>
+    <script type='text/javascript'>
+         if (!Modernizr.matchmedia){
+             $.getScript("js/media.match.min.js");
+         }
+    </script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/enquire.min.js"></script>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/base.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../../js/common-1.0.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+    
+
+    <!-- <script src="../../../js/prettify.js"></script>  -->
+
+        <script language='javascript'>
+        var _ag   = 0 ;         // 로그인사용자 나이
+        var _id   = '';    		// 로그인사용자 아이디
+        var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+        var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+        var _skey = '' ;        // 내부검색어
+
+        var _jn = '' ;          //  가입탈퇴 ( 'join','withdraw' ) 
+        var _jid = '' ;			// 가입시입력한 ID
+
+        var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+        var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+        var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+        </script>
+	
+	 <script language='javascript'>
+		function appendListToSubLinkNav() {
+
+        var $parent_menu = $('ul.dropdown-menu > li.active').parent().parent();
+		
+        if(!$parent_menu.length) {
+            $('#side_nav_right').remove();
+        }
+        else {
+            var depth_stack = [];
+            while($parent_menu.is('li')) {
+                var temp = $parent_menu;
+                depth_stack.push(temp);
+                $parent_menu = $parent_menu.parent().parent();
+            }
+            var title_menu = (depth_stack.length > 1)? depth_stack[depth_stack.length-2] : depth_stack[0];
+		    $('#sub-link-category-name').text(title_menu.children("a")[0].innerText);
+			var subMenuList = $('li .active').parent().get(0).childNodes;
+			for (var i = 0; i < subMenuList.length; i++) {
+				$("#sub-link-list").append(subMenuList[i].cloneNode(true));
+				$("#sub-link-nav > ul").append(subMenuList[i].cloneNode(true));
+			}
+		}
+	}
+	</script>
+	
+     <!-- <script language='javascript'>
+            var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+            var _AceCounter=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+        </script>
+	<noscript><img src='http://gtp18.acecounter.com:8080/?uid=AH2A40934468137&je=n&' border='0' width='0' alt=''></noscript> -->
+
+  </body>
+</html>
