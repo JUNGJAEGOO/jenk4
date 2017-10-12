@@ -233,7 +233,7 @@
 <#if content.summary??>         
 <li class="<#if (content.summary="TCGameIos-started")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-started.html">Getting Started</a></li>        
 <li class="<#if (content.summary="TCGameIos-init")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-initialization.html">Initialization</a></li>       
-<li class="<#if (content.summary="TCGameIos-authen)>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-authentication.html">Auth</a></li>      
+<li class="<#if (content.summary="TCGameIos-authen")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-authentication.html">Auth</a></li>      
 <li class="<#if (content.summary="TCGameIos-purchase")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-purchase.html">Purchase</a></li>       
 <li class="<#if (content.summary="TCGameIos-push")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-push.html">Push</a></li>       
 <li class="<#if (content.summary="TCGameIos-ui")>active<#else></#if>"><a href="../../../Game/Gamebase/ko/ios-ui.html">UI</a></li>
