@@ -776,9 +776,9 @@
     <ul class="dropdown-menu">
         
 <#if content.summary??>            
-<li class="<#if (content.big="ToastUIChartOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
-<li class="<#if (content.big="ToastUIChartGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
-<li class="<#if (content.big="ToastUIChartTutorial")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
+<li class="<#if (content.summary="ToastUIChartOverview")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
+<li class="<#if (content.summary="ToastUIChartGettingStarted")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
+<li class="<#if (content.summary="ToastUIChartTutorial")>active<#else></#if>"><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
 </#if>
         
     </ul>
