@@ -15,17 +15,17 @@
         <div class="navbar-collapse collapse">
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
-            <li class="<#if (content.summary="TCoverview")>dropdown active<#else>dropdown</#if>">
+            <#if content.big??><li class="<#if (content.big="TCoverview")>dropdown active<#else>dropdown</#if>"></#if>
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toast Cloud<b class="caret"></b></a>
               <ul class="dropdown-menu">
               <li ><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
               <li ><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
               <li ><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
-			  <#if content.summary??><li>hi</li></#if>
+			  <#if content.big??><li>hi</li></#if>
               </ul>
             </li>
 <!-- infrastrucutre -->
-            <#if content.summary??><li class="<#if (content.summary="TCcompute")>dropdown active<#elseif (content.summary="TCobjectstorage")>dropdown active<#else>dropdown</#if>"></#if>
+            <#if content.big??><li class="<#if (content.big="TCInfra")>dropdown active<#else>dropdown</#if>"></#if>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Infrastructure <b class="caret"></b></a>
 		<ul class="dropdown-menu">
 	    <li class="dropdown-submenu">
@@ -70,7 +70,7 @@
 
 
 <!-- Contents -->
-	<li class="dropdown">
+	<#if content.big??><li class="<#if (content.big="TCcontents")>dropdown active<#else>dropdown</#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -79,10 +79,10 @@
     		<a tabindex="-1" href="">Image</a>
     		<ul class="dropdown-menu">
                 
-		<li ><a href="../../Contents/Image/ko/Overview/">Overview</a></li>        
-		<li ><a href="../../Contents/Image/ko/Getting Started/">Getting Started</a></li>      
-		<li ><a href="../../Contents/Image/ko/Developer`s Guide/">Developer`s Guide</a></li>      
-		<li ><a href="../../Contents/Image/ko/Release Notes/">Release Notes</a></li>
+		<li ><a href="../../../Contents/Image/ko/Overview/">Overview</a></li>        
+		<li ><a href="../../../Contents/Image/ko/Getting Started/">Getting Started</a></li>      
+		<li ><a href="../../../Contents/Image/ko/Developer`s Guide/">Developer`s Guide</a></li>      
+		<li ><a href="../../../Contents/Image/ko/Release Notes/">Release Notes</a></li>
    
    		 </ul>
   	</li>
@@ -91,10 +91,10 @@
     		<a tabindex="-1" href="">CDN</a>
     		<ul class="dropdown-menu">
         
-		<li ><a href="../../Contents/CDN/ko/Overview/">Overview</a></li>        
-		<li ><a href="../../Contents/CDN/ko/Getting Started/">Getting Started</a></li>
-		<li ><a href="../../Contents/CDN/ko/Developer`s Guide/">Developer`s Guide</a></li>      
-		<li ><a href="../../Contents/CDN/ko/Release Notes/">Release Notes</a></li>
+		<li ><a href="../../../Contents/CDN/ko/Overview/">Overview</a></li>        
+		<li ><a href="../../../Contents/CDN/ko/Getting Started/">Getting Started</a></li>
+		<li ><a href="../../../Contents/CDN/ko/Developer`s Guide/">Developer`s Guide</a></li>      
+		<li ><a href="../../../Contents/CDN/ko/Release Notes/">Release Notes</a></li>
 
         
     		</ul>
@@ -105,7 +105,7 @@
                 </li>
             
 <!-- Anlaytics -->
-                <li class="dropdown">
+        <#if content.big??><li class="<#if (content.big="TCAnalytics")>dropdown active<#else>dropdown</#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analytics <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -119,8 +119,8 @@
     <a tabindex="-1" href="">Operator`s Guide</a>
     <ul class="dropdown-menu">
                   
-		<li ><a href="../../Analytics/App Analytics/Getting Started/">Getting Started</a></li>         
-		<li ><a href="../../Analytics/App Analytics/Marketing Guide/">Marketing Guide</a></li>
+		<li ><a href="../../../Analytics/App Analytics/Getting Started.html">Getting Started</a></li>         
+		<li ><a href="../../../Analytics/App Analytics/Marketing Guide.html">Marketing Guide</a></li>
 
         
     </ul>
@@ -132,11 +132,11 @@
     <a tabindex="-1" href="">Developer`s Guide</a>
     <ul class="dropdown-menu">
         
-		<li ><a href="../../Analytics/App Analytics/Android Developer`s Guide/">Android Developer`s Guide</a></li>          
-		<li ><a href="../../Analytics/App Analytics/iOS Developer`s Guide/">iOS Developer`s Guide</a></li>        
-		<li ><a href="../../Analytics/App Analytics/Unity Developer`s Guide/">Unity Developer`s Guide</a></li>       
-		<li ><a href="../../Analytics/App Analytics/Error Code/">Error Code</a></li>          
-		<li ><a href="../../Analytics/App Analytics/Release Notes/">Release Notes</a></li>
+		<li ><a href="../../../Analytics/App Analytics/Android Developer`s Guide.html">Android Developer`s Guide</a></li>          
+		<li ><a href="../../../Analytics/App Analytics/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+		<li ><a href="../../../Analytics/App Analytics/Unity Developer`s Guide.html">Unity Developer`s Guide</a></li>       
+		<li ><a href="../../../Analytics/App Analytics/Error Code.html">Error Code</a></li>          
+		<li ><a href="../../../Analytics/App Analytics/Release Notes.html">Release Notes</a></li>
 
         
     </ul>
@@ -153,35 +153,35 @@
     <ul class="dropdown-menu">
         
             
-<li ><a href="../../Analytics/Log & Crash Search/ko/Overview/">Overview</a></li>      
-<li ><a href="../../Analytics/Log & Crash Search/ko/Getting Started/">Getting Started</a></li>       
-<li ><a href="../../Analytics/Log & Crash Search/ko/Android Developer`s Guide/">Android Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide/">AndroidNDK Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide/">iOS Developer`s Guide</a></li>
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide.html">iOS Developer`s Guide</a></li>
 
        
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Unity Developer`s Guide</a>
     <ul class="dropdown-menu">
                
-<li ><a href="../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide/">iOS Developer`s Guide</a></li>        
-<li ><a href="../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide/">Android Developer`s Guide</a></li>       
-<li ><a href="../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide/">WebGL Developer`s Guide</a></li>        
-<li ><a href="../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide/">Standalone Developer`s Guide</a></li>
+<li ><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
+<li ><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
 
         
     </ul>
   </li>
         
-<li ><a href="../../Analytics/Log & Crash Search/ko/Windows Developer`s Guide/">Windows Developer`s Guide</a></li>        
-<li ><a href="../../Analytics/Log & Crash Search/ko/C-Sharp Developer`s Guide/">C# Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/Linux Developer`s Guide/">Linux Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/Logback Developer`s Guide/">Logback Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/Log4j Developer`s Guide/">Log4j Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/Log4j.v2 Developer`s Guide/">Log4j.v2 Developer`s Guide</a></li>        
-<li ><a href="../../Analytics/Log & Crash Search/ko/Logstash Developer`s Guide/">Logstash Developer`s Guide</a></li>         
-<li ><a href="../../Analytics/Log & Crash Search/ko/REST API Developer`s Guide/">REST API Developer`s Guide</a></li>        
-<li ><a href="../../Analytics/Log & Crash Search/ko/Release Notes/">Release Notes</a>
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Windows Developer`s Guide.html">Windows Developer`s Guide</a></li>        
+<li ><a href="../../../Analytics/Log & Crash Search/ko/C-Sharp Developer`s Guide.html">C# Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Linux Developer`s Guide.html">Linux Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Logback Developer`s Guide.html">Logback Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Log4j Developer`s Guide.html">Log4j Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Log4j.v2 Developer`s Guide.html">Log4j.v2 Developer`s Guide</a></li>        
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Logstash Developer`s Guide.html">Logstash Developer`s Guide</a></li>         
+<li ><a href="../../../Analytics/Log & Crash Search/ko/REST API Developer`s Guide.html">REST API Developer`s Guide</a></li>        
+<li ><a href="../../../Analytics/Log & Crash Search/ko/Release Notes.html">Release Notes</a>
 </li>
 
         

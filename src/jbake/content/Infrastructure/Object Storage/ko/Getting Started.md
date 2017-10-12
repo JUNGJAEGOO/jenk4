@@ -3,6 +3,7 @@ date=2013-09-24
 type=page
 status=published
 summary=TCobjectstorage
+big=TCInfra
 ~~~~~~
 
 ##TOAST Cloud Overview##
