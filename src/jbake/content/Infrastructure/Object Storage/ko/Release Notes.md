@@ -5,62 +5,26 @@ status=published
 summary=TCobjectstorageRelease
 big=TCInfra
 ~~~~~~
+## Infrastructure > Object Storage > Release Notes
 
+### 2017.03.23
 
-<h2 id="toast-cloud-release-notes">TOAST Cloud &gt; Release Notes</h2>
-<h3 id="20170824">2017.08.24</h3>
-<h4 id="_1">기능 개선/변경</h4>
-<h5 id="tc-console">TC Console</h5>
+#### 기능 개선
 
-* Infrastructure 요금 테이블 변경
-	* Infrastructure 요금제에 Basic 과 Storage Optimized 요금제가 추가 되었습니다.
-	* 저사양 Basic 과 High IOPS SSD를 제공하는 Storage Optimized를 제공 받으실 수 있습니다.
-	* 자세한 사양은 <a href="https://cloud.toast.com/pricing" target=_blank">TOASTCloud Pricing 페이지</a> 및 요금계산기서 확인 할 수 있습니다.
-* Billing Viewer 권한 추가
-	* Project의 Member 권한중 사용량 페이지를 조회할 수 있는
-	* Billing Viewer는 Project 내의 모든 행위는 제한 되며,
+* 업로드 가능한 파일 사이즈를 명시합니다.
+	* 최대 5GB까지 업로드가 가능합니다.
 
+### 2016.12.22
 
-버그 수정
-TC Conosole
+#### 버그 수정
+* [Console] 폴더명이 "/"로 시작되는 폴더 생성시 폴더가 노출되지 않던 문제 수정
+* [Console] 폴더명과 파일명이 동일할 때 파일 삭제가 불가능하던 문제 수정
+* [Console] “#” 문자가 제목으로 들어간 파일 다운로드 불가 문제 수정
+* [Console] API Endpoint 설정 팝업의 복사버튼 미동작 문제 수정
+* [Console] 0Byte 파일 다운로드 불가 현상 수정
 
-* 공지사항 버그 수정
-	* 공지사항 ALL, FAQ 카테고리 글자가 나타나지 않는 현상이 수정되었습니다.
+### 2016.12.08
 
+#### 버그 수정
 
-<h4 id="_2">버그 수정</h4>
-<h5 id="tc-console_2">TC Console</h5>
-
-<h3 id="201622">2017.06.22</h3>
-<h4 id="_3">기능 개선/변경</h4>
-<h5 id="tc-console_3">TC Console</h5>
-
-
-
-<h3 id="20170525">2017.05.25</h3>
-<h4 id="_4">기능 개선/변경</h4>
-<h5 id="tc-console_4">TC Console</h5>
-
-<h4 id="_5">버그 수정</h4>
-<h5 id="tc-console_4">TC Console</h5>
-
-
-<h3 id="20170420">2017.04.20</h3>
-<h4 id="_6">기능 개선/변경</h4>
-<h5 id="tc-console_5">TC Console</h5>
-
-
-<h4 id="_7">버그 수정</h4>
-<h5 id="tc-console_6">TC Console</h5>
-
-<h3 id="20170323">2017.03.23</h3>
-<h4 id="_8">기능 개선/변경</h4>
-<h5 id="tc-console_7">TC Console</h5>
-
-<h4 id="_9">버그 수정</h4>
-<h5 id="tc-console_8">TC Console</h5>
-
-
-<h3 id="20170223">2017.02.23</h3>
-<h4 id="_10">기능 개선/변경</h4>
-<h5 id="tc-console_9">TC Console</h5>
+* [Console] 리소스 남아있는 상태에서 상품 이용종료 시 안내 문구 수정
