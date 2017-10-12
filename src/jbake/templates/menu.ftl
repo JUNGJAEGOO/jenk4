@@ -31,7 +31,7 @@
 	    <li class="dropdown-submenu">
 		<a tabindex="-1" href="">Compute & Network </a>
 		<ul class="dropdown-menu">
-			<#if (content.summary=TCcompute><li class="active" ><#else><li ></#if><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
+			<li class="active" ><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
 			<li ><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
 			<li > <a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
 			<li ><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
