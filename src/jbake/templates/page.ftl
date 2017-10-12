@@ -12,7 +12,7 @@
 
 	<#include "sidebar-TCoverview.ftl">
 
-		content.title
+		${content.title}
 		
     </ul>
 </div>
