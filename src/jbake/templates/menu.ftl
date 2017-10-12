@@ -16,7 +16,7 @@
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
             <#if content.summary??><li class="<#if (content.summary="TCoverview")>dropdown active<#else>dropdown</#if>"></#if>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">${content.rootpath}<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toast Cloud<b class="caret"></b></a>
               <ul class="dropdown-menu">
               <li ><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
               <li ><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
@@ -25,13 +25,13 @@
               </ul>
             </li>
 <!-- infrastrucutre -->
-            <li class="dropdown active">
+            <#if content.summary??><li class="<#if (content.summary="TCcompute")>dropdown active<#elseif (content.summary="TCobjectstorage")>dropdown active<#else>dropdown</#if>"></#if>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Infrastructure <b class="caret"></b></a>
 		<ul class="dropdown-menu">
 	    <li class="dropdown-submenu">
 		<a tabindex="-1" href="">Compute & Network </a>
 		<ul class="dropdown-menu">
-			<li class="active"><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
+			<li class="<#if (content.summary=TCcompute>active<#else></#if>"><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
 			<li ><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
 			<li > <a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
 			<li ><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>

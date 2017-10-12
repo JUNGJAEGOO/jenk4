@@ -2,6 +2,7 @@
 date=2017-10-10
 type=page
 status=published
+summary=TCobjectstorage
 ~~~~~~
 
 <h2 id="infrastructure-object-storage-overview">Infrastructure &gt; Object Storage &gt; Overview</h2>
