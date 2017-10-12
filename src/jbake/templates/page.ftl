@@ -9,14 +9,11 @@
  
     <ul class="nav bs-sidenav">
     
-	<#if content.title=="TCoverview">
+
 	<#include "sidebar-TCoverview.ftl">
-	<#elseif content.title=="TCgetting"> 
-	<#include "sidebar-TCgetting.ftl">
-	<#elseif content.title=="TCrelease">
-	<#inlcude "sidebar-TCrelease.ftl">
-	</#if>
-    
+
+		content.title
+		
     </ul>
 </div>
 					</div>
