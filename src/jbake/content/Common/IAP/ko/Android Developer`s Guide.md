@@ -198,6 +198,7 @@ InAppPurchases.InAppPurchase.queryItems(activity, new InAppPurchase.ItemListCall
 | Return Value | void |
 
 [Response Example]
+
 ```json
 [
     {

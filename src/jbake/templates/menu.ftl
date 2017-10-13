@@ -323,7 +323,7 @@
                 </li>
             
 <!-- notification -->
-                <li class="dropdown">
+                <#if content.big??><li class="<#if (content.big="TCNotification")>dropdown active<#else>dropdown</#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notification <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -332,18 +332,18 @@
     <a tabindex="-1" href="">Push</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../Notification/Push/ko/Overview/">Overview</a></li>         
-<li ><a href="../../Notification/Push/ko/Getting Started/">Getting Started</a></li>
-
+ <#if content.summary??>           
+<li class="<#if (content.summary="PushOverview")>active<#else></#if>"><a href="../../../Notification/Push/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="PushGetting")>active<#else></#if>"><a href="../../../Notification/Push/ko/Getting Started.html">Getting Started</a></li>
+</#if>
         
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Developer`s Guide</a>
     <ul class="dropdown-menu">
-               
-<li ><a href="../../Notification/Push/ko/Developer`s Guide/">API v2.0</a></li>            
-<li ><a href="../../Notification/Push/ko/Developer`s Guide v1.3/">API v1.3</a></li>
-    
+ <#if content.summary??>              
+<li class="<#if (content.summary="PushDV's")>active<#else></#if>"><a href="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</a></li>            
+<li class="<#if (content.summary="PushDV's v1.3")>active<#else></#if>"><a href="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</a></li>
+ </#if>   
     </ul>
   </li>
 
@@ -352,16 +352,16 @@
     <a tabindex="-1" href="">Client SDK Developer`s Guide</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../Notification/Push/ko/Client SDK Guide/">SDK v1.4</a></li>       
-<li ><a href="../../Notification/Push/ko/Client SDK Guide v1.32/">SDK v1.32</a></li>
-   
+ <#if content.summary??>           
+<li class="<#if (content.summary="PushClientSDK")>active<#else></#if>"><a href="../../../Notification/Push/ko/Client SDK Guide.html">SDK v1.4</a></li>       
+<li class="<#if (content.summary="PushClientSDKv1.32")>active<#else></#if>"><a href="../../../Notification/Push/ko/Client SDK Guide v1.32.html">SDK v1.32</a></li>
+ </#if>  
     </ul>
   </li>
 
-        
-<li ><a href="../../Notification/Push/ko/Release Notes/">Release Notes</a></li>
-
+<#if content.summary??>        
+<li class="<#if (content.summary="PushRelease")>active<#else></#if>"><a href="../../../Notification/Push/ko/Release Notes.html">Release Notes</a></li>
+</#if>
         
     </ul>
   </li>
@@ -372,25 +372,25 @@
     <a tabindex="-1" href="">SMS</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../Notification/SMS/ko/Overview/">Overview</a></li>        
-<li ><a href="../../Notification/SMS/ko/Getting Started/">Getting Started</a></li>
-
+<#if content.summary??>            
+<li class="<#if (content.summary="SMSOverview")>active<#else></#if>"><a href="../../../Notification/SMS/ko/Overview.html">Overview</a></li>        
+<li class="<#if (content.summary="SMSGetting")>active<#else></#if>"><a href="../../../Notification/SMS/ko/Getting Started.html">Getting Started</a></li>
+</#if>
        
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Developer`s Guide</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../Notification/SMS/ko/Developer`s Guide/">API v2.0</a></li>         
-<li ><a href="../../Notification/SMS/ko/Developer`s Guide_v1/">API v1.0</a></li>
-  
+<#if content.summary??>            
+<li class="<#if (content.summary="SMSDV's")>active<#else></#if>"><a href="../../../Notification/SMS/ko/Developer`s Guide.html">API v2.0</a></li>         
+<li class="<#if (content.summary="SMSDV's v1")>active<#else></#if>"><a href="../../../Notification/SMS/ko/Developer`s Guide_v1.html">API v1.0</a></li>
+</#if>  
     </ul>
   </li>
 
-        
-<li ><a href="../../Notification/SMS/ko/Release Notes/">Release Notes</a></li>
-
+ <#if content.summary??>       
+<li class="<#if (content.summary="SMSRelease")>active<#else></#if>"><a href="../../../Notification/SMS/ko/Release Notes.html">Release Notes</a></li>
+</#if>
         
     </ul>
   </li>
@@ -401,12 +401,12 @@
     <a tabindex="-1" href="">Email</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../Notification/E-mail/ko/Overview/">Overview</a></li>         
-<li ><a href="../../Notification/E-mail/ko/Getting Started/">Getting Started</a></li>        
-<li ><a href="../../Notification/E-mail/ko/Developer`s Guide/">Developer`s Guide</a></li>       
-<li ><a href="../../Notification/E-mail/ko/Release Notes/">Release Notes</a></li>
-    
+<#if content.summary??>            
+<li class="<#if (content.summary="EmailOverview")>active<#else></#if>"><a href="../../../Notification/E-mail/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="EmailGetting")>active<#else></#if>"><a href="../../../Notification/E-mail/ko/Getting Started.html">Getting Started</a></li>        
+<li class="<#if (content.summary="EmailDV's")>active<#else></#if>"><a href="../../../Notification/E-mail/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class="<#if (content.summary="EmailRelease")>active<#else></#if>"><a href="../../../Notification/E-mail/ko/Release Notes.html">Release Notes</a></li>
+</#if>    
     </ul>
   </li>
 
@@ -415,12 +415,12 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Alimtalk</a>
     <ul class="dropdown-menu">
-               
-<li ><a href="../../Notification/Alimtalk/ko/Overview/">Overview</a></li>         
-<li ><a href="../../Notification/Alimtalk/ko/Getting Started/">Getting Started</a></li>          
-<li ><a href="../../Notification/Alimtalk/ko/Developer`s Guide/">Developer`s Guide</a></li>       
-<li ><a href="../../Notification/Alimtalk/ko/Release Notes/">Release Notes</a></li>
-
+<#if content.summary??>               
+<li class="<#if (content.summary="AlimtalkOverview")>active<#else></#if>"><a href="../../../Notification/Alimtalk/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="AlimtalkGetting")>active<#else></#if>"><a href="../../../Notification/Alimtalk/ko/Getting Started.html">Getting Started</a></li>          
+<li class="<#if (content.summary="AlimtalkDV's")>active<#else></#if>"><a href="../../../Notification/Alimtalk/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class="<#if (content.summary="AlimtalkRelease")>active<#else></#if>"><a href="../../../Notification/Alimtalk/ko/Release Notes.html">Release Notes</a></li>
+</#if>
         
     </ul>
   </li>
@@ -429,7 +429,7 @@
                     </ul>
                 </li>
 <!-- security -->
-                <li class="dropdown">
+                <#if content.big??><li class="<#if (content.big="TCSecurity")>dropdown active<#else>dropdown</#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -438,22 +438,22 @@
     <a tabindex="-1" href="">AppGuard</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../../Security/AppGuard/ko/Overview/">Overview</a></li>         
-<li ><a href="../../../Security/AppGuard/ko/Getting Started/">Getting Started</a></li>        
-<li ><a href="../../../Security/AppGuard/ko/Release Notes/">Release Notes</a></li>
-     
+<#if content.summary??>                           
+<li class="<#if (content.summary="AppGuardOverview")>active<#else></#if>"><a href="../../../Security/AppGuard/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="AppGuardGetting")>active<#else></#if>"><a href="../../../Security/AppGuard/ko/Getting Started.html">Getting Started</a></li>        
+<li class="<#if (content.summary="AppGuardRelease")>active<#else></#if>"><a href="../../../Security/AppGuard/ko/Release Notes.html">Release Notes</a></li>
+</#if>     
     </ul>
   </li>
                     
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Security Check</a>
     <ul class="dropdown-menu">
-               
-<li ><a href="../../../Security/Security Check/ko/Overview/">Overview</a></li>         
-<li ><a href="../../../Security/Security Check/ko/Getting Started/">Getting Started</a></li>         
-<li ><a href="../../../Security/Security Check/ko/Release Notes/">Release Notes</a></li>
-    
+ <#if content.summary??>              
+<li class="<#if (content.summary="SecurityCheckOverview")>active<#else></#if>"><a href="../../../Security/Security Check/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="SecurityCheckGetting")>active<#else></#if>"><a href="../../../Security/Security Check/ko/Getting Started.html">Getting Started</a></li>         
+<li class="<#if (content.summary="SecurityCheckRelease")>active<#else></#if>"><a href="../../../Security/Security Check/ko/Release Notes.html">Release Notes</a></li>
+ </#if>   
     </ul>
   </li>
 
@@ -461,11 +461,11 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Security Monitoring</a>
     <ul class="dropdown-menu">
-               
-<li ><a href="../../../Security/Security Monitoring/ko/Overview/">Overview</a></li>        
-<li ><a href="../../../Security/Security Monitoring/ko/Getting Started/">Getting Started</a></li>       
-<li ><a href="../../../Security/Security Monitoring/ko/Release Notes/">Release Notes</a></li>
-        
+ <#if content.summary??>              
+<li class="<#if (content.summary="SecurityMonitoringOverview")>active<#else></#if>"><a href="../../../Security/Security Monitoring/ko/Overview.html">Overview</a></li>        
+<li class="<#if (content.summary="SecurityMonitoringGetting")>active<#else></#if>"><a href="../../../Security/Security Monitoring/ko/Getting Started.html">Getting Started</a></li>       
+<li class="<#if (content.summary="SecurityMonitoringRelease")>active<#else></#if>"><a href="../../../Security/Security Monitoring/ko/Release Notes.html">Release Notes</a></li>
+  </#if>      
     </ul>
   </li>
                 
@@ -473,10 +473,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">CAPTCHA</a>
     <ul class="dropdown-menu">
-      
-<li ><a href="../../../Security/CAPTCHA/ko/Overview/">Overview</a></li>       
-<li ><a href="../../../Security/CAPTCHA/ko/Developer`s Guide/">Developer`s Guide</a></li>
-
+ <#if content.summary??>     
+<li class="<#if (content.summary="CAPTCHAOverview")>active<#else></#if>"><a href="../../../Security/CAPTCHA/ko/Overview.html">Overview</a></li>       
+<li class="<#if (content.summary="CAPTCHADV's")>active<#else></#if>"><a href="../../../Security/CAPTCHA/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+</#if>
     </ul>
   </li>
 
@@ -484,10 +484,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">OTP</a>
     <ul class="dropdown-menu">
-              
-<li ><a href="../../../Security/OTP/ko/Overview/">Overview</a></li>       
-<li ><a href="../../../Security/OTP/ko/Developer`s Guide/">Developer`s Guide</a></li>
-   
+ <#if content.summary??>             
+<li class="<#if (content.summary="OTPOverview")>active<#else></#if>"><a href="../../../Security/OTP/ko/Overview.html">Overview</a></li>       
+<li class="<#if (content.summary="OTPDV's")>active<#else></#if>"><a href="../../../Security/OTP/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+ </#if>  
     </ul>
   </li>
 
@@ -537,10 +537,10 @@
     <a tabindex="-1" href="">Mobile Test</a>
     <ul class="dropdown-menu">
 <#if content.summary??>                 
-<li class="<#if (content.summary="MobileTestOverview")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Overview/">Overview</a></li>      
-<li class="<#if (content.summary="MobileTestGetting")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Getting Started/">Getting Started</a></li>      
-<li class="<#if (content.summary="MobileTestDevice")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Device List/">Device List</a></li>          
-<li class="<#if (content.summary="MobileTestRelease")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Release Notes/">Release Notes</a></li>
+<li class="<#if (content.summary="MobileTestOverview")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Overview.html">Overview</a></li>      
+<li class="<#if (content.summary="MobileTestGetting")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Getting Started.html">Getting Started</a></li>      
+<li class="<#if (content.summary="MobileTestDevice")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Device List.html">Device List</a></li>          
+<li class="<#if (content.summary="MobileTestRelease")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Release Notes.html">Release Notes</a></li>
 </#if>    
     </ul>
   </li>
@@ -551,8 +551,8 @@
     <a tabindex="-1" href="">Address Search</a>
     <ul class="dropdown-menu">
 <#if content.summary??>                 
-<li class="<#if (content.summary="AdrOverview")>active<#else></#if>"><a href="../../../Common/Address Search/ko/Overview/">Overview</a></li>        
-<li class="<#if (content.summary="AdrDV's")>active<#else></#if>"><a href="../../../Common/Address Search/ko/Developer`s Guide/">Developer`s Guide</a></li>
+<li class="<#if (content.summary="AdrOverview")>active<#else></#if>"><a href="../../../Common/Address Search/ko/Overview.html">Overview</a></li>        
+<li class="<#if (content.summary="AdrDV's")>active<#else></#if>"><a href="../../../Common/Address Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
 </#if>        
     </ul>
   </li>

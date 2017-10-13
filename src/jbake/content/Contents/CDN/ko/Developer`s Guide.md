@@ -48,7 +48,7 @@ summary=CDNDV's
 |값|	타입|	필수| 기본값 |	설명|
 |---|---|---|---|---|
 |distributions| List| O |   | 생성할 CDN의 오브젝트 리스트|
-|- region|	String|	O|-|서비스 지역 ("LOCAL": 대한민국, "GLOBAL" : 글로벌)|
+|- region|	String|	O| |서비스 지역 ("LOCAL": 대한민국, "GLOBAL" : 글로벌)|
 |- description|	String|	X|   | 설명|
 |- domainAlias|	String|	X|   | Domain alias (개인 혹은 회사가 소유한 도메인 사용)|
 |- useOrigin|	String|	O| | Cache 만료 설정 ("Y": 원본 설정 사용, "N":사용자 설정 사용) |
