@@ -158,7 +158,7 @@
 <#if content.summary??>            
 <li class="<#if (content.summary="L&COverivew")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
 <li class="<#if (content.summary="L&CGetting")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
-<li class="<#if (content.summary="L&CAndroidDV"s")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CAndroidDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
 <li class="<#if (content.summary="L&CAndroidNDKDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
 <li class="<#if (content.summary="L&CIosDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide.html">iOS Developer`s Guide</a></li>
 </#if>
