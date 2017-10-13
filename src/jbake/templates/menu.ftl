@@ -81,24 +81,24 @@
   	<li class="dropdown-submenu">
     		<a tabindex="-1" href="">Image</a>
     		<ul class="dropdown-menu">
-                
-		<li ><a href="../../../Contents/Image/ko/Overview.html">Overview</a></li>        
-		<li ><a href="../../../Contents/Image/ko/Getting Started.html">Getting Started</a></li>      
-		<li ><a href="../../../Contents/Image/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
-		<li ><a href="../../../Contents/Image/ko/Release Notes.html">Release Notes</a></li>
-   
+         <#if content.summary??>       
+		<li class="<#if (content.summary="IMAGEOverview")>active<#else></#if>"><a href="../../../Contents/Image/ko/Overview.html">Overview</a></li>        
+		<li class="<#if (content.summary="IMAGEGetting")>active<#else></#if>"><a href="../../../Contents/Image/ko/Getting Started.html">Getting Started</a></li>      
+		<li class="<#if (content.summary="IMAGEDV's")>active<#else></#if>"><a href="../../../Contents/Image/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
+		<li class="<#if (content.summary="IMAGERelease")>active<#else></#if>"><a href="../../../Contents/Image/ko/Release Notes.html">Release Notes</a></li>
+		 </#if>
    		 </ul>
   	</li>
   
   	 <li class="dropdown-submenu">
     		<a tabindex="-1" href="">CDN</a>
     		<ul class="dropdown-menu">
-        
-		<li ><a href="../../../Contents/CDN/ko/Overview.html">Overview</a></li>        
-		<li ><a href="../../../Contents/CDN/ko/Getting Started.html">Getting Started</a></li>
-		<li ><a href="../../../Contents/CDN/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
-		<li ><a href="../../../Contents/CDN/ko/Release Notes.html">Release Notes</a></li>
-
+        <#if content.summary??>
+		<li class="<#if (content.summary="CDNOverview")>active<#else></#if>"><a href="../../../Contents/CDN/ko/Overview.html">Overview</a></li>        
+		<li class="<#if (content.summary="CDNGetting")>active<#else></#if>"><a href="../../../Contents/CDN/ko/Getting Started.html">Getting Started</a></li>
+		<li class="<#if (content.summary="CDNDV's")>active<#else></#if>"><a href="../../../Contents/CDN/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
+		<li class="<#if (content.summary="CDNRelease")>active<#else></#if>"><a href="../../../Contents/CDN/ko/Release Notes.html">Release Notes</a></li>
+		</#if>
         
     		</ul>
   	</li>
@@ -121,10 +121,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Operator`s Guide</a>
     <ul class="dropdown-menu">
-                  
-		<li ><a href="../../../Analytics/App Analytics/Operator's Guide/Getting Started.html">Getting Started</a></li>         
-		<li ><a href="../../../Analytics/App Analytics/Operator's Guide/Marketing Guide.html">Marketing Guide</a></li>
-
+        <#if content.summary??>          
+		<li class="<#if (content.summary="Operator`s GuideGetting")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/Getting Started.html">Getting Started</a></li>         
+		<li class="<#if (content.summary="Operator`s GuideMarketing")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/Marketing Guide.html">Marketing Guide</a></li>
+		</#if>
         
     </ul>
   </li>
@@ -134,13 +134,13 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Developer`s Guide</a>
     <ul class="dropdown-menu">
-        
-		<li ><a href="../../../Analytics/App Analytics/Developer's Guide/Android Developer's Guide.html">Android Developer`s Guide</a></li>          
-		<li ><a href="../../../Analytics/App Analytics/Developer's Guide/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
-		<li ><a href="../../../Analytics/App Analytics/Developer's Guide/Unity Developer`s Guide.html">Unity Developer`s Guide</a></li>       
-		<li ><a href="../../../Analytics/App Analytics/Developer's Guide/Error Code.html">Error Code</a></li>          
-		<li ><a href="../../../Analytics/App Analytics/Developer's Guide/Release Notes.html">Release Notes</a></li>
-
+        <#if content.summary??>
+		<li class="<#if (content.summary="Developer`s GuideAndroidDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/Android Developer's Guide.html">Android Developer`s Guide</a></li>          
+		<li class="<#if (content.summary="Developer`s GuideIosDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+		<li class="<#if (content.summary="Developer`s GuideUnityDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/Unity Developer`s Guide.html">Unity Developer`s Guide</a></li>       
+		<li class="<#if (content.summary="Developer`s GuideErrorcode")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/Error Code.html">Error Code</a></li>          
+		<li class="<#if (content.summary="Developer`s GuideRelease")>active<#else></#if>"><a href="../../../Analytics/App Analytics/ko/Release Notes.html">Release Notes</a></li>
+		</#if>
         
     </ul>
   </li>
@@ -155,38 +155,37 @@
     <a tabindex="-1" href="">Log & Crash Search</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide.html">iOS Developer`s Guide</a></li>
-
+<#if content.summary??>            
+<li class="<#if (content.summary="L&COverivew")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
+<li class="<#if (content.summary="L&CGetting")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
+<li class="<#if (content.summary="L&CAndroidDV"s")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CAndroidNDKDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CIosDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide.html">iOS Developer`s Guide</a></li>
+</#if>
        
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Unity Developer`s Guide</a>
     <ul class="dropdown-menu">
-               
-<li ><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
-<li ><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
-
+<#if content.summary??>               
+<li class="<#if (content.summary="L&CIosDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&CAndroidunityDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
+<li class="<#if (content.summary="L&CWebGLDV"s")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&CStandaloneDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
+</#if>
         
     </ul>
   </li>
-        
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Windows Developer`s Guide.html">Windows Developer`s Guide</a></li>        
-<li ><a href="../../../Analytics/Log & Crash Search/ko/C-Sharp Developer`s Guide.html">C# Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Linux Developer`s Guide.html">Linux Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Logback Developer`s Guide.html">Logback Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Log4j Developer`s Guide.html">Log4j Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Log4j.v2 Developer`s Guide.html">Log4j.v2 Developer`s Guide</a></li>        
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Logstash Developer`s Guide.html">Logstash Developer`s Guide</a></li>         
-<li ><a href="../../../Analytics/Log & Crash Search/ko/REST API Developer`s Guide.html">REST API Developer`s Guide</a></li>        
-<li ><a href="../../../Analytics/Log & Crash Search/ko/Release Notes.html">Release Notes</a>
-</li>
-
+<#if content.summary??>        
+<li class="<#if (content.summary="L&CWindowDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Windows Developer`s Guide.html">Windows Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&C C# DV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/C-Sharp Developer`s Guide.html">C# Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CLinuxDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Linux Developer`s Guide.html">Linux Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CLogbackDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Logback Developer`s Guide.html">Logback Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CLog4jDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Log4j Developer`s Guide.html">Log4j Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&CLog4j.v2DV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Log4j.v2 Developer`s Guide.html">Log4j.v2 Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&CLongstashDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Logstash Developer`s Guide.html">Logstash Developer`s Guide</a></li>         
+<li class="<#if (content.summary="L&C REST API DV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/REST API Developer`s Guide.html">REST API Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&CRelease")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Release Notes.html">Release Notes</a></li>
+</#if>
         
     </ul>
   </li>
@@ -497,7 +496,7 @@
                 </li>
 <!-- Common -->
 
-               <li class="dropdown">
+                <#if content.big??><li class="<#if (content.big="TCCommon")>dropdown active<#else>dropdown</#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Common <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -505,25 +504,11 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Launching</a>
     <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../../Common/Launching/ko/Overview/">Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../../Common/Launching/ko/Getting Started/">Getting Started</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../../Common/Launching/ko/Developer`s Guide/">Developer`s Guide</a>
-</li>
-
-        
+<#if content.summary??>     
+<li class="<#if (content.summary="LaunchingOverview")>active<#else></#if>"><a href="../../../Common/Launching/ko/Overview.html">Overview</a></li>
+<li class="<#if (content.summary="LaunchingGetting")>active<#else></#if>"><a href="../../../Common/Launching/ko/Getting Started.html">Getting Started</a></li>            
+<li class="<#if (content.summary="LaunchingDV's")>active<#else></#if>"><a href="../../../Common/Launching/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+</#if>    
     </ul>
   </li>
 
@@ -533,17 +518,17 @@
     <a tabindex="-1" href="">IAP</a>
     <ul class="dropdown-menu">
         
-            
-<li ><a href="../../../Common/IAP/ko/Overview/">Overview</a></li>          
-<li ><a href="../../../Common/IAP/ko/Web Console/">Getting Started</a></li>         
-<li ><a href="../../../Common/IAP/ko/Android Developer`s Guide/">Android Developer`s Guide</a></li>        
-<li ><a href="../../../Common/IAP/ko/iOS Developer`s Guide/">iOS Developer`s Guide</a></li>        
-<li ><a href="../../../Common/IAP/ko/Unity Plugin Developer`s Guide/">Unity Plugin Developer`s Guide</a></li>         
-<li ><a href="../../../Common/IAP/ko/Server Developer`s Guide/">Server Developer`s Guide</a></li>         
-<li ><a href="../../../Common/IAP/ko/Store interlocking information/">Store interlocking information</a></li>         
-<li ><a href="../../../Common/IAP/ko/Error Code/">Error Code Guide</a></li>          
-<li ><a href="../../../Common/IAP/ko/Release Notes/">Release Notes</a></li>
-     
+<#if content.summary??>             
+<li class="<#if (content.summary="IAPOverview")>active<#else></#if>"><a href="../../../Common/IAP/ko/Overview/">Overview</a></li>          
+<li class="<#if (content.summary="IAPWebconsole")>active<#else></#if>"><a href="../../../Common/IAP/ko/Web Console/">Getting Started</a></li>         
+<li class="<#if (content.summary="IAPAndroidDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Android Developer`s Guide/">Android Developer`s Guide</a></li>        
+<li class="<#if (content.summary="IAPIosDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/iOS Developer`s Guide/">iOS Developer`s Guide</a></li>        
+<li class="<#if (content.summary="IAPUnitypluginDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Unity Plugin Developer`s Guide/">Unity Plugin Developer`s Guide</a></li>         
+<li class="<#if (content.summary="IAPServerDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Server Developer`s Guide/">Server Developer`s Guide</a></li>         
+<li class="<#if (content.summary="IAPStoreinterlocking")>active<#else></#if>"><a href="../../../Common/IAP/ko/Store interlocking information/">Store interlocking information</a></li>         
+<li class="<#if (content.summary="IAPErrorcode")>active<#else></#if>"><a href="../../../Common/IAP/ko/Error Code/">Error Code Guide</a></li>          
+<li class="<#if (content.summary="IAPRelease")>active<#else></#if>"><a href="../../../Common/IAP/ko/Release Notes/">Release Notes</a></li>
+</#if>     
     </ul>
   </li>
 
@@ -551,12 +536,12 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Mobile Test</a>
     <ul class="dropdown-menu">
-                
-<li ><a href="../../../Common/Mobile Test/ko/Overview/">Overview</a></li>      
-<li ><a href="../../../Common/Mobile Test/ko/Getting Started/">Getting Started</a></li>      
-<li ><a href="../../../Common/Mobile Test/ko/Device List/">Device List</a></li>          
-<li ><a href="../../../Common/Mobile Test/ko/Release Notes/">Release Notes</a></li>
-    
+<#if content.summary??>                 
+<li class="<#if (content.summary="MobileTestOverview")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Overview/">Overview</a></li>      
+<li class="<#if (content.summary="MobileTestGetting")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Getting Started/">Getting Started</a></li>      
+<li class="<#if (content.summary="MobileTestDevice")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Device List/">Device List</a></li>          
+<li class="<#if (content.summary="MobileTestRelease")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Release Notes/">Release Notes</a></li>
+</#if>    
     </ul>
   </li>
 
@@ -565,10 +550,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Address Search</a>
     <ul class="dropdown-menu">
-                
-<li ><a href="../../../Common/Address Search/ko/Overview/">Overview</a></li>        
-<li ><a href="../../../Common/Address Search/ko/Developer`s Guide/">Developer`s Guide</a></li>
-        
+<#if content.summary??>                 
+<li class="<#if (content.summary="AdrOverview")>active<#else></#if>"><a href="../../../Common/Address Search/ko/Overview/">Overview</a></li>        
+<li class="<#if (content.summary="AdrDV's")>active<#else></#if>"><a href="../../../Common/Address Search/ko/Developer`s Guide/">Developer`s Guide</a></li>
+</#if>        
     </ul>
   </li>
 
@@ -576,14 +561,14 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Maps</a>
     <ul class="dropdown-menu">
-        
-<li ><a href="../../../Common/Maps/ko/Overview.html">Overview</a></li>      
-<li ><a href="../../../Common/Maps/ko/Getting Started.html">Getting Started</a></li>       
-<li ><a href="../../../Common/Maps/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
-<li ><a href="../../../Common/Maps/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
-<li ><a href="../../../Common/Maps/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>           
-<li ><a href="../../../Common/Maps/ko/Release Notes.html">Release Notes</a></li>
-        
+ <#if content.summary??>        
+<li class="<#if (content.summary="MapsOverview")>active<#else></#if>"><a href="../../../Common/Maps/ko/Overview.html">Overview</a></li>      
+<li class="<#if (content.summary="MapsGetting")>active<#else></#if>"><a href="../../../Common/Maps/ko/Getting Started.html">Getting Started</a></li>       
+<li class="<#if (content.summary="MapsDV's")>active<#else></#if>"><a href="../../../Common/Maps/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class="<#if (content.summary="MapsAndroidDV's")>active<#else></#if>"><a href="../../../Common/Maps/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
+<li class="<#if (content.summary="MapsIosDV's")>active<#else></#if>"><a href="../../../Common/Maps/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>           
+<li class="<#if (content.summary="MapsRelease")>active<#else></#if>"><a href="../../../Common/Maps/ko/Release Notes.html">Release Notes</a></li>
+ </#if>       
     </ul>
   </li>
 
