@@ -8,7 +8,7 @@ summary=PushDV's
 ## Notification > Push > Developer's Guide > v2.0 API Reference
 이전 버전보기: <select onchange="location.href=this.value">
 <option selected value="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</option>
-<option value="../../../Notification/Push/ko/Developer`s Guide.html v1.3">API v1.3</option></select>
+<option value="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</option></select>
 
 ## API 소개
 ### v2.0 API 소개

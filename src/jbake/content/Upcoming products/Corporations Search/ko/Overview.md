@@ -15,7 +15,7 @@ summary=CorporationsOverview
 
 ## 서비스 구성도
 
-![](http://static.toastoven.net/prod_toastbill/img_01.jpg)
+![image](http://static.toastoven.net/prod_toastbill/img_01.jpg)
 
 ## 제공 서비스
 

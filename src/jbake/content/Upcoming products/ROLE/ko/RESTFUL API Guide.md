@@ -984,6 +984,7 @@ page 에 1, itemsPerPage에 10을 입력하면 처음 10개의 리스트를 조�
 |appKey|	[CONSOLE] 에서 발급받은 AppKey|
 
 **[Query Parameter]**
+
 |Key|	Value|	Required|	Description|
 |---|---|---|---|
 |scopeId|	Scope ID|	No|	|
@@ -1786,6 +1787,7 @@ page 에 1, itemsPerPage에 10을 입력하면 처음 10개의 리스트를 조�
 |appKey|	[CONSOLE] 에서 발급받은 AppKey|
 
 **[Query Parameter]**
+
 |Key|	Value|	Required|	Description |
 |---|---|---|---|
 |userId|	|	No|	|

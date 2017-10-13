@@ -292,7 +292,7 @@ http://redirect-analytics.toast.com/postback/google?advertising_id={adid}&lat={l
 http://redirect-analytics.toast.com/postback/google?idfa={md5_advertising_id}&lat={lat}&click_url={click_url}&click_timestamp={click_ts}&trv_campaign_id={campaign_id}&video_id={video_id}&os=ios
 ```
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko20.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko20.png)
 
 ④ 추적방식 설정
 

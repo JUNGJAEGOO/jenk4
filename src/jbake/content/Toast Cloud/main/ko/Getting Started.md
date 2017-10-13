@@ -83,7 +83,7 @@ Console 메인 페이지로 접속한 후 [Login] 버튼을 클릭하여 로그�
 
 처음 프로젝트를 생성하면 다음과 같이 상품이용 내역이 나옵니다. 모든 상품은 이용하기 전 상태임을 알 수 있습니다.
 
-![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/wconsole/img_status.png)
+![image](http://static.toastoven.net/toastcloud/static/common/img/cms_img/wconsole/img_status.png)
 
 ### 상품 활성화
 

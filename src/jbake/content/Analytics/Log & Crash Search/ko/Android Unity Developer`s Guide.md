@@ -3,7 +3,7 @@ date=2013-09-24
 type=page
 status=published
 big=TCAnalytics
-summary=L&CAndroidunityDV"s
+summary=L&CAndroidunityDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity Android Developer's Guide
 

@@ -17,7 +17,7 @@ DLCPublisher는 하나의 실행파일(윈도우즈 용 exe)로 제공되며 게
 
 아래와 같은 게임 데이터를 다운로드 받을 폴더 구조라고 가정하자.
 
-![](http://static.toastoven.net/prod_smartdownloader/img_06.png)
+![image](http://static.toastoven.net/prod_smartdownloader/img_06.png)
 
 해당 폴더의 위치에서 윈도우 커맨드 라인 명령 프로그램을 수행한다. Smart Downloader Publisher는 총 네 가지 실행 옵션을 제공한다.
 
@@ -30,7 +30,7 @@ DLCPublisher는 하나의 실행파일(윈도우즈 용 exe)로 제공되며 게
 
 예제에서는 DLCPublisher.exe와 게임데이터 폴더를 같은 레벨에 위치시키고 수행하도록 한다.
 
-![](http://static.toastoven.net/prod_smartdownloader/img_07.png)
+![image](http://static.toastoven.net/prod_smartdownloader/img_07.png)
 
 위와 같이 실행을 시키면 (--inputDir, --outputFile option지정 없이 수행)DLCPublisher.exe와 같은 레벨에 metafile.json이라는 메타파일이 생기게 되고,
 같은 레벨에 OUTPUT 폴더 아래에 --projectName으로 지정했던 DLCTest 이름의 폴더가 생성되고, 그 폴더에 원본 폴더와 같은 트리구조대로 폴더가 생성되며,

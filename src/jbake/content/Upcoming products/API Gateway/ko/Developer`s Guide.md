@@ -23,24 +23,24 @@ summary=APIDV's
 
 하나의 Domain은 대상 서버를 가리키는 Domain URL 하나에 대응됩니다. Domain은 생성, 편집, 삭제가 가능합니다. 그리고 Domain에 대해 플러그인을 설정할 수 있습니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_13.png)
+![image](http://static.toastoven.net/prod_apigateway/img_13.png)
 <center>[그림2] Domain 리스트</center>
 
 웹콘솔의 [API Gateway] > [API Setting] 을 클릭하여 Domain 관리 화면으로 접근할 수 있습니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_14.png)
+![image](http://static.toastoven.net/prod_apigateway/img_14.png)
 <center>[그림3] Domain 관리 페이지 이동</center>
 
 #### Endpoint 관리
 
 Endpoint는 API에 접근 가능한 Endpoint를 의미합니다. 그러므로 하나의 Endpoint는 API 한 개에 대응됩니다. Endpoint는 생성, 편집, 삭제가 가능합니다. 그리고 Endpoint에 대해 플러그인을 추가, 편집, 삭제가 가능합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_15.png)
+![image](http://static.toastoven.net/prod_apigateway/img_15.png)
 <center>[그림4] Endpoint 리스트</center>
 
 Domain 목록에서 관리할 Domain의 가장 우측에 있는 [Setting] > [Endpoint]를 클릭하여 Endpoint 관리 화면으로 접근할 수 있습니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_16.png)
+![image](http://static.toastoven.net/prod_apigateway/img_16.png)
 <center>[그림5] Endpoint 관리 페이지 이동</center>
 
 ```
@@ -51,15 +51,15 @@ URI가 같더라도 HTTP Method가 다르면 다른 Endpoint입니다.
 
 API 통계는 사용자가 등록한 Domain들에서 발생한 API call의 사용량과 평균응답시간을 나타냅니다. Domain 목록 중 하나를 클릭하여 특정 Domain에 대한 통계를 차트와 Endpoint별 통계로 좀 더 자세히 확인할 수 있습니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_17.png)
+![image](http://static.toastoven.net/prod_apigateway/img_17.png)
 <center>[그림6] API 통계 페이지</center>
 
-![](http://static.toastoven.net/prod_apigateway/img_18.png)
+![image](http://static.toastoven.net/prod_apigateway/img_18.png)
 <center>[그림7] API 통계 > UrlSuffix 별 통계</center>
 
 웹콘솔에서 [API Gateway] > [Dashboard]를 클릭하여 통계 화면으로 접근할 수 있습니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_19.png)
+![image](http://static.toastoven.net/prod_apigateway/img_19.png)
 <center>[그림8] API 통계 페이지 이동</center>
 
 ### 사용법
@@ -68,31 +68,31 @@ API 통계는 사용자가 등록한 Domain들에서 발생한 API call의 사�
 
 1.[New Domain] 버튼을 클릭하여 Domain 생성화면으로 이동합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_20.png)
+![image](http://static.toastoven.net/prod_apigateway/img_20.png)
 <center>[그림9] Domain 생성</center>
 
 2.Domain 설정 폼을 채우고 [Save] 버튼을 클릭하여 Domain을 생성합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_21.png)
+![image](http://static.toastoven.net/prod_apigateway/img_21.png)
 <center>[그림10] Domain 생성 정보 저장 </center>
 
 #### Domain 편집
 
 1.Domain 목록에서 편집할 Domain 우측에 있는 [Setting] > [Domain] 버튼을 클릭하여 Domain 편집 화면으로 이동합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_22.png)
+![image](http://static.toastoven.net/prod_apigateway/img_22.png)
 <center>[그림11] Domain 편집 </center>
 
 2.Domain 설정을 변경하고 [Save] 버튼을 클릭하여 저장합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_23.png)
+![image](http://static.toastoven.net/prod_apigateway/img_23.png)
 <center>[그림12] Domain 폅집 정보 저장 </center>
 
 #### Domain 삭제
 
 1.Domain 목록에서 삭제할 Domain 우측에 있는 [Setting] > [Delete] 버튼을 클릭하면 Domain 삭제 팝업이 나타납니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_24.png)
+![image](http://static.toastoven.net/prod_apigateway/img_24.png)
 <center>[그림13] Domain 삭제</center>
 
 2.삭제할 Domain을 다시 한번 확인하고 Domain 이름을 입력해서 삭제를 합니다.
@@ -106,72 +106,72 @@ API 통계는 사용자가 등록한 Domain들에서 발생한 API call의 사�
 
 1.Endpoint 목록에서 [New Endpoint] 버튼을 클릭하여 새 Endpoint를 추가합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_26.png)
+![image](http://static.toastoven.net/prod_apigateway/img_26.png)
 <center>[그림15] Endpoint 생성</center>
 
 2.빈 칸을 채우고 우측에 있는 [Save] 버튼을 클릭하여 Endpoint를 생성합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_27.png)
+![image](http://static.toastoven.net/prod_apigateway/img_27.png)
 <center>[그림16] Endpoint 생성 정보 저장</center>
 
 #### Endpoint 편집
 
 1.Endpoint 목록에서 편집할 Endpoint 우측에 있는 [Edit] 버튼을 클릭하여 편집을 시작합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_28.png)
+![image](http://static.toastoven.net/prod_apigateway/img_28.png)
 <center>[그림17] Endpoint 편집</center>
 
 2.설정을 수정하고 우측에 있는 [Save] 버튼을 클릭하여 저장합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_29.png)
+![image](http://static.toastoven.net/prod_apigateway/img_29.png)
 <center>[그림18] Endpoint 편집 정보 저장</center>
 #### Endpoint 삭제
 
 1.Endpoint 목록에서 삭제할 Endpoint 우측에 있는 [Delete] 버튼을 클릭하여 삭제합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_30.png)
+![image](http://static.toastoven.net/prod_apigateway/img_30.png)
 <center>[그림19] Endpoint 삭제</center>
 
 #### Endpoint Plugin 추가
 
 1.Plugin을 추가할 Endpoint 우측에 있는 [+] 버튼을 클릭하면 나타나는 Plugin 목록에서 원하는 Plugin을 클릭합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_31.png)
+![image](http://static.toastoven.net/prod_apigateway/img_31.png)
 <center>[그림20] Endpoint Plugin 추가</center>
 
 2.Plugin 설정 폼을 채우고 우측에 있는 [Save] 버튼을 클릭하여 저장합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_32.png)
+![image](http://static.toastoven.net/prod_apigateway/img_32.png)
 <center>[그림21] Endpoint Plugin 생성 저장</center>
 
 #### Endpoint Plugin 편집
 
 1.편집할 Plugin을 클릭하여 편집 화면을 보이게 합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_33.png)
+![image](http://static.toastoven.net/prod_apigateway/img_33.png)
 <center>[그림22] Endpoint Plugin 편집</center>
 
 2.설정을 수정하고 우측에 보이는 [Save] 버튼을 클릭하여 저장합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_34.png)
+![image](http://static.toastoven.net/prod_apigateway/img_34.png)
 <center>[그림23] Endpoint Plugin 편집 저장</center>
 
 #### Endpoint Plugin 삭제
 
 1.삭제할 Plugin을 클릭하여 편집 화면을 보이게 합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_35.png)
+![image](http://static.toastoven.net/prod_apigateway/img_35.png)
 <center>[그림24] Endpoint Plugin 편집</center>
 
 2.우측에 보이는 [Delete] 버튼을 클릭하여 삭제합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_36.png)
+![image](http://static.toastoven.net/prod_apigateway/img_36.png)
 <center>[그림25] Endpoint Plugin 삭제</center>
 
 ## 플러그인
 
 ### 플러그인 동작 구조
-![](http://static.toastoven.net/prod_apigateway/img_12.png)
+![image](http://static.toastoven.net/prod_apigateway/img_12.png)
 <center>[그림26] Plugin 동작 구조</center>
 
 Domain에 추가한 플러그인은 Domain에 속한 모든 API에 대해서 동작합니다. 마찬가지로 Endpoint에 추가한 플러그인은 Endpoint에 대해 API call이 수행될 때 동작합니다.
@@ -190,12 +190,12 @@ IP 기반 Access Control 기능 입니다.
 정기점검등의 이유로 모든 Endpoint API 호출에 대해서 사용자가 정의한 Response를 반환하도록 설정합니다.
 
 1. [API Gateway > API Setting] 에서 도메인 셋팅을 위한 화면으로 이동합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_maintenance_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_maintenance_1.png)
 <center>[그림27] 도메인 셋팅 이동</center>
 
 
 2. [Plugin Setting > Maintenance] 에서 Maintenance Response 플러그인을 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_maintenance_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_maintenance_2.png)
 <center>[그림28] Maintenance Response 플러그인 설정</center>
 
 3. Response 정의한 후에 Deploy를 하게되면 모든 Endpoint API 호출에 대해서 정의된 Response가 반환됩니다.
@@ -206,11 +206,11 @@ IP 기반 Access Control 기능 입니다.
 요청 URL과 시간을 메시지로 사용하여 HMAC 인증을 합니다.
 
 1. [API Gateway > API Setting] 에서 도메인 셋팅을 위한 화면으로 이동합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_hmac_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_hmac_1.png)
 <center>[그림29] 도메인 셋팅 이동</center>
 
 2. [Plugin Setting > Authentication] 에서 HMAC 플러그인을 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_hmac_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_hmac_2.png)
 <center>[그림30] HMAC 플러그인 설정</center>
 
 > [참고] Clock skew 설정
@@ -269,12 +269,12 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 JWT(Json Web Token) 인증을 합니다.
 
 1. [API Gateway > API Setting\] 에서 도메인 셋팅을 위한 화면으로 이동합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_jwt_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_jwt_1.png)
 <center>[그림31] 도메인 셋팅 이동</center>
 
 
 2. [Plugin Setting > Authentication] 에서 JWT 플러그인을 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_jwt_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_jwt_2.png)
 <center>[그림32] JWT 플러그인 설정</center>
 
 > [참고]
@@ -341,12 +341,12 @@ String authorization = jws.getCompactSerialization();
 Cross-Site의 방식 내에서의 XMLHttpRequest API 호출이 가능하도록 합니다.
 
 1. [API Gateway > API Setting\] 에서 도메인 셋팅을 위한 화면으로 이동합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_cors_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_cors_1.png)
 <center>[그림33] 도메인 셋팅 이동</center>
 
 
 2. [Plugin Setting > CORS] 에서 CORS 플러그인을 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_cors_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_cors_2.png)
 <center>[그림34] CORS 플러그인 설정</center>
 
 
@@ -384,15 +384,15 @@ Pre API의 응답코드에 따라 200이면 Endpoint를 호출하고, 응답코�
 #### Pre API 설정
 
 1. [API Gateway > Endpoint] 화면으로 이동
-![](http://static.toastoven.net/prod_apigateway/img_plugin_preapi_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_preapi_1.png)
 <center>[그림35] Endpoint 설정 화면 이동</center>
 
 2. Plugins > Pre API를 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_preapi_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_preapi_2.png)
 <center>[그림36] Pre API 플러그인 추가</center>
 
 3. 호출한 Method type과 URL을 입력한 후 저장합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_preapi_3.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_preapi_3.png)
 <center>[그림37] Pre API 플러그인 설정</center>
 
 #### 에러코드
@@ -420,15 +420,15 @@ Pre API의 응답코드에 따라 200이면 Endpoint를 호출하고, 응답코�
 #### Modify Headers 설정
 
 1. [API Gateway > Endpoint] 화면으로 이동합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_modifyheaders_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_modifyheaders_1.png)
 <center>[그림38] Endpoint 설정 화면 이동</center>
 
 2. Plugins > Modify Headers 플러그인을 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_modifyheaders_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_modifyheaders_2.png)
 <center>[그림39] Modify Headers 플러그인 추가</center>
 
 3. Plugins > Modify Headers 플러그인 설정 정보를 입력합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_modifyheaders_3.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_modifyheaders_3.png)
 <center>[그림40] Modify Headers 플러그인 설정 정보 입력</center>
 
 - Request Headers는 요청 헤더를 수정할 수 있습니다.
@@ -445,9 +445,9 @@ Modify Headers 플러그인은 별도의 에러코드가 없습니다.
 #### Usage Quota 설정
 
 1. [API Gateway > Endpoint] 화면으로 이동합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_usagequota_1.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_usagequota_1.png)
 <center>[그림41] Endpoint 설정 화면 이동</center>
 
 2. Plugins > Usage Quota 플러그인을 추가한 후 단위 시간(sec) 동안 최대 호출 가능 횟수를 입력합니다.
-![](http://static.toastoven.net/prod_apigateway/img_plugin_usagequota_2.png)
+![image](http://static.toastoven.net/prod_apigateway/img_plugin_usagequota_2.png)
 <center>[그림42] Usage Quota 플러그인 추가</center>

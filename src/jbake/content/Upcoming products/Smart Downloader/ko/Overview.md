@@ -42,4 +42,4 @@ Smart Downloader는 게임 구동시에 게임에 필요한 리소스를 멀티 
 - 국가별 / 기기별 / OS별 다운로드 통계를 확인할 수 있습니다.
 - 검색 기능을 제공 하여 원하는 시간대(게임 배포 전후로)에 다운로드 통계를 확인할 수 있습니다.
 - 다음과 같은 Dashboard 화면을 통해서 통계 데이터를 확인 할 수 있습니다.
-![](http://static.toastoven.net/prod_smartdownloader/img_04.png)
+![a](http://static.toastoven.net/prod_smartdownloader/img_04.png)

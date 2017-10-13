@@ -3,7 +3,7 @@ date=2013-09-24
 type=page
 status=published
 big=TCAnalytics
-summary=L&CWebGlDV's
+summary=L&CWebGLDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity WebGL Developer's Guide
 

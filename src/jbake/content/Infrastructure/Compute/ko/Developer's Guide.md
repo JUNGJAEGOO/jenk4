@@ -79,6 +79,7 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 ### Token API
 #### Token 발급
 ##### Method, URL
+
 ```
 POST /v1.0/appkeys/{appkey}/tokens
 Content-Type: application/json;charset=UTF-8
@@ -86,6 +87,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 ##### Request Body
+
 ```json
 {
 	"auth" : {
@@ -97,10 +99,11 @@ Content-Type: application/json;charset=UTF-8
 
 | Name | In | Type | Optional | Description |
 | -- | -- | -- | -- | -- |
-| User Name | Body | String | - | TOAST Cloud 사용자 계정 ID |
-| API Password | Body | String | - | [API 패스워드](#api-password) |
+| User Name | Body | String |  | TOAST Cloud 사용자 계정 ID |
+| API Password | Body | String |  | [API 패스워드](#api-password) |
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -193,7 +196,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -254,7 +257,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 | instanceId | Query | String | O | 조회할 Instance 식별자. 기재하지 않을 경우 모든 Instance들의 간략 정보를 조회합니다. |
 
 ##### Request Body
@@ -294,7 +297,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 | instanceId | Query | String | O | 조회할 Instance의 식별자. 생략 시 모든 Instance들의 상세 정보를 조회합니다. |
 
 ##### Request Body
@@ -396,7 +399,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 ```json
@@ -429,15 +432,15 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Instance Name | Body | String | - | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
-| Image ID | Body | String | - | Instance에 설치할 Image 식별자. [Image API](#image-api) 참조 |
-| Flavor ID | Body | String | - | Instance의 Flavor 식별자. [Flavor API](#flavor-api) 참조|
-| Network ID | Body | String | - | Instance가 연결될 Network 식별자. [Network API](#network-api) 참조|
-| Availability Zone | Body | String | - | Instance가 생성될 Availability Zone 이름. [Availability Zone API](#availability-zone-api) 참조 |
-| Key Name | Body | String | - | Instance에 등록할 Key-pair 이름. [Keypair API](#keypair-api) 참조|
-| Count | Body | Integer | - | 동시 생성할 Instance의 대수, 최대 10대로 제한 |
-| Volume Size | Body | Integer | - | Instance의 Root Disk 크기, 생성 가능한 크기는 Flavor 및 설치할 Image 따라 정해짐<br /> - 최소값 : Flavor의 "minVolumeSize" 와 Image의 "minDisk" 값 중 큰 값<br /> - 최대값 : Flavor의 "maxVolumeSize" 값 |
-| Security Group Name | Body | String | - | Instance에 등록할 Security Group 이름 |
+| Instance Name | Body | String |  | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Image ID | Body | String |  | Instance에 설치할 Image 식별자. [Image API](#image-api) 참조 |
+| Flavor ID | Body | String |  | Instance의 Flavor 식별자. [Flavor API](#flavor-api) 참조|
+| Network ID | Body | String |  | Instance가 연결될 Network 식별자. [Network API](#network-api) 참조|
+| Availability Zone | Body | String |  | Instance가 생성될 Availability Zone 이름. [Availability Zone API](#availability-zone-api) 참조 |
+| Key Name | Body | String |  | Instance에 등록할 Key-pair 이름. [Keypair API](#keypair-api) 참조|
+| Count | Body | Integer |  | 동시 생성할 Instance의 대수, 최대 10대로 제한 |
+| Volume Size | Body | Integer |  | Instance의 Root Disk 크기, 생성 가능한 크기는 Flavor 및 설치할 Image 따라 정해짐<br /> - 최소값 : Flavor의 "minVolumeSize" 와 Image의 "minDisk" 값 중 큰 값<br /> - 최대값 : Flavor의 "maxVolumeSize" 값 |
+| Security Group Name | Body | String |  | Instance에 등록할 Security Group 이름 |
 
 ##### Response Body
 ```json
@@ -471,8 +474,8 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| instanceId | Query | String | - | 삭제할 Instance 식별자 |
+| tokenId | Header | String |  | Token ID |
+| instanceId | Query | String |  | 삭제할 Instance 식별자 |
 
 #### Block Storage 연결
 Instance에 추가적인 [Block Strorage](#block-storage-api)를 연결합니다.
@@ -486,8 +489,8 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| instanceId | Path | String | - | Block Strorage를 연결 할 Instance의 식별자 |
+| tokenId | Header | String |  | Token ID |
+| instanceId | Path | String |  | Block Strorage를 연결 할 Instance의 식별자 |
 
 ##### Request Body
 ```json
@@ -500,7 +503,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Volume ID | body | String | - | Instance에 연결할 [Block Strorage](#block-storage-api) 식별자. |
+| Volume ID | body | String |  | Instance에 연결할 [Block Strorage](#block-storage-api) 식별자. |
 
 ##### Response Body
 
@@ -536,9 +539,9 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String| - | Token ID |
-| instanceId | Path | String | - | Instance 식별자 |
-| volumeId | Path | String | - | Block Storage 식별자 |
+| tokenId | Header | String|  | Token ID |
+| instanceId | Path | String |  | Instance 식별자 |
+| volumeId | Path | String |  | Block Storage 식별자 |
 
 ##### Request body
 이 Request는 Body를 필요로 하지 않습니다.
@@ -574,8 +577,8 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String| - | Token ID |
-| instanceId | Path | String | - | Action을 수행할 Instance의 식별자 |
+| tokenId | Header | String|  | Token ID |
+| instanceId | Path | String |  | Action을 수행할 Instance의 식별자 |
 
 ##### Request Body Template
 ```json
@@ -588,7 +591,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Action Name | Body | String | - | Instance에서 실행할 Action명 |
+| Action Name | Body | String |  | Instance에서 실행할 Action명 |
 | parameters | Body | Object| O | Action 수행에 필요한 Parameter. Action에 따라 필요한 값을 기재하거나 없을 수 있습니다. |
 
 #### Instance 시작
@@ -650,7 +653,7 @@ Instance를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 �
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Reboot Type | body | String | - | Reboot 타입. "HARD" or "SOFT" |
+| Reboot Type | body | String |  | Reboot 타입. "HARD" or "SOFT" |
 
 ##### Response Body
 ```json
@@ -677,7 +680,7 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-|  Flavor ID | body | String | - | 변경할 Flavor 식별자. [Flavor API](#flavor-api) 참조 |
+|  Flavor ID | body | String |  | 변경할 Flavor 식별자. [Flavor API](#flavor-api) 참조 |
 
 ##### Response Body
 ```json
@@ -704,7 +707,7 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| ImageName | body | String | - | 생성할 Image 이름 |
+| ImageName | body | String |  | 생성할 Image 이름 |
 
 ##### Response Body
 ```json
@@ -742,8 +745,8 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Floating IP Address | body | String | - | Instance에 연결할 Floating IP 주소 |
-| IP Address of the instance | body | String | - | Floating IP를 연결할 Instance의 IP 주소 |
+| Floating IP Address | body | String |  | Instance에 연결할 Floating IP 주소 |
+| IP Address of the instance | body | String |  | Floating IP를 연결할 Instance의 IP 주소 |
 
 ##### Response Body
 
@@ -773,7 +776,7 @@ Instance에 연결되어 있는 [Floating IP](#floating-ip-api)의 연결을 해
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Floating IP Address | body | String | - | 연결을 해제할 Floating IP 주소 |
+| Floating IP Address | body | String |  | 연결을 해제할 Floating IP 주소 |
 
 ##### Response Body
 
@@ -802,7 +805,7 @@ Instance에 [Security Group](#security-group)을 추가 등록합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Security Group Name | body | String | - | Instance에 추가할 [Security Group](#security-group-api) 이름 |
+| Security Group Name | body | String |  | Instance에 추가할 [Security Group](#security-group-api) 이름 |
 
 ##### Response Body
 
@@ -831,7 +834,7 @@ Instance에 등록되어 있는 [Security Group](#security-group)을 제거합�
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Security Group Name | body | String | - | Instance에서 제거할 [Security Group](#security-group-api) 이름 |
+| Security Group Name | body | String |  | Instance에서 제거할 [Security Group](#security-group-api) 이름 |
 
 ##### Response Body
 ```json
@@ -856,7 +859,7 @@ X-Auth-Token: {tokenID}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String| - | Token ID |
+| tokenId | Header | String|  | Token ID |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -911,7 +914,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - |Token ID |
+| tokenId | Header | String |  |Token ID |
 | keypairName | Query | String | O | 조회할 Keypair 이름. 기재하지 않을 경우 모든 keypair 정보를 조회합니다. |
 
 ##### Request Body
@@ -956,7 +959,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 
@@ -971,7 +974,7 @@ Content-Type: application/json;charset=UTF-8
 
 | Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| Keypair Name | Body | String | - | Keypair 이름 |
+| Keypair Name | Body | String |  | Keypair 이름 |
 | Public Key Value | Body | String | O | 업로드할 Public ssh key. 생략 시 새로운 keypair가 만들어지며, 만들어진 Keypair의 Private Key가 Response로 함께 전달됩니다. |
 
 ##### Response Body
@@ -1009,8 +1012,8 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| keypairName | Query | String | - | 삭제할 Keypair 이름 |
+| tokenId | Header | String |  | Token ID |
+| keypairName | Query | String |  | 삭제할 Keypair 이름 |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1051,7 +1054,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1134,7 +1137,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 | volumeId | Query | String | O | 조회할 Block Storage ID. 기재하지 않을 경우 모든 Block Storage의 정보를 조회합니다. |
 
 ##### Request Body
@@ -1198,7 +1201,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 ```
@@ -1222,10 +1225,10 @@ Content-Type: application/json;charset=UTF-8
 | Description | Body | String | O | Block Storage 설명 |
 | Availability Zone Name | Body | String | - | Block Storage를 생성할 Availability Zone 이름 |
 | Snaptshot ID | Body | String | O | 스냅샷으로부터 Block Storage를 생성하고자 할 경우 사용하는 스냅샷 ID |
-| Size | Body | Integer | - | Block Storage 크기. GB |
-| Volume Type | Body | String | - | 생성할 Block Storage의 종류, 현재는 별도로 타입이 제공되지 않으므로 빈 문자열로 설정.  |
+| Size | Body | Integer |  | Block Storage 크기. GB |
+| Volume Type | Body | String |  | 생성할 Block Storage의 종류, 현재는 별도로 타입이 제공되지 않으므로 빈 문자열로 설정.  |
 | Metadata Key / Metadata Value | Body | String | O | Block Storage에 기입하고자 하는 메타데이터 정보 |
-| Block Storage Name | Body | String | - | Block Storage 이름 |
+| Block Storage Name | Body | String |  | Block Storage 이름 |
 
 ##### Response Body
 ```json
@@ -1272,8 +1275,8 @@ X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| volumeId | Query | String | - | 삭제할 Block Storage ID |
+| tokenId | Header | String |  | Token ID |
+| volumeId | Query | String |  | 삭제할 Block Storage ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1303,7 +1306,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 | securityGroupId | Query | String | O | 조회할 Security Group 식별자. 기재하지 않을 경우 모든 Security Group의 정보를 조회합니다. |
 
 ##### Request Body
@@ -1360,7 +1363,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 ```json
@@ -1374,7 +1377,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| name | Body | String | - |Security Group 이름 |
+| name | Body | String |  |Security Group 이름 |
 | description | Body | String | O | Security Group 설명 |
 
 ##### Response Body
@@ -1426,8 +1429,8 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
-| securityGroupId | Path | String | - | 변경할 Security Group의 식별자 |
+| tokenId | Header | String |  | Token ID |
+| securityGroupId | Path | String |  | 변경할 Security Group의 식별자 |
 
 ##### Request Body
 ```json
@@ -1441,7 +1444,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Name | Body | String | - | Security Group 이름 |
+| Name | Body | String |  | Security Group 이름 |
 | Description | Body | String | O | Security Group 설명 |
 
 ##### Response Body
@@ -1477,8 +1480,8 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
-| securityGroupId | Query | String | - | 삭제할 Security Group의 식별자 |
+| tokenId | Header | String |  | Token ID |
+| securityGroupId | Query | String |  | 삭제할 Security Group의 식별자 |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1508,7 +1511,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 | securityGroupRuleId | Query | String | O | 조회할 Security Group Rule 식별자. 기재하지 않을 경우 모든 Security Group Rule의 정보를 조회합니다. |
 
 ##### Request Body
@@ -1561,7 +1564,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 ```json
@@ -1587,8 +1590,8 @@ Content-Type: application/json;charset=UTF-8
 | Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호 |
 | Protocol | Body | String | O | IP Protocol. "icmp" "tcp" "udp" or "null" |
 | Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자 |
-| Remote IP Prefix | Body | String | - | Rule이 적용되는 Remote IP의 Prefix. |
-| Security Group ID | Body | String | - | Rule이 적용되는 Security Group의 식별자 |
+| Remote IP Prefix | Body | String |  | Rule이 적용되는 Remote IP의 Prefix. |
+| Security Group ID | Body | String |  | Rule이 적용되는 Security Group의 식별자 |
 
 ##### Response Body
 ```json
@@ -1634,8 +1637,8 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
-| securityGroupRuleId | Query | String | - | 삭제할 Security Group Rule 식별자 |
+| tokenId | Header | String |  | Token ID |
+| securityGroupRuleId | Query | String |  | 삭제할 Security Group Rule 식별자 |
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
@@ -1674,7 +1677,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional |Description |
 | -- | -- | -- | -- | -- |
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 | networkId | Query | String | O | 조회할 Network 식별자. 기재하지 않을 경우 모든 Network의 정보를 조회합니다. |
 
 ##### Request Body
@@ -1723,7 +1726,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional |Description |
 | -- | -- | -- | -- | -- |
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1790,7 +1793,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - |Token ID |
+| tokenId | Header | String |  |Token ID |
 | floatingIpId | Query | String | O | 조회할 Floating IP의 식별자. 기재하지 않을 경우 모든 Floating IP의 정보를 조회합니다. |
 
 ##### Request Body
@@ -1838,7 +1841,7 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Header | String |  | Token ID |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1877,8 +1880,8 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| floatingIpId | Path | String | - | 삭제할 Floating IP 식별자 |
+| tokenId | Header | String |  | Token ID |
+| floatingIpId | Path | String |  | 삭제할 Floating IP 식별자 |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
