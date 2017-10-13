@@ -42,6 +42,7 @@ Content-Type: application/json;charset=UTF-8
 |appkey|	String|	고유의 appkey|
 
 [Header]
+
 ```
 {
   "X-Secret-Key": String

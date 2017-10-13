@@ -539,7 +539,7 @@
 <#if content.summary??>                 
 <li class="<#if (content.summary="MobileTestOverview")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Overview.html">Overview</a></li>      
 <li class="<#if (content.summary="MobileTestGetting")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Getting Started.html">Getting Started</a></li>      
-<li class="<#if (content.summary="MobileTestDevice")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Device List.html">Device List</a></li>          
+<li class="<#if (content.summary="MobileTestDevicelist")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Device List.html">Device List</a></li>          
 <li class="<#if (content.summary="MobileTestRelease")>active<#else></#if>"><a href="../../../Common/Mobile Test/ko/Release Notes.html">Release Notes</a></li>
 </#if>    
     </ul>

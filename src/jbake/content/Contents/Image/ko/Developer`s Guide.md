@@ -69,7 +69,7 @@ SecreKey는 인증 처리에 필요하며, 모든 API 요청시에 Request Heade
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| - |토스트 클라우드 web console을 통해서 생성한 appkey|
+|appkey|	string|	Y|  |토스트 클라우드 web console을 통해서 생성한 appkey|
 
 [Request Body]
 
@@ -144,10 +144,10 @@ curl ‐X POST "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/fo
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|
-|appkey|	string|	Y| - |토스트 클라우드 web console을 통해서 생성한 appkey|
-|basepath|	string|	Y| - |조회 할 폴더의 절대 경로|
-|createdBy|	string|	N| - |목록 조회 대상 (공백: 전체, U: 사용자 업로드 이미지, P: 오퍼레이션 이미지)|
-|name|	string|	N| - |검색 할 이미지 이름 (입력 값으로 시작하는)|
+|appkey|	string|	Y|  |토스트 클라우드 web console을 통해서 생성한 appkey|
+|basepath|	string|	Y|  |조회 할 폴더의 절대 경로|
+|createdBy|	string|	N|  |목록 조회 대상 (공백: 전체, U: 사용자 업로드 이미지, P: 오퍼레이션 이미지)|
+|name|	string|	N|  |검색 할 이미지 이름 (입력 값으로 시작하는)|
 |page|	integer|	N|	1|	페이지 번호|
 |rows|	integer|	N|	100|	조회 개수 (max: 10000)|
 |sort|	string|	N|	name:asc|	정렬 방식 (정렬대상 : name or date, 정렬방식 : asc or desc)|
@@ -358,11 +358,11 @@ curl ‐X GET "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/pro
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -| 토스트 클라우드 web console을 통해서 생성한 appkey|
-|path|	string|	Y|-|생성 할 절대 경로의 파일명|
+|appkey|	string|	Y| | 토스트 클라우드 web console을 통해서 생성한 appkey|
+|path|	string|	Y| |생성 할 절대 경로의 파일명|
 |overwrite|	boolean|	N|	false|	같은 이름이 있을 경우 덮어쓰기 여부|
 |autorename|	boolean|	N|	false|	같은 이름이 있을 경우 '이름(1).확장자' 형식으로 파일명 변경 여부|
-|operationIds|	string|	N| -|이미지 오퍼레이션 ID 리스트 (콤마로 구분됨)|
+|operationIds|	string|	N| |이미지 오퍼레이션 ID 리스트 (콤마로 구분됨)|
 
 이미지 오퍼레이션 ID를 추가해서 요청할 경우, 업로드 시 원하는 옵션으로 오퍼레이션 파일을 생성할 수 있습니다. 이미지 오퍼레이 션 관련 API를 참고합니다.
 
@@ -494,23 +494,23 @@ path=/myfolder/sample.png&overwrite=true" \
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
 
 [Request Body]
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|files|	multipart/form – data|	Y| -|이미지 파일 리스트|
-|params|	string|	Y|-|업로드 옵션(json 형태의 문자열)|
+|files|	multipart/form – data|	Y| |이미지 파일 리스트|
+|params|	string|	Y| |업로드 옵션(json 형태의 문자열)|
 
 [params 옵션]
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|basepath|	string|	Y| -|업로드 할 절대 경로|
+|basepath|	string|	Y| |업로드 할 절대 경로|
 |overwrite|	boolean|	N|	false|	같은 이름이 있을 경우 덮어쓰기 여부|
 |autorename|	boolean|	N|	false|	같은 이름이 있을 경우 '이름(1).확장자' 형식으로 파일명 변경 여부|
-|operationIds|	list|	N| -|이미지 오퍼레이션 ID 리스트 (json 형태의 문자열)|
+|operationIds|	list|	N| |이미지 오퍼레이션 ID 리스트 (json 형태의 문자열)|
 
 이미지 오퍼레이션 ID를 추가해서 요청할 경우, 업로드 시 원하는 옵션으로 오퍼레이션 파일을 생성할 수 있습니다. 이미지 오퍼레이 션 관련 API를 참고합니다.
 
@@ -694,9 +694,9 @@ curl ‐X POST "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/im
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
-|folderId|	integer| -| -| 삭제 할 폴더의 ID|
-|fileld|	integer| -| -| 삭제 할 파일의 ID|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
+|folderId|	integer| | | 삭제 할 폴더의 ID|
+|fileld|	integer| | | 삭제 할 파일의 ID|
 |includeThumbnail|	boolean|	N|	false|	삭제 할 파일에 의해 생성된 오퍼레이션 파일도 삭제|
 
 'folderId' 또는 'fileId'는 최소 하나 필수 파라미터로 사용해야 합니다.
@@ -739,9 +739,9 @@ fileId=9cf11176‐045c‐4708‐8dbd‐35633f029a91" \
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
-|folderIds|	string| -| -|삭제 할 폴더의 ID 리스트 (콤마로 구분됨)|
-|files|	string| -| -| 삭제 할 파일의 ID 리스트 (콤마로 구분됨)|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
+|folderIds|	string| | |삭제 할 폴더의 ID 리스트 (콤마로 구분됨)|
+|files|	string| | | 삭제 할 파일의 ID 리스트 (콤마로 구분됨)|
 |includeThumbnail|	boolean|	N|	false|	삭제 할 파일에 의해 생성된 오퍼레이션 파일도 삭제|
 
 'folderIds' 또는 'fileIds'는 최소 하나 필수 파라미터로 사용해야 합니다.
@@ -784,14 +784,14 @@ fileIds=5fa8ce52‐d066‐490c‐85dd‐f8cef181dd28,96f726bd‐93e4‐4f7c‐ad
 |이름|	값|	설명|
 |---|---|---|
 |Authorization|	{secretKey}|	토스트 클라우드의 Web Console에서 생성한 secretKey|
-|Content–Type|	application/json| -|
+|Content–Type|	application/json| |
 
 [Request Parameters]
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appKey|
-|operationId|	string|	Y| -|생성 및 수정 할 오퍼레이션 이름|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appKey|
+|operationId|	string|	Y| |생성 및 수정 할 오퍼레이션 이름|
 
 [Request Body]
 
@@ -799,13 +799,14 @@ json 객체로 전달합니다.
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|description|	string|	N| -|오퍼레이션 설명|
+|description|	string|	N| |오퍼레이션 설명|
 |realtimeService|	boolean|	N|	true|	실 시간 서비스 제공 여부|
-|data|	list|	N| -|오퍼레이션 Flow|
+|data|	list|	N| |오퍼레이션 Flow|
 
 [data 옵션]
 
 [썸네일 크기]
+
 ```
 {
     templateOperationId: "resize_max_fit", // (required) 기반이 되는 템플릿 ID
@@ -826,6 +827,7 @@ json 객체로 전달합니다.
 ```
 
 [흑백 필터]
+
 ```
 {
     templateOperationId: "gray", // (required) 기반이 되는 템플릿 ID
@@ -836,6 +838,7 @@ json 객체로 전달합니다.
 ```
 
 [Rectangle 크롭]
+
 ```
 {
     templateOperationId: "rectangle", // (required) 기반이 되는 템플릿 ID
@@ -852,6 +855,7 @@ json 객체로 전달합니다.
 ```
 
 [Circle 크롭]
+
 ```
 {
     templateOperationId: "circle", // (required) 기반이 되는 템플릿 ID
@@ -866,6 +870,7 @@ json 객체로 전달합니다.
 ```
 
 [Slice 크롭]
+
 ```
 {
     templateOperationId: "slice", // (required) 기반이 되는 템플릿 ID
@@ -893,6 +898,7 @@ curl ‐X PUT "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/ope
 ```
 
 [Response Sample]
+
 ```
 {
 	"header": {
@@ -968,9 +974,9 @@ curl ‐X PUT "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/ope
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
 |template|	boolean|	N|	false|	목록 조회 대상 (true: 기본 오퍼레이션, false: 사용자 생성 오퍼레이션)|
-|name|	string|	N| -|검색 할 오퍼레이션 이름 (입력 값으로 시작하는)|
+|name|	string|	N| |검색 할 오퍼레이션 이름 (입력 값으로 시작하는)|
 |page|	integer|	N|	1|	페이지 번호|
 |rows|	integer|	N|	20|	조회 개수 (max: 10000)|
 |sort|	string|	N|	date:desc|	정렬 방식 (정렬대상 : name or date, 정렬방식 : asc or desc)|
@@ -1168,8 +1174,8 @@ curl ‐X GET "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/ope
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
-|operationId|	string|	Y| -|삭제 할 오퍼레이션 이름|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
+|operationId|	string|	Y| |삭제 할 오퍼레이션 이름|
 
 [Request Example]
 
@@ -1202,13 +1208,13 @@ curl ‐X DELETE "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/
 |이름|	값|	설명|
 |---|---|---|
 |Authorization|	{secretKey}|	토스트 클라우드의 Web Console에서 생성한 secretKey|
-|Content–Type|	application/json| - |
+|Content–Type|	application/json| |
 
 [Request Parameters]
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
 
 [Request Body]
 
@@ -1216,9 +1222,9 @@ json 객체로 전달합니다.
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|basepath|	string|	Y| -|기준이 되는 폴더의 절대 경로|
-|filepaths|	list|	Y| -|실행 할 절대 경로의 폴더 및 파일 리스트|
-|operationIds|	list|	Y| -|실행 할 오퍼레이션 ID 리스트|
+|basepath|	string|	Y| |기준이 되는 폴더의 절대 경로|
+|filepaths|	list|	Y| |실행 할 절대 경로의 폴더 및 파일 리스트|
+|operationIds|	list|	Y| |실행 할 오퍼레이션 ID 리스트|
 
 [Request Example]
 
@@ -1382,7 +1388,7 @@ curl ‐X POST "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/op
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
 
 [Request Example]
 
@@ -1436,13 +1442,13 @@ curl ‐X GET "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/use
 |이름|	값|	설명|
 |---|---|---|
 |Authorization|	{secretKey}|	토스트 클라우드의 Web Console에서 생성한 secretKey|
-|Content–Type|	application/json| -|
+|Content–Type|	application/json| |
 
 [Request Parameters]
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
 
 [Request Body]
 
@@ -1494,8 +1500,8 @@ curl ‐X PUT "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/use
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|---|
-|appkey|	string|	Y| -|토스트 클라우드 web console을 통해서 생성한 appkey|
-|queueId|	string|	Y| -|조회 할 작업 고유 ID|
+|appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
+|queueId|	string|	Y| |조회 할 작업 고유 ID|
 
 [Request Example]
 
@@ -1559,30 +1565,30 @@ Response Code, Message
 |0|	SUCCESS|	Success|	OOO 성공|	성공|
 |1|	PARTIAL_SUCCESS P|	Partial Success|	부분 성공|	부분 성공<br/>리스트 중에 일부는 성공, 일부는 실패 (성공 건수가 0 이라도 부분 성공임)|
 |–1|	FAIL|	Unknown error|	알 수 없는 에러가 발생했습니다.|	내부 에러 발생시|
-|403|	NOT_ALLOWED|	Not Allowed.|	혀용되지 않은 요청입니다.| -|
-|404|	NOT_FOUND|	Please check your API Url, Parameters or HTTP Method.|	API URL, 파라미터, HTTP Method 를 확인하십시요| -|
+|403|	NOT_ALLOWED|	Not Allowed.|	혀용되지 않은 요청입니다.| |
+|404|	NOT_FOUND|	Please check your API Url, Parameters or HTTP Method.|	API URL, 파라미터, HTTP Method 를 확인하십시요| |
 |10001|	INVALID_PARAMETERS|	One or more parameters were invalid.|	파라미터를 확인해주세요.|	파라미터 값을 잘못 보냈거나, 누락했을 때|
-|10002|	INVALID_FILES| -|업로드할 파일이 없거나, 유효하지 않은 파일입니다.|	업로드할 파일이 없거나, 깨진 이미지 일 때|
-|11001|	PATH_LENGTH_LIMIT| -|전체 경로의 최대 길이는 2000자입니다.|	전체 경로 길이 제한 (2000)­ linux system: 4096­ 브라우저 URL 길이 제한: IE10:2083, IE11: 3600|
-|11002|	FILENAME_LENGTH_LIMIT| -|파일과 폴더 이름의 최소 길이는 2자 최대 길이는 255자입니다.|	파일/폴더명 길이 제한 (2 ~ 255)­ N드라이브: 80자, dropbox: 255자|
-|11003|	FILE_COUNT_LIMIT| -|요청할 수 있는 파일과 폴더의 최대 개수는 10000개 입니다.|	삭제와 목록 조회 등으로 요청한파일과 폴더 개수가 많을때 (기본: 100개, max: 10000개)|
-|11004|	UPLOAD_SIZE_LIMIT| -|한번에 업로드 할 수있는 용량을 초과 했습니다(최대12Mbytes).|	업로드 파일 용량 초과 (1개 파일 max: , 1회 요청 max: )|
+|10002|	INVALID_FILES| |업로드할 파일이 없거나, 유효하지 않은 파일입니다.|	업로드할 파일이 없거나, 깨진 이미지 일 때|
+|11001|	PATH_LENGTH_LIMIT| |전체 경로의 최대 길이는 2000자입니다.|	전체 경로 길이 제한 (2000)­ linux system: 4096­ 브라우저 URL 길이 제한: IE10:2083, IE11: 3600|
+|11002|	FILENAME_LENGTH_LIMIT| |파일과 폴더 이름의 최소 길이는 2자 최대 길이는 255자입니다.|	파일/폴더명 길이 제한 (2 ~ 255)­ N드라이브: 80자, dropbox: 255자|
+|11003|	FILE_COUNT_LIMIT| |요청할 수 있는 파일과 폴더의 최대 개수는 10000개 입니다.|	삭제와 목록 조회 등으로 요청한파일과 폴더 개수가 많을때 (기본: 100개, max: 10000개)|
+|11004|	UPLOAD_SIZE_LIMIT| |한번에 업로드 할 수있는 용량을 초과 했습니다(최대12Mbytes).|	업로드 파일 용량 초과 (1개 파일 max: , 1회 요청 max: )|
 |11050|	INVALID_FILENAME|	Invalid Characters in File or Folder Name|	파일과 폴더 이름에는 다음 문자는 사용할 수 없습니다. ~ \ / :? * " &brvbar;|	파일/폴더명 validation ( ~ / \ : ? * " &brvbar;)|
-|11051|	INVALID_URL| -|URL 업로드 지원포트는 80, 443입니다.|	URL을 통한 업로드 시 URL 지원포트|
-|11060|	FILENAME_EMPTY| -|폴더 또는 파일 이름을 입력해야 합니다.|	-|
+|11051|	INVALID_URL| |URL 업로드 지원포트는 80, 443입니다.|	URL을 통한 업로드 시 URL 지원포트|
+|11060|	FILENAME_EMPTY| |폴더 또는 파일 이름을 입력해야 합니다.|	|
 |20000|	FOLDER_DUPLICATED_NAME|	There is already a folder at the given destination|	동일한 이름의 폴더가 있습니다.|	중복된 폴더명으로 생성 또는 rename시|
 |20001|	FOLDER_NOT_EXISTS|	No file was found at the specified path.|	해당 경로에 파일 또는 폴더가 없습니다.|	해당경로에 파일/폴더가 없을 때e.g. 삭제, 다운로드|
-|20002|	INVALID_BASE_PATH| -|상위 폴더가 존재하지 않습니다.|	파일 업로드 및 폴더 생성시, 상위 폴더가 삭제 중이거나 없을 경우|
-|20010|	FILE_DUPLICATED_NAME| -|동일한 이름의 파일이 있습니다.|	overwrite=false&autorename=false인 경우에, 같은 이름의 파일이 있는 경우|
-|21002|	MARKED_ALREADY_DELETING| -|삭제 요청된 파일 또는 폴더입니다.| -|
-|21003|	DELETE_FILE_COUNT_LIMIT| -|삭제할 수 있는 파일과 폴더의 최대 개수는 10000개 입니다.| -|
-|21011|	NO_FILE_TO_DELETE| -|삭제 할 데이터가 없습니다.| -|
-|21030|	FAIL_TO_DELETE| -|삭제 중에 문제가 발생하였습니다.| -|
-|21031|	FAIL_TO_CREATE_ROOT_FOLDER| -|Root 폴더 생성을 실패하였습니다.| -|
-|22001|	FAIL_TO_CREATE_FOLDER| -|폴더 생성을 실패하였습니다.| -|
-|23001|	FAIL_TO_UPLOAD_IMAGES| -|이미지 업로드중에 문제가 발생하였습니다.| -|
-|24001|	FAIL_TO_SWIFT| -|	스토리지 접근이 불가능합니다.| -|
-|30004|	INVALID_APPKEY| -|인증정보가 유효하지 않습니다.|	App Key 또는 Secret Key 에러|
-|30005|	INVALID_USER| -|사용자 정보가 유효하지 않습니다.	| -|
-|40000|	OPERATION_NOT_ALLOWED| -|	오퍼레이션 권한이 없습니다.| -|
-|40001|	OPERATION_FAIL| -|	이미지 오퍼레이션 처리에 실패했습니다.| -|
+|20002|	INVALID_BASE_PATH| |상위 폴더가 존재하지 않습니다.|	파일 업로드 및 폴더 생성시, 상위 폴더가 삭제 중이거나 없을 경우|
+|20010|	FILE_DUPLICATED_NAME| |동일한 이름의 파일이 있습니다.|	overwrite=false&autorename=false인 경우에, 같은 이름의 파일이 있는 경우|
+|21002|	MARKED_ALREADY_DELETING| |삭제 요청된 파일 또는 폴더입니다.| |
+|21003|	DELETE_FILE_COUNT_LIMIT| |삭제할 수 있는 파일과 폴더의 최대 개수는 10000개 입니다.| |
+|21011|	NO_FILE_TO_DELETE| |삭제 할 데이터가 없습니다.| |
+|21030|	FAIL_TO_DELETE| |삭제 중에 문제가 발생하였습니다.| |
+|21031|	FAIL_TO_CREATE_ROOT_FOLDER| |Root 폴더 생성을 실패하였습니다.| |
+|22001|	FAIL_TO_CREATE_FOLDER| |폴더 생성을 실패하였습니다.| |
+|23001|	FAIL_TO_UPLOAD_IMAGES| |이미지 업로드중에 문제가 발생하였습니다.| |
+|24001|	FAIL_TO_SWIFT| |	스토리지 접근이 불가능합니다.| |
+|30004|	INVALID_APPKEY| |인증정보가 유효하지 않습니다.|	App Key 또는 Secret Key 에러|
+|30005|	INVALID_USER| |사용자 정보가 유효하지 않습니다.	| |
+|40000|	OPERATION_NOT_ALLOWED| |	오퍼레이션 권한이 없습니다.| |
+|40001|	OPERATION_FAIL| |	이미지 오퍼레이션 처리에 실패했습니다.| |

@@ -10,7 +10,7 @@ summary=SecurityMonitoringOverview
 TOAST CLOUD 보안관제 서비스는 NHN Entertainment 에서 수년간 축적*검증된 IDS/SIEM 패턴 및 위협관리대응체계를 기반으로 24X365 전문 인력이 높은 수준의 동일한 보안관제 서비스를 제공합니다.
 
 ## 서비스 구성도
-<center>![alt](http://static.toastoven.net/prod_mss/img_01.png)</center>
+![alt](http://static.toastoven.net/prod_mss/img_01.png)
 <center>[그림1] 보안관제 서비스 구성도</center>
 
 
