@@ -599,7 +599,7 @@
 
 
 <!-- Upcoming Product -->
-                <#if content.big??><li class="<#if (content.big="Upcoming")>dropdown active<#else>dropdown</#if>"></#if>
+                <#if content.big??><li class="<#if (content.big="TCUpcoming")>dropdown active<#else>dropdown</#if>"></#if>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Upcoming Products <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -608,12 +608,12 @@
     <a tabindex="-1" href="">CS & BBS</a>
     <ul class="dropdown-menu">
         
-            
-<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Overview.html">Overview</a></li>         
-<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Getting Started.html">Getting Started</a></li>        
-<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
-<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Release Notes.html">Release Notes</a></li>
-      
+<#if content.summary??>              
+<li class="<#if (content.summary="CSOverview")>active<#else></#if>"><a href="../../../Upcoming Products/CS and BBS/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="CSGetting")>active<#else></#if>"><a href="../../../Upcoming Products/CS and BBS/ko/Getting Started.html">Getting Started</a></li>        
+<li class="<#if (content.summary="CSDV's")>active<#else></#if>"><a href="../../../Upcoming Products/CS and BBS/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class="<#if (content.summary="CSRelease")>active<#else></#if>"><a href="../../../Upcoming Products/CS and BBS/ko/Release Notes.html">Release Notes</a></li>
+</#if>     
     </ul>
   </li>
 
@@ -621,10 +621,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Mal-URL Detector</a>
     <ul class="dropdown-menu">
-                   
-<li class=""><a href="../../../Upcoming Products/Mal-URL Detector/ko/Overview.html">Overview</a></li>        
-<li class=""><a href="../../../Upcoming Products/Mal-URL Detector/ko/Getting Started.html">Getting Started</a></li>
-    
+<#if content.summary??>                     
+<li class="<#if (content.summary="Mal-URLOverview")>active<#else></#if>"><a href="../../../Upcoming Products/Mal-URL Detector/ko/Overview.html">Overview</a></li>        
+<li class="<#if (content.summary="Mal-URLGetting")>active<#else></#if>"><a href="../../../Upcoming Products/Mal-URL Detector/ko/Getting Started.html">Getting Started</a></li>
+ </#if>   
     </ul>
   </li>
 
@@ -632,9 +632,9 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">WatchDog</a>
     <ul class="dropdown-menu">
-               
-<li class=""><a href="../../../Upcoming Products/WatchDog/ko/Overview.html">Overview</a></li>
-        
+<#if content.summary??>                 
+<li class="<#if (content.summary="WatchDogOverview")>active<#else></#if>"><a href="../../../Upcoming Products/WatchDog/ko/Overview.html">Overview</a></li>
+ </#if>       
     </ul>
   </li>
 
@@ -642,10 +642,10 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Corporations Search</a>
     <ul class="dropdown-menu">
-                  
-<li class=""><a href="../../../Upcoming Products/Corporations Search/ko/Overview.html">Overview</a></li>         
-<li class=""><a href="../../../Upcoming Products/Corporations Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
-    
+<#if content.summary??>                    
+<li class="<#if (content.summary="CorporationsOverview")>active<#else></#if>"><a href="../../../Upcoming Products/Corporations Search/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="CorporationsDV's")>active<#else></#if>"><a href="../../../Upcoming Products/Corporations Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+</#if>    
     </ul>
   </li>
 
@@ -653,37 +653,37 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Spell Checker</a>
     <ul class="dropdown-menu">
-                
-<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Overview.html">Overview</a></li>         
-<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Getting Started.html">Getting Started</a></li>        
-<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Developer`s Guide.html">Developer`s Guide</a></li>
-    
+<#if content.summary??>                  
+<li class="<#if (content.summary="SpellOverview")>active<#else></#if>"><a href="../../../Upcoming Products/Spell Checker/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="SpellGetting")>active<#else></#if>"><a href="../../../Upcoming Products/Spell Checker/ko/Getting Started.html">Getting Started</a></li>        
+<li class="<#if (content.summary="SpellDV's")>active<#else></#if>"><a href="../../../Upcoming Products/Spell Checker/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+ </#if>   
     </ul>
   </li>                 
                         
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">ROLE</a>
     <ul class="dropdown-menu">
-                
-<li class=""><a href="../../../Upcoming Products/ROLE/ko/Overview.html">Overview</a></li>            
-<li class=""><a href="../../../Upcoming Products/ROLE/ko/Getting Started.html">Getting Started</a></li>        
-<li class=""><a href="../../../Upcoming Products/ROLE/ko/RESTFUL API Guide.html">REST API Developer`s Guide</a></li>        
-<li class=""><a href="../../../Upcoming Products/ROLE/ko/Client SDK Guide.html">Client SDK Developer`s Guide</a></li>       
-<li class=""><a href="../../../Upcoming Products/ROLE/ko/Spring Client SDK Guide.html">Spring Client SDK Developer`s Guide</a></li>        
-<li class=""><a href="../../../Upcoming Products/ROLE/ko/Release Notes.html">Release Notes</a></li>
-    
+ <#if content.summary??>                 
+<li class="<#if (content.summary="ROLEOverview")>active<#else></#if>"><a href="../../../Upcoming Products/ROLE/ko/Overview.html">Overview</a></li>            
+<li class="<#if (content.summary="ROLEGetting")>active<#else></#if>"><a href="../../../Upcoming Products/ROLE/ko/Getting Started.html">Getting Started</a></li>        
+<li class="<#if (content.summary="ROLE RESTFUL API")>active<#else></#if>"><a href="../../../Upcoming Products/ROLE/ko/RESTFUL API Guide.html">REST API Developer`s Guide</a></li>        
+<li class="<#if (content.summary="ROLEClientSDK")>active<#else></#if>"><a href="../../../Upcoming Products/ROLE/ko/Client SDK Guide.html">Client SDK Developer`s Guide</a></li>       
+<li class="<#if (content.summary="ROLESpringClientSDK")>active<#else></#if>"><a href="../../../Upcoming Products/ROLE/ko/Spring Client SDK Guide.html">Spring Client SDK Developer`s Guide</a></li>        
+<li class="<#if (content.summary="ROLERelease")>active<#else></#if>"><a href="../../../Upcoming Products/ROLE/ko/Release Notes.html">Release Notes</a></li>
+  </#if>  
     </ul>
   </li>            
                         
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">API Gateway</a>
     <ul class="dropdown-menu">
-                 
-<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Overview.html">Overview</a></li>        
-<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Getting Started.html">Getting Started</a></li>         
-<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Developer`s Guide.html">Developer`s Guide</a></li>         
-<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Release Notes.html">Release Notes</a></li>
-    
+ <#if content.summary??>                  
+<li class="<#if (content.summary="APIOverview")>active<#else></#if>"><a href="../../../Upcoming Products/API Gateway/ko/Overview.html">Overview</a></li>        
+<li class="<#if (content.summary="APIGetting")>active<#else></#if>"><a href="../../../Upcoming Products/API Gateway/ko/Getting Started.html">Getting Started</a></li>         
+<li class="<#if (content.summary="APIDV's")>active<#else></#if>"><a href="../../../Upcoming Products/API Gateway/ko/Developer`s Guide.html">Developer`s Guide</a></li>         
+<li class="<#if (content.summary="APIRelease")>active<#else></#if>"><a href="../../../Upcoming Products/API Gateway/ko/Release Notes.html">Release Notes</a></li>
+ </#if>   
     </ul>
   </li>
 
@@ -692,11 +692,11 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">DNSPlus</a>
     <ul class="dropdown-menu">
-                 
-<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Overview.html">Overview</a></li>        
-<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Getting Started.html">Getting Started</a></li>         
-<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Release Notes.html">Release Notes</a></li>
-        
+ <#if content.summary??>                  
+<li class="<#if (content.summary="DNSPlusOverview")>active<#else></#if>"><a href="../../../Upcoming Products/DNSPlus/ko/Overview.html">Overview</a></li>        
+<li class="<#if (content.summary="DNSPlusGetting")>active<#else></#if>"><a href="../../../Upcoming Products/DNSPlus/ko/Getting Started.html">Getting Started</a></li>         
+<li class="<#if (content.summary="DNSPlusRelease")>active<#else></#if>"><a href="../../../Upcoming Products/DNSPlus/ko/Release Notes.html">Release Notes</a></li>
+ </#if>       
     </ul>
   </li>               
                         
@@ -704,36 +704,36 @@
     <a tabindex="-1" href="">Mobile Device Info</a>
     <ul class="dropdown-menu">
         
-            
-<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Overview.html">Overview</a></li>              
-<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Getting Started.html">Getting Started</a></li>       
-<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
-<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Release Notes.html">Release Notes</a></li>
-        
+ <#if content.summary??>             
+<li class="<#if (content.summary="MobileDeviceOverview")>active<#else></#if>"><a href="../../../Upcoming Products/Mobile Device Info/ko/Overview.html">Overview</a></li>              
+<li class="<#if (content.summary="MobileDeviceGetting")>active<#else></#if>"><a href="../../../Upcoming Products/Mobile Device Info/ko/Getting Started.html">Getting Started</a></li>       
+<li class="<#if (content.summary="MobileDeviceDV's")>active<#else></#if>"><a href="../../../Upcoming Products/Mobile Device Info/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class="<#if (content.summary="MobileDeviceRelease")>active<#else></#if>"><a href="../../../Upcoming Products/Mobile Device Info/ko/Release Notes.html">Release Notes</a></li>
+  </#if>      
     </ul>
   </li>                   
                         
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Smart Downloader</a>
     <ul class="dropdown-menu">
-        
-<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Overview.html">Overview</a></li>       
-<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Getting Started.html">Getting Started</a></li>         
-<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
-<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Release Notes.html">Release Notes</a></li>
-        
+ <#if content.summary??>         
+<li class="<#if (content.summary="SmartDownloaderOverview")>active<#else></#if>"><a href="../../../Upcoming Products/Smart Downloader/ko/Overview.html">Overview</a></li>       
+<li class="<#if (content.summary="SmartDownloaderGetting")>active<#else></#if>"><a href="../../../Upcoming Products/Smart Downloader/ko/Getting Started.html">Getting Started</a></li>         
+<li class="<#if (content.summary="SmartDownloaderDV's")>active<#else></#if>"><a href="../../../Upcoming Products/Smart Downloader/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class="<#if (content.summary="SmartDownloaderRelease")>active<#else></#if>"><a href="../../../Upcoming Products/Smart Downloader/ko/Release Notes.html">Release Notes</a></li>
+</#if>        
     </ul>
   </li>               
                         
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">RTCS</a>
     <ul class="dropdown-menu">
-        
-<li class=""><a href="../../../Upcoming Products/RTCS/ko/Overview.html">Overview</a></li>         
-<li class=""><a href="../../../Upcoming Products/RTCS/ko/Getting Started.html">Getting Started</a></li>       
-<li class=""><a href="../../../Upcoming Products/RTCS/ko/Developer`s Guide.html">Developer`s Guide</a></li>     
-<li class=""><a href="../../../Upcoming Products/RTCS/ko/Release Notes.html">Release Notes</a></li>
-     
+  <#if content.summary??>        
+<li class="<#if (content.summary="RTCSOverview")>active<#else></#if>"><a href="../../../Upcoming Products/RTCS/ko/Overview.html">Overview</a></li>         
+<li class="<#if (content.summary="RTCSGetting")>active<#else></#if>"><a href="../../../Upcoming Products/RTCS/ko/Getting Started.html">Getting Started</a></li>       
+<li class="<#if (content.summary="RTCSDV's")>active<#else></#if>"><a href="../../../Upcoming Products/RTCS/ko/Developer`s Guide.html">Developer`s Guide</a></li>     
+<li class="<#if (content.summary="RTCSRelease")>active<#else></#if>"><a href="../../../Upcoming Products/RTCS/ko/Release Notes.html">Release Notes</a></li>
+  </#if>   
     </ul>
   </li>
 
