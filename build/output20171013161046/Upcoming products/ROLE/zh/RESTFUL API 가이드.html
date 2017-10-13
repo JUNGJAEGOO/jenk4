@@ -1,0 +1,4703 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../nhnfavicon.ico">
+
+	      <title>Toast Cloud Document</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+		    <!-- <link href="http://alpha-www.toast.com/share/common/css/common-1.0.min.css" rel="stylesheet"> -->
+        <link href="../../../css/common-1.0.min.css" rel="stylesheet">
+        <link href="../../../css/custom_tc_theme.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	<body>
+	<header id="header">
+        </header>
+        <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div>
+        <div class="navbar-header" style="padding-top : 30px;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+ 
+        </div>
+        <div class="navbar-collapse collapse">
+<!-- toast cloud main -->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              <li class=""><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
+              </ul>
+            </li>
+<!-- infrastrucutre -->
+            <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Infrastructure <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+	    <li class="dropdown-submenu">
+		<a tabindex="-1" href="">Compute & Network </a>
+		<ul class="dropdown-menu">
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Images User Guide.html">Images User Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Block storage User Guide.html">Block Storage User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/NAS User Guide.html">NAS (Offline) User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Security Groups User Guide.html">Security Groups User Guide</a></li>    
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Networks User Guide.html">Networks User Guide</a></li>           
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Load Balancers User Guide.html">Load Balancers User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows SSH Guide.html">Windows SSH Guide</a></li>   
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
+			<li class=""><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
+			
+			<li class=""><a href="../../../Infrastructure/Monitoring/ko/Getting Started.html">Monitoring Guide</a></li>      
+			
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Developer's Guide.html">Developer`s Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
+		</ul>
+	    </li>
+
+	<li class="dropdown-submenu">
+    		<a tabindex="-1" href="">Object Storage</a>
+    		<ul class="dropdown-menu">
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Overview.html">Overview</a></li>
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Getting Started.html">Getting Started</a></li>
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Developer's Guide.html">Developer`s Guide</a></li>
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+		</ul>
+	     </li>
+
+
+<!-- Contents -->
+	<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  	<li class="dropdown-submenu">
+    		<a tabindex="-1" href="">Image</a>
+    		<ul class="dropdown-menu">
+		<li class=""><a href="../../../Contents/Image/ko/Overview.html">Overview</a></li>        
+		<li class=""><a href="../../../Contents/Image/ko/Getting Started.html">Getting Started</a></li>      
+		<li class=""><a href="../../../Contents/Image/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
+		<li class=""><a href="../../../Contents/Image/ko/Release Notes.html">Release Notes</a></li>
+   		 </ul>
+  	</li>
+  
+  	 <li class="dropdown-submenu">
+    		<a tabindex="-1" href="">CDN</a>
+    		<ul class="dropdown-menu">
+		<li class=""><a href="../../../Contents/CDN/ko/Overview.html">Overview</a></li>        
+		<li class=""><a href="../../../Contents/CDN/ko/Getting Started.html">Getting Started</a></li>
+		<li class=""><a href="../../../Contents/CDN/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
+		<li class=""><a href="../../../Contents/CDN/ko/Release Notes.html">Release Notes</a></li>
+        
+    		</ul>
+  	</li>
+
+                    
+                    </ul>
+                </li>
+            
+<!-- Anlaytics -->
+        <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analytics <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">App Analytics</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Operator`s Guide</a>
+    <ul class="dropdown-menu">
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Getting Started.html">Getting Started</a></li>         
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Marketing Guide.html">Marketing Guide</a></li>
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Developer`s Guide</a>
+    <ul class="dropdown-menu">
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Android Developer's Guide.html">Android Developer`s Guide</a></li>          
+		<li class=""><a href="../../../Analytics/App Analytics/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Unity Developer`s Guide.html">Unity Developer`s Guide</a></li>       
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Error Code.html">Error Code</a></li>          
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Log & Crash Search</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide.html">iOS Developer`s Guide</a></li>
+       
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Unity Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
+        
+    </ul>
+  </li>
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Windows Developer`s Guide.html">Windows Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/C-Sharp Developer`s Guide.html">C# Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Linux Developer`s Guide.html">Linux Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Logback Developer`s Guide.html">Logback Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Log4j Developer`s Guide.html">Log4j Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Log4j.v2 Developer`s Guide.html">Log4j.v2 Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Logstash Developer`s Guide.html">Logstash Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/REST API Developer`s Guide.html">REST API Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+
+
+<!-- Game -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Game <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Gamebase</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Game/Gamebase/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/Getting Started.html">Getting Started</a></li>
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Android Developer`s Guide</a>
+    <ul class="dropdown-menu">  
+<li class=""><a href="../../../Game/Gamebase/ko/aos-started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/aos-initialization.html">Initialization</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/aos-authentication.html">Auth</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/aos-purchase.html">Purchase</a></li>      
+<li class=""><a href="../../../Game/Gamebase/ko/aos-push.html">Push</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/aos-ui.html">UI</a></li>
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">iOS Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Game/Gamebase/ko/ios-started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/ios-initialization.html">Initialization</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ios-authentication.html">Auth</a></li>      
+<li class=""><a href="../../../Game/Gamebase/ko/ios-purchase.html">Purchase</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ios-push.html">Push</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ios-ui.html">UI</a></li>
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Unity Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Game/Gamebase/ko/unity-started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/unity-initialization.html">Initialization</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/unity-authentication.html">Auth</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/unity-purchase.html">Purchase</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/unity-push.html">Push</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/unity-ui.html">UI</a></li>
+    </ul>
+  </li>
+
+        
+            
+<li class=""><a href="../../../Game/Gamebase/ko/Server Developer`s Guide.html">Server Developer`s Guide</a></li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Operator Guide</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Game/Gamebase/ko/operating-indicator.html">Operating indicator</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/app.html">App</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/operation.html">Operation</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/push.html">Push</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/member.html">Member</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ban.html">Ban</a></li>      
+<li class=""><a href="../../../Game/Gamebase/ko/purchase.html">Purchase(IAP)</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/management.html">Management</a></li>
+    </ul>
+  </li>
+<li class=""><a href="../../../Game/Gamebase/ko/error-codes.html">Error Codes</a></li>         
+<li class=""><a href="../../../Game/Gamebase/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Leaderboard</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Game/Leaderboard/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Game/Leaderboard/ko/Getting Started.html">Getting Started</a></li>      
+<li class=""><a href="../../../Game/Leaderboard/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Game/Leaderboard/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Real Time Multiplayer</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Overview.html">Overview</a></li>           
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Developer`s Guide.html">Developer`s Guide</a></li>          
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+<!-- notification -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notification <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Push</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/Push/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Notification/Push/ko/Getting Started.html">Getting Started</a></li>
+        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</a></li>            
+<li class=""><a href="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</a></li>
+    </ul>
+  </li>
+
+         
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Client SDK Developer`s Guide</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/Push/ko/Client SDK Guide.html">SDK v1.4</a></li>       
+<li class=""><a href="../../../Notification/Push/ko/Client SDK Guide v1.32.html">SDK v1.32</a></li>
+    </ul>
+  </li>
+
+<li class=""><a href="../../../Notification/Push/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">SMS</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/SMS/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Notification/SMS/ko/Getting Started.html">Getting Started</a></li>
+       
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Developer`s Guide</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/SMS/ko/Developer`s Guide.html">API v2.0</a></li>         
+<li class=""><a href="../../../Notification/SMS/ko/Developer`s Guide_v1.html">API v1.0</a></li>
+    </ul>
+  </li>
+
+<li class=""><a href="../../../Notification/SMS/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Email</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/E-mail/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Notification/E-mail/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Notification/E-mail/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class=""><a href="../../../Notification/E-mail/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Alimtalk</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Notification/Alimtalk/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Notification/Alimtalk/ko/Getting Started.html">Getting Started</a></li>          
+<li class=""><a href="../../../Notification/Alimtalk/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class=""><a href="../../../Notification/Alimtalk/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+<!-- security -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AppGuard</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Security/AppGuard/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Security/AppGuard/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Security/AppGuard/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Security Check</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/Security Check/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Security/Security Check/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Security/Security Check/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                   
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Security Monitoring</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/Security Monitoring/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Security/Security Monitoring/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Security/Security Monitoring/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+                
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">CAPTCHA</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/CAPTCHA/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Security/CAPTCHA/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">OTP</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/OTP/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Security/OTP/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+<!-- Common -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Common <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Launching</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Launching/ko/Overview.html">Overview</a></li>
+<li class=""><a href="../../../Common/Launching/ko/Getting Started.html">Getting Started</a></li>            
+<li class=""><a href="../../../Common/Launching/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">IAP</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Common/IAP/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Common/IAP/ko/Web Console.html">Getting Started</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/IAP/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/IAP/ko/Unity Plugin Developer`s Guide.html">Unity Plugin Developer`s Guide</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Server Developer`s Guide.html">Server Developer`s Guide</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Store interlocking information.html">Store interlocking information</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Error Code.html">Error Code Guide</a></li>          
+<li class=""><a href="../../../Common/IAP/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Mobile Test</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Mobile Test/ko/Overview.html">Overview</a></li>      
+<li class=""><a href="../../../Common/Mobile Test/ko/Getting Started.html">Getting Started</a></li>      
+<li class=""><a href="../../../Common/Mobile Test/ko/Device List.html">Device List</a></li>          
+<li class=""><a href="../../../Common/Mobile Test/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Address Search</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Address Search/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Common/Address Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Maps</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Maps/ko/Overview.html">Overview</a></li>      
+<li class=""><a href="../../../Common/Maps/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Common/Maps/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/Maps/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/Maps/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>           
+<li class=""><a href="../../../Common/Maps/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+<!-- Management -->
+                          <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Managed</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Management/Managed/ko/Overview.html">Overview</a></li>
+<li class=""><a href="../../../Management/Managed/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Management/Managed/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+
+
+
+<!-- Upcoming Product -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Upcoming Products <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">CS & BBS</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Mal-URL Detector</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Mal-URL Detector/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Upcoming Products/Mal-URL Detector/ko/Getting Started.html">Getting Started</a></li>
+    </ul>
+  </li>
+
+                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">WatchDog</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/WatchDog/ko/Overview.html">Overview</a></li>
+    </ul>
+  </li>
+
+                                       
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Corporations Search</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Corporations Search/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/Corporations Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Spell Checker</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>                 
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ROLE</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Overview.html">Overview</a></li>            
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/RESTFUL API Guide.html">REST API Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Client SDK Guide.html">Client SDK Developer`s Guide</a></li>       
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Spring Client SDK Guide.html">Spring Client SDK Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>            
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">API Gateway</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Developer`s Guide.html">Developer`s Guide</a></li>         
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">DNSPlus</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>               
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Mobile Device Info</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Overview.html">Overview</a></li>              
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>                   
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Smart Downloader</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>               
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">RTCS</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Developer`s Guide.html">Developer`s Guide</a></li>     
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+
+<!-- Open Source -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Open Source <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ToastUI Editor</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Open Source/ToastUI Editor/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Open Source/ToastUI Editor/ko/Getting Started.html">Getting Started</a></li>
+    </ul>
+  </li>
+
+                   
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ToastUI Chart</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
+        
+    </ul>
+  </li>
+               
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ToastUI Grid</a>
+    <ul class="dropdown-menu">
+             
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Features.html">Features</a></li>
+        
+    </ul>
+  </li>
+
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Toast Haste</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Open Source/Toast Haste/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Open Source/Toast Haste/ko/Getting Started.html">Getting Started</a></li>
+
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+
+<!-- Downloads -->
+
+               <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+<li class=""><a href="../../../Download/one/ko/Download.html">Latest version</a></li>
+                    
+                    </ul>
+                </li>
+
+    	    </ul>
+        </div>
+    </div>
+</div> 
+        <div class="container" style="margin-top: 100px;">
+            <div class="col-md-2">
+            	<div class="side_nav_left_wrapper">
+		           	<div id="side_nav_left" class="side-nav">
+	            		<div id="remotenav" class="bs-sidebar hidden-print affix well toc-list" role="complementary">
+ 
+    <ul class="nav bs-sidenav">
+    
+
+		<li class="main active"><a href="#toast-cloud-overview">TOAST Cloud Overview</a></li>
+        
+        <li class="main "><a href="#_1">서비스 구성</a></li>
+        
+            <li><a href="#infrastructure-service">Infrastructure Service</a></li>
+            <li><a href="#contents-service">Contents Service</a></li>
+            <li><a href="#analytics-service">Analytics Service</a></li>
+            <li><a href="#game-service">Game Service</a></li>
+            <li><a href="#notification-service">Notification Service</a></li>
+            <li><a href="#security-service">Security Service</a></li>
+            <li><a href="#common-service">Common Service</a></li>
+		
+		
+    </ul>
+</div>
+					</div>
+				</div>
+   	    	</div>
+		<div class="col-md-8 content-container" role="main"> 
+
+			
+          <h2>Upcoming Products &gt; ROLE &gt; REST API Developer&rsquo;s Guide</h2>
+<blockquote><p>※ 본 문서는 alpha 개발 단계의 문서입니다.<br/>사용에 관심이 있으신 분은 **<a href="mailto:&#x73;&#x75;p&#112;&#x6f;&#x72;t&#x40;&#99;&#x6c;&#x6f;&#117;d&#46;&#116;oa&#x73;&#x74;&#x2e;&#99;o&#x6d;&#42;&#x2a;&#xc73c;&#xb85c;">&#x73;&#x75;p&#112;&#x6f;&#x72;t&#x40;&#99;&#x6c;&#x6f;&#117;d&#46;&#116;oa&#x73;&#x74;&#x2e;&#99;o&#x6d;&#42;&#x2a;&#xc73c;&#xb85c;</a> 문의해 주시기 바랍니다.</p>
+</blockquote><p><br/></p>
+<blockquote><p>Role 상품을 이용하여 권한을 체크하기 위해서는<br/>RESTFUL API 를 호출하거나, Client SDK 를 이용하여야 한다.</p>
+</blockquote><h2>AppKey &amp; SecretKey</h2><p>RESTFUL API 와 Client SDK 를 사용하려면 AppKey 와 Secret Key 가 필요하다.<br/>[CONSOLE] 의 좌측 상단에서 발급된 Key 정보를 확인 할 수 있다.</p><p><img src="http://static.toastoven.net/prod_role/role_17.png" alt="[그림 1] AppKey &amp; SecretKey 확인" /><br/><center>[그림 1] AppKey &amp; SecretKey 확인</center></p><h2>RESTFUL API 가이드</h2><h3>Common Response Body</h3><p>모든 API 요청에 대해 200 OK 로 응답한다.<br/>자세한 응답 결과는 Response Body 의 header 항목을 참고한다.</p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>header</td>
+      <td>Object</td>
+      <td>응답헤더</td>
+    </tr>
+    <tr>
+      <td>header.isSuccessful</td>
+      <td>boolean</td>
+      <td>성공 여부</td>
+    </tr>
+    <tr>
+      <td>header.resultCode</td>
+      <td>int</td>
+      <td>응답 코드. 성공 시 0, 실패 시 에러코드 반환</td>
+    </tr>
+    <tr>
+      <td>header.resultMessage</td>
+      <td>String</td>
+      <td>응답 메시지. 성공 시 &ldquo;SUCCESS&rdquo;, 실패 시 에러메시지 반환</td>
+    </tr>
+  </tbody>
+</table><h3>1. User</h3><h4>1.1. User 등록</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/users</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;users&quot;: [
+		{
+			&quot;description&quot;: &quot;&quot;,
+			&quot;relations&quot;: [
+				{
+					&quot;roleId&quot;: &quot;&quot;,
+					&quot;scopeId&quot;: &quot;&quot;
+				}
+			],
+			&quot;userId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>users</td>
+      <td>List</td>
+      <td>Yes</td>
+      <td>User 등록 정보</td>
+    </tr>
+    <tr>
+      <td>users[0].userId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>User ID <br/> 최대 48글자까지 등록 가능하다. <br/> -_@. 특수문자를 사용할 수 있으며, ID의 시작과 끝은 반드시 문자 및 숫자가 와야 한다.</td>
+    </tr>
+    <tr>
+      <td>users[0].description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>User 설명 <br/> 최대 128글자까지 등록 가능하다.</td>
+    </tr>
+    <tr>
+      <td>users[0].relations</td>
+      <td>List</td>
+      <td>No</td>
+      <td>User - Role 관계 리스트</td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].roleId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].scopeId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;errors&quot; : [
+		{
+			&quot;code&quot;: 0,
+			&quot;message&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>errors</td>
+      <td>List</td>
+      <td>Error 리스트, 에러가 발생하지 않았다면 빈리스트를 반환한다.</td>
+    </tr>
+    <tr>
+      <td>errors[0].code</td>
+      <td>int</td>
+      <td>에러 코드</td>
+    </tr>
+    <tr>
+      <td>errors[0].message</td>
+      <td>String</td>
+      <td>에러 메시지</td>
+    </tr>
+  </tbody>
+</table><h4>1.2. User 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;user&quot;: {
+		&quot;appKey&quot;: &quot;&quot;,
+		&quot;description&quot;: &quot;&quot;,
+		&quot;regYmdt&quot;: 1461633317442,
+		&quot;userId&quot;: &quot;&quot;
+	}
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>user</td>
+      <td>Object</td>
+      <td>User 정보</td>
+    </tr>
+    <tr>
+      <td>user.appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>user.userId</td>
+      <td>String</td>
+      <td>User ID</td>
+    </tr>
+    <tr>
+      <td>user.description</td>
+      <td>String</td>
+      <td>User 설명</td>
+    </tr>
+    <tr>
+      <td>user.regYmdt</td>
+      <td>Timestamp</td>
+      <td>등록일</td>
+    </tr>
+  </tbody>
+</table><h4>1.3. User 리스트 조회</h4><p>Scope ID 와 Role ID 를 넘겨주면, 해당 역할을 가진 User 만 반환한다.<br/>includeRelation 을 true 로 설정하면, Role ID 와 연관 관계에 있는 Role 을 가진 User 도 포함하여 반환한다.</p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/users</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Query Parameter]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+      <th>Required </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+      <td>No </td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+      <td>No </td>
+    </tr>
+    <tr>
+      <td>includeRelation</td>
+      <td>true or false</td>
+      <td>No </td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot; : 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+    &quot;users&quot; :
+    [
+        {
+            &quot;description&quot; : &quot;&quot;,
+            &quot;regYmdt&quot; : 1466046601134,
+            &quot;relations&quot; :
+            [
+                {
+                    &quot;roleId&quot; : &quot;&quot;,
+                    &quot;scopeId&quot; : &quot;&quot;
+                }
+            ],
+            &quot;userId&quot; : &quot;&quot;
+        }
+    ]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>users</td>
+      <td>List</td>
+      <td>User 정보 리스트</td>
+    </tr>
+    <tr>
+      <td>users[0].appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>users[0].userId</td>
+      <td>String</td>
+      <td>User ID</td>
+    </tr>
+    <tr>
+      <td>users[0].description</td>
+      <td>String</td>
+      <td>User 설명</td>
+    </tr>
+    <tr>
+      <td>users[0].regYmdt</td>
+      <td>Timestamp</td>
+      <td>등록일</td>
+    </tr>
+    <tr>
+      <td>users[0].relations </td>
+      <td>List </td>
+      <td>User 에 할당된 관계 리스트 </td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].roleId </td>
+      <td>String </td>
+      <td>Role ID </td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].scopeId </td>
+      <td>String </td>
+      <td>Scope ID </td>
+    </tr>
+  </tbody>
+</table><h4>1.4. 벌크 User 리스트 조회</h4><p>User 정보를 한번에 조회하는 API</p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/relations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;usersIds&quot;: [
+		&quot;&quot;
+	]
+}
+</code></pre><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot; : 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+    &quot;users&quot; :
+    [
+        {
+            &quot;description&quot; : &quot;&quot;,
+            &quot;regYmdt&quot; : 1466046601134,
+            &quot;relations&quot; :
+            [
+                {
+                    &quot;userId&quot; : &quot;&quot;,
+                    &quot;roleId&quot; : &quot;&quot;,
+                    &quot;scopeId&quot; : &quot;&quot;
+                }
+            ],
+            &quot;userId&quot; : &quot;&quot;
+        }
+    ]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>users</td>
+      <td>List</td>
+      <td>User 정보 리스트</td>
+    </tr>
+    <tr>
+      <td>users[0].appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>users[0].userId</td>
+      <td>String</td>
+      <td>User ID</td>
+    </tr>
+    <tr>
+      <td>users[0].description</td>
+      <td>String</td>
+      <td>User 설명</td>
+    </tr>
+    <tr>
+      <td>users[0].regYmdt</td>
+      <td>Timestamp</td>
+      <td>등록일</td>
+    </tr>
+    <tr>
+      <td>users[0].relations </td>
+      <td>List </td>
+      <td>User 에 할당된 관계 리스트 </td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].userId </td>
+      <td>String </td>
+      <td>User ID </td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].roleId </td>
+      <td>String </td>
+      <td>Role ID </td>
+    </tr>
+    <tr>
+      <td>users[0].relations[0].scopeId </td>
+      <td>String </td>
+      <td>Scope ID </td>
+    </tr>
+  </tbody>
+</table><h4>1.5. User 설명 수정</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>User 설명</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>1.6. User 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELETE</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>1.7. 권한 체크</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}/authorizations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;resources&quot;: [
+		{
+			&quot;operationId&quot;: &quot;&quot;,
+			&quot;resourceId&quot;: &quot;&quot;,
+			&quot;resourcePath&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>resources</td>
+      <td>List</td>
+      <td>Yes</td>
+      <td>권한 체크 할 Resource 리스트</td>
+    </tr>
+    <tr>
+      <td>resources[0].operationId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>resources[0].resourceId</td>
+      <td>String</td>
+      <td>No</td>
+      <td>Resource ID, Resource ID 와 Path 중 하나의 값은 반드시 넣어야 한다.</td>
+    </tr>
+    <tr>
+      <td>resources[0].resourcePath</td>
+      <td>String</td>
+      <td>No</td>
+      <td>Resource Path, Resource ID 와 Path 중 하나의 값은 반드시 넣어야 한다.</td>
+    </tr>
+    <tr>
+      <td>resources[0].scopeId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;authorizations&quot;: [
+		{
+			&quot;operationId&quot;: &quot;&quot;,
+			&quot;permission&quot;: true,
+			&quot;resourceId&quot;: &quot;&quot;,
+			&quot;resourcePath&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>authorizations</td>
+      <td>List</td>
+      <td>권한 체크 결과 리스트</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].operationId</td>
+      <td>String</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].permission</td>
+      <td>boolean</td>
+      <td>권한 체크 결과</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].resourceId</td>
+      <td>String</td>
+      <td>Resource ID</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].resourcePath</td>
+      <td>String</td>
+      <td>Resource Path</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].scopeId</td>
+      <td>String</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><h4>1.8. Role 권한 체크</h4><p>User 에 Role 이 부여됬는지 여부를 반환한다. 연관 관계에 따른 Role 도 포함한다.</p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}/authorizations/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;roles&quot;: [
+		{
+			&quot;roleId&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>roles</td>
+      <td>List</td>
+      <td>Yes</td>
+      <td>권한 체크 할 Role 리스트</td>
+    </tr>
+    <tr>
+      <td>roles[0].roleId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>roles[0].scopeId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;authorizations&quot;: [
+		{
+			&quot;permission&quot;: true,
+			&quot;roleId&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>authorizations</td>
+      <td>List</td>
+      <td>권한 체크 결과 리스트</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].permission</td>
+      <td>boolean</td>
+      <td>권한 체크 결과</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].roleId</td>
+      <td>String</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].scopeId</td>
+      <td>String</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><h4>1.9. User 에 부여된 Role 조회</h4><p>직접적으로 부여한 Role 만 반환한다. Role 의 연관 관계에 따른 Role 은 반환하지 않는다.</p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;relations&quot;: [
+		{
+			&quot;appKey&quot;: &quot;&quot;,
+			&quot;roleId&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;,
+			&quot;userId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>relations</td>
+      <td>List</td>
+      <td>User - Role 관계 리스트</td>
+    </tr>
+    <tr>
+      <td>relations[0].appKey</td>
+      <td>String</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].roleId</td>
+      <td>String</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].scopeId</td>
+      <td>String</td>
+      <td>Scope ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].userId</td>
+      <td>String</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><h4>1.10. User 에 Role 부여</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;roleId&quot;: &quot;&quot;,
+	&quot;scopeId&quot;: &quot;&quot;,
+	&quot;createUserIfNotExist&quot;: false
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>roleId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope ID</td>
+    </tr>
+    <tr>
+      <td>createUserIfNotExist</td>
+      <td>Boolean</td>
+      <td>No</td>
+      <td>User 가 없을때 User 를 생성할 지 여부</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>1.11. User 에 부여된 Role 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELETE</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Query Parameter]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>1.12. User 의 기존 Role 삭제 후, 신규 Role 부여</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/users/{userId}/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;relations&quot;: [
+		{
+			&quot;roleId&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;
+		}
+	],
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>relations</td>
+      <td>List</td>
+      <td>No</td>
+      <td>User - Role 관계 리스트</td>
+    </tr>
+    <tr>
+      <td>relations[0].roleId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].scopeId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h3>2. Scope</h3><h4>2.1. Scope 등록</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/scopes</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;,
+	&quot;scopeId&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scopeId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope ID <br/> 최대 32글자까지 등록 가능하다. </br> -_ 특수문자를 사용할 수 있으며, ID의 시작과 끝은 반드시 문자 및 숫자가 와야 한다. </td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope 설명 <br/> 최대 128글자까지 등록 가능하다.</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>2.2. Scope 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/scopes/{scopeId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;scope&quot;: {
+		&quot;appKey&quot;: &quot;&quot;,
+		&quot;description&quot;: &quot;&quot;,
+		&quot;scopeId&quot;: &quot;&quot;
+	}
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scope</td>
+      <td>Object</td>
+      <td>Scope 정보</td>
+    </tr>
+    <tr>
+      <td>scope.appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>scope.scopeId</td>
+      <td>String</td>
+      <td>Scope ID</td>
+    </tr>
+    <tr>
+      <td>scope.description</td>
+      <td>String</td>
+      <td>Scope 설명</td>
+    </tr>
+  </tbody>
+</table><h4>2.3. Scope 설명 수정</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/scopes/{scopeId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Scope 설명</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>2.4. Scope 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELETE</td>
+      <td>/role/v1.0/appkeys/{appKey}/scopes/{scopeId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>2.5. Scope 과 연관된 연관 관계 조회</h4><p>Scope ID 와 관련된 연관 관계를 조회한다.</p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/scope/{scopeId}/relations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;relations&quot;: [
+		{
+			&quot;appKey&quot;: &quot;&quot;,
+			&quot;roleId&quot;: &quot;&quot;,
+			&quot;scopeId&quot;: &quot;&quot;,
+			&quot;userId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>relations</td>
+      <td>List</td>
+      <td>User - Role 관계 리스트</td>
+    </tr>
+    <tr>
+      <td>relations[0].appKey</td>
+      <td>String</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].roleId</td>
+      <td>String</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].scopeId</td>
+      <td>String</td>
+      <td>Scope ID</td>
+    </tr>
+    <tr>
+      <td>relations[0].userId</td>
+      <td>String</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><h4>2.6. Scope 리스트 조회</h4><p>페이지 형태로 리스트를 조회할 수 있다.<br/>page 에 1, itemsPerPage에 10을 입력하면 처음 10개의 리스트를 조회한다. </p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/scopes</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Query Parameter]</strong><br/>|Key| Value| Required| Description|<br/>|&mdash;|&mdash;|&mdash;|&mdash;|<br/>|scopeId| Scope ID| No| |<br/>|description| | No| 설명|<br/>|page| | No| 검색을 원하는 페이지 번호로 1부터 시작|<br/>|itemsPerPage| | No| 결과를 원하는 scopes 의 레코드 수|</p><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+  &quot;header&quot;: {
+    &quot;isSuccessful&quot;: true,
+    &quot;resultCode&quot;: 0,
+    &quot;resultMessage&quot;: &quot;Success&quot;
+  },
+  &quot;scopes&quot;: [
+    {
+      &quot;description&quot;: &quot;&quot;,
+      &quot;scopeId&quot;: &quot;&quot;
+    }
+  ],
+  &quot;totalItems&quot;: 0
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scopes</td>
+      <td>List</td>
+      <td>Scope 정보</td>
+    </tr>
+    <tr>
+      <td>scopes[0].description</td>
+      <td>String</td>
+      <td>Scope 설명</td>
+    </tr>
+    <tr>
+      <td>scopes[0].scopeId</td>
+      <td>String</td>
+      <td>Scope ID</td>
+    </tr>
+    <tr>
+      <td>totalItems</td>
+      <td>int</td>
+      <td>총 scope 수</td>
+    </tr>
+  </tbody>
+</table><h3>3. Role</h3><h4>3.1. Role 등록</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;,
+	&quot;roleId&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>roleId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Role ID <br/> 최대 32글자까지 등록 가능하다. <br/> -_ 특수문자를 사용할 수 있으며, ID의 시작과 끝은 반드시 문자 및 숫자가 와야 한다.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Role 설명 <br/> 최대 128글자까지 등록 가능하다.</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>3.2. Role 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles/{roleId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;role&quot;: {
+		&quot;appKey&quot;: &quot;&quot;,
+		&quot;description&quot;: &quot;&quot;,
+		&quot;roleId&quot;: &quot;&quot;
+	}
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>role</td>
+      <td>Object</td>
+      <td>Role 정보</td>
+    </tr>
+    <tr>
+      <td>role.appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>role.roleId</td>
+      <td>String</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>role.description</td>
+      <td>String</td>
+      <td>Role 설명</td>
+    </tr>
+  </tbody>
+</table><h4>3.3. Role 설명 수정</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles/{roleId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>User 설명</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>3.4. Role 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles/{roleId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>User 설명</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>3.5. Role 연관 관계 설정</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles/{roleId}/relations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;relatedRoleId&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>relatedRoleId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>연관 관계를 설정 할 Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>3.6. Role 연관 관계 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELETE</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles/{roleId}/relations/{relatedRoleId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>relatedRoleId</td>
+      <td>연관 Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>3.7. Role 에 User 할당</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles/{roleId}/users</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;createUserIfNotExist&quot;: false,
+	&quot;users&quot;: [
+		{
+			&quot;scopeId&quot;: &quot;&quot;,
+			&quot;userId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>createUserIfNotExist</td>
+      <td>Boolean</td>
+      <td>No</td>
+      <td>User 가 없을때 User 를 생성할 지 여부</td>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>List</td>
+      <td>Yes</td>
+      <td>User 리스트</td>
+    </tr>
+    <tr>
+      <td>users[0].scopeId</td>
+      <td>String</td>
+      <td>No</td>
+      <td>Scope ID, 없을 시 기본값 ALL</td>
+    </tr>
+    <tr>
+      <td>users[0].userId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>User ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>3.8. Role 리스트 조회</h4><p>페이지 형태로 리스트를 조회할 수 있다.<br/>page 에 1, itemsPerPage에 10을 입력하면 처음 10개의 리스트를 조회한다. </p><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/roles</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Query Parameter]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+      <th>Required </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+      <td>No </td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>설명</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>검색을 원하는 페이지 번호로 1부터 시작</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>itemsPerPage</td>
+      <td>결과를 원하는 scopes 의 레코드 수</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+  &quot;header&quot;: {
+    &quot;isSuccessful&quot;: true,
+    &quot;resultCode&quot;: 0,
+    &quot;resultMessage&quot;: &quot;Success.&quot;
+  },
+  &quot;roles&quot;: [
+    {
+      &quot;description&quot;: &quot;&quot;,
+      &quot;relatedRoleIds&quot;: [
+        {}
+      ],
+      &quot;roleId&quot;: &quot;&quot;
+    }
+  ],
+  &quot;totalItems&quot;: 0
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>roles</td>
+      <td>List</td>
+      <td>Role 정보</td>
+    </tr>
+    <tr>
+      <td>roles[0].description</td>
+      <td>String</td>
+      <td>Role 설명</td>
+    </tr>
+    <tr>
+      <td>roles[0].relatedRoleIds</td>
+      <td>List</td>
+      <td>연관 RoleId 들</td>
+    </tr>
+    <tr>
+      <td>roles[0].roleId</td>
+      <td>String</td>
+      <td>Role ID</td>
+    </tr>
+    <tr>
+      <td>totalItems</td>
+      <td>int</td>
+      <td>총 Role 수</td>
+    </tr>
+  </tbody>
+</table><h3>4. Resource</h3><h4>4.1. Resource 생성</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;,
+	&quot;metadata&quot;: &quot;&quot;,
+	&quot;name&quot;: &quot;&quot;,
+	&quot;path&quot;: &quot;&quot;,
+	&quot;priority&quot;: 0,
+	&quot;resourceId&quot;: &quot;&quot;,
+	&quot;uiPath&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>resourceId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Resource ID <br/> 최대 32글자까지 등록 가능하다. <br/> -_ 특수문자를 사용할 수 있으며, ID의 시작과 끝은 반드시 문자 및 숫자가 와야 한다.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>No</td>
+      <td>필요 없음.</td>
+    </tr>
+    <tr>
+      <td>path</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Resource 경로 <br/> 최대 1024글자까지 등록 가능하다. <br/> Resource 경로는 &lsquo;/&rsquo; 의 조합으로 이루어져야 한다. <br/> 예외적으로 Path Variable 을 표현할 수 있는 {}가 올 수 있다.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Resource 설명 <br/> 최대 128글자까지 등록 가능하다.</td>
+    </tr>
+    <tr>
+      <td>priority</td>
+      <td>smallint</td>
+      <td>Yes</td>
+      <td>같은 경로에서 보여지는 우선순위 <br/> -32768 ~ 32767 값이 올 수 있으며, 낮을 수록 앞에 보이게 된다.</td>
+    </tr>
+    <tr>
+      <td>metadata</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>사용자 정의 데이터 <br/> 최대 65536글자까지 등록 가능하다.</td>
+    </tr>
+    <tr>
+      <td>uiPath</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>UI Path 경로 <br/> 최대 1024글자까지 등록 가능하다. <br/> UI Path 경로는 Resource 이름과 &lsquo;/&rsquo; 의 조합으로 이루어져야 한다. </td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>4.2. Resource Hierarchy 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources/hierarchy</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Query Parameter]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>userId</td>
+      <td>User ID</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>roleId</td>
+      <td>Role ID</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>Scope ID</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>operationId</td>
+      <td>Operation ID</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;resources&quot;: [
+		{
+			&quot;description&quot;: &quot;&quot;,
+			&quot;metadata&quot;: &quot;&quot;,
+			&quot;name&quot;: &quot;&quot;,
+			&quot;path&quot;: &quot;&quot;,
+			&quot;priority&quot;: 0,
+			&quot;resourceId&quot;: &quot;&quot;,
+			&quot;resources&quot;: []
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>resources</td>
+      <td>List</td>
+      <td>Resource 리스트</td>
+    </tr>
+    <tr>
+      <td>resources[0].resourceId</td>
+      <td>String</td>
+      <td>Resource ID</td>
+    </tr>
+    <tr>
+      <td>resources[0].description</td>
+      <td>String</td>
+      <td>Resource 설명</td>
+    </tr>
+    <tr>
+      <td>resources[0].name</td>
+      <td>String</td>
+      <td>Resource 이름</td>
+    </tr>
+    <tr>
+      <td>resources[0].path</td>
+      <td>String</td>
+      <td>Resource 경로</td>
+    </tr>
+    <tr>
+      <td>resources[0].priority</td>
+      <td>smallint</td>
+      <td>우선순위</td>
+    </tr>
+    <tr>
+      <td>resources[0].metadata</td>
+      <td>String</td>
+      <td>사용자 정의 데이터</td>
+    </tr>
+    <tr>
+      <td>resources[0].resources</td>
+      <td>List</td>
+      <td>Resource 리스트</td>
+    </tr>
+  </tbody>
+</table><h4>4.3. Resource 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources/{resourceId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>resourceId</td>
+      <td>Resource ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;resource&quot;: {
+		&quot;appKey&quot;: &quot;&quot;,
+		&quot;description&quot;: &quot;&quot;,
+		&quot;metadata&quot;: &quot;&quot;,
+		&quot;name&quot;: &quot;&quot;,
+		&quot;path&quot;: &quot;&quot;,
+		&quot;priority&quot;: 0,
+		&quot;resourceId&quot;: &quot;&quot;
+	}
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>resource</td>
+      <td>Object</td>
+      <td>Resource 정보</td>
+    </tr>
+    <tr>
+      <td>resource.appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>resource.resourceId</td>
+      <td>String</td>
+      <td>Resource ID</td>
+    </tr>
+    <tr>
+      <td>resource.description</td>
+      <td>String</td>
+      <td>Resource 설명</td>
+    </tr>
+    <tr>
+      <td>resource.name</td>
+      <td>String</td>
+      <td>Resource 이름</td>
+    </tr>
+    <tr>
+      <td>resource.path</td>
+      <td>String</td>
+      <td>Resource 경로</td>
+    </tr>
+    <tr>
+      <td>resource.priority</td>
+      <td>smallint</td>
+      <td>우선순위</td>
+    </tr>
+    <tr>
+      <td>resource.metadata</td>
+      <td>String</td>
+      <td>사용자 정의 데이터</td>
+    </tr>
+  </tbody>
+</table><h4>4.4. Resource 수정</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources/{resourceId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>resourceId</td>
+      <td>Resource ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;,
+	&quot;metadata&quot;: &quot;&quot;,
+	&quot;name&quot;: &quot;&quot;,
+	&quot;path&quot;: &quot;&quot;,
+	&quot;priority&quot;: 0
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>No</td>
+      <td>필요 없음. </td>
+    </tr>
+    <tr>
+      <td>path</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Resource 경로 <br/> 최대 1024글자까지 등록 가능하다. <br/> Resource 경로는 &lsquo;/&rsquo; 의 조합으로 이루어져야 한다. <br/> 예외적으로 Path Variable 을 표현할 수 있는 {}가 올 수 있다.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Resource 설명 <br/> 최대 128글자까지 등록 가능하다.</td>
+    </tr>
+    <tr>
+      <td>priority</td>
+      <td>smallint</td>
+      <td>Yes</td>
+      <td>같은 경로에서 보여지는 우선순위 <br/> -32768 ~ 32767 값이 올 수 있으며, 낮을 수록 앞에 보이게 된다.</td>
+    </tr>
+    <tr>
+      <td>metadata</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>사용자 정의 데이터 <br/> 최대 65536글자까지 등록 가능하다.</td>
+    </tr>
+    <tr>
+      <td>uiPath</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>UI Path 경로 <br/> 최대 1024글자까지 등록 가능하다. <br/> UI Path 경로는 Resource 이름과 &lsquo;/&rsquo; 의 조합으로 이루어져야 한다. </td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>4.5. Resource 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELETE</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources/{resourceId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>resourceId</td>
+      <td>Resource ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>4.6. Resource 와 관련된 권한 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources/{resourceId}/authorizations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>resourceId</td>
+      <td>Resource ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;authorizations&quot;: [
+		{
+			&quot;operationId&quot;: &quot;&quot;,
+			&quot;roleId&quot;: &quot;&quot;
+		}
+	]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>authorizations</td>
+      <td>List</td>
+      <td>권한 정보 리스트</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].operationId</td>
+      <td>String</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>authorizations[0].roleId</td>
+      <td>String</td>
+      <td>Role ID</td>
+    </tr>
+  </tbody>
+</table><h4>4.7. Resource 에 권한을 추가한다.</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources/{resourceId}/authorizations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>resourceId</td>
+      <td>Resource ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;operationId&quot;: &quot;&quot;,
+  	&quot;roleId&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>operationId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>scopeId</td>
+      <td>String</td>
+      <td>No</td>
+      <td>Scope ID, 없을 시 기본값 ALL</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>4.8. Resource 리스트 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/resources</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Query Parameter]</strong><br/>|Key| Value| Required| Description |<br/>|&mdash;|&mdash;|&mdash;|&mdash;|<br/>|userId| | No| |<br/>|roleId| | No| |<br/>|operationId| | No| |</p><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+  &quot;header&quot;: {
+    &quot;isSuccessful&quot;: true,
+    &quot;resultCode&quot;: 0,
+    &quot;resultMessage&quot;: &quot;Success.&quot;
+  },
+  &quot;resources&quot;: [
+    {
+      &quot;description&quot;: &quot;&quot;,
+      &quot;metadata&quot;: &quot;&quot;,
+      &quot;name&quot;: &quot;&quot;,
+      &quot;path&quot;: &quot;&quot;,
+      &quot;priority&quot;: 0,
+      &quot;resourceId&quot;: &quot;&quot;,
+      &quot;uiPath&quot;: &quot;&quot;
+    }
+  ]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>resources</td>
+      <td>List</td>
+      <td>Resource 정보</td>
+    </tr>
+    <tr>
+      <td>resources[0].description</td>
+      <td>String</td>
+      <td>Resource 설명</td>
+    </tr>
+    <tr>
+      <td>resources[0].metadata</td>
+      <td>String</td>
+      <td>사용자 정의 데이터</td>
+    </tr>
+    <tr>
+      <td>resources[0].name</td>
+      <td>String</td>
+      <td>Resource 이름</td>
+    </tr>
+    <tr>
+      <td>resources[0].path</td>
+      <td>String</td>
+      <td>Resource 경로</td>
+    </tr>
+    <tr>
+      <td>resources[0].priority</td>
+      <td>smallint</td>
+      <td>우선순위</td>
+    </tr>
+    <tr>
+      <td>resources[0].resourceId</td>
+      <td>String</td>
+      <td>Resource ID</td>
+    </tr>
+    <tr>
+      <td>resources[0].uiPath</td>
+      <td>String</td>
+      <td>uiPath</td>
+    </tr>
+  </tbody>
+</table><h3>5. Operation</h3><h4>5.1. Operation 등록</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>/role/v1.0/appkeys/{appKey}/operations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;,
+	&quot;operationId&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>operationId</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Operation ID <br/> 최대 32글자까지 등록 가능하다. <br/> -_ 특수문자를 사용할 수 있으며, ID의 시작과 끝은 반드시 문자 및 숫자가 와야 한다.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Operation 설명 <br/> 최대 128글자까지 등록 가능하다.</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>5.2. Operation 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/operations/{operationId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>operationId</td>
+      <td>Operation ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	},
+	&quot;operation&quot;: {
+		&quot;appKey&quot;: &quot;&quot;,
+		&quot;description&quot;: &quot;&quot;,
+		&quot;operationId&quot;: &quot;&quot;
+	}
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>operation</td>
+      <td>Object</td>
+      <td>Operation 정보</td>
+    </tr>
+    <tr>
+      <td>operation.appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>operation.operationId</td>
+      <td>String</td>
+      <td>Operation ID</td>
+    </tr>
+    <tr>
+      <td>operation.description</td>
+      <td>String</td>
+      <td>Operation 설명</td>
+    </tr>
+  </tbody>
+</table><h4>5.3. Operation 설명 수정</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUT</td>
+      <td>/role/v1.0/appkeys/{appKey}/operations/{operationId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>operationId</td>
+      <td>Operation ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Body]</strong></p>
+<pre><code class="json">{
+	&quot;description&quot;: &quot;&quot;
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Operation 설명</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>5.4. Operation 삭제</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELETE</td>
+      <td>/role/v1.0/appkeys/{appKey}/operations/{operationId}</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+    <tr>
+      <td>operationId</td>
+      <td>Operation ID</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+	&quot;header&quot; : {
+		&quot;isSuccessful&quot; : true,
+		&quot;resultCode&quot;: 0,
+		&quot;resultMessage&quot; : &quot;Success.&quot;
+	}
+}
+</code></pre><h4>5.5. Operation 리스트 조회</h4><p><strong>[Method, URL]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/role/v1.0/appkeys/{appKey}/operations</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Request Header]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Secret-Key</td>
+      <td>[CONSOLE] 에서 발급받은 SecretKey</td>
+    </tr>
+    <tr>
+      <td>Content-Type</td>
+      <td>application/json</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Path Variable]</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>appKey</td>
+      <td>[CONSOLE] 에서 발급받은 AppKey</td>
+    </tr>
+  </tbody>
+</table><p><strong>[Response Body]</strong></p>
+<pre><code class="json">{
+  &quot;header&quot;: {
+    &quot;isSuccessful&quot;: true,
+    &quot;resultCode&quot;: 0,
+    &quot;resultMessage&quot;: &quot;Success.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;appKey&quot;: &quot;&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;operationId&quot;: &quot;&quot;
+    }
+  ]
+}
+</code></pre>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>operations</td>
+      <td>List</td>
+      <td>Operation 정보</td>
+    </tr>
+    <tr>
+      <td>operations[0].appKey</td>
+      <td>String</td>
+      <td>AppKey</td>
+    </tr>
+    <tr>
+      <td>operations[0].description</td>
+      <td>String</td>
+      <td>Operation 설명</td>
+    </tr>
+    <tr>
+      <td>operations[0].operationId</td>
+      <td>String</td>
+      <td>Operation ID</td>
+    </tr>
+  </tbody>
+</table>
+
+           	</div>
+ 			<div class="col-md-2">
+ 				<div id="side_nav_right" class="side-nav">
+ 					<div id="sub-link-nav" role="complementary">
+    <b id="sub-link-category-name" class="main"></b>
+    <ul class="nav">
+    
+    </ul>
+</div>
+ 				</div>
+ 			</div>       
+        </div>
+
+<footer id="footer" class="col-md-12">
+</footer>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../../js/readthedocs-data.js"></script>
+    <script src="../../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../../js/modernizr-custom.js"></script>
+    <script type='text/javascript'>
+         if (!Modernizr.matchmedia){
+             $.getScript("js/media.match.min.js");
+         }
+    </script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/enquire.min.js"></script>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/base.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../../js/common-1.0.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+    
+
+    <!-- <script src="../../../js/prettify.js"></script>  -->
+
+        <script language='javascript'>
+        var _ag   = 0 ;         // 로그인사용자 나이
+        var _id   = '';    		// 로그인사용자 아이디
+        var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+        var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+        var _skey = '' ;        // 내부검색어
+
+        var _jn = '' ;          //  가입탈퇴 ( 'join','withdraw' ) 
+        var _jid = '' ;			// 가입시입력한 ID
+
+        var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+        var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+        var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+        </script>
+	
+	 <script language='javascript'>
+		function appendListToSubLinkNav() {
+
+        var $parent_menu = $('ul.dropdown-menu > li.active').parent().parent();
+		
+        if(!$parent_menu.length) {
+            $('#side_nav_right').remove();
+        }
+        else {
+            var depth_stack = [];
+            while($parent_menu.is('li')) {
+                var temp = $parent_menu;
+                depth_stack.push(temp);
+                $parent_menu = $parent_menu.parent().parent();
+            }
+            var title_menu = (depth_stack.length > 1)? depth_stack[depth_stack.length-2] : depth_stack[0];
+		    $('#sub-link-category-name').text(title_menu.children("a")[0].innerText);
+			var subMenuList = $('li .active').parent().get(0).childNodes;
+			for (var i = 0; i < subMenuList.length; i++) {
+				$("#sub-link-list").append(subMenuList[i].cloneNode(true));
+				$("#sub-link-nav > ul").append(subMenuList[i].cloneNode(true));
+			}
+		}
+	}
+	</script>
+	
+     <!-- <script language='javascript'>
+            var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+            var _AceCounter=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+        </script>
+	<noscript><img src='http://gtp18.acecounter.com:8080/?uid=AH2A40934468137&je=n&' border='0' width='0' alt=''></noscript> -->
+
+  </body>
+</html>
