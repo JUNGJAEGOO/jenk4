@@ -169,7 +169,7 @@
 <#if content.summary??>               
 <li class="<#if (content.summary="L&CIosDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
 <li class="<#if (content.summary="L&CAndroidunityDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
-<li class="<#if (content.summary="L&CWebGLDV"s")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&CWebGLDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
 <li class="<#if (content.summary="L&CStandaloneDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
 </#if>
         
