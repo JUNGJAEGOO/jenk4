@@ -3,7 +3,7 @@ date=2013-09-24
 type=page
 status=published
 big=TCAnalytics
-summary=L&CAndroidNDKDV"s
+summary=L&CAndroidNDKDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > AndroidNDK Developer's Guide
 

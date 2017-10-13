@@ -16,7 +16,7 @@
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
             <#if content.big??><li class="<#if (content.big="TCoverview")>dropdown active<#else>dropdown</#if>"></#if>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toast Cloud<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud<b class="caret"></b></a>
               <ul class="dropdown-menu">
 				<#if content.summary??>
               <li class="<#if (content.summary="TCOverview")>active<#else></#if>"><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
@@ -156,7 +156,7 @@
     <ul class="dropdown-menu">
         
 <#if content.summary??>            
-<li class="<#if (content.summary="L&COverivew")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
+<li class="<#if (content.summary="L&COverview")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
 <li class="<#if (content.summary="L&CGetting")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
 <li class="<#if (content.summary="L&CAndroidDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
 <li class="<#if (content.summary="L&CAndroidNDKDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
@@ -167,7 +167,7 @@
     <a tabindex="-1" href="">Unity Developer`s Guide</a>
     <ul class="dropdown-menu">
 <#if content.summary??>               
-<li class="<#if (content.summary="L&CIosDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class="<#if (content.summary="L&CIosunityDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
 <li class="<#if (content.summary="L&CAndroidunityDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
 <li class="<#if (content.summary="L&CWebGLDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
 <li class="<#if (content.summary="L&CStandaloneDV's")>active<#else></#if>"><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
@@ -519,15 +519,15 @@
     <ul class="dropdown-menu">
         
 <#if content.summary??>             
-<li class="<#if (content.summary="IAPOverview")>active<#else></#if>"><a href="../../../Common/IAP/ko/Overview/">Overview</a></li>          
-<li class="<#if (content.summary="IAPWebconsole")>active<#else></#if>"><a href="../../../Common/IAP/ko/Web Console/">Getting Started</a></li>         
-<li class="<#if (content.summary="IAPAndroidDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Android Developer`s Guide/">Android Developer`s Guide</a></li>        
-<li class="<#if (content.summary="IAPIosDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/iOS Developer`s Guide/">iOS Developer`s Guide</a></li>        
-<li class="<#if (content.summary="IAPUnitypluginDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Unity Plugin Developer`s Guide/">Unity Plugin Developer`s Guide</a></li>         
-<li class="<#if (content.summary="IAPServerDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Server Developer`s Guide/">Server Developer`s Guide</a></li>         
-<li class="<#if (content.summary="IAPStoreinterlocking")>active<#else></#if>"><a href="../../../Common/IAP/ko/Store interlocking information/">Store interlocking information</a></li>         
-<li class="<#if (content.summary="IAPErrorcode")>active<#else></#if>"><a href="../../../Common/IAP/ko/Error Code/">Error Code Guide</a></li>          
-<li class="<#if (content.summary="IAPRelease")>active<#else></#if>"><a href="../../../Common/IAP/ko/Release Notes/">Release Notes</a></li>
+<li class="<#if (content.summary="IAPOverview")>active<#else></#if>"><a href="../../../Common/IAP/ko/Overview.html">Overview</a></li>          
+<li class="<#if (content.summary="IAPWebconsole")>active<#else></#if>"><a href="../../../Common/IAP/ko/Web Console.html">Getting Started</a></li>         
+<li class="<#if (content.summary="IAPAndroidDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
+<li class="<#if (content.summary="IAPIosDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class="<#if (content.summary="IAPUnitypluginDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Unity Plugin Developer`s Guide.html">Unity Plugin Developer`s Guide</a></li>         
+<li class="<#if (content.summary="IAPServerDV's")>active<#else></#if>"><a href="../../../Common/IAP/ko/Server Developer`s Guide.html">Server Developer`s Guide</a></li>         
+<li class="<#if (content.summary="IAPStoreinterlocking")>active<#else></#if>"><a href="../../../Common/IAP/ko/Store interlocking information.html">Store interlocking information</a></li>         
+<li class="<#if (content.summary="IAPErrorcode")>active<#else></#if>"><a href="../../../Common/IAP/ko/Error Code.html">Error Code Guide</a></li>          
+<li class="<#if (content.summary="IAPRelease")>active<#else></#if>"><a href="../../../Common/IAP/ko/Release Notes.html">Release Notes</a></li>
 </#if>     
     </ul>
   </li>
