@@ -10,7 +10,7 @@
     <ul class="nav bs-sidenav">
     
 
-	<#include "sidebar-TCoverview.ftl">
+	
 
 		
 		
