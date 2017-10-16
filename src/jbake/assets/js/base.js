@@ -37,6 +37,21 @@
 			$(".container > div")[1].className = "col-md-9 content-container";
 		}
 	});
+	
+	function test(){
+		var topics = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+		for(var i=0; i<topics.length ;i++){		
+			if(i==0){
+				$('#remotenav > ul').append("<li class='main active'><a href='#"+i+"'>"+topics[0].innerHTML+"</a></li>");		
+
+			}else if(topics[i].tagName=="H2"){			
+				$('#remotenav > ul').append("<li class='main'><a href='#"+i+"'>"+topics[i].innerHTML+"</a></li>");
+
+			}else if(topics[i].tagName=="H3"){
+				$('#remotenav > ul').append("<li class=''><a href='#"+i+"'>"+topics[i].innerHTML+"</a></li>");
+			}
+		}
+	}
 
 	function appendListToSubLinkNav() {
 
@@ -63,20 +78,7 @@
 	}
 })();
 
-	function test(){
-		var topics = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-		for(var i=0; i<topics.length ;i++){		
-			if(i==0){
-				$('#remotenav > ul').append("<li class='main active'><a href='#"+i+"'>"+topics[0].innerHTML+"</a></li>");		
 
-			}else if(topics[i].tagName=="H2"){			
-				$('#remotenav > ul').append("<li class='main'><a href='#"+i+"'>"+topics[i].innerHTML+"</a></li>");
-
-			}else if(topics[i].tagName=="H3"){
-				$('#remotenav > ul').append("<li class=''><a href='#"+i+"'>"+topics[i].innerHTML+"</a></li>");
-			}
-		}
-	}
 
 /* Search */
 

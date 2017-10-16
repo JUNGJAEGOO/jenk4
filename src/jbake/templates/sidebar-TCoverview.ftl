@@ -19,12 +19,12 @@
 	
 		<#if config['side_menu_child_'+config['side_menu_'+content.parent][x_index]]?is_string>
 		
-		<li><a href="#${config['side_menu_child_'+config['side_menu_'+content.parent][x_index]]}">${config['side_menu_child_'+config['side_menu_'+content.parent][x_index]]}</a></li>
+		<li class=""><a href="#${config['side_menu_child_'+config['side_menu_'+content.parent][x_index]]}">${config['side_menu_child_'+config['side_menu_'+content.parent][x_index]]}</a></li>
 		
 		<#else>
 		<#list config['side_menu_child_'+config['side_menu_'+content.parent][x_index]] as z>
 		
-		<li><a href="#${z}">${z}</a></li>
+		<li class=""><a href="#${z}">${z}</a></li>
 		</#list>
 		</#if>
 	</#if>
