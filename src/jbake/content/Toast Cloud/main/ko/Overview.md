@@ -12,7 +12,7 @@ parent=TOASTCloudOverview
 
 dev버전 입니다.
 
-<h2 id="TOAST Cloud Overview">TOAST Cloud Overview</h2>
+<h2 id="TOASTCloudOverview">TOAST Cloud Overview</h2>
 
 TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스입니다.
 
