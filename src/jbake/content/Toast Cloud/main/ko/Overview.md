@@ -52,8 +52,8 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |----------|-----|
 |Image|-이미지의 저장, 편집, 전송을 제공하는 이미지 플랫폼<br>-실시간 썸네일 생성 및 동적 전송.|
 |CDN|-캐시 서버를 이용한 빠른 콘텐츠 배포<br>-네트워크 전송량, 콘텐츠 배포 통계 제공.|
-
-<h3 id="Aanalytics Service">Analytics Service</h3>
+		
+<h3 id="Analytics Service">Analytics Service</h3>
 데이터 분석 및 수집에 필요한 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -61,8 +61,8 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |App Analytics|-대시보드, 실시간 모니터링 지표, 이용자/매출/게임 상세 분석.<br>-커스텀 이벤트 분석 제공, 유입 채널별 이용자 트래킹 및 LTV에 기반을 둔 ROI 제공.<br>-캠페인 목적에 따른 이용자 타겟팅과 캠페인 실행 기능 제공.|
 |Log & Crash Search|-앱 오류 로그 수집, 저장, 조회 및 크래쉬 발생 원인 정보 제공 서비스.|
 
-
-<h3 id="Game service">Game Service</h3>
+        
+<h3 id="Game Service">Game Service</h3>
 게임 개발에 필요한 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
