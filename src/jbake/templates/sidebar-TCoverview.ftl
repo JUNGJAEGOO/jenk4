@@ -10,7 +10,7 @@
 
 
 <#if x_index == 0>
-<li class="main active"><a href="#${config['side_menu_'+content.parent][x_index]}"></a>${config['side_menu_'+content.parent][x_index]}</li>
+<li class="main active"><a href="#${config['side_menu_'+content.parent][x_index]}">${config['side_menu_'+content.parent][x_index]}</a></li>
 <#else>
 <li class="main"><a href="#${config['side_menu_'+content.parent][x_index]}">${config['side_menu_'+content.parent][x_index]}</a></li>
 </#if>

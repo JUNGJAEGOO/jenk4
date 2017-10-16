@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCoverview
 summary=TCGettingStarted
+parent=TOASTCloudGettingStarted
 ~~~~~~
 ## TOAST Cloud Getting Started
 
