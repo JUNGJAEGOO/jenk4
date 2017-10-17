@@ -20,7 +20,12 @@
     <script src="../../../js/common-1.0.min.js"></script>
     <script src="../../../js/custom.js"></script>
     
+	<script src="../../../js/jquery.cookie.js"></script>
 
+	<script language='javascript'>
+	$.cookie('cookie',"cook");
+	</script>
+	
     <!-- <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>  -->
 
         <script language='javascript'>
@@ -69,6 +74,7 @@
 		}
 	}
 	</script>
+
 	
      <!-- <script language='javascript'>
             var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
