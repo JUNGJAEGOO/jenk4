@@ -20,11 +20,7 @@
     <script src="../../../js/common-1.0.min.js"></script>
     <script src="../../../js/custom.js"></script>
     
-	<script src="../../../js/jquery.cookie.js"></script>
 
-	<script language='javascript'>
-	$.cookie('cookie',"cook");
-	</script>
 	
     <!-- <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>  -->
 
