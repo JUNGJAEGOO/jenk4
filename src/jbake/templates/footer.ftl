@@ -37,6 +37,12 @@
         var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
         var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
         </script>
+		
+		<script language='javascript'>
+		$("h2,h3").attr("id", function (arr) {
+			return arr;
+		});
+		</script>
 	
 	 <script language='javascript'>
 		function appendListToSubLinkNav() {

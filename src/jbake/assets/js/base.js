@@ -1,6 +1,6 @@
 (function() {
 	appendListToSubLinkNav();
-	
+	test();
 	$(".dropdown-submenu > a").click(function(){
 		  $(location).attr('href', $(this).next().children()[0].children[0].href);
 		  return false;
@@ -39,7 +39,7 @@
 	});
 	
 	function test(){
-		var topics = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+		var topics = document.querySelectorAll("h2, h3");
 		for(var i=0; i<topics.length ;i++){		
 			if(i==0){
 				$('#remotenav > ul').append("<li class='main active'><a href='#"+i+"'>"+topics[0].innerHTML+"</a></li>");		

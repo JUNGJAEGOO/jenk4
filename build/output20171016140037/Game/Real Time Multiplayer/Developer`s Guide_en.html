@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../nhnfavicon.ico">
+
+	      <title>Toast Cloud Document</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+		    <!-- <link href="http://alpha-www.toast.com/share/common/css/common-1.0.min.css" rel="stylesheet"> -->
+        <link href="../../../css/common-1.0.min.css" rel="stylesheet">
+        <link href="../../../css/custom_tc_theme.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	<body>
+	<header id="header">
+        </header>
+        <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div>
+        <div class="navbar-header" style="padding-top : 30px;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+ 
+        </div>
+        <div class="navbar-collapse collapse">
+<!-- toast cloud main -->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              <li class=""><a href="../../../Toast Cloud/main/ko/Overview.html">Overview</a></li>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Getting Started.html">Getting Started</a></li>
+              <li class=""><a href="../../../Toast Cloud/main/ko/Release Notes.html">Release Notes</a></li>
+              </ul>
+            </li>
+<!-- infrastrucutre -->
+            <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Infrastructure <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+	    <li class="dropdown-submenu">
+		<a tabindex="-1" href="">Compute & Network </a>
+		<ul class="dropdown-menu">
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Overview.html">Overview</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Getting Started.html">Getting Started</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Instances User Guide.html">Instances User Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Images User Guide.html">Images User Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Block storage User Guide.html">Block Storage User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/NAS User Guide.html">NAS (Offline) User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Security Groups User Guide.html">Security Groups User Guide</a></li>    
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Networks User Guide.html">Networks User Guide</a></li>           
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Load Balancers User Guide.html">Load Balancers User Guide</a></li>         
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows SSH Guide.html">Windows SSH Guide</a></li>   
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows SFTP Guide.html">Windows SFTP Guide</a></li>       
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Windows Sysprep Guide.html">Windows Sysprep Guide</a></li>        
+			<li class=""><a href="../../../Infrastructure/Compute/ko/CIDR Guide.html">CIDR Guide</a></li>         
+			
+			<li class=""><a href="../../../Infrastructure/Monitoring/ko/Getting Started.html">Monitoring Guide</a></li>      
+			
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Developer's Guide.html">Developer`s Guide</a></li>
+			<li class=""><a href="../../../Infrastructure/Compute/ko/Release Notes.html">Release Notes</a></li>
+		</ul>
+	    </li>
+
+	<li class="dropdown-submenu">
+    		<a tabindex="-1" href="">Object Storage</a>
+    		<ul class="dropdown-menu">
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Overview.html">Overview</a></li>
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Getting Started.html">Getting Started</a></li>
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Developer's Guide.html">Developer`s Guide</a></li>
+		<li class=""><a href="../../../Infrastructure/Object Storage/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+		</ul>
+	     </li>
+
+
+<!-- Contents -->
+	<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  	<li class="dropdown-submenu">
+    		<a tabindex="-1" href="">Image</a>
+    		<ul class="dropdown-menu">
+		<li class=""><a href="../../../Contents/Image/ko/Overview.html">Overview</a></li>        
+		<li class=""><a href="../../../Contents/Image/ko/Getting Started.html">Getting Started</a></li>      
+		<li class=""><a href="../../../Contents/Image/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
+		<li class=""><a href="../../../Contents/Image/ko/Release Notes.html">Release Notes</a></li>
+   		 </ul>
+  	</li>
+  
+  	 <li class="dropdown-submenu">
+    		<a tabindex="-1" href="">CDN</a>
+    		<ul class="dropdown-menu">
+		<li class=""><a href="../../../Contents/CDN/ko/Overview.html">Overview</a></li>        
+		<li class=""><a href="../../../Contents/CDN/ko/Getting Started.html">Getting Started</a></li>
+		<li class=""><a href="../../../Contents/CDN/ko/Developer`s Guide.html">Developer`s Guide</a></li>      
+		<li class=""><a href="../../../Contents/CDN/ko/Release Notes.html">Release Notes</a></li>
+        
+    		</ul>
+  	</li>
+
+                    
+                    </ul>
+                </li>
+            
+<!-- Anlaytics -->
+        <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analytics <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">App Analytics</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Operator`s Guide</a>
+    <ul class="dropdown-menu">
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Getting Started.html">Getting Started</a></li>         
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Marketing Guide.html">Marketing Guide</a></li>
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Developer`s Guide</a>
+    <ul class="dropdown-menu">
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Android Developer's Guide.html">Android Developer`s Guide</a></li>          
+		<li class=""><a href="../../../Analytics/App Analytics/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Unity Developer`s Guide.html">Unity Developer`s Guide</a></li>       
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Error Code.html">Error Code</a></li>          
+		<li class=""><a href="../../../Analytics/App Analytics/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Log & Crash Search</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Overview.html">Overview</a></li>      
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/AndroidNDK Developer`s Guide.html">AndroidNDK Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/IOS Developer`s Guide.html">iOS Developer`s Guide</a></li>
+       
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Unity Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/iOS Unity Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Android Unity Developer`s Guide.html">Android Developer`s Guide</a></li>       
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/WebGL Developer`s Guide.html">WebGL Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Standalone Developer`s Guide.html">Standalone Developer`s Guide</a></li>
+        
+    </ul>
+  </li>
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Windows Developer`s Guide.html">Windows Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/C-Sharp Developer`s Guide.html">C# Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Linux Developer`s Guide.html">Linux Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Logback Developer`s Guide.html">Logback Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Log4j Developer`s Guide.html">Log4j Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Log4j.v2 Developer`s Guide.html">Log4j.v2 Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Logstash Developer`s Guide.html">Logstash Developer`s Guide</a></li>         
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/REST API Developer`s Guide.html">REST API Developer`s Guide</a></li>        
+<li class=""><a href="../../../Analytics/Log & Crash Search/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+
+
+<!-- Game -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Game <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Gamebase</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Game/Gamebase/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/Getting Started.html">Getting Started</a></li>
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Android Developer`s Guide</a>
+    <ul class="dropdown-menu">  
+<li class=""><a href="../../../Game/Gamebase/ko/aos-started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/aos-initialization.html">Initialization</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/aos-authentication.html">Auth</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/aos-purchase.html">Purchase</a></li>      
+<li class=""><a href="../../../Game/Gamebase/ko/aos-push.html">Push</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/aos-ui.html">UI</a></li>
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">iOS Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Game/Gamebase/ko/ios-started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/ios-initialization.html">Initialization</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ios-authentication.html">Auth</a></li>      
+<li class=""><a href="../../../Game/Gamebase/ko/ios-purchase.html">Purchase</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ios-push.html">Push</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ios-ui.html">UI</a></li>
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Unity Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Game/Gamebase/ko/unity-started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/unity-initialization.html">Initialization</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/unity-authentication.html">Auth</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/unity-purchase.html">Purchase</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/unity-push.html">Push</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/unity-ui.html">UI</a></li>
+    </ul>
+  </li>
+
+        
+            
+<li class=""><a href="../../../Game/Gamebase/ko/Server Developer`s Guide.html">Server Developer`s Guide</a></li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Operator Guide</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Game/Gamebase/ko/operating-indicator.html">Operating indicator</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/app.html">App</a></li>        
+<li class=""><a href="../../../Game/Gamebase/ko/operation.html">Operation</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/push.html">Push</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/member.html">Member</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/ban.html">Ban</a></li>      
+<li class=""><a href="../../../Game/Gamebase/ko/purchase.html">Purchase(IAP)</a></li>       
+<li class=""><a href="../../../Game/Gamebase/ko/management.html">Management</a></li>
+    </ul>
+  </li>
+<li class=""><a href="../../../Game/Gamebase/ko/error-codes.html">Error Codes</a></li>         
+<li class=""><a href="../../../Game/Gamebase/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Leaderboard</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Game/Leaderboard/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Game/Leaderboard/ko/Getting Started.html">Getting Started</a></li>      
+<li class=""><a href="../../../Game/Leaderboard/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Game/Leaderboard/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Real Time Multiplayer</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Overview.html">Overview</a></li>           
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Developer`s Guide.html">Developer`s Guide</a></li>          
+<li class=""><a href="../../../Game/Real Time Multiplayer/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+<!-- notification -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notification <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Push</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/Push/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Notification/Push/ko/Getting Started.html">Getting Started</a></li>
+        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Developer`s Guide</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</a></li>            
+<li class=""><a href="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</a></li>
+    </ul>
+  </li>
+
+         
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Client SDK Developer`s Guide</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/Push/ko/Client SDK Guide.html">SDK v1.4</a></li>       
+<li class=""><a href="../../../Notification/Push/ko/Client SDK Guide v1.32.html">SDK v1.32</a></li>
+    </ul>
+  </li>
+
+<li class=""><a href="../../../Notification/Push/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">SMS</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/SMS/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Notification/SMS/ko/Getting Started.html">Getting Started</a></li>
+       
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Developer`s Guide</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/SMS/ko/Developer`s Guide.html">API v2.0</a></li>         
+<li class=""><a href="../../../Notification/SMS/ko/Developer`s Guide_v1.html">API v1.0</a></li>
+    </ul>
+  </li>
+
+<li class=""><a href="../../../Notification/SMS/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Email</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Notification/E-mail/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Notification/E-mail/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Notification/E-mail/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class=""><a href="../../../Notification/E-mail/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Alimtalk</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Notification/Alimtalk/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Notification/Alimtalk/ko/Getting Started.html">Getting Started</a></li>          
+<li class=""><a href="../../../Notification/Alimtalk/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class=""><a href="../../../Notification/Alimtalk/ko/Release Notes.html">Release Notes</a></li>
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+<!-- security -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AppGuard</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Security/AppGuard/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Security/AppGuard/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Security/AppGuard/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Security Check</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/Security Check/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Security/Security Check/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Security/Security Check/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                   
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Security Monitoring</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/Security Monitoring/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Security/Security Monitoring/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Security/Security Monitoring/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+                
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">CAPTCHA</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/CAPTCHA/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Security/CAPTCHA/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">OTP</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Security/OTP/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Security/OTP/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+<!-- Common -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Common <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Launching</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Launching/ko/Overview.html">Overview</a></li>
+<li class=""><a href="../../../Common/Launching/ko/Getting Started.html">Getting Started</a></li>            
+<li class=""><a href="../../../Common/Launching/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">IAP</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Common/IAP/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Common/IAP/ko/Web Console.html">Getting Started</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/IAP/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/IAP/ko/Unity Plugin Developer`s Guide.html">Unity Plugin Developer`s Guide</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Server Developer`s Guide.html">Server Developer`s Guide</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Store interlocking information.html">Store interlocking information</a></li>         
+<li class=""><a href="../../../Common/IAP/ko/Error Code.html">Error Code Guide</a></li>          
+<li class=""><a href="../../../Common/IAP/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Mobile Test</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Mobile Test/ko/Overview.html">Overview</a></li>      
+<li class=""><a href="../../../Common/Mobile Test/ko/Getting Started.html">Getting Started</a></li>      
+<li class=""><a href="../../../Common/Mobile Test/ko/Device List.html">Device List</a></li>          
+<li class=""><a href="../../../Common/Mobile Test/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Address Search</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Address Search/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Common/Address Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Maps</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Common/Maps/ko/Overview.html">Overview</a></li>      
+<li class=""><a href="../../../Common/Maps/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Common/Maps/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/Maps/ko/Android Developer`s Guide.html">Android Developer`s Guide</a></li>        
+<li class=""><a href="../../../Common/Maps/ko/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>           
+<li class=""><a href="../../../Common/Maps/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+<!-- Management -->
+                          <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Managed</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Management/Managed/ko/Overview.html">Overview</a></li>
+<li class=""><a href="../../../Management/Managed/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Management/Managed/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+
+
+
+<!-- Upcoming Product -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Upcoming Products <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">CS & BBS</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/CS and BBS/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Mal-URL Detector</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Mal-URL Detector/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Upcoming Products/Mal-URL Detector/ko/Getting Started.html">Getting Started</a></li>
+    </ul>
+  </li>
+
+                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">WatchDog</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/WatchDog/ko/Overview.html">Overview</a></li>
+    </ul>
+  </li>
+
+                                       
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Corporations Search</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Corporations Search/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/Corporations Search/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>
+
+                                      
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Spell Checker</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Upcoming Products/Spell Checker/ko/Developer`s Guide.html">Developer`s Guide</a></li>
+    </ul>
+  </li>                 
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ROLE</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Overview.html">Overview</a></li>            
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Getting Started.html">Getting Started</a></li>        
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/RESTFUL API Guide.html">REST API Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Client SDK Guide.html">Client SDK Developer`s Guide</a></li>       
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Spring Client SDK Guide.html">Spring Client SDK Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/ROLE/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>            
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">API Gateway</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Developer`s Guide.html">Developer`s Guide</a></li>         
+<li class=""><a href="../../../Upcoming Products/API Gateway/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">DNSPlus</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Overview.html">Overview</a></li>        
+<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Upcoming Products/DNSPlus/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>               
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Mobile Device Info</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Overview.html">Overview</a></li>              
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Developer`s Guide.html">Developer`s Guide</a></li>        
+<li class=""><a href="../../../Upcoming Products/Mobile Device Info/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>                   
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Smart Downloader</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Getting Started.html">Getting Started</a></li>         
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Developer`s Guide.html">Developer`s Guide</a></li>       
+<li class=""><a href="../../../Upcoming Products/Smart Downloader/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>               
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">RTCS</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Developer`s Guide.html">Developer`s Guide</a></li>     
+<li class=""><a href="../../../Upcoming Products/RTCS/ko/Release Notes.html">Release Notes</a></li>
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+
+<!-- Open Source -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Open Source <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ToastUI Editor</a>
+    <ul class="dropdown-menu">
+<li class=""><a href="../../../Open Source/ToastUI Editor/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Open Source/ToastUI Editor/ko/Getting Started.html">Getting Started</a></li>
+    </ul>
+  </li>
+
+                   
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ToastUI Chart</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Overview.html">Overview</a></li>       
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Getting Started.html">Getting Started</a></li>           
+<li class=""><a href="../../../Open Source/ToastUI Chart/ko/Tutorial.html">Tutorial</a></li>
+        
+    </ul>
+  </li>
+               
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ToastUI Grid</a>
+    <ul class="dropdown-menu">
+             
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Overview.html">Overview</a></li>         
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Getting Started.html">Getting Started</a></li>       
+<li class=""><a href="../../../Open Source/ToastUI Grid/ko/Features.html">Features</a></li>
+        
+    </ul>
+  </li>
+
+                    
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Toast Haste</a>
+    <ul class="dropdown-menu">
+        
+<li class=""><a href="../../../Open Source/Toast Haste/ko/Overview.html">Overview</a></li>          
+<li class=""><a href="../../../Open Source/Toast Haste/ko/Getting Started.html">Getting Started</a></li>
+
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+
+<!-- Downloads -->
+
+               <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+<li class=""><a href="../../../Download/one/ko/Download.html">Latest version</a></li>
+                    
+                    </ul>
+                </li>
+
+    	    </ul>
+        </div>
+    </div>
+</div>        <div class="container" style="margin-top: 100px;">
+            <div class="col-md-2">
+            	<div class="side_nav_left_wrapper">
+	           	<div id="side_nav_left" class="side-nav">
+	            		<div id="remotenav" class="bs-sidebar hidden-print affix well toc-list" role="complementary"> 
+					<ul class="nav bs-sidenav">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+    	</div>
+		
+
+
+	<div class="col-md-8 content-container" role="main"> 			
+		<h2>Game &gt; Real Time Multiplayer &gt; Developer&rsquo;s Guide</h2><h2>NetworkManager</h2><p>NetworkManager is a component which provides a network function for multiplayer games. The user not only conduct works such as network settings, status management and match makings using the inspector provided by NetworkManager without making a separate script but also provide API which corresponds to the applicable functions. Major functions NetworkManager provides are as follows.</p>
+<ul>
+  <li><p>Game status management</p></li>
+  <li><p>Game object creation management</p></li>
+  <li><p>Scene management</p></li>
+  <li><p>Debugging level settings</p></li>
+  <li><p>Match making</p></li>
+  <li><p>Network connection settings</p></li>
+</ul><h2>Inspector</h2><p>NetworkManager inspector as follows.</p><p><img src="http://static.toastoven.net/prod_realtimemultiplayer/img_27.jpg" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Don’t Destroy On Load </td>
+      <td>When loading a new scene, designate not to destroy the game object which includes NetworkManager component. </td>
+    </tr>
+    <tr>
+      <td>Log Level </td>
+      <td>Designate the debugging level of NetworkManager component. </td>
+    </tr>
+    <tr>
+      <td>Online Scene </td>
+      <td>Designate the scene which is called when a player joins the game room. </td>
+    </tr>
+    <tr>
+      <td>Offline Scene </td>
+      <td>Designate the scene which is called when a player leaves the room or network connection ends. </td>
+    </tr>
+    <tr>
+      <td>Listener </td>
+      <td>A field to notify the status changes in NetworkManager. Designate by making a script to receive event notices in the game object. - void OnConnected() : Network connection successful - void OnFailedToConnect() : Network connection failed - void OnDisconnected() : End network connection - void OnJoinedGame() : Join the game room </td>
+    </tr>
+    <tr>
+      <td>Appkey </td>
+      <td>Enter Appkey issued from TOAST Cloud. </td>
+    </tr>
+    <tr>
+      <td>Url </td>
+      <td>Enter URL issued from TOAST Cloud. </td>
+    </tr>
+    <tr>
+      <td>Max Player </td>
+      <td>Designate max number of people to be admitted when creating a room. </td>
+    </tr>
+    <tr>
+      <td>RoomType </td>
+      <td>Perform matching if same as entered string. </td>
+    </tr>
+    <tr>
+      <td>Reopen </td>
+      <td>If a vacancy occurs while processing a game, allow an additional participant to join the game. </td>
+    </tr>
+    <tr>
+      <td>Spawn Info </td>
+      <td>Register game object that will be created dynamically in the game room. </td>
+    </tr>
+    <tr>
+      <td>Channel Count </td>
+      <td>Designate the number of channels for network communications. The minimum range is 5 and maximum is 50. </td>
+    </tr>
+    <tr>
+      <td>MTU Size </td>
+      <td>Designate max byte number for one time send. Minimum range to designate is 450 bytes and max is 1300 bytes. </td>
+    </tr>
+    <tr>
+      <td>Ping Interval </td>
+      <td>If reliability data is not sent, designate Ping interval sent to a server from a client. </td>
+    </tr>
+    <tr>
+      <td>Disconnect Timeout </td>
+      <td>After sending reliability data, designate max time to wait for the response. </td>
+    </tr>
+    <tr>
+      <td>Enable CRC </td>
+      <td>Activate data’s integrity test. If the network connection is good in the service area, it is not recommended to use it on a mobile device. </td>
+    </tr>
+    <tr>
+      <td>Max Unreliable Commands </td>
+      <td>Empty the queue if unreliability data piles up in the queue more than the designated number. If set 0, the applicable function does not operate. </td>
+    </tr>
+    <tr>
+      <td>Waning Queue Size </td>
+      <td>In case a certain number of packet piles up in the queue, transfer a Warning message. </td>
+    </tr>
+    <tr>
+      <td>Resent Count Allowance </td>
+      <td>Designate the number of resend of data that has not received the response. </td>
+    </tr>
+    <tr>
+      <td>Shows Network Stats and Info </td>
+      <td>If activated, network condition related figure information can be checked via NetworkStatistic property, and if NetworkManagerHUD component is activated, the applicable value can be checked on the game screen. </td>
+    </tr>
+  </tbody>
+</table><p>###<br/>Scene management</p><p>A lot of developers use multiple scenes when creating a game with unity. For example, they develop a game by separating menu scene, game scene and end scene. When a player enters the game room, NetworkManager automatically loads scenes set in Online Scene. On the other hand, if service use has ended as the player ends the game and leaves the room, it will load Offline Scene.</p><p>But if a scene used before connecting to the network and an online scene are same, do not perform a scene loading. Same goes for an offline scene, do not perform a scene loading for same scenes. In other words, multiplayer contents can be added to a game composed of a single scene. Then from the moment entering the game room till the end, other scene can be loaded for use additionally.</p><h3>Match making</h3><p>TOAST Cloud’s real time multiplayer service provides the very basic way of match making service. Match making conducts matching according to the string set in RoomType.</p>
+<ul>
+  <li><p><strong>Level matching</strong> For matchings based on scores, divide player’s score in certain intervals and create a string based on that value. For example, if a player with score of 111, designate game_1 type matching with the value dividing 100 in order to designate a matching between players in the score range of 100.</p></li>
+  <li><p><strong>Game type matching</strong> Like MORPG, if a player selects to enter a certain dungeon, it can be designated to perform matching by designating the applicable dungeon name.</p></li>
+  <li><p><strong>Game version related matching</strong> If a client version needs to be classified, designate to perform matching by adding client version information.</p></li>
+</ul><h3>Listener settings</h3><p>NetworkManager has a function to notify status information in three categories. They are Connected status connected to TOAST Cloud, JoinedGame status joined in the game room after a verification process and lastly, Disconnected status disconnected the connection. If a required action is needed depending on the status change, make a script as follows and drag to NetworkManager inspector’s Listener item.</p>
+<pre><code>public class Listener : MonoBehaviour {
+
+    ///
+
+    /// Connected to TOAST Cloud
+    ///
+
+    void OnConnect() {}
+
+    ///
+
+    /// Failed to connect TOAST Cloud
+    ///
+
+    void OnFailedToConnect() {}
+
+    ///
+
+    /// Joined a Game
+    ///
+
+    void OnJoinedGame() {}
+
+    ///
+
+    /// Disconnected from TOAST Cloud
+    ///
+
+    void OnDisconnected() {}
+}
+</code></pre><h3>Create game objects</h3><p>Creating game objects dynamically in a multiplayer game is one of necessary functions. Game objects can be created dynamically by registering Prefab to be created in NetworkManager before connecting to the network. To register in NetworkManager, the applicable game object must include NetworkIdentity component.</p><p><img src="http://static.toastoven.net/prod_realtimemultiplayer/img_28.jpg" /></p><p>Registered prefab can be created dynamically by calling API provided by RealtimeNetwork as follows.</p>
+<pre><code>RealtimeNetwork.Instantiate (playerPrefab, position, rotation);
+</code></pre><h3>Multiplexing</h3><p>Multiplexing is a way to present unnecessary data delay by having a domain to delete dependence between other data. For example, if A data and B data are designated as Reliable Sequenced QoS but do not depend on each other, it is better for the loss of A data avoid the delay of B data. In order to prevent these unnecessary delays, it is best to assign each domain with no dependency to separate channels.</p><p>NetworkManager Channel Count designates the max number of channels for use. A range possible to assign is minimum of 5 to maximum of 50, and because 0 and the first channels are used for internal data, it is better not to use them.</p><h3>Network setting</h3><p>If Advanced Configuration is activated in the inspector, network engine’s default option can be changed. However, it is not recommended to set this function except for special occasions.</p>
+<ul>
+  <li><p><strong>MTU Size</strong> MTU size changes are used to prevent fragmentation of IP class by reducing the value in a serviced country or region where network infra condition is not good. Fragmentation of IP class may raise the network delay even more.</p></li>
+  <li><p><strong>Ping Interval</strong> If there is no need to recognize client’s connection status sensitively, expand Ping send interval, if need to recognize sensitively, it can be reduced to minimum of 500 milliseconds.</p></li>
+  <li><p><strong>Disconnection Timeout</strong> Indicates the max time value to wait until receiving the response message for reliability data after sending it. Minimum value is 1000 milliseconds and max is 5000 milliseconds.</p></li>
+  <li><p><strong>CRC Enable</strong> Activate data’s integrity check function. Considering the national network environment, it is not recommended to activate this.</p></li>
+  <li><p><strong>Max Unreliable Commands</strong> This function is useful if rendering loop has stopped due to Cellular-Wi-Fi hand over or user manipulation, and this function deletes previous data piled up in the queue and reflects latest data.</p></li>
+  <li><p><strong>Waning Queue Size</strong> If there is more data piled up in network engine internal queue than the designated threshold value, a Warning message is generated.</p></li>
+</ul><h3>API</h3><p>[Properties]</p>
+<table>
+  <thead>
+    <tr>
+      <th>Term </th>
+      <th>Type </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Url </td>
+      <td>string </td>
+      <td>Indicates Project access URL issued from the Console. </td>
+    </tr>
+    <tr>
+      <td>Appkey </td>
+      <td>string </td>
+      <td>Indicates Project Appkey issued from the Console. </td>
+    </tr>
+    <tr>
+      <td>GameState </td>
+      <td>GameStates </td>
+      <td>Indicates conditions related to games </td>
+    </tr>
+    <tr>
+      <td>NetStatus </td>
+      <td>NetStates </td>
+      <td>Shows network condition. </td>
+    </tr>
+    <tr>
+      <td>UserID </td>
+      <td>string </td>
+      <td>Indicates player’s unique ID that will be used when connecting. </td>
+    </tr>
+    <tr>
+      <td>LocalPlayer </td>
+      <td>Player </td>
+      <td>Local player’s information shared in the game room. </td>
+    </tr>
+    <tr>
+      <td>IsMaster </td>
+      <td>bool </td>
+      <td>If the current player has a master authority, return True, if not, return false. </td>
+    </tr>
+    <tr>
+      <td>dontDestroyOnLoad </td>
+      <td>bool </td>
+      <td>Set up not to destroy the game object including NetworkManager when a scene changes. </td>
+    </tr>
+    <tr>
+      <td>ServerAddress </td>
+      <td>string </td>
+      <td>Returns accessed game server’s address. </td>
+    </tr>
+    <tr>
+      <td>ServerPort </td>
+      <td>int </td>
+      <td>Return port number of the accessed game server. </td>
+    </tr>
+    <tr>
+      <td>MaxPlayer </td>
+      <td>int </td>
+      <td>Indicates game room’s max players. Max number of people is 8. </td>
+    </tr>
+    <tr>
+      <td>RoomType </td>
+      <td>string </td>
+      <td>Designate types of game rooms to access. </td>
+    </tr>
+    <tr>
+      <td>Reopen </td>
+      <td>bool </td>
+      <td>If a player leaves while playing a game, allow a new player to join the game. </td>
+    </tr>
+    <tr>
+      <td>OnlineScene </td>
+      <td>string </td>
+      <td>Indicates a scene that will be loaded when joining the game room. </td>
+    </tr>
+    <tr>
+      <td>OfflineScene </td>
+      <td>string </td>
+      <td>Indicates a scene that will be loaded when disconnected. </td>
+    </tr>
+    <tr>
+      <td>SpawnPrefabs </td>
+      <td>List </td>
+      <td>Indicates prefab list which will be created dynamically during the game. </td>
+    </tr>
+    <tr>
+      <td>MTU </td>
+      <td>int </td>
+      <td>Designate max byte number for one time send. Minimum range to designate is 450 and max is 1300. </td>
+    </tr>
+    <tr>
+      <td>PingInterval </td>
+      <td>int </td>
+      <td>If reliability data is not sent, designate Ping cycle sent to a server from a client. </td>
+    </tr>
+    <tr>
+      <td>DisconenctTimeout </td>
+      <td>int </td>
+      <td>Designate max time to wait for the response after sending reliability data. </td>
+    </tr>
+    <tr>
+      <td>ChannelCount </td>
+      <td>int </td>
+      <td>Designate ma number of channels for use. </td>
+    </tr>
+    <tr>
+      <td>ShowNetworkStats </td>
+      <td>bool </td>
+      <td>Decide whether to indicate the network status for the purpose of debugging. </td>
+    </tr>
+    <tr>
+      <td>Listener </td>
+      <td>GameObject </td>
+      <td>Appoint a listener to receive NetworkManager’s status changes. </td>
+    </tr>
+  </tbody>
+</table><p>[Methods]</p>
+<table>
+  <thead>
+    <tr>
+      <th>Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Description </td>
+      <td>Connect to Real Time Multiplayer service of TOAST Cloud. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void Connect() </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>N/A </td>
+    </tr>
+    <tr>
+      <td>Term </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>End the Real Time Multiplayer service of TOAST Cloud. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void Disconnect() </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>N/A </td>
+    </tr>
+  </tbody>
+</table><h2>RealtimeNetwork</h2><p>Once the network is activated, RealtimeNetwork provides high level of API that can produce real time multiplayer contents. Because RealtimeNetwork provides static functions and static properties only that it does not need to create separate objects. Major functions that RealtimeNetwork provides are as follows.</p>
+<ul>
+  <li><p>Create and destroy game objects</p></li>
+  <li><p>RPC</p></li>
+  <li><p>Synch server time</p></li>
+</ul><h3>Creation and destruction of game objects</h3><p>Formation and destruction of game objects on network is a required function in a multiplayer game. By using Instantiate function that RealtimeNetwork provides, a game object can be created in the game room. A few constraint conditions related to formation are as follows.</p>
+<ul>
+  <li><p>Game objects that can be created on the network dynamically are limited to the ones that are designated in Registered Spawnable Prefab of NetworkManager, and the registered game objects must include NetworkIdentity component.</p></li>
+  <li><p>Only a player with a master authority can created prefab set by a master ownership.</p></li>
+  <li><p>A player who created prefab set by a local player’s ownership gets the primary ownership.</p></li>
+</ul><p>If a game object needs to be destroyed, use a Destroy function that RealtimeNetwork provides. Only the player who has an ownership of a game object to be deleted can delete the game object using the Destroy. As the second factor of Destroy function can set the delete delay time, functions like Destroy of GameObject can be easily realized on the network.</p><h3>RPC</h3><p>RPC of RealtimeNetwork provides functions to send and receive messages between players.</p>
+<ul>
+  <li><p>Ephemeral message, Persistent message</p></li>
+  <li><p>Unicast</p></li>
+  <li><p>Multicast</p></li>
+</ul><p>Requirements for script and game object to be called to RPC are as follows.</p>
+<ul>
+  <li><p>Class to be used in RPC need to inherit NetworkBehaviour.</p></li>
+  <li><p>Game object which includes script to be used must include NetworkIdentity component.</p></li>
+</ul><p>RPC provides two types of message. First, Ephemeral which sends a message to players connected to the current game room and Persistent method which saves a message in the game room are provided. Similar to message send and receive of general network communications, Ephemeral type sends temporarily limited to players currently in the game room. However, Persistent type is saved in the game room classified as an assigned script and function. As an example of a use, if a player with a master ownership assigns a certain RPC as Persistent and sends to a game room, players currently connected will receive the message right away and players who connected after this will receive same RPC message. Assigned Persistent message can be deleted from the game room using the RemoveRPC function.</p><p>RealtimeNetwork’s RPC supports unicast and multicast. In other words, it not only sends a message to a particular player but also to all the players in the game room or to a particular player group.</p><h3>Time synch</h3><p>Despite the fact the time synch is a necessary element in games like a great war, it is not easy to share same time value due to a network environment and physical distance. Moreover, if each player is in a different time zone, a local time cannot be used so the server time should be used as a reference time. FetchServerTimestamp function of RealtimeNetwork and ServerTime property allows an easy synch of time between players. Especially in a mobile environment, it supports time synch considering the network performance gap occurred between Cellular and Wi-Fi.</p><p>FetchServerTimestamp is a desynch function which, once synch is completed, ServerTime returns values bigger than 0. In case of an initial call, client performs the time synch function by calling FetchServerTimestamp internally, but considering the mobile environment, one more call is recommended before starting the game.</p><h3>API</h3><p>[Properties]</p><p>RealtimeNetwork provides static functions and static properties. Functions and properties of RealtimeNetwork are as follows.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Term </th>
+      <th>Type </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IsNetworkActive </td>
+      <td>bool </td>
+      <td>Shows network connection status. </td>
+    </tr>
+    <tr>
+      <td>IsJoinedRoom </td>
+      <td>bool </td>
+      <td>Shows the status connected to the game room. </td>
+    </tr>
+    <tr>
+      <td>IsMaster </td>
+      <td>bool </td>
+      <td>Indicates if the current player has the master authority. </td>
+    </tr>
+    <tr>
+      <td>LocalPlayer </td>
+      <td>Player </td>
+      <td>Returns current player’s information. </td>
+    </tr>
+    <tr>
+      <td>CurrentUserID </td>
+      <td>string </td>
+      <td>Returns player’s unique ID used for connection. </td>
+    </tr>
+    <tr>
+      <td>Players </td>
+      <td>List </td>
+      <td>Returns list of players connected to the game room up to now. </td>
+    </tr>
+    <tr>
+      <td>RoomProperties </td>
+      <td>DataObject </td>
+      <td>Returns property of a room designated when creating the game room. </td>
+    </tr>
+    <tr>
+      <td>ServerTime </td>
+      <td>uint </td>
+      <td>Returns server time. </td>
+    </tr>
+    <tr>
+      <td>IsServerTimeAvailable </td>
+      <td>uint </td>
+      <td>Check to see if server time is available. </td>
+    </tr>
+    <tr>
+      <td>RoundTripTime </td>
+      <td>uint </td>
+      <td>Returns average packet round trip time. </td>
+    </tr>
+  </tbody>
+</table><p>[Methods]</p>
+<table>
+  <thead>
+    <tr>
+      <th>Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Description </td>
+      <td>Create game objects on the network. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>GameObject Instantiate( GameObject prefab, Vector3 position, Quaternion rotation) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Prefab of game object to be created </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Position value of game object to be created </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Rotation value of game object to be created </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>Returns created Game Object. </td>
+    </tr>
+    <tr>
+      <td>Term </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Delete game objects on the network. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool Destroy(GameObject gameObject, float time = 0) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Game Object to be deleted on the network </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Delete delay time in seconds </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>Returns created game object from Game Object. </td>
+    </tr>
+    <tr>
+      <td>Term </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Send RPC messages on the network. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool RPC(NetworkIdentity identity, string methodName, RpcType type, ReceiverGroup receiverGroup, DataObject parameters, SendParameters sendParameters) </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool RPC(NetworkIdentity identity, string methodName, RpcType type, byte player, DataObject parameters, SendParameters sendParameters) </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool RPC(NetworkIdentity identity, string methodName, RpcType type, byte[] players, DataObject parameters, SendParameters sendParameters) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Designate NetworkIdentity of the game object to send messages. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>methodName Name of a function to receive a message </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Designate the message type. Ephemeral or Persistent of RpcType </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>receiverGroup Designate a group to receive messages. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Designate player’s ID to receive messages. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Designate player’s ID to receive a message in configuration. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>parameters Sent in function’s factor when receiving a message. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>sendParameters Designate message send options. </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>bool If send is successful, returns true, if not, returns false. </td>
+    </tr>
+    <tr>
+      <td>Term </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Delete RPC message appointed as Persistent. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool RemoveRPC(NetworkIdentity identity, string methodName, SendParameters sendParameters) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>identity Designate NetworkIdentity of RPC to be deleted. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>methodName Designate the function name of RPC to be deleted. </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>bool If send is successful, returns true, if not, returns false. </td>
+    </tr>
+    <tr>
+      <td>Term </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Requests ownership of other player’s game object. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool RequestOwnership(GameObject gameobject) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Game object to request gameobject ownership </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>bool If send is successful, returns true, if not, returns false. </td>
+    </tr>
+    <tr>
+      <td>Term </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Request a message to synch server time. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool FetchServerTimestamp() </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>bool If send is successful, returns true, if not, returns false. </td>
+    </tr>
+  </tbody>
+</table><h2>NetworkIdentity</h2><p>NetworkIdentity is the unique identifier of an applicable game object on the network. To use NetworkTransfrom component and NetworkBehaviour in the game object, it must include NetworkIdentity component, and if NetworkBehaviour is inherited from the user defined script or add NetworkTransform component, NetworkIdentity will be added automatically. Major functions of NetworkIdentity are as follows.</p>
+<ul>
+  <li><p>Game object unique identifier</p></li>
+  <li><p>Appoint ownership</p></li>
+</ul><h3>Inspector</h3><p>NetworkIdentity inspector as follows.</p><p><img src="http://static.toastoven.net/prod_realtimemultiplayer/img_29.jpg" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>Inspector </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Local Player Authority </td>
+      <td>Indicates the ownership of the applicable game object. If designated, the player who created the object will get the ownership. If it is not designated, it will be designated upon the master ownership. </td>
+    </tr>
+  </tbody>
+</table><h2>NetworkTransform</h2><p>NetworkTransform provides various functions to synch position of game object and rotation value easily. NetworkTransform component, in a special form of user defined script inherited NetworkBehaviour, operates the same way user defined script inherited NetworkBehaviour operates.</p><p>To use NetworkTransform component, NetworkIdentity component must be included in the game object. Following is major functions that NetworkTransform provides.</p>
+<ul>
+  <li><p>Location synch</p></li>
+  <li><p>Rotation synch</p></li>
+  <li><p>Send speed</p></li>
+  <li><p>Sending and receiving channel settings</p></li>
+</ul><h3>Inspector</h3><p>NetworkManager inspector as follows.</p><p><img src="http://static.toastoven.net/prod_realtimemultiplayer/img_30.jpg" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>Inspector </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Network Send Rate </td>
+      <td>Designate transmission rate in seconds. </td>
+    </tr>
+    <tr>
+      <td>Network Channel </td>
+      <td>Designate send channel. </td>
+    </tr>
+    <tr>
+      <td>Transform Sync Mode </td>
+      <td>Provide a way to synch. </td>
+    </tr>
+    <tr>
+      <td>Movement Threshold </td>
+      <td>Send data if the designated value exceeds the rotation angle or the size value of the position vector. </td>
+    </tr>
+    <tr>
+      <td>Snap Threshold </td>
+      <td>If the size value of position vector exceeds the designated value, match the value directly without performing the position interpolation. </td>
+    </tr>
+    <tr>
+      <td>Interpolate Movement Factor </td>
+      <td>Position interpolation number which is based on data transmission rate. If bigger than 1, the number of interpolation reduces, if the value is smaller than 1, the number of interpolation increases. Does not perform interpolation if 0. </td>
+    </tr>
+    <tr>
+      <td>Rotation Axis </td>
+      <td>Designate rotation axis. </td>
+    </tr>
+    <tr>
+      <td>Interpolate Rotation Factor </td>
+      <td>Rotation interpolation number which is based on data transmission rate. If bigger than 1, the number of interpolation reduces, if the value is smaller than 1, the number of interpolation increases. Does not perform interpolation if 0. </td>
+    </tr>
+    <tr>
+      <td>Sync Angular Velocity </td>
+      <td>Designate synch of each speed value of Rigidbody. </td>
+    </tr>
+  </tbody>
+</table><h3>Send speed</h3><p>Setting transmission rate for game object synch is very important for natural display of performance and game. Because NetworkTransform supports Interpolation, transmission rate can be designated following the characteristics of a game, and designate transmission rate appropriate for the role of each game object.</p><p>It may seem it is best to send data for every frame to reduce the delay between the send device and receive device, but actually if data is sent for every frame, it has a negative effect on the game performance. Therefore, since the delay of position information sent to the network is unavoidable, interpolation must be used necessarily, and it is recommended to reduce a delay by restricting the character’s moving speed and to use interpolation. Except for special occasions, 10 times per second on PC and 6 times per second on a mobile device are recommended.</p><h3>Synch mode</h3><p>Synch technique varies depending on the game property and the purpose of use of game object. NetworkTransform component supports easy game object synch by providing synch technique as follows.</p>
+<ul>
+  <li><p><strong>SyncTransform</strong> : Perform sync without using the interpolation. Immediately reflect recent data received through network in the game object.</p></li>
+  <li><p><strong>SyncRigidbody2D</strong> : Sync by changing the velocity value of Rigidbody2D using the interpolation. Rigidbody2D component must be included.</p></li>
+  <li><p><strong>SyncRigidbody3D</strong> : Sync the velocity value of Rigidbody using the interpolation. Rigidbody component must be included.</p></li>
+  <li><p><strong>SyncCharacterControl</strong> : Sync CharacterController component coordinates using the interpolation. CharacterController component must be included.</p></li>
+</ul><h3>Channel settings</h3><p>To use data multiplexing, designate dedicated channels in NetworkTransform. If there is not a lot of data, it may be a way to send all data via channel 3 which is assigned as a default rather than assigning a particular channel, but if there is a lot of data, using multiple channels to avoid interference between data is more efficient. By using NetworkManager inspector’s Channel Count item or ChannelCount API, designate the max channel number, and assign a unique channel to each NetworkTransform within the range of designated channels. For example, if Channel Count is designated as 10, channels from 0 to 10 can be used. But since channel 0 and 1 are used internally and channel 3 is a default channel, it is recommended to avoid them and it is best to use channels from 4 to 10 for dedicated channels. Since unnecessary channel formation is not good for the performance, it is better to designate a reasonable number of channels.</p><h3>API</h3><p>Provides property corresponding to the functions provided by inspector.</p><p>[Properties]</p>
+<table>
+  <thead>
+    <tr>
+      <th>API Methods </th>
+      <th>Type </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>syncRotationAxis </td>
+      <td>AxisSyncMode </td>
+      <td>Designate rotation axis. </td>
+    </tr>
+    <tr>
+      <td>NetworkChannel </td>
+      <td>int </td>
+      <td>Designate send channel. </td>
+    </tr>
+    <tr>
+      <td>transformSyncMode </td>
+      <td>TransformSyncMode </td>
+      <td>Provide a way to sync. </td>
+    </tr>
+    <tr>
+      <td>movementTheshold </td>
+      <td>float </td>
+      <td>Send data if the designated value exceeds the rotation angle or size value of the position vector. </td>
+    </tr>
+    <tr>
+      <td>snapThreshold </td>
+      <td>float </td>
+      <td>If the size value of position vector exceeds the designated value, match the value directly without performing the position interpolation. </td>
+    </tr>
+    <tr>
+      <td>interpolateMovement </td>
+      <td>float </td>
+      <td>Position interpolation number which is based on data transmission rate. If bigger than 1, the number of interpolation reduces, if the value is smaller than 1, the number of interpolation increases. Does not perform interpolation if 0. </td>
+    </tr>
+    <tr>
+      <td>interpolateRotation </td>
+      <td>float </td>
+      <td>Position interpolation number which is based on data transmission rate. If bigger than 1, the number of the number of interpolation reduces, if the value is smaller than 1, the number of interpolation increases. Does not perform interpolation if 0. </td>
+    </tr>
+    <tr>
+      <td>syncSpin </td>
+      <td>bool </td>
+      <td>Designate sync of each speed value of Rigidbody. </td>
+    </tr>
+  </tbody>
+</table><h2>NetworkBehaviour</h2><p>NetworkBehaviour is a class a script must inherit in order to use the functions Real Time Multiplayer provides in the user defined script. Because NetworkBehaviour inherited UnityEngine.MonoBehaviour, MonoBehaviour function can be used. A game object which includes a user defined class that has inherited NetworkBehaviour with NetworkTransform as a component must include one NetworkIdentity component.</p><h3>Start and end of the game</h3><p>Upon entering the game room, overriding OnStart function will be called. In reverse, upon leaving the game room or network disconnection, OnLeave function will be called.</p><h3>Confirm player’s access</h3><p>When a player joins or leave the game room currently involved in, receive an applicable event message by overriding OnJoinedRoom and OnLeavedRoom. If a player designated as a master left the game room, receive a number of a player who is newly designated as a master through OnLeavedRoom message.</p><h3>User defined sync</h3><p>Synch data that requires continuous reflection through overriding in user defined script with virtual functions of NetworkBehaviour, OnSerialize and OnDeserialize. For example, if the size of a game object that is not supported by NetworkTransform continuously requires synch, it can be developed by adding the applicable logic in OnSerialize and OnDeserialize. It is a realization of NetworkTransform position and rotation synch using the applicable function. However, it is recommended to use RPC for data that does not require continuous synch.</p><p>After the initial call of OnSerialize function, designate DirtyBit as true if synch is required as it is called only when DirtyBit property value is true. Once data is sent, DirtyBit will automatically change to false. If you want to reflect latest data with OnSerialize function when a new player joins the game room, designate DirtyBit as true. For details on applicable functions, refer to NetworkTransform source code provided.</p><p>NetworkBehaviour can designate send interval, channels and QoS through function overriding. Send interval is set to designate in seconds. For example, if the user wants to send data every 200 milliseconds, set it as 0.2. It is different from the inspector as the inspector designates number of times in seconds. Channels can be changed by overriding GetNetworkChannel functions and must be designated within the designated maximum channels in NetworkManager Channel Count. QoS basic value is designated as UnreliableSequenced, and for data that requires continuous reflection, UnreliableSequenced QoS is recommended as the basic value is.</p><h3>API</h3><p>NetworkBehaviour API is composed of a virtual function to receive properties related to the current game object ownership and certain events, a virtual function to send and receive user data and a property.</p><p>[Properties]</p>
+<table>
+  <thead>
+    <tr>
+      <th>API Properties </th>
+      <th>Type </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IsLocalPlayerGameObject </td>
+      <td>bool </td>
+      <td>Indicates whether a local player owns the game object. </td>
+    </tr>
+    <tr>
+      <td>hasAuthority </td>
+      <td>bool </td>
+      <td>Check to see if ownership of applicable game object is held. </td>
+    </tr>
+    <tr>
+      <td>DirtyBit </td>
+      <td>bool </td>
+      <td>If designate True, OnSerialize function will be called to send data. After sending, it will automatically change to False. </td>
+    </tr>
+    <tr>
+      <td>networkIdentity </td>
+      <td>NetworkIdentity </td>
+      <td>Return NetworkIdentity component included in the current game object. </td>
+    </tr>
+  </tbody>
+</table><p>[Methods]</p>
+<table>
+  <thead>
+    <tr>
+      <th>API Methods </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Description </td>
+      <td>Called if enters the game room with a virtual function. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void OnStart() </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Called if leaves the game room with a virtual function. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void OnLeave() </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>As a virtual function, function overrode to send data. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool OnSerialize(DataObject data, bool initialState) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Enter data to send. </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>initialState If initial call, true, if not, false. </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>If bool true is returned, send data, if not, do not send data. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>As a virtual function, function overrode to receive. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void OnDeserialize(DataObject data, bool initialState) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Received data </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>initialState If initial call, true, if not, false. </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>If bool true is returned, send data, if not, do not send data. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>OnSerialize data will be sent to the channel designated with a virtual function. Channels can be changed through overriding. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>byte GetNetworkChannel() </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>byte designated channel returns. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Designate OnSerialize data send cycle with a virtual function. Send interval can be changed through overriding. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>float GetNetworkSendInterval() </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>float designated time interval in seconds returns. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Designate OnSerialize send data network QoS with a virtual function. Send interval can be changed through overriding. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>QosType GetQoS() </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>QosType designated QoS returns. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Called when a new player joins the game room with a virtual function. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void OnJoinedRoom(byte playerNum) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>playerNum Newly joined player number </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Called when the player left the game room with a virtual function. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>public virtual void OnLeavedRoom(byte playerNum, byte newMasterNum) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>playerNum Player number who left the game room </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>newMasterNum Player number of the current game room master </td>
+    </tr>
+  </tbody>
+</table><h2>DataObject</h2><p>DataObject is used when a user creates objects to send and receive data. When sending, DataObject will be sent to the destination through serialization and deserialization.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Type </th>
+      <th>Bytes used </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bool </td>
+      <td>1 </td>
+    </tr>
+    <tr>
+      <td>byte </td>
+      <td>1 </td>
+    </tr>
+    <tr>
+      <td>Int16 </td>
+      <td>2 </td>
+    </tr>
+    <tr>
+      <td>Int32 </td>
+      <td>4 </td>
+    </tr>
+    <tr>
+      <td>Int64 </td>
+      <td>8 </td>
+    </tr>
+    <tr>
+      <td>float </td>
+      <td>4 </td>
+    </tr>
+    <tr>
+      <td>double </td>
+      <td>8 </td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>bool array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>byte array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>Int16 array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>Int32 array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>Int64 array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>float array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>double array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>string array </td>
+      <td>variable </td>
+    </tr>
+    <tr>
+      <td>DataObject </td>
+      <td>variable </td>
+    </tr>
+  </tbody>
+</table><h3>API</h3><p>DataObject will save data with key and value.</p><p>[Properties]</p>
+<table>
+  <thead>
+    <tr>
+      <th>API Properties </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Count </td>
+      <td>Returns the number of saved data. </td>
+    </tr>
+  </tbody>
+</table><p>[Methods]</p>
+<table>
+  <thead>
+    <tr>
+      <th>API Methods </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Description </td>
+      <td>Check if the corresponding key is included. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool ContainsKey(byte key) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>key value </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>If a key corresponding to bool already exists, return true, if not, return false. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Returns the value corresponding to key. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>T GetValue(byte key) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>key value </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>Returns the value of the key corresponding to T. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Check the existence of the key and return the corresponding value. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>bool GetValue(byte key, out T value) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>key value </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Return value. </td>
+    </tr>
+    <tr>
+      <td>Return Value </td>
+      <td>If there is a value corresponding to bool key, return true, if not, return false. </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Enter Boolean type’s value in the designated key. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void SetBoolean(byte key, bool value) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>key value </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Boolean type’s value </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Enter Byte type’s value in the designated key. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void SetByte(byte key, byte value) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>key value </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Byte type’s value </td>
+    </tr>
+    <tr>
+      <td>API Methods </td>
+      <td>Description </td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td>Enter Int16 type’s value in the designated key. </td>
+    </tr>
+    <tr>
+      <td>Signature </td>
+      <td>void SetInt16(byte key, Int16 value) </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>key value </td>
+    </tr>
+    <tr>
+      <td>Parameters </td>
+      <td>Int16 type’s value </td>
+    </tr>
+  </tbody>
+</table><p>| Return Value | - |<br/>| API Methods | Description |<br/>| Description | Enter Int32 type’s value in the designated key. |<br/>| Signature | void SetInt32(byte key, Int16 value) |<br/>| Parameters | key value |<br/>| Parameters | Int32 type’s value |<br/>| API Methods | Description |<br/>| Description | Enter Int64 type’s value in the designated key. |<br/>| Signature | void SetInt64(byte key, Int64 value) |<br/>| Parameters | key value |<br/>| Parameters | Int64 type’s value |<br/>| API Methods | Description |<br/>| Description | Enter String types’ value in the designated key. |<br/>| Signature | void SetString(byte key, String value) |<br/>| Parameters | key value |<br/>| Parameters | String type’s value |<br/>| API Methods | Description |<br/>| Description | Enter DataObject type’s value in the designated key. |<br/>| Signature | void SetDataObject(byte key, DataObject value) |<br/>| Parameters | key value |<br/>| Parameters | DataObject type’s value |<br/>| API Methods | Description |<br/>| Description | Enter Boolean array type’s value in the designated key. |<br/>| Signature | void SetBooleans(byte key, bool[] value) |<br/>| Parameters | key value |<br/>| Parameters | Boolean sequence type’s value |<br/>| API Methods | Description |<br/>| Description | Enter Byte array type’s value in the designated key. |<br/>| Signature | void SetBytes(byte key, byte[] value) |<br/>| Parameters | key value |<br/>| Paramters | Byte sequence type’s value |<br/>| API Methods | Description |<br/>| Description | Enter Int16 array type’s value in the designated key. |<br/>| Signature | void SetInt16s(byte key, Int16[] value) |<br/>| Parameters | key value |<br/>| Parameters | Int16 type’s value |<br/>| API Methods | Description |<br/>| Description | Enter Int32 array type’s value in the designated key. |<br/>| Signature | void SetInt32s(byte key, Int16[] value) |<br/>| Parameters | key value |<br/>| Parameters | Int32 sequence type’s value |<br/>| API Methods | Description |<br/>| Description | Enter Int64 array type’s value in the designated key. |<br/>| Signature | void SetInt64s(byte key, Int64[] value) |<br/>| Parameters | key value |<br/>| Parameters | Int64 sequence type’s value |<br/>| API Methods | Description |<br/>| Description | Enter String array type’s value in the designated key. |<br/>| Signature | void SetStrings(byte key, String[] value) |<br/>| Parameters | key value |<br/>| Parameters | String sequence type’s value. |</p><h2>Others</h2><p>If used as factors or return values, classes are as follows.</p><h3>GameState</h3><p>GameState shows the game status.</p>
+<table>
+  <thead>
+    <tr>
+      <th>GameState Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CONNECT_ESTABLISHED </td>
+      <td>Network connection established </td>
+    </tr>
+    <tr>
+      <td>AUTH </td>
+      <td>Verification successful </td>
+    </tr>
+    <tr>
+      <td>JOINGAME </td>
+      <td>Join the game </td>
+    </tr>
+    <tr>
+      <td>LEAVEGAME </td>
+      <td>Leave the game </td>
+    </tr>
+  </tbody>
+</table><h3>NetStates</h3><p>Shows the network status.</p>
+<table>
+  <thead>
+    <tr>
+      <th>NetStates Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DISCONNECTED </td>
+      <td>Network connection ended </td>
+    </tr>
+    <tr>
+      <td>DISCONNECTING </td>
+      <td>Ending network connection </td>
+    </tr>
+    <tr>
+      <td>CONNECTING </td>
+      <td>Connecting to the network </td>
+    </tr>
+    <tr>
+      <td>CONNECTED </td>
+      <td>Network connected </td>
+    </tr>
+  </tbody>
+</table><h3>TransformSyncMode</h3><p>Designate position synch on the network.</p>
+<table>
+  <thead>
+    <tr>
+      <th>TransformSyncMode Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SyncNone </td>
+      <td>Do not perform synch. </td>
+    </tr>
+    <tr>
+      <td>SyncTransform </td>
+      <td>Perform synch based on game object’s Transform. </td>
+    </tr>
+    <tr>
+      <td>SyncRigidbody2D </td>
+      <td>Sync Rigidbody2D component. </td>
+    </tr>
+    <tr>
+      <td>SyncRigidbody3D </td>
+      <td>Sync Rigidbody component. </td>
+    </tr>
+    <tr>
+      <td>SyncCharacterController </td>
+      <td>Sync CharacterController component. </td>
+    </tr>
+  </tbody>
+</table><h3>AxisSyncMode</h3><p>Designate rotation synch on the network.</p>
+<table>
+  <thead>
+    <tr>
+      <th>AxisSyncMode Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>None </td>
+      <td>Do not perform sync. </td>
+    </tr>
+    <tr>
+      <td>AxisX </td>
+      <td>Perform X axis rotation sync. </td>
+    </tr>
+    <tr>
+      <td>AxisY </td>
+      <td>Perform Y axis rotation sync. </td>
+    </tr>
+    <tr>
+      <td>AxisZ </td>
+      <td>Perform Z axis rotation sync. </td>
+    </tr>
+    <tr>
+      <td>AxisXY </td>
+      <td>Perform X axis and Y axis rotations sync. </td>
+    </tr>
+    <tr>
+      <td>AxisXZ </td>
+      <td>Perform X axis and Z axis rotations sync. </td>
+    </tr>
+    <tr>
+      <td>AxisYZ </td>
+      <td>Perform Y axis and Z axis rotations sync. </td>
+    </tr>
+    <tr>
+      <td>AxisXYZ </td>
+      <td>Perform all axis rotations sync. </td>
+    </tr>
+  </tbody>
+</table><h3>Player</h3><p>Player class is used to refer to player’s information.</p><p>[Properties]</p>
+<table>
+  <thead>
+    <tr>
+      <th>Player Term </th>
+      <th>Type </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IsMine </td>
+      <td>bool </td>
+    </tr>
+    <tr>
+      <td>IsMaster </td>
+      <td>bool </td>
+    </tr>
+    <tr>
+      <td>PlayerNr </td>
+      <td>byte </td>
+    </tr>
+    <tr>
+      <td>Properties </td>
+      <td>DataObject </td>
+    </tr>
+  </tbody>
+</table><h3>SendParameters</h3><p>SendParameters is used as send option when sending RPC data.</p><p>[Properties]</p>
+<table>
+  <thead>
+    <tr>
+      <th>SendParameters Term </th>
+      <th>Type </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Channel </td>
+      <td>byte </td>
+      <td>Designate send channel. </td>
+    </tr>
+    <tr>
+      <td>Encrypted </td>
+      <td>bool </td>
+      <td>Encrypt data if designate True. </td>
+    </tr>
+    <tr>
+      <td>QoS </td>
+      <td>QosType </td>
+      <td>Designate send QoS. </td>
+    </tr>
+  </tbody>
+</table><h3>ReceiverGroup</h3><p>When sending RPC, ReceiverGroup designates receiver with a factor. Sending can still be done by designating Player ID without using ReceiverGroup but if receiver list is within the range of ReceiverGroup’s support, it is recommended to use ReceiverGroup considering the size of send data.</p>
+<table>
+  <thead>
+    <tr>
+      <th>ReceiverGroup Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All </td>
+      <td>Send a message to all players in the current game room. </td>
+    </tr>
+    <tr>
+      <td>Others </td>
+      <td>Send a message to all players in the game room except me. </td>
+    </tr>
+    <tr>
+      <td>MasterClient </td>
+      <td>Send a message to a player with master ownership. </td>
+    </tr>
+  </tbody>
+</table><h3>QosType</h3><p>When sending data, designate network QoS.</p>
+<table>
+  <thead>
+    <tr>
+      <th>QosType Term </th>
+      <th>Description </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UnreliableSequenced </td>
+      <td>Unreliability –Order ensured send. Appropriate when data requires constant updates along with the game object coordinate. </td>
+    </tr>
+    <tr>
+      <td>ReliableSequenced </td>
+      <td>Reliability-order ensured send. Appropriate to send intermittent or temporary data. </td>
+    </tr>
+    <tr>
+      <td>AllCostDelivery </td>
+      <td>Reliability-ensures order-fast send ReliableSequenced Perform fast resend similar to send. Appropriate for small but important data. </td>
+    </tr>
+  </tbody>
+</table><h2>Notice</h2><p>Following restrictions apply when using Real-Time Multiplayer Service, and if efficiency and functions over restrictions are needed, separate service zone is supported for build.</p>
+<ul>
+  <li><p>The number of concurrent connected people per game room is 8.</p></li>
+  <li><p>Max number of message is limited to 500 (send + receive) per second for each room.</p></li>
+  <li><p>Do not use API with Public and Internal accesses that are not recorded in the document.</p></li>
+</ul><h2>Video tutorial</h2><p>The following is videos of making a simple game to a multiplayer game.<br/>You can download assets used in tutorials via below links.</p>
+<pre><code>[Space Shooter Tutorial Project Download](http://static.toastoven.net/toastcloud/sdk_download/RTM/SpaceShooter-Tutorial-Project.zip)
+</code></pre><p>[Space Shooter Tutorial 1 : TOAST Cloud settings/ connect to the game server]</p><p>[Space Shooter Tutorial 2 : Synch creation and position of player objects]</p><p>[Space Shooter Tutorial 3 : Synch missiles and obstacle objects]</p>
+   	</div>
+
+ 	
+	
+	<div class="col-md-2">
+		<div id="side_nav_right" class="side-nav">
+			<div id="sub-link-nav" role="complementary">
+    				<b id="sub-link-category-name" class="main"></b>
+    				<ul class="nav">
+
+    				</ul>
+			</div>
+		</div>
+	</div>       
+        
+</div>
+
+<footer id="footer" class="col-md-12">
+</footer>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../../js/readthedocs-data.js"></script>
+    <script src="../../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../../js/modernizr-custom.js"></script>
+    <script type='text/javascript'>
+         if (!Modernizr.matchmedia){
+             $.getScript("js/media.match.min.js");
+         }
+    </script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/enquire.min.js"></script>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/base.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../../js/common-1.0.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+    
+
+    <!-- <script src="../../js/prettify.js"></script>  -->
+
+        <script language='javascript'>
+        var _ag   = 0 ;         // 로그인사용자 나이
+        var _id   = '';    		// 로그인사용자 아이디
+        var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+        var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+        var _skey = '' ;        // 내부검색어
+
+        var _jn = '' ;          //  가입탈퇴 ( 'join','withdraw' ) 
+        var _jid = '' ;			// 가입시입력한 ID
+
+        var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+        var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+        var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+        </script>
+	
+	 <script language='javascript'>
+		function appendListToSubLinkNav() {
+
+        var $parent_menu = $('ul.dropdown-menu > li.active').parent().parent();
+		
+        if(!$parent_menu.length) {
+            $('#side_nav_right').remove();
+        }
+        else {
+            var depth_stack = [];
+            while($parent_menu.is('li')) {
+                var temp = $parent_menu;
+                depth_stack.push(temp);
+                $parent_menu = $parent_menu.parent().parent();
+            }
+            var title_menu = (depth_stack.length > 1)? depth_stack[depth_stack.length-2] : depth_stack[0];
+		    $('#sub-link-category-name').text(title_menu.children("a")[0].innerText);
+			var subMenuList = $('li .active').parent().get(0).childNodes;
+			for (var i = 0; i < subMenuList.length; i++) {
+				$("#sub-link-list").append(subMenuList[i].cloneNode(true));
+				$("#sub-link-nav > ul").append(subMenuList[i].cloneNode(true));
+			}
+		}
+	}
+	</script>
+	
+     <!-- <script language='javascript'>
+            var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+            var _AceCounter=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+        </script>
+	<noscript><img src='http://gtp18.acecounter.com:8080/?uid=AH2A40934468137&je=n&' border='0' width='0' alt=''></noscript> -->
+
+  </body>
+</html>
