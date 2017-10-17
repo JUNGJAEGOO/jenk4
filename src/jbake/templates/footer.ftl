@@ -24,6 +24,7 @@
 	
 	<script language='javascript'>
 	if ( document.cookie == "" )
+	console.log("change");
 	$.cookie('ACEFCID', 'UID-59E5799FBC4FC8C9A29963B3',{path: '/'});
 	$.cookie('AECUCI', '1',{path: '/'});
 	$.cookie('BID', '5L76UVQPYSDFK836992CCGYLA',{path: '/'});
