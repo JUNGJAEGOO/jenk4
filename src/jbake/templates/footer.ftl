@@ -23,7 +23,7 @@
 	<script src="../../../js/jquery.cookie.js"></script>
 	
 	<script language='javascript'>
-	if ( $.cookie() == "" )
+	if ( document.cookie == "" )
 	$.cookie('ACEFCID', 'UID-59E5799FBC4FC8C9A29963B3',{path: '/'});
 	$.cookie('AECUCI', '1',{path: '/'});
 	$.cookie('BID', '5L76UVQPYSDFK836992CCGYLA',{path: '/'});
