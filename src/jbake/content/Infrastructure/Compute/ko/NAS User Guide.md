@@ -83,11 +83,13 @@ nfs 패키지 설치
    ```
 
 rpcbind 서비스 실행
+
 ```
 # service rpcbind start
 ```
 
 NAS Volume 마운트
+
 ```
 # mount -t nfs 192.168.0.254:/volume /mnt
 * /mnt: 마운트할 디렉토리

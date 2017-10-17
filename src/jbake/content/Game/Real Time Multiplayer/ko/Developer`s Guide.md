@@ -22,7 +22,7 @@ NetworkManager는 멀티플레이어 게임을 위한 네트워크 기능을 제
 
 NetworkManager 인스펙터는 다음과 같다.
 
-![](http://static.toastoven.net/prod_realtimemultiplayer/img_27.jpg)
+![image](http://static.toastoven.net/prod_realtimemultiplayer/img_27.jpg)
 
 |용어|	설명|
 |---|---|

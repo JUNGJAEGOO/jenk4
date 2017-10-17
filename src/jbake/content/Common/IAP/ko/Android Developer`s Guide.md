@@ -553,7 +553,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [queryPurchases]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  소비(Consume) 되지 않은 결제내역을 조회합니다. |
 | Syntax | public void queryPurchases(Activity activity, PurchaseListCallback callback) |
 | Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
@@ -601,7 +601,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [queryItems]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  구매 가능한 모든 아이템 내역을 조회합니다. |
 | Syntax | public void queryItems(Activity activity, ItemListCallback callback) |
 | Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
@@ -650,7 +650,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [onCallback]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  API 요청 결과를 전달합니다. |
 | Syntax | public abstract void onCallback(JSONObject result, InAppPurchaseException exception) |
 | Parameters |  result [in] 응답 결과에 대한 코드 및 추가 정보를 전달 |
@@ -670,7 +670,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [onCallback]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  API 요청 결과를 전달합니다. |
 | Syntax | public abstract void onCallback(JSONArray result, InAppPurchaseException exception) |
 | Parameters |  result [in] 응답 결과에 대한 코드 및 추가 정보를 전달 |

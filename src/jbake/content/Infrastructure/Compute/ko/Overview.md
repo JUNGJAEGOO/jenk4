@@ -6,7 +6,7 @@ summary=TCcomputeOverview
 big=TCInfra
 ~~~~~~
 
-<h2 id="infrastructure-compute-network-overview">Infrastructure &gt ; Compute &amp; Network &gt; Overview</h2>
+<h2 id="infrastructure-compute-network-overview">Infrastructure &gt; Compute &amp; Network &gt; Overview</h2>
 
 Infrastructure > Compute & Network는 서비스 인프라 구축에 필요한 기본 리소스인 Instance와 Network관리 기능을 제공합니다. 유연한 인프라 구성이 가능하며 사용한 만큼만 지불하므로 비용을 절감할 수 있습니다.
 

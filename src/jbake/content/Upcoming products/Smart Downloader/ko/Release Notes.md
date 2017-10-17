@@ -15,7 +15,7 @@ summary=SmartDownloaderRelease
 * [Console] 각 페이지에 접근할 수 있는 탭 추가
 * [Console] 다운로드 상세 검색시 검색 대상 데이터가 너무 많은 경우, 검색 항목을 다시 설정하도록 기능 수정
 * [Console] 다운로드 상세 검색시 다운로드 실패만 선택한 경우 '다운로드 시간/속도' 항목은 선택 안되도록 수정
-* [SDK][[Unity-1.1.0](/Download/#upcoming-products-smart-downloader)] 릴리스 
+* [SDK][[Unity-1.1.0](../../../Download/one/ko/#4)] 릴리스 
     * class Name 변경(DLCSkin -> SmartDLUnitySkin) 
     * Only static API 제공 
 

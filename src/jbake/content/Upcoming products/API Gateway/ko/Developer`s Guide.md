@@ -97,7 +97,7 @@ API 통계는 사용자가 등록한 Domain들에서 발생한 API call의 사�
 
 2.삭제할 Domain을 다시 한번 확인하고 Domain 이름을 입력해서 삭제를 합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_25.png)
+![image](http://static.toastoven.net/prod_apigateway/img_25.png)
 <center>[그림14] Domain 삭제 확인</center>
 
 > 주의 : 삭제한 Domain은 복구할 수없습니다. 삭제 시도시 사용자로부터 Domain 이름을 입력 받아서 확인을 합니다.

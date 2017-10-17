@@ -12,8 +12,8 @@ TOAST Cloud 웹 페이지는 [표 1]과 같이 **Dev Center, Console 2가지**�
 
 |이름|접속주소|설명|
 |---|---|---|
-|Dev Center|http://cloud.toast.com|상품, 가격정책 소개, 개발자 지원<br/>(기술문서, FAQ, 1:1 문의)|
-|Console|http://console.cloud.toast.com|프로젝트 생성/삭제, 사용정보, 상품 사용, 빌링 정보, 계정 관리 기능 제공|
+|Dev Center| http://cloud.toast.com | 상품, 가격정책 소개, 개발자 지원<br/>(기술문서, FAQ, 1:1 문의)|
+|Console| http://console.cloud.toast.com | 프로젝트 생성/삭제, 사용정보, 상품 사용, 빌링 정보, 계정 관리 기능 제공|
 
 [표1 TOAST Cloud 제공 웹 페이지]
 

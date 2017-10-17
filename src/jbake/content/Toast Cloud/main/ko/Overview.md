@@ -9,10 +9,9 @@ parent=TOASTCloudOverview
 
 
 
-
 dev버전 입니다.
 
-<h2 id="TOASTCloudOverview">TOAST Cloud Overview</h2>
+## TOAST Cloud Overview
 
 TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스입니다.
 
@@ -22,7 +21,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 * 합리적 비용으로 사업화에 기여
 
 
-<h2 id="ServiceMenus">서비스 구성</h2>
+## 서비스 구성
 인프라, 개발, 테스트, 운영과 기술지원, 사업화에 필요한 다양한 서비스를 제공합니다.
 
 |서비스|설명|
@@ -36,7 +35,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |Common Service|개발/테스트/서비스에 필요한 공통 도구|
 
 
-<h3 id="Infrastructure Service">Infrastructure Service</h3>
+### Infrastructure Service
 클라우드 인프라를 통해 저렴한 비용으로 인프라 리소스를 필요한 만큼 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -45,7 +44,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |Object Storage|-파일 갯수,크기 제약 없이 확장 가능한 고가용성, 안정성을 가진 REST 기반 대용량<br>-스토리지 서비스|
 |Monitoring|-별도의 설치 없이 서버 및 네트워크 사용량을 확인할 수 있는 가상 리소스 모니터링<br>-기능 제공.|
 
-<h3 id="Contents Service">Contents Service</h3>
+### Contents Service
 이미지의 저장 및 배포를 제공하는 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -53,7 +52,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |Image|-이미지의 저장, 편집, 전송을 제공하는 이미지 플랫폼<br>-실시간 썸네일 생성 및 동적 전송.|
 |CDN|-캐시 서버를 이용한 빠른 콘텐츠 배포<br>-네트워크 전송량, 콘텐츠 배포 통계 제공.|
 		
-<h3 id="Analytics Service">Analytics Service</h3>
+### Analytics Service
 데이터 분석 및 수집에 필요한 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -62,7 +61,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |Log & Crash Search|-앱 오류 로그 수집, 저장, 조회 및 크래쉬 발생 원인 정보 제공 서비스.|
 
         
-<h3 id="Game Service">Game Service</h3>
+### Game Service
 게임 개발에 필요한 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -71,7 +70,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |Real Time Multiplayer|-룸기반의 실시간 멀티플레이 게임을 지원하는 네트워크 서비스|
 
 
-<h3 id="Notification Service">Notification Service</h3>
+### Notification Service
 모바일 푸쉬 및 SMS 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -80,7 +79,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |SMS|-SMS / LMS / MMS 발송 기능 제공|
 
 
-<h3 id="Security Service">Security Service</h3>
+### Security Service
 보안을 강화할 수 있는 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|
@@ -91,7 +90,7 @@ TOAST Cloude란 NHN 엔터테인먼트에서 제공하는 클라우드 서비스
 |OTP|-사용자의 스마트폰으로 사용 가능한 OTP 제공|
 
 
-<h3 id="Common Service">Common Service</h3>
+### Common Service
 개발, 테스트, 서비스 운영에 필요한 공통 플랫폼을 사용할 수 있습니다.
 
 |서비스 정보|설명|

@@ -26,7 +26,7 @@ WinSCP 다운로드 페이지에서 [Installation package] 링크를 클릭하�
 http://winscp.net/eng/download.php#download2 접속
 [Installation package] 링크 클릭
 ```
-![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_01.jpg)
+![image](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_01.jpg)
 
 ## 서버 등록
 
@@ -39,7 +39,7 @@ WinSCP를 실행하고 로그인 정보를 등록합니다.
 [고급] 버튼 클릭
 ```
 
-![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_02.jpg)
+![image](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_02.jpg)
 <center>[그림 1] [호스트 이름], [사용자 이름] 입력 및 [고급] 버튼 클릭</center>
 
 개인키(.ppk) 파일을 등록합니다.

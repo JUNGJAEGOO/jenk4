@@ -23,6 +23,7 @@ big=TCInfra
 
 ## 기본 정보
 ### API Endpoint URL
+
 ```
 https://api-compute.cloud.toast.com/compute/v1.0/appkeys/{appkey}
 ```
@@ -1223,7 +1224,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | Description | Body | String | O | Block Storage 설명 |
-| Availability Zone Name | Body | String | - | Block Storage를 생성할 Availability Zone 이름 |
+| Availability Zone Name | Body | String |  | Block Storage를 생성할 Availability Zone 이름 |
 | Snaptshot ID | Body | String | O | 스냅샷으로부터 Block Storage를 생성하고자 할 경우 사용하는 스냅샷 ID |
 | Size | Body | Integer |  | Block Storage 크기. GB |
 | Volume Type | Body | String |  | 생성할 Block Storage의 종류, 현재는 별도로 타입이 제공되지 않으므로 빈 문자열로 설정.  |

@@ -288,8 +288,8 @@ curl ‐X GET "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/fol
 
 |이름|	Type|	필수 여부|	기본값|	설명|
 |---|---|---|---|
-|appkey|	string|	Y| - |토스트 클라우드 web console을 통해서 생성한 appkey|
-|path|	string|	Y| -|조회 할 폴더의 절대 경로|
+|appkey|	string|	Y|  |토스트 클라우드 web console을 통해서 생성한 appkey|
+|path|	string|	Y| |조회 할 폴더의 절대 경로|
 
 [Request Example]
 
@@ -1213,7 +1213,7 @@ curl ‐X DELETE "https://api-image.cloud.toast.com/image/v2.0/appkeys/{appKey}/
 [Request Parameters]
 
 |이름|	Type|	필수 여부|	기본값|	설명|
-|---|---|---|---|
+|---|---|---|---|----|
 |appkey|	string|	Y| |토스트 클라우드 web console을 통해서 생성한 appkey|
 
 [Request Body]
