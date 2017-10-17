@@ -20,7 +20,16 @@
     <script src="../../../js/common-1.0.min.js"></script>
     <script src="../../../js/custom.js"></script>
     
-
+	<script src="../../../js/jquery.cookie.js"></script>
+	
+	<script language='javascript'>
+	$.cookie('ACEFCID', 'UID-59E5799FBC4FC8C9A29963B3');
+	$.cookie('AECUCI', '1');
+	$.cookie('BID', '5L76UVQPYSDFK836992CCGYLA');
+	$.cookie('NNB', '55YK4WMTKOXFS');
+	$.cookie('ttx_did', 'e93d733a-c43b-452c-b3ea-57c49bc5e9f8');
+	$.cookie('userLocale', 'ko_KR');
+	</script>
 	
     <!-- <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>  -->
 
