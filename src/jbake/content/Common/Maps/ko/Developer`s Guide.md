@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MapsDV's
+nation=ko
 ~~~~~~
 ## Common > Maps > Developer's Guide
 

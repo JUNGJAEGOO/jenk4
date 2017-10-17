@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=CDNRelease
+nation=ko
 ~~~~~~
 ## Contents > CDN > Release Notes
 

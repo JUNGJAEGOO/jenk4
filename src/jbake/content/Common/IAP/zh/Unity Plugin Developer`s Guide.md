@@ -2,99 +2,100 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPUnitypluginDV's
+nation=zh
 ~~~~~~
 ## Common > IAP > Unity Plugin Developer's Guide
+
 ### Add In App Purchase SDK
 
 ```
-在Unity Editor上生成项目
+Unity Editor에서 프로젝트 생성
 ```
 
-![[图 1 生成项目]](http://static.toastoven.net/prod_iap/iap_11.png)
-<center>[图 1 生成项目]</center>
+![[그림 1 프로젝트 생성]](http://static.toastoven.net/prod_iap/iap_11.png)
+<center>[그림 1 프로젝트 생성]</center>
 
 ```
-在Unity Editor上选择[Assets] > [Import Package] > [Custom Package] 
-选择[In App Purchase Unity SDK]
+Unity Editor 에서 [Assets] > [Import Package] > [Custom Package] 를 선택
+[In App Purchase Unity SDK]를 선택
 ```
 
-![[图 2 选择Custom Package]](http://static.toastoven.net/prod_iap/iap_12.png)
-<center>[图 2 选择Custom Package]</center>
+![[그림 2 Custom Package 선택]](http://static.toastoven.net/prod_iap/iap_12.png)
+<center>[그림 2 Custom Package 선택]</center>
 
 ```
-Step3 : Import所有Assets。
+Step3 : 모든 Assets을 Import 합니다.
 ```
 
+![[그림 3 Importing package]](http://static.toastoven.net/prod_iap/iap_13.png)
+<center>[그림 3 Importing package]</center>
 
-![[图 3 Importing package]](http://static.toastoven.net/prod_iap/iap_13.png)
-<center>[图 3 Importing package]</center>
-
-### Android 环境设置及创建
-
-```
-1. 选择Unity Editor的[File - Build Settings] 
-2. 选择[Platform]- Android，[Switch Platform]  
-3. 在[Player Setting]上，参考以下内容修改[Android - Others Setting]信息。
-4. [Minimum API Level] IAP Unity插件支持Android API Level 10以上。
-```
-
-![[图 4 Setting for Android]](http://static.toastoven.net/prod_iap/iap_14.png)
-<center>[图 4 Setting for Android]</center>
+### Android 환경 설정 및 빌드
 
 ```
-参照AndroidManifest-iap-template.xml信息来修改App的AndroidManifest.xml信息 
+1. Unity Editor 의 [File - Build Settings] 선택  
+2. [Platform]- Android 선택하고 [Switch Platform]  
+3. [Player Setting] 에서 [Android - Others Setting] 정보를 아래의 내용을 참조하여 수정 합니다.  
+4. [Minimum API Level] IAP 유니티플러그인은 Android API Level 10 이상을 지원합니다.
 ```
 
-![[图 5 AndroidManifest-iap-template.xml]](http://static.toastoven.net/prod_iap/iap_15.png)
-<center>[图 5 AndroidManifest-iap-template.xml]</center>
-
-> [参考]<br>
-> 详细的 Android创建环境设置参照Android 项目设置。
-
-### iOS 环境设置及创建
+![[그림 4 Setting for Android]](http://static.toastoven.net/prod_iap/iap_14.png)
+<center>[그림 4 Setting for Android]</center>
 
 ```
-1. 选择Unity Editor的[File] - Build Settings] 
-2. 选择[Platform]- iOS，[Switch Platform]
+어플리케이션의 AndroidManifest.xml 정보를 AndroidManifest-iap-template.xml 정보를 참조하여 수정  
 ```
 
-![[图 6 选择Platform iOS]](http://static.toastoven.net/prod_iap/iap_20.jpg)
-<center>[图 6 选择Platform iOS]</center>
+![[그림 5 AndroidManifest-iap-template.xml]](http://static.toastoven.net/prod_iap/iap_15.png)
+<center>[그림 5 AndroidManifest-iap-template.xml]</center>
+
+> [참고]  
+> 자세한 Android 빌드 환경설정은 Android 프로젝트 설정을 참조합니다.
+
+### iOS 환경 설정 및 빌드
 
 ```
-[Player Settings] > [Settings for iOS] > 输入Bundle identifier
+1. Unity Editor 의 [File] - Build Settings] 선택  
+2. [Platform]- iOS 선택하고 [Switch Platform]
 ```
 
-![[图 7 Settings for iOS]](http://static.toastoven.net/prod_iap/iap_21.jpg)
-<center>[图 7 Settings for iOS]</center>
+![[그림 6 Platform을 iOS를 선택]](http://static.toastoven.net/prod_iap/iap_20.jpg)
+<center>[그림 6 Platform을 iOS를 선택]</center>
 
 ```
-1. 选择[Build]按钮，生成Xcode项目。
-2. 在和[unity_ios]一样的任意的文件夹中生成项目
-3. 通过[iPhone.xcodeproj]来运行Xcode。
+[Player Settings] > [Settings for iOS] > Bundle identifier 를 입력합니다
 ```
 
-![[图 8 用iOS Platform进行创建，并生成Xcode项目]](http://static.toastoven.net/prod_iap/iap_22.jpg)
-<center>[图 8 用iOS Platform进行创建，并生成Xcode项目]</center>
+![[그림 7 Settings for iOS]](http://static.toastoven.net/prod_iap/iap_21.jpg)
+<center>[그림 7 Settings for iOS]</center>
 
 ```
-运行生成的Xcode项目。
+1. [Build] 버튼을 선택하여 Xcode 프로젝트를 생성 합니다.  
+2. [unity_ios]와 같은 임의의 폴더에 프로젝트 생성  
+3. [iPhone.xcodeproj] 를 통해 Xcode를 실행 합니다.
+```
+
+![[그림 8 iOS Platform으로 빌드하여 Xcode 프로젝트 생성]](http://static.toastoven.net/prod_iap/iap_22.jpg)
+<center>[그림 8 iOS Platform으로 빌드하여 Xcode 프로젝트 생성]</center>
+
+```
+생성된 Xcode 프로젝트를 실행 합니다.  
 1. [Xcode] > [Project] > [Targets – Build Phases]  
-2. 在[Link Bianry With Libraries]上添加下面的framworks 
+2. [Link Bianry With Libraries] 에 아래의 framworks 추가  
     - StoreKit.framework  
     - libsqlite3.dylib  
-    - CoreTelephony.framework (TOAST-IAP-UnityPlugin-1.3.0以后版本)
-4. 在[plist]上，TOAST_IAP_APP_ID生成了KEY的string value，并输入了APP ID。
+    - CoreTelephony.framework (TOAST-IAP-UnityPlugin-1.3.0 이후버전)
+4. [plist] 에서 TOAST_IAP_APP_ID 가 KEY인 string value를 생성하고, APP ID를 입력 합니다.
 ```
 
-> [参考]<br>
-> 详细的 iOS 创建环境设置参照iOS Developer's Guide即可。
+> [참고]  
+> 자세한 iOS 빌드 환경설정은 [iOS Developer's Guide](/Common/IAP/ko/iOS%20Developer%60s%20Guide/)를 참조
 
-### Unity插件初始化
+### 유니티 플러그인 초기화
 
-为了使用IAP Unity 插件，需要进行如下初始化过程。
+IAP 유니티 플러그인을 사용하기 위해서는 아래와 같이 초기화 과정이 필요 합니다.
 
 [Example Response]
 
@@ -107,20 +108,19 @@ void Start()
 }
 ```
 
-### 样品App
+### 샘플 어플리케이션
 
-在Unity Editor上，提供如下的测试InAppPurchase<br>
-API的样品Console。(参照Sample文件夹) 在Unity Editor上，传达Mock形态的<br>
-API应答，为了测试实际结算，通过Android设备创建后进行测试。
+Unity Editor에서 아래와 같이 InAppPurchase API를 테스트하기 위한 샘플 Console을 제공합니다.(Sample 폴더 참조)
+Unity Editor에서는 Mock 형태의 API응답이 전달되고, 실제 결제 테스트를 위해서는 Android 디바이스를 통해 빌드 후 테스트 하도록 합니다.  
 
-![[图 9 样品控制台]](http://static.toastoven.net/prod_iap/iap_43.png)
-<center>[图 9 样品控制台]</center>
+![[그림 9 샘플 콘솔]](http://static.toastoven.net/prod_iap/iap_43.png)
+<center>[그림 9 샘플 콘솔]</center>
 
-* RegisterUserId : 注册用户ID
-* Request Purchase : 请求结算
-* Query Purchase List : 查询未消费结算明细
-* Query Item List : 查询可购买的商品
-* Processes Incomplete Purchases : 重新处理未结算项
+* RegisterUserId : 유저 ID 등록
+* Request Purchase : 결제 요청
+* Query Purchase List : 미소비 결제 내역 조회
+* Query Item List : 구매가능 상품조회
+* Processes Incomplete Purchases : 미결제건 재처리
 
 ## API Reference
 
@@ -128,27 +128,27 @@ API应答，为了测试实际结算，通过Android设备创建后进行测试�
 
 ### public class InAppPurchase
 
-提供In App结算的Method。
+인앱 결제를 위한 Method를 제공합니다.
 
 [Method Summary]
 
-|名称 |                               Return Value  | 参数|
+| 이름                              | Return Value | 파라미터                                 |
 | --------------------------------- | ------------ | ---------------------------------------- |
-|Init |                               Result      |   | |
-|SetDebugMode  |                      void       |    bool isDebuggable|
-|RegisterUserId  |                    Result    |     String userId|
-|AsyncRequestPuchase |                void     |      long itemId, OnResponsePurchase callback|
-|AsyncQueryPurchases  |               void    |       OnResponsePurchase callback|
-|AsyncQueryItems       |              void   |        OnResponsePurchase callback|
-|AsyncProcessesIncompletePurchases |  void  |         OnResponsePurchase callback|
+| Init                              | Result       |                                          |
+| SetDebugMode                      | void         | bool isDebuggable                        |
+| RegisterUserId                    | Result       | String userId                            |
+| AsyncRequestPuchase               | void         | long itemId, OnResponsePurchase callback |
+| AsyncQueryPurchases               | void         | OnResponsePurchase callback              |
+| AsyncQueryItems                   | void         | OnResponsePurchase callback              |
+| AsyncProcessesIncompletePurchases | void         | OnResponsePurchase callback              |
 
 [Init]
 
-|用语 |          说明|
+|용어|설명|
 | ----- | ----- |
-|Description |   初始化Unity插件。|
-|Syntax       |  public static Result Init();|
-|Return Value  | 归还Result初始化是否成功。|
+| Description |  유니티 플러그인을 초기화 한다 |
+| Syntax | public static Result Init(); |
+| Return Value |  Result 초기화 성공 여부를 반환 합니다 |
 
 [Example Code]
 
@@ -163,10 +163,10 @@ void start()
 
 [SetDebugMode]
 
-|用语 |         说明|
+|용어|설명|
 | ----- | ----- |
-|Description |  设置IAP Unity插件的iOS/Android Level的日志活性化与否。|
-|Syntax |       public static void SetDebugMode(bool isDebuggable);|
+| Description |  IAP 유니티 플러그인의 iOS/Android Level의 로그 활성화 여부를 설정한다. |
+| Syntax | public static void SetDebugMode(bool isDebuggable); |
 
 [Example Code]
 
@@ -181,28 +181,28 @@ void start()
 
 [RegisterUserId]
 
-|用语          | 说明|
-| -------------- | ----------------------------------------------|
-|Description   | 在App上注册定义的用户识别Key。|
-|Syntax        | public Result RegisterUserId(String userId);|
-|Parameters    | userId 用户ID|
-|Return Value  | 归还有关Result API请求的结果。|
+|용어|설명|
+| ----- | ----- |
+| Description |  어플리케이션에서 정의한 사용자 식별키를 등록한다. |
+| Syntax | public Result RegisterUserId(String userId); |
+| Parameters |  userId 유저ID |
+| Return Value |  Result API 요청에 대한 결과를 반환한다 |
 
 [Example Code]
 
-```
+```java
 InAppPurchase.RegisterUserId("guest001");
 ```
 
 [AsyncRequestPurchase]
 
-|用语         |  说明|
+|용어|설명|
 | ----- | ----- |
-|Description  |  请求In App结算。有关结算请求的应答通过delegate来接收。|
-|Syntax       |  public static void AsyncRequestPurchase(long itemId, OnResponsePurchase callback)|
-|Parameters   |  在itemId [in] Console上发行的项目编号|
-|Parameters   |  callback [in] 传达API请求结果的 delegate|
-|Return Value |  void|
+| Description |  인앱 결제 요청을 한다. 결제 요청에 대한 응답은 delegate을 통해 전달 받는다. |
+| Syntax | public static void AsyncRequestPurchase(long itemId, OnResponsePurchase callback) |
+| Parameters |  itemId [in] Console에서 발급된 아이템 번호 |
+| Parameters | callback [in] API 요청 결과를 전달 하는 delegate |
+| Return Value |  void |
 
 [Example Code]
 
@@ -223,13 +223,13 @@ InAppPurchase.AsyncRequestPurchase(1000001, (Result result, object data) => {
 
 [Response (JSON)]
 
-|Attribute      | Value   | Description|
-|--------------- | -------- | -------------------------------------------|
-|paymentSeq     | String  | 已完成付款的结算编号|
-|itemSeq        | Long    | 项目编号|
-|purchaseToken  | String  | 统计应用版本和IAP版本间的结算时所需的令牌|
-|currency       | String  | 商品的货币单位|
-|price          | Float  |  商品的价格|
+| Attribute     | Value  | Description                      |
+| ------------- | ------ | -------------------------------- |
+| paymentSeq    | String | 완료한 결제에 대한 결제번호                  |
+| itemSeq       | Long   | 아이템번호                            |
+| purchaseToken | String | 애플리케이션 서버와 IAP 서버간 결제 통지시 필요한 토큰 |
+| currency      | String | 상품의 화폐 단위                        |
+| price         | Float  | 상품의 가격                           |
 
 [Response Example]
 
@@ -245,12 +245,12 @@ InAppPurchase.AsyncRequestPurchase(1000001, (Result result, object data) => {
 
 [AsyncQueryPurchases]
 
-| 用语          | 说明|
-| -------------- | ---------------------------------------------------------------------|
-| Description   | 查询未消费(Consume)的结算明细。|
-|Syntax        | public static void AsyncQueryPurchases(OnResponsePurchase callback)|
-|Parameters    | callback [in] 传达API请求结果的delegate|
-|Return Value  | void|
+|용어|설명|
+| ----- | ----- |
+| Description |  소비(Consume) 되지 않은 결제내역을 조회한다. |
+| Syntax | public static void AsyncQueryPurchases(OnResponsePurchase callback) |
+| Parameters |  callback  [in] API 요청 결과를 전달 하는 delegate |
+| Return Value |  void |
 
 [Example Code]
 
@@ -269,16 +269,15 @@ InAppPurchase.AsyncQueryPurchases((Result result, object data) => {
 });
 ```
 
-\[Response(JSON)\]
+[Response(JSON)]
 
-|Attribute      | Value  |  Description|
+| Attribute     | Value  | Description                      |
 | ------------- | ------ | -------------------------------- |
-|paymentSeq    |  String  | 结算编号|
-|purchaseToken  | String  | 统计应用版本和IAP版本间的结算时所需的令牌|
-|itemSeq        | Long    | 项目编号|
-|currency       | String |  商品的货币单位|
-|price          | Float |   商品的价格|
-                           
+| paymentSeq    | String | 결제번호                             |
+| purchaseToken | String | 애플리케이션 서버와 IAP 서버간 결제 통지시 필요한 토큰 |
+| itemSeq       | Long   | 아이템 번호                           |
+| currency      | String | 상품의 화폐 단위                        |
+| price         | Float  | 상품의 가격                           |
 
 [Response Example]
 
@@ -304,15 +303,14 @@ InAppPurchase.AsyncQueryPurchases((Result result, object data) => {
 }]
 ```
 
-
 [AsyncQueryItems]
 
-|用语          | 说明|
+|용어|설명|
 | ----- | ----- |
-|Description   | 查询可购买的所有项目明细。|
-|Syntax         |public static void AsyncQueryItems(OnResponsePurchase callback)|
-|Parameters    | callback [in] 传达API请求结果的delegate|
-|Return Value  | void|
+| Description |  구매가능한 모든 아이템 내역을 조회합니다. |
+| Syntax | public static void AsyncQueryItems(OnResponsePurchase callback) |
+| Parameters |  callback  [in] API 요청 결과를 전달 하는 delegate |
+| Return Value |  void |
 
 [Example Code]
 
@@ -350,13 +348,13 @@ InAppPurchase.AsyncQueryItems((Result result, object data) => {
 
 [Response(JSON)]
 
-| Attribute     | Value    |Description|
-|-------------- | -------- | ----------------|
-|itemSeq       | Long   |  项目编号|
-|itemName      | String |  项目名|
-|marketItemId  | Long   |  各Store商品ID|
-|currency      | String |  商品的货币单位|
-|price         | Float  |  商品的价格|
+| Attribute     | Value  | Description                      |
+| ------------- | ------ | -------------------------------- |
+| itemSeq    | Long | 아이템 번호                             |
+| itemName | String | 아이템명 |
+| marketItemId       | Long   | 스토어별 상품 ID                           |
+| currency      | String | 상품의 화폐 단위                        |
+| price         | Float  | 상품의 가격                           |
 
 [Response Example]
 
@@ -380,12 +378,12 @@ InAppPurchase.AsyncQueryItems((Result result, object data) => {
 
 [AsyncProcessesIncompletePurchases]
 
-|用语 |          说明|
+|용어|설명|
 | ----- | ----- |
-|Description |   对未处理的结算项(IAP 服务器验证失败)进行批量处理。|
-|Syntax       |  public static void AsyncProcessesIncompletePurchases(OnResponsePurchase callback)|
-|Parameters    | 向callback [in] API传达请求结果的delegate|
-|Return Value  | void|
+| Description | 미처리된 결제건(IAP 서버 검증 실패)들에 대해 일괄로 재처리 작업을 진행합니다. |
+| Syntax | public static void AsyncProcessesIncompletePurchases(OnResponsePurchase callback) |
+| Parameters |  callback  [in] API 요청 결과를 전달 하는 delegate |
+| Return Value |  void |
 
 [Example Code]
 
@@ -439,13 +437,13 @@ InAppPurchase.AsyncProcessesIncompletePurchases((Result result, object data) => 
 
 [Response(JSON)]
 
-|Attribute |     Value   | Description|
+| Attribute     | Value  | Description                      |
 | ------------- | ------ | -------------------------------- |
-|itemSeq    |    Long    | 项目编号|
-|itemName    |   String  | 项目名|
-|marketItemId |  Long     |各Store商品ID|
-|currency     |  String  | 商品的货币单位|
-|price        |  Float  |  商品的价格|
+| itemSeq    | Long | 아이템 번호                             |
+| itemName | String | 아이템명 |
+| marketItemId       | Long   | 스토어별 상품 ID                           |
+| currency      | String | 상품의 화폐 단위                        |
+| price         | Float  | 상품의 가격                           |
 
 [Response Example]
 
@@ -469,46 +467,46 @@ InAppPurchase.AsyncProcessesIncompletePurchases((Result result, object data) => 
 
 ### public class Result
 
-出现了API的应答结果。
+API의 응답 결과를 나타냅니다.
 
 [IsSuccessful]
 
-|用语 |          说明|
-| ----- | ---- |
-|Description   | 归还API是否成功。|
-|Syntax        | public bool IsSuccessful;|
-|Return Value  | 若是bool true的话，请求API 即为成功|
+|용어|설명|
+| ----- | ----- |
+| Description |  API 성공 여부를 반환 합니다 |
+| Syntax | public bool IsSuccessful; |
+| Return Value |  bool true이면, API 요청 성공 |
 
 [ResultCode]
 
-|用语  |         说明|
+|용어|설명|
 | ----- | ---- |
-|Description  |  归还错误代码。|
-|Syntax        | public int ResultCode;|
-|Return Value  | 归还Int 错误代码|
+| Description |  에러코드를 반환 합니다. |
+| Syntax | public int ResultCode; |
+| Return Value |  Int 에러코드를 반환 |
 
 [ResultString]
 
-|用语         |  说明|
-| ----- | ---- |
-|Description  |  传达错误的详细信息。|
-|Syntax       |  public int ResultString;|
-|Return Value |  归还Int 错误的详细信息|
+|용어|설명|
+| ----- | ----- |
+| Description |  에러의 상세정보를 전달 합니다. |
+| Syntax | public int ResultString; |
+| Return Value |  Int 에러의 상세정보를 반환 |
 
 ### public class PluginVersion
 
-管理插件的Version信息。
+플러그인의 Version 정보를 관리합니다.
 
 [VersionInt]
 
-|用语         | 说明|
-| ----- | ---- |
-|Description |  插件的Version信息|
-|Syntax |       public const int VersionInt|
+|용어|설명|
+| ----- | ----- |
+| Description |  플러그인의 Version 정보 |
+| Syntax | public const int VersionInt |
 
 [VersionString]
 
-|用语 |         说明|
-| ----- | ---- |
-|Description |  插件的Version信息|
-|Syntax |       public const String VersionString|
+|용어|설명|
+| ----- | ----- |
+| Description |  플러그인의 Version 정보 |
+| Syntax | public const String VersionString |

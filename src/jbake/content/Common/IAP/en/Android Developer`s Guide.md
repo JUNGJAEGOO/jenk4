@@ -2,29 +2,29 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPAndroidDV's
+nation=en
 ~~~~~~
 ## Common > IAP > Android Developer's Guide
 
-## Development Environment
+## 개발환경
 
 * Windows
 * Eclipse in Android Development Tools / Android Studio IDE 1.2
 * Android 5.0.1 (API Level 21)
-* Android SDK Version is beyond **2.3.3 (API Level 10)**
+* Android SDK Version은 **2.3.3 (API Level 10)** 이상
 
-The open sources in use are as follows.
+사용하는 오픈 소스 정보는 다음과 같습니다.
 
-|Name|Reference|Version|License|
+|이름|참조|버전|라이선스|
 |---|---|---|---|
 |okhttp|http://square.github.io/okhttp/|1.5.4|Apache License 2.0|
 |gson|https://code.google.com/p/google-gson/|2.2.4|Apache License 2.0|
 
-## Using in Android Studio & Gradle
+## Android Studio & Gradle 환경에서 사용하기
 
-IAP’s Android SDK offers development environment for Gradle-based Android Studio IDE. Remote downloading is available from jCenter Maven Repository. Define repository and dependency in build.gradle file of the project as below
-
+IAP의 Android SDK는 Gradle을 기반으로한 Android Studio IDE에 대한 개발환경을 제공합니다. jCenter Maven Repository 로부터 Remote로 다운로드 받을수 있습니다. 아래의 같이 프로젝트의 build.gradle 파일에 repository와 dependency에 대한 정의를 하시면 됩니다.
 
 ### Gradle Repository
 
@@ -42,77 +42,79 @@ dependencies {
 }
 ```
 
-> [Reference]  
-> Specify SDK version in project.TOAST_IAP_SDK_VERSION. Using Gradle Project beyond version 1.1.0 is recommended.   
+> [참고]  
+> project.TOAST_IAP_SDK_VERSION 에는 SDK의 version을 명시합니다. Gradle 은 1.1.0 Version 이상의 Gradle Project를 사용하는 것을 권장합니다.  
 
 <br/>
-> [Reference]  
-> Please refer to RELEASE-NOTES.md within package for SDK version history
+> [참고]  
+> Release History   
+> SDK의 Version의 변경이력은 패키지내의 RELEASE-NOTES.md 를 참조해주세요.
 
-### Implementing Sample Application
+### 샘플 애플리케이션 실행하기
 
+IAP의 Android SDK는 Gradle을 기반으로한 Android Studio IDE에 대한 개발환경을 제공합니다. jCenter Maven Repository 로부터 Remote로 다운로드 받을수 있습니다. 아래의 같이 프로젝트의 build.gradle 파일에 repository와 dependency에 대한 정의를 하시면 됩니다.
 
 #### Import Project
 
-Import project from Android Studio and add /toast-iap-android-sdk-studio to SDK package.
+Android Studio에서 Import Project 하여 SDK 패키지의 /toast-iap-android-sdk-studio 를 추가합니다.
 
-> [Reference]  
-> Set sdk.dir value in local.properties to Android SDK path set in local. If sample application is built in release build type, enter keystore information for APK signing. Flavor and buildType can be selected from Build Variants menu in Android Studio.
-  
+> [참고]  
+> local.properties 수정   
+> local.properties 내부의 sdk.dir 의 값을 로컬에 설정된 Android SDK의 경로로 변경합니다. 만약 샘플 애플리케이션을 빌드타입을 release 로 빌드한다면, APK signing을 위한 keystore 정보를 입력해야 합니다. Flavor 및 buildType은 Android Studio의 Build Variants 메뉴에서 선택가능합니다.  
 
 <br/>
-> [Reference]  
+> [참고]  
 > Workspace Encoding Type   
-> Check if the Workspace File Encoding of the imported project is set in UTF-8. If not, change to UTF-8  
+> Import 한 Project의 Workspace File Encoding이 UTF-8로 되어있는 확인합니다, 아닐경우 UTF-8로 변경합니다.  
 
-#### Setting Market Information to AndroidManifest.xml
+#### AndroidManifest.xml 에 스토어 정보 설정
 
-Set appId / market using information registered to IAP Web Console
+IAP Web Console에 등록한 마켓정보를 통해 appId / Store 을 설정합니다.
 
-> [Reference]  
-> Set appId / Store   
-> Refer to AndroidManifest.xml of each market’s Flavor section of sample application for detailed setting.
+> [참고]  
+> appId / Store 설정   
+> 설정방법은 샘플애플리케이션의 각 스토어 Flavor의 AndroidManifest.xml 을 참조하시면 됩니다.
 
-## Using in Eclipse
+## 이클립스 환경에서 사용하기
 
-IAP Android SDK is distributed in Android Library Project format.
+IAP Android SDK는 안드로이드 라이브러리 프로젝트 형태로 배포합니다.
 
-| Directory Name                                     | Description                     |
+| 디렉토리명                                     | 설명                     |
 | ----------------------------------------- | ---------------------- |
-| /docs                                     | API reference               |
-| /toast-iap-android-sdk-eclipse/iap        | IAP Android library project |
-| /toast-iap-android-sdk-eclipse/iap-sample | Sample application              |
+| /docs                                     | API 레퍼런스               |
+| /toast-iap-android-sdk-eclipse/iap        | IAP Android 라이브러리 프로젝트 |
+| /toast-iap-android-sdk-eclipse/iap-sample | 샘플 애플리케이션              |
 
-[Table.1 Android SDK Directory Information]
+[표1 Android SDK 디렉토리 정보]
 
-### How To Import
-
-```
-[Eclipse] > [File] > [Import] select.  
-[Android] - [Existing Android Code into Workspace] select.  
-<Import Projects> 창 > [Browse] butoon > [IAP SDK] folder select.  
-Once IAP SDK & sample application project are displayed in Import list, select [Finish] while all projects are selected.
-```
-
-> [Reference]  
-> If error occurs in Project after importing, follow below instructions   
-> \- [project] > [clean] select.    
-> \- [IAP] right click > [Properties] > [Resource] > [Text File Encoding] set to UTF-8.
-
-### Add IAP Android SDK 
+### Import 방법
 
 ```
-Right Click of [project] > [Properties] > [Android] > [Add] > Add IAP
+[Eclipse] > [File] > [Import] 선택  
+[Android] - [Existing Android Code into Workspace] 선택  
+<Import Projects> 창 > [Browse] 버튼 > [IAP SDK] 폴더 선택  
+IAP SDK와 샘플 애플리케이션의 프로젝트가 Import 목록에 표시되면, 프로젝트를 모두 선택한 상태에서 [Finish] 선택
 ```
 
-![[Figure.1 IAP SDK]](http://static.toastoven.net/prod_iap/iap_5.jpg)
-<center>[Figure 1 IAP SDK]</center>
+> [참고]  
+> Import 후에 Project에 에러 발생시 다음과 같이 합니다.   
+> \- [project] > [clean] 선택    
+> \- [IAP] 우클릭 > [Properties] > [Resource] > [Text File Encoding]을 UTF-8로 설정
 
-## Setting Android Project
+### IAP Android SDK 추가
 
-### AndroidManifest.xml Modification
+```
+[project] 우클릭 > [Properties] > [Android] > [Add] > IAP 추가
+```
 
-This is for Google Play development.
+![[그림 1 IAP SDK 추가]](http://static.toastoven.net/prod_iap/iap_5.jpg)
+<center>[그림 1 IAP SDK 추가]</center>
+
+## Android 프로젝트 설정
+
+### AndroidManifest.xml 추가
+
+Google Play 기준으로 작성한 내용입니다.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -133,34 +135,34 @@ This is for Google Play development.
 </application>
 ```
 
-Setting information for AndroidManifest.xml is as follows.
+AndroidManifest.xml의 설정 정보는 다음과 같습니다.
 
 | Property Name               | Description                  |
 | --------------------------- | ---------------------------- |
-| android.permission          | Common Android authority for IAP use <br/> * Duplicate permission can be omitted.          |
-| com.android.vending.BILLING | Authority for Google Play. <br/> * Names and/or contents may differ depending on store.     |
-| activity                    | Register activity offered by IAP           |
-| com.toast.iap.config.appId  | App identifier issued by IAP web console          |
-| com.toast.iap.config.market | Store <br/>GG : Google Play <br/> AS : Apple App Store<br/> TS : One Store <br/>TEST : Test |
+| android.permission          | IAP 사용을 위한 공통 Android 권한 <br/> * 중복 permission 생략가능          |
+| com.android.vending.BILLING | Google Play를 위한 권한. <br/> * 스토어별로 이름이 다르거나 포함여부가 달라짐     |
+| activity                    | IAP에서 제공하는 액티비티 등록           |
+| com.toast.iap.config.appId  | IAP 웹콘솔에서 발급된 앱고유번호          |
+| com.toast.iap.config.market | 스토어 정보 <br/>GG : 구글플레이<br/> TS : 티스토어<br/> NA : 네이버앱스토어<br/>TEST : 테스트 |
 
-[Table.2 AndroidManifest.xml Information]
+[표2 AndroidManifest.xml 설정 정보]
 
-> [Reference]  
-> When market information is set in TEST, IAP’s API can be tested easily without entering market sync information.    
-> Please refer to Sample Application for more details.  
+> [참고]  
+> 스토어 정보를 TEST로 설정시 별도의 스토어 연동 정보없이 IAP의 API를 손쉽게 테스트 해볼 수 있습니다.    
+> 자세한 내용은 Sample Application 을 참고 해주세요.  
 
-## IAP Payment Flow Diagram
+## IAP 결제 흐름도
 
-In-app purchase is proceeded in two stages: payment request and payment consume.  
-If payment consume is complete, issue item in user’s application.
+인앱 결제는 결제요청과 결제소비 2단계로 진행됩니다.  
+결제소비까지 완료한 이후에는 사용자의 애플리케이션에서 아이템을 지급하면 됩니다.
 
-> [Reference]  
-> [IAP Payment Flow](/Common/IAP/en/Overview/#iap)
+> [참고]  
+> [IAP 결제 흐름도](/Common/IAP/ko/Overview/#iap)
 
-### Registering User Identifier
+### 사용자 식별자 등록
 
-Register authorized user ID.  
-This is user identifier defined by developer, which qualifies for item issuance.
+인증을 완료한 사용자 ID를 등록합니다.  
+개발사에서 정의한 사용자 식별키이며, 아이템이 지급되는 대상입니다.
 
 [Request Example]
 
@@ -168,9 +170,9 @@ This is user identifier defined by developer, which qualifies for item issuance.
 InAppPurchases.InAppPurchase.registerUserId(userId); // userId : String value
 ```
 
-### Inquiry All Purchasable Items
+### 구매 가능한 아이템 내역 조회
 
-Inquire All Purchasable Items
+구매 가능한 모든 아이템 내역을 조회합니다.
 
 [Request Example]
 
@@ -189,14 +191,15 @@ InAppPurchases.InAppPurchase.queryItems(activity, new InAppPurchase.ItemListCall
 
 [Method]
 
-|Word|Description|
+|용어|설명|
 | ----- | --- |
 | Syntax | public void queryItems(Activity activity, ItemListCallback callback) |
-| Parameters | activity [in] of current application. |
-| Parameter | callback [in] which returns response of API.|
+| Parameters | activity [in] 어플리케이션의 현재 액티비티 |
+| Parameter | callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value | void |
 
 [Response Example]
+
 ```json
 [
     {
@@ -215,9 +218,9 @@ InAppPurchases.InAppPurchase.queryItems(activity, new InAppPurchase.ItemListCall
 }]
 ```
 
-### Request Payment
+### 결제 요청
 
-Request item purchase from client. Response for payment request will be received via PurchaseCallback. Once payment is successfully done, send result to server to consume payment details.
+클라이언트에서 아이템 구매를 요청합니다. 결제 요청에 대한 응답은 PurchaseCallback 을 통해 전달 받게 되고, 결제가 성공적으로 완료되면 결과값을 서버에 전달하여 결제내역을 (Consume) 해야 합니다.
 
 [Request Example]
 
@@ -237,12 +240,12 @@ InAppPurchases.InAppPurchase.requestPurchase(this, 1000001, new PurchaseCallback
 
 [Method]
 
-|Word|Description|
+|용어|설명|
 | ----- |  --- |
 | Syntax | public void requestPurchase(Activity activity, long itemId, String currency, float price, PurchaseCallback callback) ||
-| Parameters |  activity [in] of current application. |
-| Parameters | itemId [in] generated in Web Console [Item] |
-| Parameters | callback [in] which returns response of API. |
+| Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
+| Parameters | itemId [in] Web Console [Item]에서 발급된 ID |
+| Parameters | callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value |  void |
 
 [Response Example]
@@ -257,19 +260,19 @@ InAppPurchases.InAppPurchase.requestPurchase(this, 1000001, new PurchaseCallback
 }
 ```
 
-> [Reference]  
-> IAP Android SDK payment confirmation pop-up   
-> There will be no payment confirmation pop-up appearing from toast-iap-android-sdk-1.2.3; it will be directly processed to market purchase.
+> [참고]  
+> IAP Android SDK 결제확인창   
+> toast-iap-android-sdk-1.2.3 부터 기존 아래의 결제확인창 없이 스토어결제로 바로 진행됩니다.
 
-![[Figure 2 Payment confirmation pop-up supported in old version]](http://static.toastoven.net/prod_iap/iap_40.jpg)
-<center>[Figure 2 Payment confirmation pop-up supported in old version]</center>
+![[그림 2 기존 결제확인창]](http://static.toastoven.net/prod_iap/iap_40.jpg)
+<center>[그림 2 기존 결제확인창]</center>
 
-### Payment Consume
+### 결제 소비
 
-User application server should notify IAP server for payment consume before issuing item. Use Payment Purchase Token to check validity of the payment between user server and IAP server.
+사용자 애플리케이션 서버는 아이템을 지급하기 전 IAP 서버에게 결제를 소비할 것을 알려야 합니다. 이 때 결제 구매 토큰(Payment Purchase Token)을 이용하여 사용자 서버와 IAP서버간의 결제 유효성에 대한 보안을 체크합니다.
 
-> [Reference]  
-> [Server Payment Consume API](/Common/IAP/en/Server%20Developer%60s%20Guide/#payment-consume-api)  
+> [참고]  
+> [Server Payment Consume API](/Common/IAP/ko/Server%20Developer%60s%20Guide/#payment-consume-api)  
 
 [HTTP Request Example]
 
@@ -299,9 +302,9 @@ RequestBody
 }
 ```
 
-### Inquiry unconsumed user payment history.
+### 미소비 결제내역 조회
 
-Inquire unconsumed user payment history.
+유저의 소비(Consume) 되지 않은 결제내역을 조회합니다.
 
 [Request Example]
 
@@ -320,11 +323,11 @@ InAppPurchases.InAppPurchase.queryPurchases(this, new PurchaseListCallback() {
 
 [Method]
 
-|Word|Description|
+|용어|설명|
 |--------|--------|
 | Syntax |public void queryPurchases(Activity activity, PurchaseListCallback callback)|
-| Parameters | activity [in] of current application. |
-| Parameter | callback [in] which returns response of API.|
+| Parameters | activity [in] 어플리케이션의 현재 액티비티 |
+| Parameter | callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value | void |
 
 [Response Example]
@@ -351,10 +354,9 @@ InAppPurchases.InAppPurchase.queryPurchases(this, new PurchaseListCallback() {
 }]
 ```
 
-### Batch process of unconsumed payment
+### 미처리 결제건 일괄 재처리
 
-processes whole of unconsumed(cause of verification failure or network loss) payments. 
-
+미처리된 결제건(IAP 서버 검증 실패)들에 대해 일괄로 재처리 작업을 진행합니다.
 
 [Request Example]
 
@@ -373,11 +375,11 @@ InAppPurchases.InAppPurchase.processesIncompletePurchases(activity, new InAppPur
 
 [Method]
 
-|Word|Description|
+|용어|설명|
 |--------|--------|
 | Syntax |public void processesIncompletePurchases(Activity activity, IncompletePurchasesCallback callback)|
-| Parameters | activity [in] of current application. |
-| Parameter | callback [in] which returns response of API.|
+| Parameters | activity [in] 어플리케이션의 현재 액티비티 |
+| Parameter | callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value | void |
 
 [Response Example]
@@ -415,9 +417,9 @@ InAppPurchases.InAppPurchase.processesIncompletePurchases(activity, new InAppPur
 }
 ```
 
-### Processing Error after Calling API
+### API 호출 이후 에러 정보에 대한 처리
 
-InAppPurchaseException class delivers error information of API call.
+InAppPurchaseException 클래스는 API 호출에 대한 에러 정보를 전달 합니다.
 
 ```java
 InAppPurchases.InAppPurchase.queryPurchases(activity, new PurchaseListCallback() {
@@ -427,7 +429,7 @@ InAppPurchases.InAppPurchase.queryPurchases(activity, new PurchaseListCallback()
            if (exception != null) {
               int errorCode = exception.getErrorCode();
               String errorMessage = exception.getMessage();
-              // TODO : do something when error occurs.
+              // TODO : 에러 발생시에 대한 처리를 정의 합니다.
               ....
               return;
            }
@@ -435,40 +437,40 @@ InAppPurchases.InAppPurchase.queryPurchases(activity, new PurchaseListCallback()
 });
 ```
 
-* errorCode - error code
-* errorMessage - error detail message
+* errorCode - 에러코드
+* errorMessage - 에러에 대한 상세 정보
 
-> [Reference]  
-> [Error Code Guide](/Common/IAP/en/Error%20Code/)    
+> [참고]  
+> [Error Code Guide](/Common/IAP/ko/Error%20Code/)    
 
 ## Android Sample Application
 
-Sample application can be imported in Eclipse + ADT development environment.
+Eclipse + ADT 개발환경에서 샘플 애플리케이션을 다음과 같이 import하여 참고할 수 있습니다.
 
 ```
-[Eclipse] > [File] > select [Import]  
-[Android - Existing Android Code into Workspace] select > select [Next]  
-<Import Projects> window > click [Browse] button > select [IAP Android SDK] folder 
-you can see [IAP Android SDK] and sample application project in [Import] list. 
-check projects to be imported  
-check [Copy Project into Workspace]  
-click [Finish] button and Import completed
+[Eclipse] > [File] > [Import] 선택  
+[Android - Existing Android Code into Workspace] 선택 > [Next] 선택  
+<Import Projects> 창 > [Browse] 버튼 클릭 > [IAP Android SDK]의 폴더 선택  
+[IAP Android SDK]와 샘플 애플리케이션의 프로젝트가 [Import] 목록에 표시  
+Import 할 프로젝트 체크  
+[Copy Project into Workspace] 체크  
+[Finish] 버튼을 선택하여 Import 완료
 ```
 
-![[Figure 3 Add sample application]](http://static.toastoven.net/prod_iap/iap_7.jpg)
-<center>[Figure 3 Add sample application]</center>
+![[그림 3 샘플 애플리케이션 추가]](http://static.toastoven.net/prod_iap/iap_7.jpg)
+<center>[그림 3 샘플 애플리케이션 추가]</center>
 
-### Using Test Store
+### 테스트 스토어를 통한 테스트
 
-Set market code to TEST to test API provided by IAP Android SDK without actual market sync information.
+IAP Android SDK에서 제공하는 API를 실제 스토어 연동 정보 없이 테스트 하기 위해 스토어 코드를 TEST로 설정합니다.
 
 ```xml
 <meta-data android:name="com.toast.iap.config.market" android:value="TEST" />
 ```
 
-### Sample Code
+### 예제 코드
 
-Refer to IAPServiceProvider class of  com.nhnent.iap.sample package.
+com.nhnent.iap.sample 패키지의 IAPServiceProvider 클래스 참고.
 
 ## Android Reference
 
@@ -476,11 +478,11 @@ Refer to IAPServiceProvider class of  com.nhnent.iap.sample package.
 
 ### public interface InAppPurchase
 
-Interface for In app purchase payment.
+인앱 결제 요청을 위한 interface
 
 [Method Summary]
 
-| name             | Return Value | Parameter                                                      |
+| 이름             | Return Value | 파라미터                                                      |
 | -------------- | ------------ | --------------------------------------------------------- |
 | setDebugMode   | void         | boolean isDebuggable                                      |
 | registerUserId | void         | String userId                                             |
@@ -489,11 +491,11 @@ Interface for In app purchase payment.
 
 [setDebugMode]
 
-|Word|Description|
+|용어|설명|
 | ----- | -- |
-| Description |  Set IAP SDK log information activation. |
+| Description |  IAP SDK의 로그 정보 활성화 여부를 설정합니다. |
 | Syntax | public void setDebugMode(boolean isDebuggable)  |
-| Parameters |  isDebuggable [in] Expose log information when true.|
+| Parameters |  isDebuggable [in] 로그 활성화 여부, true 일때 로그정보를 노출 합니다. |
 
 [Example Code]
 
@@ -503,11 +505,11 @@ InAppPurchases.InAppPurchase.setDebugMode(true);
 
 [registerUserId]
 
-|Word|Description|
+|용어|설명|
 | ----- |--|
-| Description | Register user identifier after user verification in application. It is not store account. |
+| Description |  애플리케이션에서 사용자에 대한 인증 이후에 사용자 식별이 가능한 값을 등록합니다. 스토어 계정이 아닙니다. |
 | Syntax |public void registerUserId(String userId) |
-| Parameters |  userId [in] userId shall be unchanging unique value as user identifier. |
+| Parameters |  userId [in] 사용자 식별자 값으로 userId는 변하지 않는 고유한 값이어야만 합니다. |
 | Return Value |  void |
 
 [Example Code]
@@ -518,24 +520,24 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 
 [requestPurchase]
 
-|Word|Description|
+|용어 |설명|
 | ----- | -- |
-| Description | Request in-app purchase. Response for payment request is delivered via PurchaseCallback interface. Register item information via Web Console. |
+| Description | 인앱 결제 요청을 합니다. 결제 요청에 대한 응답은 PurchaseCallback 인터페이스를 통해 전달 받습니다. <br/>* 아이템에 대한 정보는 Web Console을 통해 등록합니다. |
 | Syntax | public void requestPurchase(Activity activity, long itemId, PurchaseCallback callback) |
-| Parameters | activity [in] of current application. |
-| Parameters |itemId [in] generated in Web Console |
-| Parameter | callback [in] which returns response of API.|
+| Parameters |  activity  [in] 어플리케이션의 현재 액티비티 |
+| Parameters |itemId [in] Web Console에서 발급된 아이템 번호 |
+| Parameters |callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value |  void |
 
 [Response (JSON)]
 
 | Attribute     | Value  | Description                                       |
 | ------------- | ------ | ------------------------------------------------- |
-| paymentSeq    | String | unique payment identifier for completed payment.                                   |
-| itemSeq       | Long   | item identifier                                             |
-| purchaseToken | String | Token information required for requesting payment consume in IAP server from application server.
-| currency      | String | currency                                         |
-| price         | Float  | price                                            |
+| paymentSeq    | String | 완료한 결제에 대한 결제번호                                   |
+| itemSeq       | Long   | 아이템번호                                             |
+| purchaseToken | String | 애플리케이션 서버에서 IAP 서버에 결제내역 소비(Consume) 요청시 필요한 토큰정보 |
+| currency      | String | 상품의 화폐 단위                                         |
+| price         | Float  | 상품의 가격                                            |
 
 [Response Example]
 
@@ -551,23 +553,23 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 
 [queryPurchases]
 
-|Word|Description|
-| ----- | ----- | ----- |
-| Description |  Inquire unconsumed payment history. |
+|용어|설명|
+| ----- | ----- |
+| Description |  소비(Consume) 되지 않은 결제내역을 조회합니다. |
 | Syntax | public void queryPurchases(Activity activity, PurchaseListCallback callback) |
-| Parameters | activity [in] of current application. |
-| Parameter | callback [in] which returns response of API.|
+| Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
+| Parameters | callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value |  void |
 
 **[Response (JSON)]**
 
 | Attribute     | Value  | Description                      |
 | ------------- | ------ | -------------------------------- |
-| paymentSeq    | String | unique payment identifier for completed payment.                             |
-| purchaseToken | String | Token information required for requesting payment consume in IAP server from application server. |
-| itemSeq       | Long   | item identifier                           |
-| currency      | String | currency                        |
-| price         | Float  | price                           |
+| paymentSeq    | String | 결제번호                             |
+| purchaseToken | String | 애플리케이션 서버와 IAP 서버간 결제 통지시 필요한 토큰 |
+| itemSeq       | Long   | 아이템 번호                           |
+| currency      | String | 상품의 화폐 단위                        |
+| price         | Float  | 상품의 가격                           |
 
 [Response Example]
 
@@ -599,23 +601,23 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 
 [queryItems]
 
-|Word|Description|
-| ----- | ----- | ----- |
-| Description |  Inquire all purchasable items. |
+|용어|설명|
+| ----- | ----- |
+| Description |  구매 가능한 모든 아이템 내역을 조회합니다. |
 | Syntax | public void queryItems(Activity activity, ItemListCallback callback) |
-| Parameters | activity [in] of current application. |
-| Parameter | callback [in] which returns response of API.|
+| Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
+| Parameters | callback [in] API 요청 결과를 전달 하는 콜백 |
 | Return Value |  void |
 
 **[Response (JSON)]**
 
 | Attribute     | Value  | Description                      |
 | ------------- | ------ | -------------------------------- |
-| itemSeq       | Long   | item identifier                              |
-| itemName      | String | item name |
-| marketItemId  | String | item ID shown in store console.                          |
-| currency      | String | currency                        |
-| price         | Float  | price                           |
+| itemSeq       | Long   | 아이템 번호                             |
+| itemName      | String | 아이템명 |
+| marketItemId  | String | 스토어별 상품 ID                           |
+| currency      | String | 상품의 화폐 단위                        |
+| price         | Float  | 상품의 가격                           |
 
 [Response Example]
 
@@ -638,92 +640,92 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 
 ### public interface InAppPurchase.PurchaseCallback
 
-callback interface for receiving response after payment request
+인앱 결제 요청 후에 결과를 전달받기 위한 callback interface
 
 [Method Summary]
 
-| Name         | Return Value | Parameter                                                |
+| 이름         | Return Value | 파라미터                                                |
 | ---------- | ------------ | --------------------------------------------------- |
 | onCallback | void         | JSONObject result, InAppPurchaseException exception |
 
 [onCallback]
 
-|Word|Description|
-| ----- | ----- | ----- |
-| Description |  Send API request result. |
+|용어|설명|
+| ----- | ----- |
+| Description |  API 요청 결과를 전달합니다. |
 | Syntax | public abstract void onCallback(JSONObject result, InAppPurchaseException exception) |
-| Parameters |  result [in]  return result code and message. |
-| Parameters | exception [in] return detail error. if null, request is successful. |
+| Parameters |  result [in] 응답 결과에 대한 코드 및 추가 정보를 전달 |
+| Parameters | exception [in] 에러에 대한 정보를 전달한다. null이면 요청 성공 |
 | Return Value |  void |
 
 ### public interface InAppPurchase.PurchaseListCallback
 
-callback interface for receiving response after payment request
+결제 내역 요청 후에 결과를 전달받기 위한 callback interface
 
 [Method Summary]
 
-| Name         | Return Value | Parameter                                                |
+| 이름         | Return Value | 파라미터                                               |
 | ---------- | ------------ | -------------------------------------------------- |
 | onCallback | void         | JSONArray result, InAppPurchaseException exception |
 
 [onCallback]
 
-|Word|Description|
-| ----- | ----- | ----- |
-| Description |  Send API request result. |
+|용어|설명|
+| ----- | ----- |
+| Description |  API 요청 결과를 전달합니다. |
 | Syntax | public abstract void onCallback(JSONArray result, InAppPurchaseException exception) |
-| Parameters |  result [in]  return result code and message. |
-| Parameters | exception [in] return detail error. if null, request is successful. |
+| Parameters |  result [in] 응답 결과에 대한 코드 및 추가 정보를 전달 |
+| Parameters | exception [in] 에러에 대한 정보를 전달한다. null이면 요청 성공 |
 | Return Value |  void |
 
-> [Reference]  
-> 1\. Call unsynchronized API from UI Thread (main Thread)    
-> 2\. When calling unsynchronized API, send response result via parameter Callback interface.
+> [참고]  
+> 1\. 비동기 API는 UI Thread(메인 Thread) 에서 호출하도록 합니다.    
+> 2\. 비동기 API 호출시에는 응답결과를 파라미터의 콜백 인터페이스를 통해 전달 합니다.
 
 ### public final class InAppPurchases
 
-Entry Point for IAP payment interface
+인앱 결제를 위한 인터페이스를 제공하는 Entry Point
 
 [Field]
 
 | Type                              | Variable       | Description     |
 | --------------------------------- | -------------- | --------------- |
-| public static final InAppPurchase | InAppPurchases | interface for iap payment |
+| public static final InAppPurchase | InAppPurchases | 인앱 결제를 위한 인터페이스 |
 
 [getSdkVersion]
 
-|Word|Description|
+|용어|설명|
 | ----- | ----- |
-| Description |  returns SDK version.|
+| Description |  SDK의 Version을 반환합니다 |
 | Syntax | public static String getSdkVersion() |
-| Return Value |  String SDK의 Version |
+| Return Value |  String SDK의 Version 정보 |
 
 [getAppId]
 
-|Word|Description|
+|용어|설명|
 | ----- | ----- |
-| Description |  returns App ID. |
+| Description |  앱ID를 반환 합니다 |
 | Syntax | public static long getAppId() |
-| Return Value |  String App ID registered in SDK|
+| Return Value |  String SDK에 설정한 앱ID 정보 |
 
 # Package: com.toast.android.iap.exception
 
 ### public class InAppPurchaseException extends Exception
 
-Returns error of api request.
+API 요청에 대한 에러정보를 전달한다.
 
 [getErrorCode]
 
-|Word|Description|
+|용어|설명|
 | ----- | ----- |
-| Description |  returns error code.|
+| Description |  에러 코드를 반환 합니다. |
 | Syntax | public int getErrorCode() |
-| Return Value |  int error code |
+| Return Value |  int 에러코드 |
 
 [getMessage]
 
-|Word|Description|
+|용어|설명|
 | ----- | ----- |
-| Description |  returns detail error message.|
+| Description |  에러의 상세정보를 반환 합니다. |
 | Syntax | public String getMessage() |
-| Return Value |  String detail error message|
+| Return Value |  String 에러의 상세정보 |

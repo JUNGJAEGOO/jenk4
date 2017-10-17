@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameRealtimeGetting
+nation=ja
 ~~~~~~
 ## Game > Real Time Multiplayer > Getting Started 
 

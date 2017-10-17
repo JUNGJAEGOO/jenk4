@@ -2,87 +2,92 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPOverview
+nation=zh
 ~~~~~~
 ## Common > IAP > Overview
 
-In-App Purchase (IAP) service is an integrated in-app purchase service.
+In-App Purchase (이하 IAP) 서비스는 통합 인앱 결제 서비스 입니다.
 
-## Main Features
+## 주요 기능
 
-IAP offers the following features.
+IAP는 다음과 같은 기능을 제공합니다.
 
-* Purchasing is done easily by calling API only 2 to 3 times within SDK.  
-* Various in-app purchases, such as Google Play and Apple App Store, are integrated in a single interface. 
-There is no need to study over detailed payment sync process for each store. 
-* Security will become more powerful with purchase verification server provided by IAP. 
-* Web console provides purchase history inquiry function for customer support.
+* 결제를 쉽게 연동할 수 있는 환경을 제공합니다.  
+SDK에서 2~3번의 API 호출 만으로도 결제 처리를 완료할 수 있습니다.  
+* 다양한 스토어의 인앱 결제를 단일 인터페이스로 제공합니다.  
+Google Play, Apple AppStore 등과 같은 다양한 인앱 결제를 단일 인터페이스로 연동했습니다. 
+IAP SDK 사용자는 제공하는 결제 API만 사용하면 됩니다. 스토어별 세부 결제 연동방식은 몰라도 됩니다.  
+* 강력한 결제 보안 기능을 제공합니다.  
+IAP에서 제공하는 결제 검증 서버를 통해 결제 안정성을 높일 수 있습니다.  
+* 고객 지원을 위한 결제 조회 기능을 제공합니다.  
+웹콘솔에서 결제내역 조회기능을 제공합니다  
 
-## Available Store
+## 지원 스토어
 
-These are stores serviced by IAP service. 
+IAP 서비스에서는 다음과 같은 스토어의 연동을 지원 합니다.  
 
-[Table.1 Store Supported]
+[표1 IAP 지원 스토어 리스트]
 
-| OS Type | Store |
+| 플랫폼 | 스토어 |
 | --- | --- |
-| Android | Google Play |
-| Android | One Store(TStore + olleh market + UStore + Naver App Store)<br>[http://dev.onestore.co.kr](http://dev.onestore.co.kr) |
-| iOS | Apple App Store |
+| Android | 구글 플레이 |
+| Android | 원스토어(티스토어 + 올레마켓 + U+스토어 + 네이버 앱스토어)<br>[http://dev.onestore.co.kr](http://dev.onestore.co.kr) |
+| iOS | 앱스토어 |
 
-## Terms
+## 서비스 용어
 
-These are terms for IAP service.
+IAP 서비스에서는 다음 용어를 내부적으로 사용합니다.
 
-[Table.2 IAP Terms]
+[표2 IAP 서비스 용어]
 
-| Term | Description |
+| 용어 | 설명 |
 | --- | --- |
-| AppKey | These are terms for IAP service. |
-| Store | App Store, Google Play |
-| Payment | User purchase history |
-| Purchase | Item purchased in-app |
-| Consume | Consuming purchase before creating item for user. |
-| Payment Purchase Token | Verification token used when user application server consumes purchase. |
+| AppKey | TOAST Cloud 사용자 프로젝트와 상품간 1:1 매칭키. 프로젝트당 하나의 IAP용 AppKey를 발급함 |
+| 스토어(Store) | App Store, Google Play같은 스토어를 의미함 |
+| 결제내역(Payment) | 사용자가 결제한 내역 |
+| 결제요청(Purchase) | 앱 내에서 아이템을 구매함 |
+| 결제소비(Consume) | 사용자에게 아이템을 생성하기 전 결제를 소비하는 것 |
+| Payment Purchase Token | 사용자 애플리케이션 서버가 결제를 소비할 때 사용하는 인증토큰 |
 
-## Service Diagram
+## 서비스 구조
 
-IAP service is comprised of 4 components as in following figure: IAP SDK, User Application Server, IAP Server, and Market.
+IAP 서비스는 다음 그림과 같이 IAP SDK, User Application Server, IAP Server, Store 4가지로 구성됩니다.
 
-![[Figure 1 IAP Service Diagram - Server To Server Model]](http://static.toastoven.net/prod_iap/iap_n_1.png)
-<center>[Figure 1 IAP Service Diagram - Server To Server Model]</center>
+![[그림 1 IAP 서비스 구조 - Server To Server Model]](http://static.toastoven.net/prod_iap/iap_n_1.png)
+<center>[그림 1 IAP 서비스 구조 - Server To Server Model]</center>
 
-![[Figure 2 IAP Service Diagram - Build-in Model]](http://static.toastoven.net/prod_iap/iap_n_23.png)
-<center>[Figure 2 IAP Service Diagram - Build-in Model]</center>
+![[그림 2 IAP 서비스 구조 - Build-in Model]](http://static.toastoven.net/prod_iap/iap_n_23.png)
+<center>[그림 2 IAP 서비스 구조 - Build-in Model]</center>
 
-| Component | Description |
+| 컴포넌트명 | 설명 |
 | ----- | --- |
-| IAP SDK | Register User ID and request payment for in-app purchase. If payment is performed, you’ll move to in-app purchase screen of the store (Google Store for Android). |
-| User Application Server | Verify purchase history requested by client via IAP server, consume purchase and transfer item. |
-| User Application Client | If there is no server existent to user application, perform payment consume in application’s client and grant authority for item.  |
-| IAP Server | This is in-app purchase server provided by TOAST Cloud|
-| Store | It includes various stores such as Google Store and Apple App Store. Store server for each platform is synchronized with IAP server. |
-<center>[Table. 3 IAP Component]</center>
+| IAP SDK | IAP Android SDK입니다. 인앱 결제를 위하여 사용자ID 등록, 결제요청을 수행합니다. 결제 수행시 스토어(Android의 경우 Google Store)의 인앱 결제 화면으로 이동합니다. |
+| User Application Server | 사용자 애플리케이션 서버입니다. IAP 서버를 통하여 클라이언트가 요청한 결제내역을 확인한 후 결제소비를 진행하고 아이템 전달을 수행합니다. |
+| User Application Client | 사용자 애플리케이션에 서버가 존재하지 않는다면, 애플리케이션의 클라이언트에서 결제소비를 진행하고 아이템에 대한 권한을 부여하게 됩니다. |
+| IAP Server | TOAST Cloud에서 제공하는 인앱 결제 서버입니다. |
+| Store | Google Store, Apple App Store 등의 다양한 스토어입니다. 플랫폼별 스토어는 IAP 서버와 연동되어 있습니다. |
+<center>[표 3 IAP 컴포넌트]</center>
 
-## IAP Payment Flow
+## IAP 결제 흐름도
 
-In-app purchase provides IAP SDK and IAP server API. The following figure is payment flow.
+인앱 결제에서는 IAP SDK와 IAP 서버 API를 제공하고 있습니다. 다음 그림은 결제 흐름도 입니다.
 
-![[Figure. 3 Server To Server Model Payment Flow]](http://static.toastoven.net/prod_iap/iap_n_28.png)
-<center>[Figure. 3 Server To Server Model Payment Flow]</center>
+![[그림 3 Server To Server Model 결제 흐름도]](http://static.toastoven.net/prod_iap/iap_n_28.png)
+<center>[그림 3 Server To Server Model 결제 흐름도]</center>
 
-![[Figure. 4 Build-in model Payment Flow]](http://static.toastoven.net/prod_iap/iap_n_29.png)
-<center>[Figure. 4 Build-in model Payment Flow]</center>
+![[그림 4 Build-in model 결제 흐름도]](http://static.toastoven.net/prod_iap/iap_n_29.png)
+<center>[그림 4 Build-in model 결제 흐름도]</center>
 
-[Table.4 IAP Payment Flow]
+[표4 IAP 결제 흐름도]
 
 | Step | Description |
 | ---------- | ----------- |
-| [1] | Register payment user ID. Developer identifies the payment user and provides item accordingly. This is not Google Play or App Store account.<br>**[Reference]** <br>API Step<br>Android : InternalInAppPurchase.InAppPurchase.registerUserId<br>iOS : TIAPurchase registerUserId: error: |
-| [2] | Request payment in client<br>**[Reference]** <br>API Step<br>Android : InternalInAppPurchase..InAppPurchases.requestPurchase<br>iOS : TIAPurchase startPurchaseWithViewController: itemId: completionHandler |
-| [3]<br>[3-1] | Perform payment in store. |
-| [4] | Once payment is done in store, payment result will be delivered. <br>Consume item in user application server using the result.<br>**[Warning]** <br>For Build in model, if user application server is not existent, payment consume is done directly from client. However, for security reason, we strongly recommend you to consume payment in server to server method before granting authority to item.  |
-| [4-1]<br>[4-2] | Request consume to IAP Server via transferred result from the store |
-| [5] | Deliver item to the user if consume is successful |
-| [6] | Complete payment. |
+| [1] | 결제 사용자 ID를 등록합니다. 결제 사용자는 개발사에서 사용자를 식별하고 아이템을 지급하는 대상이며<br>Google play나 App Store 계정이 아닙니다.<br>**[참조]** <br>API Step<br>Android : InternalInAppPurchase.InAppPurchase.registerUserId<br>iOS : TIAPurchase registerUserId: error: |
+| [2] | 클라이언트에서 결제를 요청합니다.<br>**[참조]** <br>API Step<br>Android : InternalInAppPurchase..InAppPurchases.requestPurchase<br>iOS : TIAPurchase startPurchaseWithViewController: itemId: completionHandler |
+| [3]<br>[3-1] | 스토어에서 결제를 진행합니다. |
+| [4] | 스토어에서 결제를 마치고 결제결과를 전달받습니다.<br>전달받은 결과를 이용해 User Application Server에서 item consume 진행을 합니다.<br>**[주의]** <br>Build in model 인 경우User Application Server가 없는 경우<br>애플리케이션 서버가 존재 하지 않는 모델은 결제소비를 클라이언트에서 직접 검증 할 수 있으나, <br/> 보안 상의 이슈로 인해 Server To Server로 결제소비후 아이템에 대한 권한을 부여하는 것을 강력 권장 합니다. |
+| [4-1]<br>[4-2] | 스토어에서 전달받은 결과를 통해 IAP Server에 Consume 요청을 합니다. |
+| [5] | Consume을 성공하면 사용자에게 item을 전달합니다. |
+| [6] | 결제를 완료합니다. |

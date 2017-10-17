@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPWebconsole
+nation=ko
 ~~~~~~
 ## Common > IAP > Getting Started
 

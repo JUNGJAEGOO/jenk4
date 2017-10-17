@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameLeaderboardGetting
+nation=zh
 ~~~~~~
 ## Game > Leaderboard > Getting Started
 

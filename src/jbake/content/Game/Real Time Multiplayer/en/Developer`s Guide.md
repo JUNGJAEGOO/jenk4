@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameRealtimeDV's
+nation=en
 ~~~~~~
 ## Game > Real Time Multiplayer > Developer's Guide
 

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=CDNGetting
+nation=zh
 ~~~~~~
 ## Contents > CDN > Getting Started
 

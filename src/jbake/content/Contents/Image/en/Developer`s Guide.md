@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=IMAGEDV's
+nation=en
 ~~~~~~
 ## Contents > Image > Developer's Guide
 

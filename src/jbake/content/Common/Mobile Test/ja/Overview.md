@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MobileTestOverview
+nation=ja
 ~~~~~~
 ## Common > Mobile Test > Overview
 

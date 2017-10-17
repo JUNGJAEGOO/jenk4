@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameLeaderboardOverview
+nation=en
 ~~~~~~
 ## Game > Leaderboard > Overview
 

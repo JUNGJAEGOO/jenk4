@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MapsOverview
+nation=ja
 ~~~~~~
 ## Common > Maps > Overview
 

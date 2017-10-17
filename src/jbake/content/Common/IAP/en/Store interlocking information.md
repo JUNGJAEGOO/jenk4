@@ -2,125 +2,113 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPStoreinterlocking
+nation=en
 ~~~~~~
 ## Common > IAP > Store interlocking information
 
-You need to enter application key that store issues to IAP web console to implement in-app purchase. 
-Refer to below table for application key value that each store issues. 
+스토어의 인앱결제를 구현하려면 스토어에서 발급하는 애플리케이션 키를 IAP 웹콘솔에 입력하여야 합니다. 
+마켓별로 발급하는 애플리케이션 키 값은 아래 표를 참고합니다.
 
 ## Google Play
 
-### Google Play Store
+### Google Play 스토어 연동 정보
 
-| Field | Description                                             |
+| 필드 | 설명                                             |
 | ---------------------------------- | ---------------------------------------------- |
-| Market ID                          | GG in store list                                |
-| Market App ID                      | application package name in Google Play                |
-| Google In App Purchase License Key | Public KEY(RSA)  in Google Play       |
-| Google API Client ID               | OAuth Client ID in Google API Project           |
-| Google API Client Secret           | OAuth Client Secret in Google API Project         |
-| Refresh Token For Google OAuth     | Refresh Token getting by Google API Client ID, Google API Client Secret |
+| Market ID                          | 스토어 리스트에서 GG 선택                                 |
+| Market App ID                      | Google Play에 등록한 애플리케이션의 패키지명                  |
+| Google In App Purchase License Key | Google Play에 등록된 애플리케이션의 Public KEY(RSA)       |
+| Google API Client ID               | Google API Project의 OAuth Client ID            |
+| Google API Client Secret           | Google API Project의 OAuth Client Secret        |
+| Refresh Token For Google OAuth     | Google Play Developer 계정을 통해 획득한 Refresh Token |
 
-<center>[Table. 1] Field for registering app for synchronizing with Google Play Store </center>
+<center>[표 1] Google Play 스토어 연동을 위한 앱 등록 필드</center>
 
-| Field | Description                                             |
+| 필드        | 설명                              |
 | -------------- | ------------------------------- |
-| Item Name      | item name                |
-| Market Item ID | in app item ID registered in Google Play Developer Console |
+| Item Name      | 아이템에 대한 제목 또는 설명                |
+| Market Item ID | Google Play 개발자 콘솔에 등록한 인앱상품 ID |
 
-<center>[Table. 2] Field for registering item for synchronizing with Google Play Store</center>
+<center>[표 2] Google Play 스토어 연동을 위한 아이템 등록 필드</center>
 
-### Check application public key in Google Play developer console
+### Google Play 개발자 콘솔의 애플리케이션 Public Key 확인
 
 ```
-select [Application - Service and API] in Google Play Developer Console
+Google Play 개발자 콘솔 메뉴의 [애플리케이션 - 서비스 및 API] 선택
 ```
 
 ![](http://static.toastoven.net/prod_iap/iap_8.jpg)
 
-> [Reference]  
-> [Android Developers - Management In App Payment](http://developer.android.com/google/play/billing/billing_admin.html)
+> [참고]  
+> [Android Developers - 인앱 결제 관리](http://developer.android.com/google/play/billing/billing_admin.html)
 
-### Check OAuth Client in Google API developer console
+### Google API 개발자 콘솔에서 OAuth 클라이언트 정보 확인
 
 ```
-Create project in Google API console with the same account as Google Play developer console. 
-Create below information required for OAuth verification in reference to below link. 
-  
+Google Play 개발자 콘솔과 동일한 계정으로 Google API 콘솔에 프로젝트를 생성합니다. 아래의 링크를 참조하여 OAuth 인증에 필요한 아래의 정보를 생성합니다.  
 1) Client ID  
 2) Client Secret  
 3) Refresh Token  
 ```
 
-> [Reference]  
+> [참고]  
 > [Android Developers - Authorization](https://developers.google.com/identity/protocols/OAuth2WebServer)
 
 <br/>
 
 ```
-1. Create authorization credentials
+1. Client ID 및 Client Secret 생성
   
-  1) Go to https://console.developers.google.com
+  1) https://console.developers.google.com 로 접근합니다.
   
-  2) Click Create credentials > OAuth client ID
+  2) "사용자 정보 인증 > 사용자 인증 정보 만들기 > OAuth 클라이언트 ID" 메뉴로 진입합니다.
   
-  3) Complete the form.
-      - application type : Web application
-      - name : as you want
-      - redirect URIs : http://localhost:8080
+  3) 아래와 같이 선택 및 입력 합니다.
+      - 애플리케이션 유형 : 웹 애플리케이션
+      - 이름 : {임의로 지정}
+      - 승인된 자바스크립트 원본 : http://localhost
+      - 승인된 리디렉션 URI : http://localhost
   
+  4) 생성 버튼을 누르면 Client ID와 Client Secret이 생성되며 화면에 노출됩니다.
 ```
-![Figure. 1 Create authorization credentials](http://static.toastoven.net/prod_iap/iap_47.png)
-<center>[Figure. 1 Create authorization credentials] </center>
+![[그림 1] Client ID 및 Client Secret 생성 1](http://static.toastoven.net/prod_iap/iap_47.png)
+<center>[그림 1] Client ID 및 Client Secret 생성 1</center>
 
-![Figure. 2 Create authorization credentials](http://static.toastoven.net/prod_iap/iap_48.png)
-<center>[Figure. 2 Create authorization credentials] </center>
+![[그림 2] Client ID 및 Client Secret 생성 2](http://static.toastoven.net/prod_iap/iap_48.png)
+<center>[그림 2] Client ID 및 Client Secret 생성 2</center>
 
 ```
-2. Obtaining OAuth2.0 access tokens
+2. Refresh Token 생성
   
-  1) Redirect to Google's OAuth 2.0 server
-    sample url is shown below. you should change {client_id} to your real Client ID obtained before.
-
-    https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fandroidpublisher&access_type=offline&include_granted_scopes=true&state=state_parameter_passthrough_value&redirect_uri=http://localhost&response_type=code&client_id={client_id}
+  1) 브라우저 URL 입력란에 아래와 같이 입력하고 마지막 {client_id} 부분을 위에서 발급받은 Client ID로 치환하고 실행합니다.
+      https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fandroidpublisher&access_type=offline&include_granted_scopes=true&state=state_parameter_passthrough_value&redirect_uri=http://localhost&response_type=code&client_id={client_id}
   
+  2) 브라우저 실행화면에서 권한을 요청하면 "허용" 버튼을 클릭합니다.
   
-  2) Handle the OAuth 2.0 server response
-    above url produces respose as following, 4/P7q7W91a-oMsCeLvIaQm6bTrgtp7 value is your code.
+  3) 브라우저 URL 입력란의 URL이 아래와 같이 변경되면, {code} 부분을 마지막 #을 제외하고 별도로 저장합니다.
+      localhost/?code={code}
   
-    https://oauth2.example.com/auth?code=4/P7q7W91a-oMsCeLvIaQm6bTrgtp7 
-  
-  4) Exchange authorization code for refresh and access tokens
-  
+  4) 아래와 같이 HTTPS 요청을 하면 응답결과로 Refresh Token(refresh_token)을 취득할 수 있습니다.
       - URL : https://www.googleapis.com/oauth2/v4/token
       - Method : POST     
       - Headers : Content-Type = application/x-www-form-urlencoded
-      - Body Sample :
-            code=4/P7q7W91a-oMsCeLvIaQm6bTrgtp7&
-            client_id=your_client_id&
-            client_secret=your_client_secret&
-            redirect_uri=https://oauth2.example.com/code&
-            grant_type=authorization_code
-            
-            
-      - sample response : you can get refresh_token
-        {
-          "access_token":"1/fFAGRNJru1FTz70BzhT3Zg",
-          "expires_in":3920,
-          "token_type":"Bearer",
-          "refresh_token":"1/xEoDL4iW3cxlI7yDbSRFYNG01kVKM2C-259HOF2aQbI"
-        }                    
+      - Body :
+          grant_type = authorization_code
+          code = {code}
+          client_id = {client_id}
+          client_secret = {client_secret}
+          redirect_uri = http://localhost
 ```
 
-![Figure. 3 Creation Refresh Token](http://static.toastoven.net/prod_iap/iap_49.jpg)
-<center>[Figure. 3 Creation Refresh Token]</center>
+![[그림 3] Refresh Token 생성 1](http://static.toastoven.net/prod_iap/iap_49.jpg)
+<center>[그림 3] Refresh Token 생성 1</center>
 
-![Figure. 4 Creation Refresh Token](http://static.toastoven.net/prod_iap/iap_50.jpg)
-<center>[Figure. 4 Creation Refresh Token]</center>
+![[그림 4] Refresh Token 생성 2](http://static.toastoven.net/prod_iap/iap_50.jpg)
+<center>[그림 4] Refresh Token 생성 2</center>
 
-### AndroidManifest.xml Setting Example
+### AndroidManifest.xml 설정 예시
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -143,102 +131,107 @@ Create below information required for OAuth verification in reference to below l
 ```
 
 ```
-* Android : Refer to  /AndroidManifest-google-example.xml of sample application  
-* Unity : Refer to  /Plugins/Android/AndroidManifest-iap-template.xml of Unity Plugin
+* Android : 샘플 어플리케이션의 /AndroidManifest-google-example.xml 참조  
+* Unity : 유니티 플러그인의 /Plugins/Android/AndroidManifest-iap-template.xml 참조
 ```
 
-### Google Play Prerequisites
+### Google Play 연동 주의사항
 
-Registering app/ item via web console may not be available if you don’t follow below instructions when setting in Google Play.
-
-```
-1. Any application that calls Google APIs needs to enable those APIs in the API Console. To enable the appropriate APIs for your project:
-    - Open the Library page in the API Console.
-    - Select the project associated with your application. Create a project if you do not have one already.
-    - Use the Library page to find each API that your application will use. Click on each API and enable it for your project.
-
+구글연동을 위해 주의해야 할 사항이 있습니다.    
+아래와 같은 상황이 아닌 경우 웹콘솔을 통해 정상적인 앱, 아이템 등록이 불가할 수 있습니다.
 
 ```
-
-![Figure. 5 Google Play Developer API](http://static.toastoven.net/prod_iap/iap_36_1.png)
-<center>[Figure. 5 Google Play Developer API]</center>
-
-![Figure. 6 Google Play Developer API Enable](http://static.toastoven.net/prod_iap/iap_37.png)
-<center>[Figure. 6 Google Play Developer API Enable]</center>
-
-```
-2. 'Check if the API is connected with project ID in 'Google Play Developer Console' by visiting [API Access menu]  
-  - Go to https://play.google.com/apps/publish
-  - Go to [Settings] > [API Access] menu on left     
-  - Check if project is successfully connected
+1. 'Google Developers Console' 에 등록된 프로젝트가 Google Play Developer API가 활성화 되어있는지 확인합니다.
+  - https://console.developers.google.com 접속  
+  - [API 및 인증] > [API] 메뉴 접근  
+  - [모바일 API] > [Google Play Developer API] 접근  
+  - API 사용 중지 상태확인
 ```
 
-![Figure 7 Google Play Developer API Enable](http://static.toastoven.net/prod_iap/iap_38.png)
-<center>[Figure 7 Google Play Developer API Enable]</center>
+![[그림 5] Google Developers Console 내부의 Google Play Developer API 메뉴](http://static.toastoven.net/prod_iap/iap_36_1.png)
+<center>[그림 5] Google Developers Console 내부의 Google Play Developer API 메뉴</center>
+
+![[그림 6] Google Play Developer API 활성화 확인](http://static.toastoven.net/prod_iap/iap_37.png)
+<center>[그림 6] Google Play Developer API 활성화 확인</center>
 
 ```
-3. The account holder of 'Google Play Developer Console' needs to be the user who has the authority over project in Google Developers Console.  
-
+2. 'Google Play Developer Console' 에서 프로젝트 ID와 연결되어있는지 [API 액세스] 메뉴를 통해 확인합니다.  
+  - https://play.google.com/apps/publish 접속
+  - 좌측메뉴의 [설정] > [API 액세스] 메뉴 접근  
+  - 프로젝트가 연결되어있는지 확인
 ```
 
-![Figure 8 Check in app product ID](http://static.toastoven.net/prod_iap/iap_39.jpg)
-<center>[Figure 8 Check in app product ID]</center>
+![[그림 7] Google Play Developer API 활성화 확인](http://static.toastoven.net/prod_iap/iap_38.png)
+<center>[그림 7] Google Play Developer API 활성화 확인</center>
 
 ```
-4. In-app item in ‘Google Play Developer Console’ should match with item in Store Item ID.  
+3. 'Google Play Developer Console' 의 계정 소유자가 Google Developers Console의 프로젝트에 권한이 있는 사용자 이여야 합니다.  
+  - https://console.developers.google.com 접속
+  - 좌측 [권한]메뉴 접근  
+  - 계정 확인
 ```
 
-## One Store Developer Center (ex TStore)
+![[그림 8] 인앱상품 ID 확인](http://static.toastoven.net/prod_iap/iap_39.jpg)
+<center>[그림 8] 인앱상품 ID 확인</center>
 
-### Guide for integrated developer center (3 telecoms)
+```
+4. 'Google Play Developer Console' 인앱상품에서 Market Item ID와 일치하는 상품이 등록이 되어있어야 합니다.  
+  - https://play.google.com/apps/publish 접속
+  - 좌측 [인앱 상품]메뉴 접근  
+  - 인앱 상품의 ID 확인
+```
 
-T-store developer center is one-store integrated developer center for Olleh store, U+ store and T-store. 
-Synchronizing systems for in-app purchase is the same as before; publishing for all three stores is possible using T-store sync information.
+## 원스토어 통합개발자센터(구 T스토어)
 
-> [Reference]
-> Naver App store will be transferred to One Store from June 01, 2016.
-> [Naver App Store Developer Center](http://cafe.naver.com/naverappdev/10658)
+### 통신3사 통합개발자센터에 대한 안내
 
-### One Store 
+원스토어 통합개발자 센터는 올레마켓 / U+스토어 / T스토어 / 네이버 앱스토어 통합 센터입니다. 
+인앱결제를 위한 연동방법은 기존과 동일하게 제공되기 때문에 원스토어 연동 정보를 통해 퍼블리싱이 가능합니다.
 
-[Table. 3] App Form for One Store
+> [참고]
+> 2016년 6월 1일 이후로는 네이버 앱스토어는 원스토어로 양도 되었습니다.
+> [네이버앱스토어 개발자센터 공식카페](http://cafe.naver.com/naverappdev/10658)
 
-| Field | Description                               |
+### 원스토어 연동 정보
+
+[표 3] 원스토어 연동을 위한 앱 등록 필드
+
+| 필드         | 설명                             |
 | ------------- | ------------------------------ |
-| Market ID     | select TS in store list                 |
-| Market App ID | AID (Application ID) |
+| Market ID     | 스토어 리스트에서 TS 선택                 |
+| Market App ID | 스토어에 등록한 AID (Application ID) |
 
-[Table. 4] Item Form for One Store
+[표 4] 원스토어 연동을 위한 아이템 등록 필드
 
-| Field | Description                        |
+| 필드        | 설명                      |
 | -------------- | ----------------------- |
-| Item Name      | Item Name        |
-| Market Item ID | Product Id registered in One Store|
+| Item Name      | 아이템에 대한 제목 또는 설명        |
+| Market Item ID | 원스토어에 등록한 In-App 상품의 ID |
 
-### Obtaining AID and In-App ID in One Store
+### 원스토어 개발자 센터에서 AID와 In-App ID 발급
 
 ```
-You should check following information in One Store. 
-1) AID : Application Id created in One Store 
-2) In-App ID : In-App Product Id created in One Store
+원스토어 개발자 센터에서 아래의 정보를 확인 합니다.  
+1) AID : 원스토어 개발자 센터에서 생성한 애플리케이션의 ID  
+2) In-App ID : 생성한 애플리케이션에 등록한 In-App 상품의 ID
 ```
 
-### Add One Store library 
+### Android 원스토어 라이브러리 추가
 
-In order to download IAP Android SDK and sync with T-store, you first need to add below library to project. 
-Copy files from /libs/tstore folder in downloaded SDK package and paste them to /libs in application project.
+IAP Android SDK의 다운로드 받고 원스토어 연동을 위해서는 추가적으로 아래와 같이 프로젝트에 라이브러리를 추가해야합니다.
 
+\- Download한 SDK패키지에서 /libs/tstore 폴더의 파일을 애플리케이션 프로젝트의 /libs 에 복사합니다.
 
-![Figure. 9 Add One Store Library](http://static.toastoven.net/prod_iap/iap_41.png)
-<center>[Figure. 9 Add One Store Library]</center>
+![[그림 9 원스토어 라이브러리의 추가]](http://static.toastoven.net/prod_iap/iap_41.png)
+<center>[그림 9 원스토어 라이브러리의 추가]</center>
 
-> [Reference]  
-> Adding Library in Unity Project   
-> Copy files from /libs/tstore folder in downloaded SDK package and paste them to /Plugins/Android/iap/libs  
+> [참고]  
+> Unity 프로젝트에서 Library 추가   
+> Download 한 SDK패키지에서 /libs/tstore 폴더의 파일을 /Plugins/Android/iap/libs 에 복사합니다.  
 
-### AndroidManifest.xml Example
+### AndroidManifest.xml 설정 예시
 
-Add AndroidManifest.xml setting information as shown below to sync with One store.
+원스토어 연동을 위해서는 아래와 같이 AndroidManifest.xml 설정 정보를 추가 합니다.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -262,48 +255,48 @@ Add AndroidManifest.xml setting information as shown below to sync with One stor
 ```
 
 ```
-- Android: Refer to /AndroidManifest-tstore-example.xml of sample application  
-- Unity: Refer to /Plugins/Android/AndroidManifest-iap-tstore-template.xml of Unity Plugin  
-- One Store sets development environment in AndroidManifest.xml during purchase.  
-  * iap:plugin_mode: development (test), release (production)
+- Android: 샘플 어플리케이션의 /AndroidManifest-tstore-example.xml 참조  
+- Unity: 유니티 플러그인의 /Plugins/Android/AndroidManifest-iap-tstore-template.xml 참조  
+- 원스토어는 결제시 개발환경을 아래와 같이 지원합니다. AndroidManifest.xml 를 통해 설정가능합니다.  
+  * iap:plugin_mode: 개발(development), 운영(release)
 ```
 
 > [참고]  
-> [One Store Developer Tools](http://dev.onestore.co.kr/devpoc/reference/view/Tools)
+> [원스토어 개발자 센터 개발도구](http://dev.onestore.co.kr/devpoc/reference/view/Tools)
 
 <br/>
-> [Reference]  
-> One Store IAP SDK Update
-> As Android 6.0 is published, One Store highly recommends applying the newest in-app SDK (v.15.01.00). 
-You need to apply the latest in-app SDK in order to register app via One Store developer center 
-> [One Store Reference](http://dev.onestore.co.kr/devpoc/support/news/noticeView.omp?noticeId=26472)
+> [참고]  
+> 원스토어 인앱 SDK 업데이트   
+> 안드로이드 6.0이 공개됨에 따라 원스토어에서는 최신 인앱 SDK (v.15.01.00) 을 적용해야함을 강력권고 하고있습니다. 
+> OneStore 개발자 센터를 통해 앱을 등록하기 위해서는 최신 인앱 SDK을 적용해야만 앱을 등록할 수 있습니다.    
+> [원스토어 Reference](http://dev.onestore.co.kr/devpoc/support/news/noticeView.omp?noticeId=26472)
 
 <br/>
-> [Reference]  
-> [Naver App Store Transfer](http://cafe.naver.com/naverappdev/10658)
+> [참고]  
+> [네이버 앱스토어 영업 양수도 관련 서비스 주요 변경사항](http://cafe.naver.com/naverappdev/10658)
 
-## Apple App Store
+## 애플 앱스토어
 
-### Apple App Store Form
+### 앱스토어 연동 정보
 
-| Field         | Description                          |
+| 필드         | 설명                          |
 | ------------- | --------------------------- |
-| Market ID     | select AS in Store list              |
-| Market App ID | application Bundle Id in iTunes Connect |
+| Market ID     | 스토어 리스트에서 AS 선택              |
+| Market App ID | 앱스토어에 등록한 애플리케이션의 Bundle Id |
 
-| Web Console <br/> item field        | Description               |
+| Web Console <br/> 아이템 등록 필드        | 설명               |
 | -------------- | ---------------- |
-| Item Name      | item name |
-| Market Item ID | product Id in iTunes Connect  |
+| Item Name      | 아이템에 대한 제목 또는 설명 |
+| Market Item ID | 앱스토어 등록한 제품 ID   |
 
-### Check Bundle Id and in-app item ID in App Store developer center
+### 앱스토어 개발자 센터에서 Bundle Id 및 In-App 제품ID 확인
 
 ```
-Check below information in iTunes Connect  
-1) Bundle Id  
-2) Product ID
+iTunes Connect 를 통해 아래의 정보를 확인 합니다.  
+1) Bundle Id : iTunes Connect를 통해 등록한 애플리케이션의 Bundle Id  
+2) 제품 ID : iTunes Connect를 통해 등록한 In-App 상품의 제품ID
 ```
 
-> [Reference]  
-> Suppose you have completed application and item registration to iTunes Connect in order to test in-app purchase.    
+> [참고]  
+> In App Purchase 테스트를 하기 위해 iTunes Connect에 어플리케이션 및 상품등록을 완료했다고 가정합니다.   
 > [iTunes Connect](http://itunesconnect.apple.com)  

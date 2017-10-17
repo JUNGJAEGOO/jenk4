@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPAndroidDV's
+nation=ja
 ~~~~~~
 ## Common > IAP > Android Developer's Guide
 
@@ -156,7 +157,7 @@ AndroidManifest.xml의 설정 정보는 다음과 같습니다.
 결제소비까지 완료한 이후에는 사용자의 애플리케이션에서 아이템을 지급하면 됩니다.
 
 > [참고]  
-> [IAP 결제 흐름도](/Common/IAP/ja/Overview/#iap)
+> [IAP 결제 흐름도](/Common/IAP/ko/Overview/#iap)
 
 ### 사용자 식별자 등록
 
@@ -198,6 +199,7 @@ InAppPurchases.InAppPurchase.queryItems(activity, new InAppPurchase.ItemListCall
 | Return Value | void |
 
 [Response Example]
+
 ```json
 [
     {
@@ -270,7 +272,7 @@ InAppPurchases.InAppPurchase.requestPurchase(this, 1000001, new PurchaseCallback
 사용자 애플리케이션 서버는 아이템을 지급하기 전 IAP 서버에게 결제를 소비할 것을 알려야 합니다. 이 때 결제 구매 토큰(Payment Purchase Token)을 이용하여 사용자 서버와 IAP서버간의 결제 유효성에 대한 보안을 체크합니다.
 
 > [참고]  
-> [Server Payment Consume API](/Common/IAP/ja/Server%20Developer%60s%20Guide/#payment-consume-api)  
+> [Server Payment Consume API](/Common/IAP/ko/Server%20Developer%60s%20Guide/#payment-consume-api)  
 
 [HTTP Request Example]
 
@@ -439,7 +441,7 @@ InAppPurchases.InAppPurchase.queryPurchases(activity, new PurchaseListCallback()
 * errorMessage - 에러에 대한 상세 정보
 
 > [참고]  
-> [Error Code Guide](/Common/IAP/ja/Error%20Code/)    
+> [Error Code Guide](/Common/IAP/ko/Error%20Code/)    
 
 ## Android Sample Application
 
@@ -552,7 +554,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [queryPurchases]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  소비(Consume) 되지 않은 결제내역을 조회합니다. |
 | Syntax | public void queryPurchases(Activity activity, PurchaseListCallback callback) |
 | Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
@@ -600,7 +602,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [queryItems]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  구매 가능한 모든 아이템 내역을 조회합니다. |
 | Syntax | public void queryItems(Activity activity, ItemListCallback callback) |
 | Parameters |  activity [in] 어플리케이션의 현재 액티비티 |
@@ -649,7 +651,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [onCallback]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  API 요청 결과를 전달합니다. |
 | Syntax | public abstract void onCallback(JSONObject result, InAppPurchaseException exception) |
 | Parameters |  result [in] 응답 결과에 대한 코드 및 추가 정보를 전달 |
@@ -669,7 +671,7 @@ InAppPurchases.InAppPurchase.registerUserId("guest0001");
 [onCallback]
 
 |용어|설명|
-| ----- | ----- | ----- |
+| ----- | ----- |
 | Description |  API 요청 결과를 전달합니다. |
 | Syntax | public abstract void onCallback(JSONArray result, InAppPurchaseException exception) |
 | Parameters |  result [in] 응답 결과에 대한 코드 및 추가 정보를 전달 |

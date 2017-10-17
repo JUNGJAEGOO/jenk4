@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=IMAGEGetting
+nation=ko
 ~~~~~~
 ## Contents > Image > Getting Started
 

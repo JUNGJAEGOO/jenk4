@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPWebconsole
+nation=ja
 ~~~~~~
 ## Common > IAP > Getting Started
 
@@ -95,7 +96,7 @@ IAP 서비스를 사용하기 위해서는 Web Console (http://console.cloud.toa
 > 결제 상태   
 >  - In Progress : 결제 진행중   
 >  - Success : 결제 완료   
->  - Failure : 결제 검증 실패
+>  - Failure : 결제 검증 실패  
 >  - Refund : 환불 완료
 
 > 결제 상태에 따른 상황  

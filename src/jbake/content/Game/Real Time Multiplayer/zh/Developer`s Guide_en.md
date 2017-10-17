@@ -4,6 +4,7 @@ type=page
 status=published
 big=
 summary=
+nation=
 ~~~~~~
 Game &gt; Real Time Multiplayer &gt; Developer's Guide
 ------------------------------------------------------

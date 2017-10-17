@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameLeaderboardDV'sEN
+nation=zh
 ~~~~~~
 Game &gt; LeaderBoard &gt; Developer's Guide
 --------------------------------------------

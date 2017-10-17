@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameRealtimeRelease
+nation=ja
 ~~~~~~
 ## Game > Real Time Multiplayer > Release Notes
 

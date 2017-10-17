@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPOverview
+nation=ko
 ~~~~~~
 ## Common > IAP > Overview
 

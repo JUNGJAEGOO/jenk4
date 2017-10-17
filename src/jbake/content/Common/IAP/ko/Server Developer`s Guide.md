@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPServerDV's
+nation=ko
 ~~~~~~
 ## Common > IAP > Server Developer's Guide
 

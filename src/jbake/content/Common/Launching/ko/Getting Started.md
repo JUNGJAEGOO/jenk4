@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=LaunchingGetting
+nation=ko
 ~~~~~~
 ## Common > Launching > Getting Started
 

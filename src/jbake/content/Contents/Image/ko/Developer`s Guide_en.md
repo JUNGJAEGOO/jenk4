@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=IMAGEDV'sEN
+nation=ko
 ~~~~~~
 Contents &gt; Image &gt; Developer's Guide
 ------------------------------------------

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPStoreinterlocking
+nation=ko
 ~~~~~~
 ## Common > IAP > Store interlocking information
 

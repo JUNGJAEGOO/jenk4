@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MapsGetting
+nation=ja
 ~~~~~~
 ## Common > Maps > Getting Started
 

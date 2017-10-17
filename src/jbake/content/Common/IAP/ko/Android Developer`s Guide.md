@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPAndroidDV's
+nation=ko
 ~~~~~~
 ## Common > IAP > Android Developer's Guide
 

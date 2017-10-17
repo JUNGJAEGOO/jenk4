@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MobileTestRelease
+nation=ko
 ~~~~~~
 ## Common > Mobile Test > Release Notes
 

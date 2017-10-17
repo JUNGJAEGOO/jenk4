@@ -2,47 +2,47 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPServerDV's
+nation=zh
 ~~~~~~
 ## Common > IAP > Server Developer's Guide
 
 ## Payment Consume API
 
-用户应用服务器在支付项目前，向IAP服务器告知要消费的项目。每次只能进行1次结算消费，结算情况不正常的话将不能消费。未消费(Consume)的结算明细，可通过SDK的未消费结算明细查询API进行查询。
+사용자 애플리케이션 서버는 아이템을 지급하기 전에 IAP 서버에게 결제를 소비 할 것을 알려야 합니다. <br/>결제 1건당 1번만 결제소비 가능하며, 결제의 상태가 정상이 아니면 소비되지 않습니다. <br/>소비 (Consume) 하지 않은 결제내역은 SDK의 미소비 결제 내역조회 API를 통해 조회가능 합니다.
 
-> [参考]<br>
-> 结算 1次可消费 1次，未消费结算的结算被当作是在IAP上未支付项目。<br>
-> 客户端可批量查询未消费的结算项。
+> [참고]  
+> 결제 1건당 1번 소비 가능하며, 결제소비 하지 않은 결제는 IAP에서 아이템을 지급하지 않은 것으로 간주합니다.    
+> 클라이언트는 소비 되지 않은 결제건을 일괄 조회할 수 있습니다.
 
 ### Request
 
 [URL]
 
-```
+```http
 POST https://api-iap.cloud.toast.com/inapp/v3/consume/{paymentSeq}/items/{itemSeq}
 ```
 
 [Request Header]
 
-|Property name   |Value|
-|--------------- | ------------------|
-|Http Method    | POST|
-|Content-Type   | application/json|
+| Property name | Value            |
+| ------------- | ---------------- |
+| Http Method   | POST             |
+| Content-Type  | application/json |
 
 [Path Parameter]
 
-|名称 |        资料类型  | 说明|
-|------------ | ---------- | -----------------------------|
-|paymentSeq |  String |    结算编号|
-|itemSeq    |  Long  |     Web Console上注册的项目编号|
+| 이름         | 자료형    | 설명                     |
+| ---------- | ------ | ---------------------- |
+| paymentSeq | String | 결제 번호                  |
+| itemSeq    | Long   | Web Console에 등록된 아이템번호 |
 
 [RequestBody]
 
-|名称           | 资料类型  | 说明|
-|--------------- | ---------- | --------------------|
-|purchaseToken |  String    | 检验结算的令牌信息|
-                             
+| 이름            | 자료형    | 설명              |
+| ------------- | ------ | --------------- |
+| purchaseToken | String | 결제 검증을 위한 토큰 정보 |
 
 [Example]
 
@@ -57,7 +57,7 @@ RequestBody
 
 ### Response
 
-在Response body上以JSON形态来传达
+Response body에 JSON형태로 전달
 
 [Example Response]
 
@@ -77,64 +77,61 @@ RequestBody
 
 [Header]
 
-|Property name  | Value   |  Description|
+| Property name | Value   | Description             |
 | ------------- | ------- | ----------------------- |
-|isSuccessful   | Boolean  | 结算消费是否正常，成功邀请API时为true，失败时为false|
-|resultCode     | Integer  | 结算消费失败时的详细代码|
-|resultMessage  | String  |  详细消息|
+| isSuccessful  | Boolean | 결제소비가 정상적으로 됐는지 여부. <br/> API 가 성공적으로 요청 되었을 때 true <br/> 실패 했을 때 false |
+| resultCode |  Integer |  결제소비 실패시 상세코드 |
+| resultMessage |  String |  상세 메시지 |
 
 [Result]
 
-|Property name |  Value |   Description|
-| ------------- | ------- | ----------------------- |
-|price  |         long   |  已完成消费的结算项的价格|
-|currency  |      String  | 已完成消费的结算项的通货|
-                           
+| Property name | Value  | Description       |
+| ------------- | ------ | ----------------- |
+| price         | long   | 결제소비가 완료된 결제건의 가격 |
+| currency      | String | 결제소비가 완료된 결제건의 통화 |
 
 [ResultCode]
 
-|值  | 说明|
-|---- | ------------------| 
-|0   | 成功完成的结算项|
+| 값 | 설명             |
+| - | -------------- |
+| 0 | 성공적으로 완료한 결제 건 |
 
-> [参考]<br>
-> 其他的Result Code<br>
-> 参照Error Code 页面。
+> [참고]  
+> 그 외의 Result Code    
+> Error Code 페이지 참조  
 
-<br>
+<br/>
+> [참고]  
+> 기존의 consume API v2는 호출은 가능하나 더 이상 사용되지 않을 예정입니다.
 
-> [参考]<br>
-> 现存的consume API v2可进行呼叫，但将不再使用。
 
 ## Payment Consumable API
 
-虽已完成结算，但是未消费(consume)的结算明细可用SERVER<br>
-API进行查询。用该API查询未消费明细的话，可消费(consume)未消费的明细。
+결제가 완료되었으나 소비 (consume) 되지 않은 결제내역을 SERVER API로 조회할 수 있습니다. <br/>해당 API로 미소비내역을 조회하여 소비되지 않은 내역들을 소비 (consume) 할 수 있습니다.
 
 ### Request
 
 [URL]
 
-```
+```http
 POST https://api-iap.cloud.toast.com/standard/inapp/v1/consumable/list
 ```
 
 [Request Header]
 
-|Property name   |Value|
-|--------------- | ------------------|
-|Http Method     |POST|
-|Content-Type    |application/json|
-                  
+| Property name | Value            |
+| ------------- | ---------------- |
+| Http Method   | POST             |
+| Content-Type  | application/json |
+
 
 [RequestBody]
 
-|名称          | 资料类型 |   说明|
-|------------- | ---------- | ---------------------------|
-|appSeq     |   Long     |  Web控制台上注册的APP ID|
-|userChannel |  String  |   用户频道 (Default : "GF")|
-|userKey      | String |    结算的用户钥匙|
-                           
+| 이름            | 자료형    | 설명              |
+| ------------- | ------ | --------------- |
+| appSeq | Long | 웹콘솔에 등록된 APP ID |
+| userChannel | String | 유저채널 <br/>(디폴트 : "GF") |
+| userKey | String | 결제한 유저키 |
 
 [Example]
 
@@ -151,7 +148,7 @@ RequestBody
 
 ### Response
 
-在Response body上以JSON形态来传达
+Response body에 JSON형태로 전달
 
 [Example Response]
 
@@ -185,65 +182,68 @@ RequestBody
 
 [Header]
 
-|Property name   |Value    | Description|
+| Property name | Value   | Description             |
 | ------------- | ------- | ----------------------- |
-|isSuccessful   | Boolean  | 查询是否正常，成功邀请API时为true，失败时为false|
-|resultCode     | Integer |  查询失败时的详细代码|
-|resultMessage  | String |   详细消息|
+| isSuccessful  | Boolean | 조회가 정상적으로 됐는지 여부. <br/> API 가 성공적으로 요청 되었을 때 true <br/> 실패 했을 때 false |
+| resultCode |  Integer |  조회 실패시 상세코드 |
+| resultMessage |  String |  상세 메시지 |
 
 [Result]
 
-|Property name |  Value   | Description|
-| ------------- | ------- | ----------------------- |
-|paymentSeq    |  String   |结算编号(PAYMENT ID)|
-|itemSeq       |  String  | Web控制台上注册的ITEM ID|
-|currency      |  Long     |结算通货|
-|price         |  String  | 结算价格|
-|purchaseToken |  String |  为了消费(consume)而进行的令牌信息|
+| Property name | Value  | Description       |
+| ------------- | ------ | ----------------- |
+| paymentSeq |  String | 결제번호(PAYMENT ID) |
+| itemSeq |  String |  웹콘솔에 등록된 ITEM ID |
+| currency | Long |  결제 통화 |
+| price |  String |  결제 가격 |
+| purchaseToken |  String | 소비(consume)하기 위한 토큰정보 |
 
 [ResultCode]
 
-|值 |  说明|
-|---- | ------------------|
-|0 |   成功完成的结算项|
+| 값 | 설명             |
+| - | -------------- |
+| 0 | 성공적으로 완료한 결제 건 |
 
-> [参考]<br>
-> 其他的Result Code<br>
-> 参照Error Code 页面。
+> [참고]  
+> 그 외의 Result Code    
+> Error Code 페이지 참조  
+
 
 ## Item Search API
 
-在Web控制台上查询注册于APP ID的ITEM。
+웹콘솔에서 APP ID에 등록된 ITEM을 조회합니다.
 
 ### Request
 
 [URL]
 
-```
+```http
 POST https://api-iap.cloud.toast.com/standard/item/list/{appSeq}
+
 ```
 
 [Request Header]
 
-| Property name   |Value|
-|--------------- | -------|
-|Http Method    | GET|
+| Property name | Value            |
+| ------------- | ---------------- |
+| Http Method   | GET             |
 
 [Path Parameter]
 
-|名称    | 资料类型  | 说明|
-|-------- | ---------- | -----------------------------|
-|appSeq |  Long      | 注册于Web Console的项目编号|
+| 이름         | 자료형    | 설명                     |
+| ---------- | ------ | ---------------------- |
+| appSeq    | Long   | Web Console에 등록된 아이템번호 |
+
 
 [Example]
 
-```
+```http
 POST https://api-iap.cloud.toast.com/standard/item/list/1000047
 ```
 
 ### Response
 
-在Response body上以JSON形态来传达
+Response body에 JSON형태로 전달
 
 [Example Response]
 
@@ -278,34 +278,34 @@ POST https://api-iap.cloud.toast.com/standard/item/list/1000047
 
 [Header]
 
-|Property name  | Value     |Description|
+| Property name | Value   | Description             |
 | ------------- | ------- | ----------------------- |
-|isSuccessful   | Boolean  | 确认查询是否正常，<br>成功邀请API时为true，<br>失败时为false|
-|resultCode     | Integer  | 项目查询失败时的详细代码|
-|resultMessage  | String   | 详细消息|
+| isSuccessful  | Boolean | 조회가 정상적으로 됐는지 여부. <br/> API 가 성공적으로 요청 되었을 때 true <br/> 실패 했을 때 false |
+| resultCode |  Integer | 아이템조회 실패시 상세코드 |
+| resultMessage |  String |  상세 메시지 |
 
 [Result]
 
-|Property name    |Value    |Description|
-| ------------- | ------- | ----------------------- |
-|appUsingStatus|   String |  使用中 : "USE" , 未使用中 : "STOP"|
-|itemList       |  List |    承载项目信息的目标清单|
-|itemSeq        |  Long    | Web控制台上注册的ITEM ID|
-|itemName       |  String |  Web控制台上注册的 ITEM 名称|
-|marketItemId   |  String |  Web控制台上注册的Store Item ID|
-|usingStatus    |  String |  使用中: "USE" , 未使用中 : "STOP"|
-|regYmdt        |  String |  ITEM 注册日期|
-|appName        |  String |  ITEM 的App名|
-|marketId       |  String |  ITEM 的市场划分<br>Google : "GG" <br>苹果 : "AS" <br>ONE Store : "TS"|
-|marketAppId   |   String |  Web控制台上注册的Store App ID|
-|appSeq       |    Long   |  Web控制台上注册的App ID|
+| Property name | Value  | Description       |
+| ------------- | ------ | ----------------- |
+| appUsingStatus | String | 사용중 : "USE" , 미사용중 : "STOP" |
+| itemList | List | 아이템정보를 담은 오브젝트의 리스트 |
+| itemSeq | Long | 웹콘솔에 등록된 ITEM ID |
+| itemName | String | 웹콘솔에 등록된 ITEM 이름 |
+| marketItemId | String | 웹콘솔에 등록된 Store Item ID |
+| usingStatus | String | 사용중 : "USE" , 미사용중 : "STOP" |
+| regYmdt | String | ITEM 등록 일자 |
+| appName | String | ITEM 의 앱명 |
+| marketId | String | ITEM 의 마켓구분 <br/>구글 : "GG"<br/> 애플 : "AS" <br/>원스토어 : "TS" |
+| marketAppId | String | 웹콘솔에 등록된 Store App ID |
+| appSeq | Long | 웹콘솔에 등록된 App ID |
 
 [ResultCode]
 
-|值  | 说明|
-|---- | ------------------|
-|0|    成功完成的结算项|
+| 값 | 설명             |
+| - | -------------- |
+| 0 | 성공적으로 완료한 결제 건 |
 
-> [参考]<br>
-> 其他的Result Code<br>
-> 参照Error Code 页面。
+> [참고]  
+> 그 외의 Result Code    
+> Error Code 페이지 참조  

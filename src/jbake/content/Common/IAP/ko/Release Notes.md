@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPRelease
+nation=ko
 ~~~~~~
 ## Common > IAP > Release Notes
 

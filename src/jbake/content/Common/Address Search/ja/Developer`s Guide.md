@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=AdrDV's
+nation=ja
 ~~~~~~
 ## Common > Address Search > Developer's Guide
 

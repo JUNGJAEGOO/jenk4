@@ -4,6 +4,7 @@ type=page
 status=published
 summary=CDNOverview
 big=TCcontents
+nation=ja
 ~~~~~~
 ## Contents > CDN > Overview
 

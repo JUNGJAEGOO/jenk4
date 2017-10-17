@@ -2,96 +2,93 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPIosDV's
+nation=zh
 ~~~~~~
-## 开发环境
+## 개발 환경
 
 * OSX is required
 * Xcode 6.0.1 and higher
 * IAP SDK Support for iOS 6.x and higher
 
-为了使用IAP SDK，需在App上添加下面的Framework。
+IAP SDK 사용을 위해서는 어플리케이션에 아래의 Framework를 추가 해야 합니다.
 
-| 名称                     | 说明|
-|------------------------- | ---------------------------------------------------|
-|StoreKit.framework      |  为了关联AppStore的In App Purchase的framework|
-|libsqlite3.dylib        |  TOAST Cloud IAP SDK为了管理本地数据而使用sqlite。|
-|coreTelephony.framework |  为获得用户的国家信息而使用。|
+| 이름                 | 설명                                             |
+| ------------------ | ---------------------------------------------- |
+| StoreKit.framework | 앱스토어의 In App Purchase연동을 위한 framework          |
+| libsqlite3.dylib   | TOAST Cloud IAP SDK는 로컬데이터관리를 위해 sqlite를 사용합니다 |
+| coreTelephony.framework   | 사용자의 국가정보를 획득하기 위해 사용합니다 |
 
-> [参考]<br>
-> 为了测试In App Purchase ，假设在iTunes Connect上完成了App及商品注册。<br>
+> [참고]  
+> In App Purchase 테스트를 하기 위해 iTunes Connect에 어플리케이션 및 상품등록을 완료했다고 가정합니다.    
 > [iTunes Connect](http://itunesconnect.apple.com)
 
 ## IAP Console
 
-### 1. 注册Store – 获得APP ID 
+### 1\. 스토어등록 - APP ID 획득
 
 ```
-1. 选择[App]标签 > 点击[添加]按钮 
-2. 在[Store ID]上选择AS(Apple Store) 
-    - 输入关联Market的信息(Market APP ID : Bundle Id)
-3. 确认[APP ID] 
+1. [App] 탭 선택 > [추가] 버튼 클릭  
+2. [Store ID]에서 AS(Apple Store) 선택  
+    - 마켓 연동을 위한 정보 입력(Market APP ID : Bundle Id)
+3. [APP ID] 확인
 ```
 
-![[图 1 获得APP ID]](http://static.toastoven.net/prod_iap/iap_n_32.png)
+![[그림 1 APP ID 획득]](http://static.toastoven.net/prod_iap/iap_n_32.png)
+<center>[그림 1 APP ID 획득]</center>
 
-<center>[图 1 获得APP ID]</center>
-
-### 2. 注册Item
+### 2\. 아이템 등록
 
 ```
-1. 选择[Item]标签 > 点击[添加]按钮
-2. 在[Store ID]上选择AS(Apple Store)   
-3. [输入项目信息]  
-    - Item Name : 项目的名称
-    - Store Item ID : 注册于iTunes Connect的App项目的Product ID  
-4. 确认[ITEM] 
+1. [Item] 탭 선택 > [추가] 버튼 클릭  
+2. [Store ID]에서 AS(Apple Store) 선택  
+3. [아이템 정보 입력]  
+    - Item Name : 아이템의 이름  
+    - Store Item ID : iTunes Connect에 등록한 어플리케이션의 아이템의 Product ID  
+4. [ITEM] 확인
 ```
 
+## Xcode 프로젝트 설정하기
 
-## 设置Xcode 项目
 
-| 目录名    | 说明|
-|---------- | ---------------------------|
-| /docs    |  IAP iOS SDK API Reference|
-| /include |  Header File|
-| /lib     |  Library|
-| /samples |  Sample Application|
+| 디렉토리명    | 설명                        |
+| -------- | ------------------------- |
+| /docs    | IAP iOS SDK API Reference |
+| /include | Header File               |
+| /lib     | Library                   |
+| /samples | Sample Application        |
+<center>[표1 iOS SDK 디렉토리 정보]</center>
 
-[表1 iOS SDK目录信息]
-
-### 1.添加 IAP SDK及framework 
+### 1\. IAP SDK 및 framework 추가
 
 ```
 1. [Xcode] > [Project] > [Targets – Build Phases]  
-2. [将TIAPurchase.h文件添加至项目Drag & Drop中]  
-3. 在[Link Bianry With Libraries]上添加下面的framworks   
+2. [TIAPurchase.h 파일을 프로젝트에 Drag & Drop 하여 추가]  
+3. [Link Bianry With Libraries] 에 아래의 framworks 추가  
     - libTIAPurchase.a  
     - StoreKit.framework  
     - Libsqlite3.dylib
     - coreTelephony.framework
 ```
 
-![[图 2 添加关联IAP 的库]](http://static.toastoven.net/prod_iap/iap_42.png)
+![[그림 2 IAP 연동을 위한 라이브러리 추가]](http://static.toastoven.net/prod_iap/iap_42.png)
+<center>[그림 2 IAP 연동을 위한 라이브러리 추가]</center>
 
-<center>[图 2 添加关联IAP 的库]</center>
-
-### 2. 设置plist 
+### 2\. plist 설정하기
 
 ```
-在[plist]上，TOAST_IAP_APP_ID生成了KEY的string value，输入APP ID。
-.plist形式如下。
+[plist] 에서 TOAST_IAP_APP_ID 가 KEY인 string value를 생성하고, APP ID를 입력 합니다.  
+.plist 는 아래와 같은 형태일 것입니다.
 ```
 
-![[图 3 在plist设置APP ID]](http://static.toastoven.net/prod_iap/iap_19.jpg)
+![[그림 3 plist에 APP ID 설정]](http://static.toastoven.net/prod_iap/iap_19.jpg)
+<center>[그림 3 plist에 APP ID 설정]</center>
 
-<center>[图 3 在plist设置APP ID]</center>
-
-> [参考-iOS9 ATS 设置]<br>
-> 从iOS9 SDK开始，适用 ATS(App Transport Security)相关设置。<br>
-> 在XCode7 以上进行创建时，需设置如下的有关 IAP特定域名的例外处理。<br>
-> Apple Document
+> [참고-iOS9 ATS 설정]  
+> iOS9 SDK부터 ATS(App Transport Security)관련 설정을 적용해야 합니다.  
+> XCode7 이상에서 빌드할 경우 아래와 같이 IAP 특정 도메인에 대한 예외처리를 설정해야 합니다.  
+> [Apple Document](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/)
 
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -114,17 +111,17 @@ summary=
 
 ## API Reference
 
-### 1. Import TIAPurchase.h
+### 1\. Import TIAPurchase.h
 
-在应用上完成使用SDK的准备的话，添加IAP SDK的Header File如下。
+어플리케이션에 SDK 사용을 위한 준비가 완료되면, IAP SDK의 Header File을 아래와 같이 추가합니다.
 
 ``` objc
 #import "TIAPurchase.h"
 ```
 
-### 2. 日志信息活性化
+### 2\. 로그정보 활성화
 
-激活显示有关调试的日志信息。
+디버그를 위한 로그 정보에 대한 노출을 활성화 합니다.
 
 [Example Code]
 
@@ -132,9 +129,9 @@ summary=
 [TIAPurchase setDebugMode:YES];
 ```
 
-### 3. 注册用户
+### 3\. 유저 등록
 
-在应用上对用户进行认证后，注册可识别用户的值。
+애플리케이션에서 사용자에 대한 인증 이후에 사용자 식별이 가능한 값을 등록합니다.
 
 [Example Code]
 
@@ -148,9 +145,9 @@ If (!result) {
 // register user id succeccfully.
 ```
 
-### 4. 结算请求
+### 4\. 결제 요청
 
-请求结算In App。成功结算的话，可通过completionHandler传达结算明细。
+인앱 결제 요청을 합니다. 결제가 성공적으로 완료되면 completionHandler 를 통해 결제내역이 전달 됩니다.
 
 [Example Code]
 
@@ -185,9 +182,9 @@ server.
 }];
 ```
 
-### 5. 查询未消费结算明细
+### 5\. 미소비 결제 내역 조회
 
-查询结算明细。
+결제 내역을 조회 합니다.
 
 [Example Code]
 
@@ -218,9 +215,9 @@ server.
 }];
 ```
 
-### 6. 查询可购买的项目明细
+### 6\. 구매 가능한 아이템 내역 조회
 
-查询可购买的所有项目明细。
+구매 가능한 모든 아이템 내역을 조회합니다.
 
 [Example Code]
 
@@ -254,11 +251,12 @@ server.
 }];
 ```
 
-### 7. 对未处理的结算项进行批量再处理
+### 7\. 미처리 결제건 일괄 재처리
 
-对于未处理的结算项(IAP服务器验证失败)，进行批量再处理。
+미처리된 결제건(IAP 서버 검증 실패)들에 대해 일괄로 재처리 작업을 진행합니다.
 
 [Example Code]
+
 ```objc
 [TIAPurchase processesIncompletePurchasesWithCompletionHandler:^(id result, NSError *error) {
         if (error)

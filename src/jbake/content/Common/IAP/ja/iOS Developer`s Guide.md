@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPIosDV's
+nation=ja
 ~~~~~~
 ## 개발 환경
 
@@ -219,6 +220,7 @@ server.
 구매 가능한 모든 아이템 내역을 조회합니다.
 
 [Example Code]
+
 ```objc
 [TIAPurchase itemListWithCompletionHandler:^(id result, NSError *error) {
     if (error)
@@ -254,6 +256,7 @@ server.
 미처리된 결제건(IAP 서버 검증 실패)들에 대해 일괄로 재처리 작업을 진행합니다.
 
 [Example Code]
+
 ```objc
 [TIAPurchase processesIncompletePurchasesWithCompletionHandler:^(id result, NSError *error) {
         if (error)

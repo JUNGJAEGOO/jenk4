@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameLeaderboardRelease
+nation=ja
 ~~~~~~
 ## Game > Leaderboard > Release Notes
 ### 2017.08.24

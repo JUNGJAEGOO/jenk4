@@ -2,53 +2,55 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPErrorcode
+nation=zh
 ~~~~~~
 ## Common > IAP > Error Code Guide
 
-## Client API 错误类型
+## Client API 에러 타입
 
-| 错误 代码  | 类型 |                             说明|
-|----------- |  --------------------------------- | ----------------------------------------------------|
-|100       |  NETWORK_TIMEOUT                |  网络错误|
-|101       |  AUTHORIZATION_ERROR            |  平台认证错误|
-|102       |  UNSUPPORTED_DEVICE             |  不支持的设备|
-|103       |  UNSUPPORTED_MARKET             |  不支持的Store|
-|104       |  USER_CANCEL                    |  用户在结算途中取消的情况|
-|105       |  IAP_INITIALIZED_ERROR         |  IAP初始化错误的情况，确认初始化信息。|
-|106       |  IAP_SERVER_UNKNOWN_ERROR     |  IAP 服务器不是HTTP Response 20x而是HTTP Status时|
-|107       |  IAP_RESPONSE_ON_FAILED       |  IAP API的response失败|
-|108       |  INAPP_INITIALIZED_ERROR       |  Store结算库初始化错误|
-|109       |  INAPP_PURCHASE_ERROR          |  Store结算错误 – 请求购买时|
-|110       |  INAPP_VERIFY_SIGNATURE_ERROR |  Store结算错误 – 检验签名时|
-|111       |  INAPP_CONSUME_ERROR           |  Store结算错误 – 消耗结算明细时|
-|112       |  INAPP_VERIFY_CONSUME_ERROR   |  Store结算检验错误 – 检验收据时|
-|113       |  SERVER_NETWORK_FAIL           |  IAP 服务器 NETWORK 错误|
-|116       |  APP_STORE_REMAINS_PAYMENT    |  以前的结算未进行处理（需向用户显示再次购买诱导信息|
+| 에러 코드 | 타입 | 설명 |
+| ---------- | ----- | ----- |
+| 100 |  NETWORK_TIMEOUT |  네트워크 오류 |
+| 101 |  AUTHORIZATION_ERROR |  플랫폼 인증 오류 |
+| 102 |  UNSUPPORTED_DEVICE |  지원하지 않는 디바이스 |
+| 103 |  UNSUPPORTED_MARKET |  지원하지 않는 스토어 |
+| 104 |  USER_CANCEL |  사용자가 결제 도중 취소 했을 경우 |
+| 105 |  IAP_INITIALIZED_ERROR |  IAP 초기화가 올바르지 않은 경우, 초기화 정보를 확인하도록 한다. |
+| 106 |  IAP_SERVER_UNKNOWN_ERROR |  IAP 서버 HTTP Response 20x가 아닌 HTTP Status일 때 |
+| 107 |  IAP_RESPONSE_ON_FAILED |  IAP API의 response 실패 |
+| 108 |  INAPP_INITIALIZED_ERROR |  스토어 결제 라이브러리 초기화 오류 |
+| 109 |  INAPP_PURCHASE_ERROR |  스토어 결제 오류 - 구매 요청시 |
+| 110 |  INAPP_VERIFY_SIGNATURE_ERROR |  스토어 결제 오류 - 서명 검증시 |
+| 111 |  INAPP_CONSUME_ERROR |  스토어 결제 오류 - 결제 내역 소모시 |
+| 112 |  INAPP_VERIFY_CONSUME_ERROR |  스토어 결제 검증 오류 - 영수증 검증 시 |
+| 113 |	 SERVER_NETWORK_FAIL |  IAP 서버 NETWORK 오류 |
+| 116 |	 APP_STORE_REMAINS_PAYMENT | 이전의 결제건에 대한 미처리작업 (사용자에게 재구매유도 메시지를 보여줘야 함) |
+| 117 |  IAP_IN_PROGRESS_ERROR | IAP API가 아직 처리 중일 때 새로운 요청이 들어오면 해당 에러가 발생할 수 있으며, 클라이언트는 필요에 따라 무시하거나 재요청할 수 있음 |
 
-## Server API 错误类型
+## Server API 에러타입
 
-|错误代码  |  类型  |                                说明|
-|---------- | ------------------------------------- | ------------|
-|1100  |     INVALID_PARAMETERS                  | 参数信息错误|
-|2111  |     HTTP_CONTENT_TYPE_NOT_SUPPORT    | Content-Type 错误 – 请求Request 时，Content-Type不是 application/json的情况|
-|2112  |     HTTP_REQUEST_METHOD_NOT_SUPPORT  | HTTP Method 错误 – 请求Request 时，用错误的HTTP Method进行请求时|
-|5000  |     CONSUME_FAILED                      | Consume 失败|
+|에러 코드|	타입|	설명|
+|---|---|---|
+|1100|	INVALID_PARAMETERS|	파라미터 정보 오류|
+|2111|	HTTP_CONTENT_TYPE_NOT_SUPPORT|	Content-Type 오류 – Request 요청시Content-Type이 application/json 아닌 경우|
+|2112|	HTTP_REQUEST_METHOD_NOT_SUPPORT|	HTTP Method 오류 – Request 요청시 잘못된 HTTP Method로 요청시|
+|5000|	CONSUME_FAILED|	Consume 실패|
 
-## Web Console 错误类型
+## Web Console 에러타입
 
-|错误代码  | 类型                             |  说明|
-|---------- | ---------------------------------- | ---------------------|
-|1100  |     INVALID_PARAMETERS                |参数信息错误|
-|5003  |     INVALID_AUTHENTICATED             |Store验证信息错误|
-|5013  |     MARKET_GOOGLE_INVALID_REQUEST   |Google 关联信息错误|
+|에러 코드|	타입|	설명|
+|---|---|---|
+|1100|	INVALID_PARAMETERS|	파라미터 정보 오류|
+|5003|	INVALID_AUTHENTICATED|	스토어 인증정보 오류|
+|5013|	MARKET_GOOGLE_INVALID_REQUEST|	Google 연동정보 오류|
 
-## touble Shooting
+## 트러블 슈팅
 
-|错误代码  |   说明|
-|-|-|
-|1100      |   参数信息错误|
-|2111, 2112  | 在IAP Server上请求Request时，确认 Content-type, HTTP Method。[链接](./Server Developer`s Guide)|
-|5003, 5013  | 确认一下，用以下步骤是否能获得Store关联信息。<br> [链接](./Store interlocking information)|
-|5000       |  - 确认PurchaseToken的正确与否。<br>- 确认一下，先前通过客户端进行的结算是否进行的不错。|
+|에러 코드|	설명|
+|---|---|
+|1100|	파라미터 정보 오류|
+|2111, 2112|	IAP Server에 Request 요청시 Content-type, HTTP Method를 확인합니다.<br/> [링크](./Server Developer`s Guide) |
+|5003, 5013|	스토어 연동정보를 아래 절차로 발급받았는지 확인합니다. <br/> [링크](./Store interlocking information) |
+|5000| - PurchaseToken이 잘못되었는지 확인합니다. <br/> - 클라이언트를 통한 결제가 앞서 잘 진행되었는지 확인합니다.|

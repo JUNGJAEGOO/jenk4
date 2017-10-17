@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=IMAGERelease
+nation=en
 ~~~~~~
 ## Contents > Image > Release Notes
 

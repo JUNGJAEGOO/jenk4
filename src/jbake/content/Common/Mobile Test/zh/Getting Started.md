@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MobileTestGetting
+nation=zh
 ~~~~~~
 ## Common > Mobile Test > Getting Started
 

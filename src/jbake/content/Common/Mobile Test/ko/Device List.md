@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MobileTestDevicelist
+nation=ko
 ~~~~~~
 ## Common > Mobile Test > Device List
 

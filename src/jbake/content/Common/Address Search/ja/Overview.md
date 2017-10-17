@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=AdrOverview
+nation=ja
 ~~~~~~
 ## Common > Address Search > Overview
 

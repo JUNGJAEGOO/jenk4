@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=LaunchingDV's
+nation=zh
 ~~~~~~
 ## Common > Launching > Developer's Guide
 

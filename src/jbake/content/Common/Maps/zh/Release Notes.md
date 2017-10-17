@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MapsRelease
+nation=zh
 ~~~~~~
 ## Common > Maps > Release Notes
 

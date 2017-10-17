@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=IAPUnitypluginDV's
+nation=ja
 ~~~~~~
 ## Common > IAP > Unity Plugin Developer's Guide
 
@@ -90,7 +91,7 @@ Step3 : 모든 Assets을 Import 합니다.
 ```
 
 > [참고]  
-> 자세한 iOS 빌드 환경설정은 [iOS Developer's Guide](/Common/IAP/ja/iOS%20Developer%60s%20Guide/)를 참조
+> 자세한 iOS 빌드 환경설정은 [iOS Developer's Guide](/Common/IAP/ko/iOS%20Developer%60s%20Guide/)를 참조
 
 ### 유니티 플러그인 초기화
 

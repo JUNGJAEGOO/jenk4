@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MapsAndroidDV's
+nation=ja
 ~~~~~~
 ## Common > Maps > Android Developer's Guide
 

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=MapsIosDV's
+nation=ko
 ~~~~~~
 ## Common > Maps > iOS Developer's Guide
 

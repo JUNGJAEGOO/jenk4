@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCGame
 summary=TCGameLeaderboardDV's
+nation=ko
 ~~~~~~
 ## Game > Leaderboard > Developer's Guide
 

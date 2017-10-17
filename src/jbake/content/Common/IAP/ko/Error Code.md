@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCCommon
 summary=IAPErrorcode
+nation=ko
 ~~~~~~
 ## Common > IAP > Error Code Guide
 

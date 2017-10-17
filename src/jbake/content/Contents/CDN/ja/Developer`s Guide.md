@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCcontents
 summary=CDNDV's
+nation=ja
 ~~~~~~
 ## Contents > CDN > Developer's Guide
 

@@ -4,6 +4,7 @@ type=page
 status=published
 summary=IMAGEOverview
 big=TCcontents
+nation=ja
 ~~~~~~
 ## Contents > Image > Overview
 
