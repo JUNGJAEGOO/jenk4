@@ -8,8 +8,8 @@ nation=ja
 ~~~~~~
 ## v1.3 API Reference
 이전 버전보기: <select onchange="location.href=this.value">
-<option value="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</option>
-<option selected value="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</option></select>
+<option value="../../../Notification/Push/ja/Developer`s Guide.html">API v2.0</option>
+<option selected value="../../../Notification/Push/ja/Developer`s Guide v1.3.html">API v1.3</option></select>
 
 ### API 테스트
 
