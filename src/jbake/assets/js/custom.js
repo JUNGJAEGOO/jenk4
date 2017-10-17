@@ -77,8 +77,8 @@ function clickLanguageHandler(event) {
     if(current_location[1] === currentLocale) {
         current_location[1] = selectLocaleCode;
     }
-    if(current_location[current_location.length-3] === currentLocale) {
-        current_location[current_location.length-3] = selectLocaleCode;
+    if(current_location[current_location.length-2] === currentLocale) {   // 원래 사이트는 -2 가 아니라 -3 입니다.
+        current_location[current_location.length-2] = selectLocaleCode;
     }
     window.location.href = current_location.join("/");
 }
