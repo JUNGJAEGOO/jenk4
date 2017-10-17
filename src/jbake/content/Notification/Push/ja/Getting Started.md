@@ -2,12 +2,13 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCNotification
+summary=PushGetting
+nation=ja
 ~~~~~~
 ## Notification > Push > Getting Started
 
-![](http://static.toastoven.net/prod_push/img_02.png)
+![image](http://static.toastoven.net/prod_push/img_02.png)
 
 ### CONSOLE
 
@@ -56,7 +57,7 @@ summary=
 
 ### 실시간 모니터링
 
-![](http://static.toastoven.net/prod_push/img_03.png)
+![image](http://static.toastoven.net/prod_push/img_03.png)
 
 [Messages] 탭에서 메시지 발송 상태를 실시간으로 확인할 수 있다.
 
@@ -236,6 +237,7 @@ summary=
 '고객'이 TOAST Cloud > Push 상품 이용 시, '고객' - '당사' 간 개인정보 처리에 관한 업무 위수탁 관계가 발생하는 바 정보통신망법 및 개인정보보호법에 따라 위탁자인 '고객'은 개인정보처리방침을 통해 '당사'에 개인정보를 위탁한 현황(수탁자 및 업무의내용)을 공개하여야 합니다. 이에, '당사'에서는 '고객'이 TOAST Cloud의 Push 상품을 이용함에 있어 관련 법령을 준수하고, 위탁현황 미공개로 인하여 과태료 등의 불이익을 받지 않도록 아래와 같이 가이드 할 수 있습니다.
 
 [개인정보 수탁사 고지 안내] Push 상품 이용 시 고객사에서 운영하시는'개인정보처리방침' > 위탁 현황에 다음의 내용을 표기해주세요.
+
 ```
 수탁사 : 엔에이치엔엔터테인먼트 업무의 내용 : 푸시 메시지 발송 대행
 ```

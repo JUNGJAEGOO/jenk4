@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCOpensource
 summary=ToastHasteGetting
+nation=ko
 ~~~~~~
 
 ## Open Source > Toast Haste > Overview

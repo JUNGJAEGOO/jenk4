@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=SecurityMonitoringGetting
+nation=ko
 ~~~~~~
 ##  Security > Security Monitoring > Getting Started 
 

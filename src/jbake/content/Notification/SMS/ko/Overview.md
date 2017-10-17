@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=SMSOverview
+nation=ko
 ~~~~~~
 ## Notification > SMS > Overview
 

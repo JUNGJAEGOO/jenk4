@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCOpensource
 summary=ToastUIChartGettingStarted
+nation=ko
 ~~~~~~
 
 ## Open Source > ToastUI Chart > Getting started

@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeRelease
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Release Notes
 

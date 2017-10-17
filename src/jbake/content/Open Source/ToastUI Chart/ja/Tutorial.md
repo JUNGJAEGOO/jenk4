@@ -1,3 +1,12 @@
+title=About
+date=2013-09-24
+type=page
+status=published
+big=TCOpensource
+summary=ToastUIChartTutorial
+nation=ja
+~~~~~~
+
 ## Open Source > ToastUI Chart > Tutorial
 
 # Tutorial

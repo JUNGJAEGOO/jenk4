@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=CAPTCHAOverview
+nation=ko
 ~~~~~~
 ## Security > CAPTCHA > Overview
 

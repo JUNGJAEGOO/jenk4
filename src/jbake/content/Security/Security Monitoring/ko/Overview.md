@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=SecurityMonitoringOverview
+nation=ko
 ~~~~~~
 ##  Security > Security Monitoring > Overview 
 

@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CWebGLDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity WebGL Developer's Guide
 
@@ -275,11 +275,11 @@ LogNCrash.setMaximumSendCount (100);
 
 1.File->Build Settings 클릭.
 
-![](http://static.toastoven.net/prod_logncrash/gl_5.png)
+![image](http://static.toastoven.net/prod_logncrash/gl_5.png)
 
  - WebGL Platform 선택 한 뒤 Player Settings 클릭합니다.
 
-![](http://static.toastoven.net/prod_logncrash/gl_11.png)
+![image](http://static.toastoven.net/prod_logncrash/gl_11.png)
 
 2.Build settings에서 Build And Run 클릭합니다.
 

@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CWebGLDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity WebGL Developer's Guide
 
@@ -227,41 +227,27 @@ public static string GetUserID()
  - true : (Default 값) 중복 제거 로직 활성화
  - false : 중복 제거 로직 비활성화
 
-## build 하기
-
-1.File->Build Settings 클릭.
-
-![](http://static.toastoven.net/prod_logncrash/unity_5.png)
-
- - PC, Mac & Linux Standalone Platform 선택 한 뒤 Player Settings 클릭합니다.
-
-![](http://static.toastoven.net/prod_logncrash/unity_10.png)
-
-2.Build settings에서 Build And Run 클릭합니다.
-
-## WebGL 적용
-
-### 지원 프로토콜
- - Unity WebGL 환경에서 Log&Crash를 초기화 하는 경우, Collector 주소로 https를 지정해야 합니다.
- - http의 경우 보안상의 이유로 지원하지 않습니다.
+## WebGL API
 
 ### 지원하지 않는 API
- - WebGL SDK에서는 asm.js이 try-catch를 지원하지 않기 때문에 Handled Exception을 지원하지 않습니다.
 
-### WebGL 지원 API
- - 중복 제거 로그 큐의 최대 사이즈를 지정합니다.
+- WebGL SDK에서는 asm.js이 try-catch를 지원하지 않기 때문에 Handled Exception을 지원하지 않습니다.
+
+### WebGL 전용 API
+
+- 중복 제거 로그 큐의 최대 사이즈를 지정합니다.
 
 ```
 LogNCrash.setDuplciateQueueSize (100);
 ```
 
- - BulkMessage 사이즈의 최대 사이즈를 지정합니다.
+- BulkMessage 사이즈의 최대 사이즈를 지정합니다.
 
 ```
 LogNCrash.setMaximumBulkMessageSize (1024 * 512); // 512 KB
 ```
 
-- 로그 전송 실패 시, 저장할 수 있는 최대 파일의 수를 지정합니다.
+- 로그 전송 실패 시, 저장할 수있는 최대 파일의 수를 지정합니다.
 
 ```
 LogNCrash.setMaximumFileCount (100);
@@ -274,9 +260,11 @@ LogNCrash.setMaximumSendCount (100);
 ```
 
 ### Crash 수집을 위한 설정
+
 - WebGL SDK에서 Crash를 수집하기 위해서는 PlayerSettings > Publishing Settings > Enable Exception 옵션이 Full로 설정되어 있어야 합니다.
 
 ### 주의 사항
+
 - Log&Crash는 메모리를 전송하는 과정에서, 최대 2000개의 SendQueue에 로그를 저장합니다.
 - Log&Crash는 로그의 중복을 제거하기 위해, 최대 500개의 Duplicate 로그를 저장합니다.
 - Log&Crash는 전송에 실패한 로그를 재전송 하기 위해, 500개의 실패 로그를 저장합니다.
@@ -285,12 +273,43 @@ LogNCrash.setMaximumSendCount (100);
 
 ## WebGL Build 하기
 
-1. File->Build Settings 클릭합니다.
+1.File->Build Settings 클릭.
 
-![](http://static.toastoven.net/prod_logncrash/unity_5.png)
+![image](http://static.toastoven.net/prod_logncrash/gl_5.png)
 
-- WebGL Platform 선택 한 뒤 Player Settings 클릭합니다.
+ - WebGL Platform 선택 한 뒤 Player Settings 클릭합니다.
 
-![](http://static.toastoven.net/prod_logncrash/unity_11.png)
+![image](http://static.toastoven.net/prod_logncrash/gl_11.png)
 
-2. Build settings에서 Build And Run 클릭합니다.
+2.Build settings에서 Build And Run 클릭합니다.
+
+## 외부 CrashHandler 사용하기
+
+- 기존 SDK에서는 초기화 단계에서 logMessageReceived 등을 사용하여 Unity의 CrashHandler를 LogNCrash 전용 Callback 함수에 등록하여 사용하였습니다.
+- 외부 CrashHandler와 같이 사용하는 경우가 있어, 같이 적용할 수 있도록 구조를 수정하였습니다. ( MultihandlerSample 참고 )
+
+### 적용방법
+
+- LogNCrash.SetCrashHandler 함수에 false를 파라미터로 넘겨 자동으로 CrashHandler가 등록되는 것을 막습니다.
+- 반드시 Initialize 함수 이전에 설정되어야 합니다.
+
+```
+LogNCrash.SetCrashHanlder (false);
+LogNCrash.Initialize ();
+```
+
+- 이후 LogNCrash.unity3dHandleException 함수를 사용하여 CrashHandler의 파라미터를 LogNCrash 객체로 넘겨줍니다.
+
+```
+void OnEnable()
+{
+		Application.logMessageReceived += HandleLog;
+}
+
+void HandleLog(string logString, string stackTrace, LogType type)
+{
+		if (LogNCrash.isInitialized) {
+			LogNCrash.unity3dHandleException (logString, stackTrace, type);
+		}
+}
+```

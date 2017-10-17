@@ -4,6 +4,7 @@ type=page
 status=published
 big=Management
 summary=ManagementGetting
+nation=ko
 ~~~~~~
 ## Management > Managed > Getting Started
 

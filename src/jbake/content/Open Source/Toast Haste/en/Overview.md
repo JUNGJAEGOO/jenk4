@@ -1,3 +1,12 @@
+title=About
+date=2013-09-24
+type=page
+status=published
+big=TCOpensource
+summary=ToastHasteOverview
+nation=en
+~~~~~~
+
 ## Open Source > Toast Haste > Overview
 
 ![Logo](https://cloud.githubusercontent.com/assets/4951898/21089491/ccdd9672-c07b-11e6-81c2-466374640a25.png)

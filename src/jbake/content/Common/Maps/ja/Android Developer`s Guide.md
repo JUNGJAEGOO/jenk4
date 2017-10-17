@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=MapsAndroidDV's
 ~~~~~~
 ## Common > Maps > Android Developer's Guide
 
@@ -57,11 +57,11 @@ Android에서 API를 호출하고 콜백함수로 매개변수를 전달받는 �
 #### TOAST Cloud Maps Android WebView API 사용하기
 
 TOAST Cloud Maps Android WebView API를 사용하기 위해서는
-<br>안드로이드 프로젝트에 android.permission.INTERNET 권한을 추가해야합니다.
-<br>팅크웨어 WebView API는 웹페이지에 발급받은 appKey를 선언하여 해당 웹페이지를 웹뷰에서 호출하고
-<br>발급 키 권한에 따라 다운로드 된 API(자바스크립트)를 호출하고, 콜백함수를 연결하여 사용합니다.
-<br>※ 콜백 함수를 사용할 때 주의점 : 안드로이드 버전 4.2 이상에서는 아래와 같이 콜백 함수 위에
-<br>@JavascriptInterface 어노테이션을 꼭 써주시기 바랍니다.
+안드로이드 프로젝트에 android.permission.INTERNET 권한을 추가해야합니다.
+팅크웨어 WebView API는 웹페이지에 발급받은 appKey를 선언하여 해당 웹페이지를 웹뷰에서 호출하고
+발급 키 권한에 따라 다운로드 된 API(자바스크립트)를 호출하고, 콜백함수를 연결하여 사용합니다.
+※ 콜백 함수를 사용할 때 주의점 : 안드로이드 버전 4.2 이상에서는 아래와 같이 콜백 함수 위에
+@JavascriptInterface 어노테이션을 꼭 써주시기 바랍니다.
 
 ```
 @JavascriptInterface
@@ -75,8 +75,8 @@ public void setMoveendCB(String result){
 
 
 아래는 간단한 맵을 로딩하는 방법입니다.
-<br>아래의 예제에서 어떻게 웹페이지와 웹뷰간 API를 호출하고 이벤트 발생 시 콜백함수로 어떤 매개변수를 받는지 볼 수 있습니다.
-<br>아래 파일의 경로 : 프로젝트명\assets\www\android_webview.html
+아래의 예제에서 어떻게 웹페이지와 웹뷰간 API를 호출하고 이벤트 발생 시 콜백함수로 어떤 매개변수를 받는지 볼 수 있습니다.
+아래 파일의 경로 : 프로젝트명\assets\www\android_webview.html
 
 ```
 <!DOCTYPE HTML>
@@ -162,12 +162,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 지도 초기화 & 정보 얻어오기
-<br>이 예제에서는 지도를 초기화 하고 지도 정보를 얻어오는 방법에 대해 설명합니다.
-<br>지도를 초기화 하는 방법은 두가지가 있습니다.
-<br>웹뷰에서 로딩할 페이지 android_webview.html에서 THINKMAP.initMap을 호출하는 방법과
-<br>안드로이드 프로젝트에서 TMWA.initMap을 사용하는 방법이 있습니다.
-<br>지도 초기화 이후에 추가로 해야할 작업이 있다면 TMWA.initMap을 사용하여 콜백함수에서 추가 처리 할 수 있습니다.
-<br>이 예제에서는 TMWA.initMap을 호출하는 방법을 사용하였습니다.
+이 예제에서는 지도를 초기화 하고 지도 정보를 얻어오는 방법에 대해 설명합니다.
+지도를 초기화 하는 방법은 두가지가 있습니다.
+웹뷰에서 로딩할 페이지 android_webview.html에서 THINKMAP.initMap을 호출하는 방법과
+안드로이드 프로젝트에서 TMWA.initMap을 사용하는 방법이 있습니다.
+지도 초기화 이후에 추가로 해야할 작업이 있다면 TMWA.initMap을 사용하여 콜백함수에서 추가 처리 할 수 있습니다.
+이 예제에서는 TMWA.initMap을 호출하는 방법을 사용하였습니다.
 
 
 ```

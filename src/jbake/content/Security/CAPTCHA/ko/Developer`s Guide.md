@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=CAPTCHADV's
+nation=ko
 ~~~~~~
 ## Security > CAPTCHA > Developer's Guide
 

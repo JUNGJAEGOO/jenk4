@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=ROLEClientSDK
 ~~~~~~
 ## Upcoming Products > ROLE > Client SDK Developer's Guide
 

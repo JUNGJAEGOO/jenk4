@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCOpensource
 summary=ToastUIGridOverview
+nation=ko
 ~~~~~~
 
 ## Open Source > ToastUI Grid > Overview

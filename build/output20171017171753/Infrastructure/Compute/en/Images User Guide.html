@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../nhnfavicon.ico">
+
+	      <title>Toast Cloud Document</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+		    <!-- <link href="http://alpha-www.toast.com/share/common/css/common-1.0.min.css" rel="stylesheet"> -->
+        <link href="../../../css/common-1.0.min.css" rel="stylesheet">
+        <link href="../../../css/custom_tc_theme.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	<body>
+	<header id="header">
+        </header>
+        <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div>
+        <div class="navbar-header" style="padding-top : 30px;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+ 
+        </div>
+        <div class="navbar-collapse collapse">
+		
+                    </ul>
+                </li>
+
+    	    </ul>
+        </div>
+    </div>
+</div>        <div class="container" style="margin-top: 100px;">
+            <div class="col-md-2">
+            	<div class="side_nav_left_wrapper">
+	           	<div id="side_nav_left" class="side-nav">
+	            		<div id="remotenav" class="bs-sidebar hidden-print affix well toc-list" role="complementary"> 
+					<ul class="nav bs-sidenav">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+    	</div>
+		
+
+
+	<div class="col-md-8 content-container" role="main"> 			
+		<h2>Infrastructure &gt; Compute &amp; Network &gt; Image User Guide</h2><p>Image는 OS와 각종 애플리케이션 및 설정들이 포함된 파일입니다. 기본 제공 Image 이외에 사용자가 생성한 Instance로부터 새로운 Image를 생성 할 수 있습니다. 서비스의 부하가 늘어나는 경우, Instance를 복제하여 부하를 분산시킬 때 사용할 수 있습니다.</p><p>이 문서에서는 다음과 같은 내용을 다룹니다.</p>
+<ul>
+  <li>Image 종류</li>
+  <li>Image 생성, 공유</li>
+</ul><h2>Image의 종류</h2><p>Image 는 [표 1]의 3가지 종류가 있으며 고객이 생성한 Image는 기본적으로 Private Image입니다. Private Image는 공유 기능을 이용해 공유 Image로 전환할 수 있습니다.</p><p>[표 1] Image의 종류</p>
+<table>
+  <thead>
+    <tr>
+      <th>종류</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Public Image</td>
+      <td>TOAST Cloud가 제공하는 Image로서 기본적인 보안 검증을 마친 안전한 Image입니다.</td>
+    </tr>
+    <tr>
+      <td>Private Image</td>
+      <td>Public Image를 토대로 새롭게 생성한 사용자 고유의 Image입니다. 사용자의 필요에 따라 각종 OS 설정과 애플리케이션 설치 등을 변경하여 사용할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td>공유 Image</td>
+      <td>Private Image는 사용자가 소유한 Project간 공유가 가능하고, 이렇게 공유한 Image를 공유 Image라고 부릅니다.</td>
+    </tr>
+  </tbody>
+</table>
+<pre><code>[Notice]
+TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
+</code></pre><h2>Image 생성</h2><p>Image를 생성하기 위해서는 먼저 Image를 생성할 Instance를 정지해야 합니다.</p><p>1.[Infrastructure] &gt; [Compute &amp; Network] &gt; [Instances]로 이동한 후 Image를 생성할 Instance를 선택합니다. [그림 1]과 같이 [추가기능] 드롭다운 메뉴 &gt; [Instance Shutdown]을 선택하여 해당 Instance를 정지합니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_259.png" alt="[그림 1] Instance Shutdown 선택" /><br/><center>[그림 1] Instance Shutdown 선택</center></p><p>2.[그림 2]의 [상태] 항목에서 Image를 생성할 Instance가 종료된 것을 확인한 뒤, [추가기능] 드롭다운 메뉴 &gt; [Image 생성]을 선택합니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_260.png" alt="[그림 2] Image 생성 선택" /><br/><center>[그림 2] Image 생성 선택</center></p><p>3.생성할 Image의 이름을 입력한 뒤, [Image 생성] 버튼을 클릭합니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/images/003_170524.PNG" alt="[그림 3] Image 이름 입력" /><br/><center>[그림 3] Image 이름 입력</center></p>
+<pre><code>[Notice]
+Windows Instance의 경우 Image 생성하기 전에 Sysprep을 이용하여 사용자화 과정을 거쳐야 합니다. Windows Sysprep 가이드를 참고해주시기 바랍니다.
+</code></pre><p>4.[Infrastructure] &gt; [Compute &amp; Network] &gt; [Images]에서 생성된 Image를 확인할 수 있습니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_261.png" alt="[그림 4] 생성된 Image 확인" /><br/><center>[그림 4] 생성된 Image 확인</center></p><h2>Image 공유</h2>
+<pre><code>[Notice]
+TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
+</code></pre><p>생성된 Image는 다른 프로젝트에서 사용할 수 있도록 설정할 수 있습니다.</p><p>1.[Infrastructure] &gt; [Compute &amp; Network] &gt; [Images]로 이동한 후 공유할 Image를 선택합니다. [그림 5]와 같이 [다른 프로젝트에 공유] 버튼을 클릭합니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_262.png" alt="[그림 5] 공유할 Image 선택" /><br/><center>[그림 5] 공유할 Image 선택</center></p><p>2.<Share Image> 대화창에서 공유할 프로젝트를 선택합니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_263.png" alt="[그림 6] <Share Image> 대화창에서 공유할 프로젝트 선택" /><br/><center>[그림 6] <Share Image> 대화창에서 공유할 프로젝트 선택</center></p><p>3.<Share Image> 대화창에서 공유할 프로젝트를 클릭하여 [그림 6]의 우측 &ldquo;Shared Projects&rdquo; 영역으로 이동시킵니다. 이 후 [다른 프로젝트에 공유] 버튼을 클릭합니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_264.png" alt="[그림 7] 공유할 프로젝트 추가" /><br/><center>[그림 7] 공유할 프로젝트 추가</center></p><p>4.[그림 6] ~ [그림 7]의 과정으로 Image를 공유한 프로젝트의 [공유된 Image]를 확인하면 1개의 Image가 공유된 것을 확인할 수 있습니다.</p><p><img src="http://static.toastoven.net/prod_infrastructure/compute/img_265.png" alt="[그림 8] 공유한 Image확인" /><br/><center>[그림 8] 공유한 Image확인</center></p>
+   	</div>
+
+ 	
+	
+	<div class="col-md-2">
+		<div id="side_nav_right" class="side-nav">
+			<div id="sub-link-nav" role="complementary">
+    				<b id="sub-link-category-name" class="main"></b>
+    				<ul class="nav">
+
+    				</ul>
+			</div>
+		</div>
+	</div>       
+        
+</div>
+
+<footer id="footer" class="col-md-12">
+</footer>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../../js/readthedocs-data.js"></script>
+    <script src="../../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../../js/modernizr-custom.js"></script>
+    <script type='text/javascript'>
+         if (!Modernizr.matchmedia){
+             $.getScript("js/media.match.min.js");
+         }
+    </script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/enquire.min.js"></script>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/base.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../../js/common-1.0.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+    
+	<script src="../../../js/js.cookie.js"></script>
+	
+	<script language='javascript'>
+	if ( document.cookie == "" ){
+	console.log("change");
+	Cookies.set('ACEFCID', 'UID-59E5799FBC4FC8C9A29963B3',{path: ''});
+	Cookies.set('AECUCI', '1',{path: ''});
+	Cookies.set('BID', '5L76UVQPYSDFK836992CCGYLA',{path: ''});
+	Cookies.set('NNB', '55YK4WMTKOXFS',{path: ''});
+	Cookies.set('ttx_did', 'e93d733a-c43b-452c-b3ea-57c49bc5e9f8',{path: ''});
+	Cookies.set('userLocale', 'ko_KR',{path: ''});
+	}
+	</script>
+	
+    <!-- <script src="../../../js/prettify.js"></script>  -->
+
+        <script language='javascript'>
+        var _ag   = 0 ;         // 로그인사용자 나이
+        var _id   = '';    		// 로그인사용자 아이디
+        var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+        var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+        var _skey = '' ;        // 내부검색어
+
+        var _jn = '' ;          //  가입탈퇴 ( 'join','withdraw' ) 
+        var _jid = '' ;			// 가입시입력한 ID
+
+        var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+        var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+        var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+        </script>
+		
+		<script language='javascript'>
+		$("h2,h3").attr("id", function (arr) {
+			return arr;
+		});
+		</script>
+	
+	 <script language='javascript'>
+		function appendListToSubLinkNav() {
+
+        var $parent_menu = $('ul.dropdown-menu > li.active').parent().parent();
+		
+        if(!$parent_menu.length) {
+            $('#side_nav_right').remove();
+        }
+        else {
+            var depth_stack = [];
+            while($parent_menu.is('li')) {
+                var temp = $parent_menu;
+                depth_stack.push(temp);
+                $parent_menu = $parent_menu.parent().parent();
+            }
+            var title_menu = (depth_stack.length > 1)? depth_stack[depth_stack.length-2] : depth_stack[0];
+		    $('#sub-link-category-name').text(title_menu.children("a")[0].innerText);
+			var subMenuList = $('li .active').parent().get(0).childNodes;
+			for (var i = 0; i < subMenuList.length; i++) {
+				$("#sub-link-list").append(subMenuList[i].cloneNode(true));
+				$("#sub-link-nav > ul").append(subMenuList[i].cloneNode(true));
+			}
+		}
+	}
+	</script>
+
+	
+     <!-- <script language='javascript'>
+            var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+            var _AceCounter=(function(){var G=_AceGID;if(G.o!=0){var _A=G.val[G.o-1];var _G=( _A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];	var _U=( _A[5]).replace(/\,/g,'_');var _S=((['<scr','ipt','type="text/javascr','ipt"></scr','ipt>']).join('')).replace('tt','t src="'+location.protocol+ '//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime())+'" t');document.writeln(_S); return _S;} })();
+        </script>
+	<noscript><img src='http://gtp18.acecounter.com:8080/?uid=AH2A40934468137&je=n&' border='0' width='0' alt=''></noscript> -->
+
+  </body>
+</html>

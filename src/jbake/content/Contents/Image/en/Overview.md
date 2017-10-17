@@ -2,14 +2,15 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+summary=IMAGEOverview
+big=TCcontents
 ~~~~~~
 ## Contents > Image > Overview
 
 고객님의 서비스에서 사용하는 이미지를 저장, 편집 그리고 전송까지 한번에 제공하는 시스템입니다.
 
 ## 주요 기능
+
 - 어플리케이션에서 사용 가능한 RESTful API를 제공합니다.
 - 다중 폴더 생성, 다중 이미지 업로드, 다중 파일 다운로드, 다중 파일 삭제 기능을 제공합니다.
 - 원본 이미지 파일 URL에 파라메타만 추가하시면 실시간으로 원하는 사이즈의 썸네일을 생성할 수 있습니다.

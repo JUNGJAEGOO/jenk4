@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=MobileDeviceDV's
 ~~~~~~
 ## Upcoming Products > Mobile Device Info > Developer's Guide
 

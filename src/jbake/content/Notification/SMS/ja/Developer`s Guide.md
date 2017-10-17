@@ -2,12 +2,13 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCNotification
+summary=SMSDV's
+nation=ja
 ~~~~~~
 ## Notification > SMS > Developer's Guide
 
-이전 버전보기 :   <select onchange="location.href=this.value"><option selected value="/en/Notification/SMS/en/Developer%60s%20Guide/">API v2.0</option><option value="/en/Notification/SMS/en/Developer%60s%20Guide_v1/">API v1.0</option></select>
+이전 버전보기 :   <select onchange="location.href=this.value"><option selected value="../../../Notification/SMS/ko/Developer%60s%20Guide.html">API v2.0</option><option value="../../../Notification/SMS/ko/Developer%60s%20Guide_v1.html">API v1.0</option></select>
 
 ### [버전 개선사항]
 API v1.0 ->  2.0 변경되면서 다음과 같이 발송 API가 변경되었습니다.<br/>
@@ -133,6 +134,7 @@ Content-Type: application/json;charset=UTF-8
 </table>
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "body": "{본문 내용}",
@@ -145,6 +147,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -184,6 +187,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "body": "{본문 내용}",
@@ -202,6 +206,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -538,6 +543,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "title": "{제목}",
@@ -552,6 +558,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -657,6 +664,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 [Request body]
+
 ```
 {
   "fileName": "{파일 이름}",
@@ -666,6 +674,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -699,6 +708,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "title": "{제목}",
@@ -716,6 +726,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -1014,6 +1025,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 #### 응답
+
 ```
 {
     "header": {
@@ -1068,6 +1080,7 @@ Content-Type: application/json;charset=UTF-8
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "body": "{본문 내용}",
@@ -1081,6 +1094,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -1328,6 +1342,7 @@ Content-Type: application/json;charset=UTF-8
 
 <span style="color:red">단, 본문에 아래 문구가 필수로 들어가야 합니다.</span>
 080번호는 콘솔의 080수신거부 설정 탭에서 확인 가능합니다.
+
 ```
 (광고)
 
@@ -1355,6 +1370,7 @@ Content-Type: application/json;charset=UTF-8
 
 <span style="color:red">단, 본문에 아래 문구가 필수로 들어가야 합니다.</span>
 080번호는 콘솔의 080수신거부 설정 탭에서 확인 가능합니다.
+
 ```
 (광고)
 
@@ -1411,6 +1427,7 @@ Request URL은 템플릿 등록시 선택한 발송타입으로 선택하여 발
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -1480,6 +1497,7 @@ Request URL은 템플릿 등록시 선택한 발송타입으로 선택하여 발
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -1751,6 +1769,7 @@ Content-Type: application/json;charset=UTF-8
 |pageSize|	Integer|	옵션|	조회 건수(Default : 15)|
 
 #### 응답
+
 ```
 {
     "header": {

@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCGame
+summary=TCGameLeaderboardRelease
 ~~~~~~
 ## Game > Leaderboard > Release Notes
 ### 2017.08.24
@@ -23,16 +23,6 @@ summary=
 #### 버그 수정
 * [Console] IE 에서 랭킹 등록 시 이름을 한글로 등록 하는 경우 내용이 잘리는 이슈 수정
 * [Console] 랭킹 내 유저 조회 시 유저 범위 조회가 UI 와 맞지 않는 이슈 수정
-
-### 2017.04.20
-
-#### 기능 개선/변경
-* [Console] 랭킹 설정 탭에 팩터 검색 기능 추가. 팩터 이름, 팩터 주기에 따라 검색 가능
-* [Console] 랭킹 데이터 탭에 검색 창 간결하게 변경. 검색 시 팩터 주기를 기준으로 등록된 팩터 분류.
-
-#### 버그 수정
-* [API] 서버로 요청이 오면, 비정상적인 요청인 경우에도, HTTP Status Code 를 200으로 리턴.
-
 
 ### 2017.04.20
 

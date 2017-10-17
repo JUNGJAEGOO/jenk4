@@ -2,52 +2,53 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCSecurity
+summary=AppGuardOverview
+nation=en
 ~~~~~~
 ## Security > AppGuard > Overview
 
-AppGuard can help prevent code manipulation in application. AppGuard can also detect various tools to manipulate memory, speed, and code by pattern or heuristics, and restrict tools.
+AppGuard는 애플리케이션의 코드 조작을 방지 할 수 있습니다. 또한 메모리나 속도, 코드를 조작하려는 각종 툴을 패턴 또는 휴리스틱한 방법으로 탐지하고, 이를 제재할 수 있습니다.
 
-## Feature/Advantage
+## 특/장점
 
-* Code manipulation can be prevented at the source.
-* Various manipulation tools can be detected and restrict based on pattern or behavior that is difficult to bypass.
-* AppGuard provide basis about restriction after check detected information by AppGuard through the Console.
-* Powerful App protection with easy app protection work only.
-* Is is applied to about 80 various services such as game, shopping, and easy payment, and is utilized for protecting
+* 코드 조작을 원천적으로 방지 할 수 있습니다.
+* 다양한 조작 툴을 패턴이나 우회가 힘든 행위 기반으로 탐지하고, 제재 할 수 있습니다.
+* AppGuard를 통해 탐지한 정보를 Console을 통해 확인 후 제재할 수 있는 근거를 제공합니다.
+* 쉬운 앱 보호 작업 만으로도 강력하게 앱을 보호 할 수 있습니다.
+* 게임, 쇼핑, 간편결제 등 약 80 여 개의 다양한 서비스에 적용되어 각종 어뷰징, 앱 조작에 대한 보호 효과에 활용되고 있습니다.
 
-## Main Function
+## 주요 기능
 
-It provides the following function.
+다음과 같은 기능을 제공합니다.
 
-* Application protection via Web console provides convenient decompile protection function.
-* Detect application manipulation through file integrity.
-* Detect Abusing environment like Rooting, Emulation, etc.
-* Detect speed manipulation.
-* Patterns and behavior based detection of various manipulation tools.
-* It it not a manual restriction with a lot of resources by the operator, but a low-cose automatic restriction by the system. (to be provided in the near future)
+* 웹 콘솔을 통한 애플리케이션 보호로 편리한 디컴파일 방지 기능 제공
+* 파일의 무결성을 통한 애플리케이션 조작 탐지
+* 루팅, 에뮬레이션 등 어뷰징 환경 탐지
+* 스피드 조작 탐지
+* 각종 조작 툴의 패턴 및 행위 기반에 의한 탐지
+* 운영자에 의해 많은 리소스가 들어가는 수동 제재가 아니라 시스템에 의한 저비용의 자동 제재 (가까운 시일 내에 제공 예정)
 
-## Service Terms
+## 서비스 용어
 
-AppGuard uses the terms in [Table 1].
+AppGuard에서는 [표 1]의 용어를 사용 합니다.
 
-[Table 1] Service Terms of AppGuard
+[표 1] AppGuard 서비스 용어
 
-| Term       | Description                                                             |
+| 용어       | 설명                                                                      |
 | -------- | ----------------------------------------------------------------------- |
-| Heuristic Detection      | Detection methods that can not be bypassed by detecting target like the cheat tools in the usual way |
-| Code Manipulation        | Analyzing the code through decompilation, etc., and manipulating it for the purpose of obtaining the benefit |
-| Decompile                | Converting compiled code into high-level language for easy analysis |
-| File integrity           | Check if the original file has changed due to code manipulation, etc. |
-| Rooting, Jail Break      | Raising the limited privileges of the smartphone to the higheste level of root privileges to allow unrestricted access to all parts of the system |
-| Behavior Based Detection | A method of detecting using behavior of cheat tool or like to perform a cheat |
-| Restriction System       | The restriction are automatically performed by the system, not by the operator through the detected logs, etc. |
+| 휴리스틱 탐지  | 치팅 툴과 같은 대상을 일반적인 방법으로 탐지하여 우회하기 힘든 탐지 방법                               |
+| 코드 조작    | 코드를 디컴파일 등을 통해 분석하여 이득을 얻기 위한 목적으로 조작하는 행위                              |
+| 디컴파일     | 컴파일된 코드를 쉽게 분석하기 위해 고급언어로 변환하는 행위                                       |
+| 파일 무결성   | 코드 조작 등으로 인하여 원본 파일이 변경 되었는지 확인하는 것                                     |
+| 루팅, 탈옥   | 스마트폰의 제한 되어 있는 권한을 최상위 root 권한으로 상승시켜 시스템의 모든 부분에 제한 없이 접근 할 수 있도록 하는 것 |
+| 행위 기반 탐지 | 치팅 툴 등이 치팅을 하기 위해 하는 행위를 이용하여 탐지하는 방법                                   |
+| 시스템 제재   | 탐지된 로그 등을 통해 운영자가 제재를 하는 것이 아니라 시스템에 의해서 자동으로 수행되는 제재                   |
 
-## Service Structure
+## 서비스 구조
 
-The structure of AppGuard is shown in [Figure 1].
-After the code is linked (optional) to the app via the AppGuard SDK, use the Console or Command Line Interface(CLI) tools to complete protection work (required), then deploy app. The AppGuard Engine detects abusing and sends logs to the server for blocking or restriction.
+AppGuard의 구조는 [그림 1]과 같습니다.  
+AppGuard의 SDK를 통해 앱에 코드 연동(선택 사항) 후, Console이나 CLI(Command Line Interface)툴을 이용하여 앱 보호(필수 사항) 작업을 완료하고 배포합니다. AppGuard Engine은 어뷰징을 탐지하여 차단하거나 제재할 수 있는 로그를 서버로 전송합니다.
 
-![[Figure 1] The Structure of AppGuard Serivce](http://static.toastoven.net/prod_appguard/Overview_figure1.png)
-<center>[Figure 1] The Structure of AppGuard Serivce</center>
+![[그림 1] AppGuard 서비스 구조](http://static.toastoven.net/prod_appguard/Overview_figure1.png)
+<center>[그림 1] AppGuard 서비스 구조</center>

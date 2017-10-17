@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCOpensource
 summary=ToastUIEditorGettingStarted
+nation=ko
 ~~~~~~
 
 ## Open Source > ToastUI Editor > Getting Started

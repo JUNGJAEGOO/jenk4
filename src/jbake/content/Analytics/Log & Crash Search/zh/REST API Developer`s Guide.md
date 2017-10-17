@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&C REST API DV's
 ~~~~~~
 ## Analytics > Log&Crash Search > REST API Developer's Guide
 

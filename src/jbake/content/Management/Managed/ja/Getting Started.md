@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=Management
+summary=ManagementGetting
+nation=ja
 ~~~~~~
 ## Management > Managed > Getting Started
 

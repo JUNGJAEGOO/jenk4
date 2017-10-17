@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=SMSDV's
+nation=ko
 ~~~~~~
 ## Notification > SMS > Developer's Guide
 

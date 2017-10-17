@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=SMSRelease
+nation=ko
 ~~~~~~
 ## Notification > SMS > Release Notes
 ### 2017.09.21

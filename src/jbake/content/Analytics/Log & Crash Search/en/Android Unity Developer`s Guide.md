@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CAndroidunityDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity Android Developer's Guide
 
@@ -266,13 +266,13 @@ false :  중복 제거 로직 비활성화
 
 1.File->Build Settings 클릭합니다.
 
-![](http://static.toastoven.net/prod_logncrash/image023.png)
+![image](http://static.toastoven.net/prod_logncrash/image023.png)
 
-![](http://static.toastoven.net/prod_logncrash/image028.png)
+![image](http://static.toastoven.net/prod_logncrash/image028.png)
 
 - Android Platform 선택 한 뒤 Player Settings 클릭합니다.
 
-![](http://static.toastoven.net/prod_logncrash/image029.png)
+![image](http://static.toastoven.net/prod_logncrash/image029.png)
 
 - Internet Access는 Require, Write Access는 External(SDCard)로 설정합니다.
 
@@ -288,7 +288,7 @@ false :  중복 제거 로직 비활성화
 
 - mapping.txt 파일은 proguard 폴더 하위에 생성됩니다.
 <br><br>
-![](http://static.toastoven.net/prod_logncrash/12.png)
+![image](http://static.toastoven.net/prod_logncrash/12.png)
 
 ## Android Unity Crash 주의 사항
 

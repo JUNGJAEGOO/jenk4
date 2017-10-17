@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=PushDV's v1.3
+nation=ko
 ~~~~~~
 ## v1.3 API Reference
 이전 버전보기: <select onchange="location.href=this.value">

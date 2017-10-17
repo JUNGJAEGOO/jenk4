@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCobjectstorageOverview
 big=TCInfra
+nation=ko
 ~~~~~~
 
 <h2 id="infrastructure-object-storage-overview">Infrastructure &gt; Object Storage &gt; Overview</h2>

@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=Developer`s GuideIosDV's
 ~~~~~~
 ## Analytics > App Analytics > iOS Developer\`s Guide
 

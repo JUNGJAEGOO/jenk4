@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=AppGuardGetting
+nation=ko
 ~~~~~~
 ## Security > AppGuard > Getting Started
 

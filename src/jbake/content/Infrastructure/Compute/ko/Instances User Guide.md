@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeInstancesUser
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Instances User Guide
 

@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeLoadBalancers
 big=TCInfra
+nation=ko
 ~~~~~~
 
 ## Infrastructure > Compute & Network > Load Balancers Guide Guide

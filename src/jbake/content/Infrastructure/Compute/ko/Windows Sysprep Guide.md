@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeWindowSysprep
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Windows Sysprep Guide
 

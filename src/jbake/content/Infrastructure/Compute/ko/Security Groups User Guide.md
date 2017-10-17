@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeSecurityGroups
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Security Groups User Guide
 

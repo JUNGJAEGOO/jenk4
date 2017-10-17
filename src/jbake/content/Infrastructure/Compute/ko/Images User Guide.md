@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeImagesUser
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Image User Guide
 

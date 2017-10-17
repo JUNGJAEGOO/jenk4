@@ -2,10 +2,18 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=DNSPlusRelease
 ~~~~~~
 ## Upcoming Products > DNS+ > Release Notes
+
+### 2017.08.24
+#### 기능 개선
+* Routing Policy weight 기능에 0을 입력할 수 있도록 변경되었습니다
+* SPF record type 지원이 중단되었습니다. TXT record type을 대신 사용할 것으로 권장합니다.
+
+#### 버그 수정
+* Healthcheck를 HTTP에서 TCP로 변경한 경우 설정 정보(Path)가 그대로 남아있던 버그가 수정되었습니다.
 
 ### 2016.12.22
 #### 기능 개선/변경

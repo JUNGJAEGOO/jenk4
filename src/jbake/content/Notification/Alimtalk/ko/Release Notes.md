@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=AlimtalkRelease
+nation=ko
 ~~~~~~
 ## Notification > Alimtalk > Release Notes
 ### 2017.08.24

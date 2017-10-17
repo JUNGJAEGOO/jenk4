@@ -1,3 +1,12 @@
+title=About
+date=2013-09-24
+type=page
+status=published
+big=TCOpensource
+summary=ToastUIChartOverview
+nation=ja
+~~~~~~
+
 ## Open Source > ToastUI Chart > Overview
 
 ![Logo](https://cloud.githubusercontent.com/assets/7088720/21300155/e52f31ae-c5e4-11e6-8d6a-d660a48d0d50.png)

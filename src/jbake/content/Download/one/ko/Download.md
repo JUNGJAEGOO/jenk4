@@ -4,6 +4,7 @@ type=page
 status=published
 summary=downloads
 big=TCDownloads
+nation=ko
 ~~~~~~
 
 <style>

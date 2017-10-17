@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeNetworksUser
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Networks User Guide
 

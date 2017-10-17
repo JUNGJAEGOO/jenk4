@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCInfra
 summary=TCobjectstorageDV's
+nation=ko
 ~~~~~~
 ## Infrastructure > Object Storage > Developer's Guide
 

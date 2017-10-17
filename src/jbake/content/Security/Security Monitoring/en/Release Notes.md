@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCSecurity
+summary=SecurityMonitoringRelease
+nation=en
 ~~~~~~
 ## Security > Security Monitoring > Release Notes
 
@@ -30,4 +31,3 @@ summary=
 
 * [Console] 영문 적용 시 UI 깨짐 현상 수정
 * [Console] 공지사항 팝업 스크롤 버그 수정
-

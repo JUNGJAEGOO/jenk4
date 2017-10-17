@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=EmailRelease
+nation=ko
 ~~~~~~
 ## Notification > Email > Release Notes
 

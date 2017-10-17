@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCobjectstorageRelease
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Object Storage > Release Notes
 

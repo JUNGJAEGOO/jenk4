@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCSecurity
+summary=SecurityMonitoringGetting
+nation=zh
 ~~~~~~
 ##  Security > Security Monitoring > Getting Started 
 
@@ -53,7 +54,7 @@ Toast Cloud Console에 접속하여** [Security]** > **[Security Monitoring]**�
 <center>[그림5] 보안관제 대응 현황</center>
 
 ## 문의 등록
-보안관제에 대한 문의사항이 있으실 경우 문의 등록을 통해 보안관제 전문인력으로부터 답변을 받으실 수 있습니다. <span style="color:#1995dc">**|Q&A|** </span> 탭으로 이동하여 **[문의 등록]** 버튼을 통해 새로운 문의를 등록하실 수 있습니다.
+보안관제에 대한 문의사항이 있으실 경우 문의 등록을 통해 보안관제 전문인력으로부터 답변을 받으실 수 있습니다. <span style="color:#1995dc"> <strong>|Q&A|</strong> </span> 탭으로 이동하여 **[문의 등록]** 버튼을 통해 새로운 문의를 등록하실 수 있습니다.
 
 ## Notice
-<span style="color:#1995dc">**|Notice|** </span> 탭을 통해 대외 주요 동향 및 보안 이슈, 신규 탐지 패턴 생성 등의 정보를 확인하실 수 있습니다.
+<span style="color:#1995dc"> <strong>|Notice|</strong> </span> 탭을 통해 대외 주요 동향 및 보안 이슈, 신규 탐지 패턴 생성 등의 정보를 확인하실 수 있습니다.

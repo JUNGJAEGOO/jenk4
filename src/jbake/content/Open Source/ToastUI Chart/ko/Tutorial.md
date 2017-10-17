@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCOpensource
 summary=ToastUIChartTutorial
+nation=ko
 ~~~~~~
 
 ## Open Source > ToastUI Chart > Tutorial

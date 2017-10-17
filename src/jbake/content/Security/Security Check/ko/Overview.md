@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=SecurityCheckOverview
+nation=ko
 ~~~~~~
 ## Security > Security Check > Overview
 

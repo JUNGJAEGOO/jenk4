@@ -1,3 +1,11 @@
+title=About
+date=2013-09-24
+type=page
+status=published
+summary=TCobjectstorageRelease
+big=TCInfra
+nation=en
+~~~~~~
 ## Infrastructure > Object Storage > Release Notes
 
 ### 2017.03.23

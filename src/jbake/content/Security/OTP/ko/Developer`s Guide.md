@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=OTPDV's
+nation=ko
 ~~~~~~
 ## Security > OTP > Developer's Guide
 

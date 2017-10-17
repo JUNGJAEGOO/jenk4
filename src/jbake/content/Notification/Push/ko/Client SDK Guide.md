@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=PushClientSDK
+nation=ko
 ~~~~~~
 ## Notification > Push > Client SDK Developer's Guide
 이전 버전보기: <select onchange="location.href=this.value">

@@ -2,69 +2,82 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCSecurity
+summary=AppGuardGetting
+nation=zh
 ~~~~~~
 ## Security > AppGuard > Getting Started
 
-AppGuard有 Android版本和iOS版本(Beta)。
+AppGuard는 Android 버전과 iOS 버전(Beta)이 있습니다.
 
-Android版本关联SDK(选项)后所构建的apk文件，通过Web Console或CLI来进行App保护 工作(必选项)。<br>
-iOS版本的话，通过关联SDK(必选项)来进行应用，没有额外的保护工作。
+Android 버전은 SDK 연동(선택 사항) 후 빌드된 apk 파일을 Web Console 또는 CLI를 통해 앱 보호 작업(필수 사항)을 하면 적용됩니다.
+iOS 버전의 경우 SDK 연동(필수 사항)을 통해 적용되며, 별도의 보호 작업은 없습니다.
 
-AppGuard的使用应用阶段如[图 1]。
+AppGuard의 사용을 위한 적용 단계는 [그림 1]과 같습니다. 
 
-![[图 1] AppGuard 应用方法](http://static.toastoven.net/prod_appguard/figure1.png)
+![[그림 1] AppGuard 적용 방법](http://static.toastoven.net/prod_appguard/figure1.png)
+<center>[그림 1] AppGuard 적용 방법</center>
 
-<center>[图 1] AppGuard 应用方法</center>
+## 서비스 활성화
 
-## 服务活性化
+AppGuard 상품 활성화는 [그림 2]와 같이 Toast Cloud [Console] 페이지에서 [Security] > [AppGuard]를 선택한 후 [Product using] 버튼을 클릭합니다.
 
-要想用AppGuard来保护App的话，首先要激活服务。激活方法如[图 2]，在Console上选择[Security] > [AppGuard]后，点击 [Product using]按钮。
+![[그림 2] AppGuard 활성화](http://static.toastoven.net/prod_appguard/figure2.png)
+<center>[그림 2] AppGuard 활성화</center>
 
-![[图 2] AppGuard 활성화](http://static.toastoven.net/prod_appguard/figure2.png)
-<center>[图 2] AppGuard活性化</center>
+[Product using] 버튼으로 AppGuard 상품을 활성화 하신 후 Web Console 상단에 [상품 사용법]을 참고하셔서 AppGuard를 이용하시면 됩니다.
 
-详细的费用内容请参照AppGuard费用政策(<http://cloud.toast.com/pricing/security>)。
+AppGuard는 어뷰징에 대한 로그 정보를 제공하기 위해 단말 정보, IP등 최소한으로 필요한 내용를 수집 및 저장하게 됩니다.
 
-## 保护App
+AppGuard 상품을 이용하는 고객께서는 [상품 사용법]에 공개된 '개인정보보호 가이드'를 참고해 주시기 바랍니다.
 
-### SDK 下载及关联
+이용요금은 AppGuard 요금정책([http://cloud.toast.com/pricing/security](http://cloud.toast.com/pricing/security))을 참고 바랍니다.
 
-若是激活AppGuard的话，就会看见[App Setting/Protection]菜单。若是选择 [App Setting/Protection]菜单的话，就可下载SDK。
+## 앱 보호
 
-下载SDK后，按照附加的说明书中进行关联。
+### SDK 다운로드 및 연동
 
-### 保护App菜单选择
+AppGuard를 활성화하면 [대쉬보드], [앱 설정/보호] 메뉴가 보입니다. [앱 설정/보호] 메뉴를 선택하고 [SDK 다운로드] 버튼을 누르면 OS별 SDK를 다운로드 받을 수 있습니다.
 
-选择 [App Setting/Protection]后，点击[Protect App]按钮的话，就会出现 [图 3]的页面。(iOS的话，没有保护阶段，只能关联SDK。)
+SDK를 다운로드 받은 후 첨부 되어 있는 매뉴얼에 따라 연동합니다.
 
-![[图 3] 为了设置保护App而需要输入的项目](http://static.toastoven.net/prod_appguard/figure4.png)
-<center>[图 3] 为了设置保护App而需要输入的项目</center>
+### 앱 보호 메뉴 선택
 
-* 选择[Certificate]。Android为 KeyStore文件。
-* 输入[Master Password]，点击[Validation]按钮，可检查证书文件的有效性。
-        * 此检查操作是为了在App保护工作前选择KeyStore的有效性和适当的Alias。
-        * 有效性检查失败时，需确认证书文件是否正常和管理员密码。
-* 选择[Alias]名。
-* 输入[Alias Password]。
-* 选择要保护的App。
-* 选择保护等级。<br>    * Level1 : 有关App的非正常行为及模式基础的基本安全检测功能<br>    * Level2 : Level1 + 代码加密、App防伪等增强的安全功能<br>    * Level3 : Level2 + 强化的安全功能(在特定服务中，可能会需要检测安全性，只有收到额外的应用指南才建议使用。)<br>    * Level ex : 关联SDK作为必须需要的版本，提供Level1和2之间的安全性(只有和其它安全解决方案相冲突时，才建议使用。)
-* 点击[OK]按钮，保护App。<br>    \- 若保护App结束的话，选择\[图片4\]的[App Setting / Protection]标签，即可下载被保护的App。现在，将被保护的发布文件上传至各App Store进行发布即可。 
-   
-![[图 4] 设置/保护App页面](http://static.toastoven.net/prod_appguard/figure5.png)
-<center>[图 4] 设置/保护App页面</center>
+[앱 설정/보호] 메뉴 선택 후 [앱 보호] 버튼을 클릭하면 [그림 3]의 화면이 나옵니다. (iOS의 경우 보호 단계 없이 SDK 연동만으로 동작합니다.)
 
-* App保护工作手段 Console, CLI(Command Line Interface)
+![[그림 3] 앱 보호 설정을 위한 입력 항목](http://static.toastoven.net/prod_appguard/figure4.png)
+<center>[그림 3] 앱 보호 설정을 위한 입력 항목</center>
 
-## 控制面板
+* [인증서] 파일을 선택합니다. 안드로이드는 KeyStore파일입니다.
+* [마스터 비밀번호]를 입력하고 [유효성 검사] 버튼을 클릭하여 인증서 파일의 유효성을 검사합니다.
+	* 이 검사 작업은 앱 보호 작업 전 KeyStore의 유효성과 적절한 앨리어스를 선택하기 위함입니다.
+	* 유효성 검사 실패시, 인증서 파일 정상 여부와 마스터 비밀번호를 확인 합니다.
+* [앨리어스]명을 선택합니다.
+* [앨리어스 비밀번호]를 입력합니다.
+* [보호할 앱]을 선택합니다.
+* 보호 레벨을 선택합니다.
+	- Level1 : 앱에 대한 비정상 행위 및 패턴 기반의 기본 보안 탐지 기능
+	- Level2 : Level1 + 코드 암호화, 앱 변조 방지 등 향상된 보안 기능
+	- Level3 : Level2 + 강화된 보안 기능 (특정 서비스에서는 안정성 검증이 필요할 수 있어, 별도 적용 가이드를 받은 경우에만 사용 권장)
+	- Level ex : SDK 연동이 필수로 필요한 버전, Level1과 2  사이의 보안성 제공 (타 보안솔루션과 충돌시에만 사용 권장)
 
-1.  App保护工作已完结的App在App Store发布后，若被Abusing用户探知的话，可在[图 5]的 [Dashboard]标签上确认现状。
-2.  [Dashboard]可搜索AppGuard探知的Abusing用户的统计图表和清单。
-3.  可用 [User ID]、 [Device ID]、 [Detection Log Count]、 [Detection Log Pattern]、[Search Period]进行搜索。<br> * [User ID]和[Device ID]用逗号来区分，可添加多个条件。
-4.  检测统计图表可确认“按检测模式分布”和按时间“检测模式量”。
-5.  检测目录会显示[User ID]和[Device ID]、[Detection Log Pattern Information]、[Detection Log Count]、[App version]、[Detection Time]。
-6.  搜索结果，点击[Download Report(CSV)]，即可进行下载。
+* [확인] 버튼을 클릭하여 앱 보호를 합니다.
+	\- 앱 보호가 끝나면 [그림 4]의 [앱 설정/보호]탭을 선택하여 보호가 된 앱을 다운로드 받을 수 있습니다. 이제 보호가 된 배포 파일을 각 앱스토어에 올려서 배포하면 됩니다.
 
-![[图 6] Abusing 用户探知控制面板页面](http://static.toastoven.net/prod_appguard/figure6.png)
-<center>[图 6] Abusing 用户探知控制面板页面</center>
+![[그림 4] 앱 설정/보호 화면](http://static.toastoven.net/prod_appguard/figure5.png)
+<center>[그림 4] 앱 설정/보호 화면</center>
+
+* 앱 보호 작업 수단: Console, CLI(Command Line Interface)
+
+## 대쉬보드
+
+1. 앱 보호 작업이 완료된 앱을 앱 스토어에 배포 후 어뷰징 유저가 탐지되면 [그림 6]의 [대쉬보드] 탭에서 현황을 확인 할 수 있습니다.
+2. [대쉬보드]는 AppGuard가 탐지한 어뷰징 사용자의 통계 그래프와 리스트를 검색할 수 있습니다.
+3. [유저 ID], [디바이스 ID], [로그 탐지 횟수], [로그 탐지 패턴], [조회기간]으로 [검색] 할 수 있습니다.  
+	* [유저 ID]와 [디바이스 ID]는 콤마로 구분하여 여러 개의 조건을 추가할 수 있습니다.
+4. 탐지 통계 그래프는 '탐지 패턴별 분포'와 기간별 '탐지 패턴량'을 확인 할 수 있습니다.
+5. 탐지 목록은 [유저 ID]와 [디바이스 ID], [로그 탐지 패턴 정보], [로그 탐지 횟수], [앱 버전], [시각]이 나타납니다.
+6. 검색 결과는 [보고서 다운로드(CSV)]를 클릭하여 다운로드가 가능합니다. 
+
+![[그림 5] 어뷰징 유저 탐지 대시보드 화면](http://static.toastoven.net/prod_appguard/figure6.png)
+<center>[그림 5] 어뷰징 유저 탐지 대시보드 화면</center>

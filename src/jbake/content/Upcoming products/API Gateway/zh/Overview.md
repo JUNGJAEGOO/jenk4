@@ -2,35 +2,30 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=CorporationsOverview
 ~~~~~~
-## Upcoming Products > API Gateway > Overview
+## Upcoming Products > Corporations Search > Overview 
+
 > ※ 본 문서는 alpha 개발 단계의 문서입니다.
 > 사용에 관심이 있으신 분은 **support@cloud.toast.com**으로 문의해 주시기 바랍니다.
 
-API를 생성, 관리, 배포, 통계, 모니터링 할 수 있으며, 플러그인을 사용하여 API에 부가기능을 더할 수 있는 서비스입니다.
+국세청에서 관리하고 있는 사업자번호에 대하여 과세유형 및 신규등록, 휴.폐업 여부를 스크래핑 모듈을 통해 조회한 후 재무/세무/ERP시스템과 연동하는 서비스 입니다.  
+본 조회서비스는 정확한 세무처리와 거래 상대방이 세금계산서를 교부할 수 없는 휴.폐업자 또는 간이과세자로 의심되는 경우, 납세자가 이를 확인하여 불의의 피해를 받지 않도록 하기 위한 서비스 입니다.
 
-## 특/장점
+## 서비스 구성도
 
-- 대상 API 서버마다 API Gateway를 만들지 않아도 되므로 비용이 절감됩니다.
-- 클릭 몇 번 만으로 API에 접근제어와 같은 부가기능을 더할 수 있습니다.
-- 통계를 통해 API 사용량과 응답시간 등을 모니터링 할 수 있습니다.
+![image](http://static.toastoven.net/prod_toastbill/img_01.jpg)
+
+## 제공 서비스
+
+|서비스|	설명|
+|---|---|
+|과세정보|	사업자 과세유형(일반/간이/면세)|
+|휴.폐업정보|	휴.폐업여부, 휴.폐업일자|
 
 ## 주요 기능
 
-- API 생성, 관리, 배포
-- API를 대상 서버로 프록시
-- 다양한 플러그인 기능 제공
-- API 사용량과 실패율 및 응답시간 통계 제공
-
-## 서비스 용어
-
-|용어|	설명|
-|---|---|
-|Domain|	API 제공자|
-|DomainKey|	API 제공자가 가지는 고유키 ex) exampleDomain|
-|TargetUrl|	API 제공자의 대상 서버 ex) http://api.target.server.com|
-|DomainUrl|	API Gateway를 통해 노출되는 대상 서버에 대한 URL ex) https://api-gw.cloud.toast.com/example|
-|Endpoint|	API Gateway를 통해 노출시킬 API|
-|Plugin|	Domain 혹은 Endpoint에 연결되어 API에 적용되는 플러그인 ex) ACL, Authentification|
+- 엑셀 파일을 통한, 사업자등록번호의 신규등록, 휴.폐업 여부 대량조회를 지원 합니다.
+- REST API를 제공하고 있어, 다양한 플랫폼에서 손쉽게 사용 할 수 있습니다.
+- REST API를 통한, 실시간 단 건 조회 및 복수 거래처 대량 조회를 지원 합니다.

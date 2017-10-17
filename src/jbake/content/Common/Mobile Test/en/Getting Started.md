@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=MobileTestGetting
 ~~~~~~
 ## Common > Mobile Test > Getting Started
 
@@ -21,19 +21,19 @@ Mobile Test는 다음과 같은 순서로 사용합니다.
 
 Console에 [Game] > [Mobile Test]를 선택한 후 [상품이용]버튼을 클릭하여 서비스를 활성화 시킵니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_02.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_02.png)
 
 ### 단말기 목록 및 사용하기
 
 서비스를 활성화 하면 다음과 같은 단말 목록을 확인 할 수 있습니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_12.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_12.png)
 
 ### 단말기 컨트롤 화면
 
 사용을 원하는 단말기를 클릭하면 다음과 같은 컨트롤 화면을 확인할 수 있습니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_13.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_13.png)
 
 ### 단말기 컨트롤
 
@@ -71,19 +71,19 @@ Console에 [Game] > [Mobile Test]를 선택한 후 [상품이용]버튼을 클�
 
 * 단말기에 저장된 내용을 가지고 바로 가지고 올 수 있습니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_05.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_05.png)
 
 ### Screenshot
 
 현재 화면에 대한 스크린샷 기능을 제공하며 저장/확인이 가능합니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_06.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_06.png)
 
 ### Automation
 
 계정 로그인, 계정 관리, 단말기 설정 등을 할 수 있습니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_07.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_07.png)
 
 #### 1\. 계정 로그인
 
@@ -101,16 +101,16 @@ Console에 [Game] > [Mobile Test]를 선택한 후 [상품이용]버튼을 클�
 
 단말기에 추가적인 기능들을 사용할 수 있습니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_08.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_08.png)
 
 ### Info
 
 단말기에 정보를 확인 할 수 있습니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_09.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_09.png)
 
 ### Logs
 
 단말기에서 실시간 로그 확인이 가능 합니다.
 
-![](http://static.toastoven.net/prod_mobiletest/img_10.png)
+![image](http://static.toastoven.net/prod_mobiletest/img_10.png)

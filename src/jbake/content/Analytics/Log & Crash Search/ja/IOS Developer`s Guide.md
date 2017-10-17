@@ -2,82 +2,72 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CIosDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > iOS Developer's Guide
 
-Log & Crash iOS/Mac SDKはLog & Crash Search収集サーバーにログを送信する機能を提供します。  
-Log & Crash iOS/Mac SDK特徴は次の通りです。  
+Log & Crash iOS/Mac SDK는 Log & Crash Search 수집 서버에 로그를 보내는 기능을 제공합니다.  
+Log & Crash iOS/Mac SDK 특·장점은 다음과 같습니다.  
 
-- ログを収集してサーバーに送信します。
-- アプリで発生したクラッシュログを収集サーバーに送信します。
-- Log & Crash Searchから送られたログの照会/検索ができます。
-- マルチスレッディング環境で動作します。
+- 로그를 수집 서버로 보냅니다.
+- 앱에서 발생한 크래시 로그를 수집 서버로 보냅니다.
+- Log & Crash Search 에서 전송된 로그를 조회 및 검색이 가능합니다.
+- 멀티 쓰레딩 환경에서 동작합니다.
 
-## 動作環境
+## 지원 환경
 
 - iPhone 3GS, 4, 4S, 5, 5S, 6, 6 Plus (armv7, armv7s, arm64)
-- iOS 5.1以上(arm64は7.0.3以上)
-- Mac OS X 10.5以降(Intel 64ビット)
+- iOS 5.1 이상 (arm64는 7.0.3 이상)
+- Mac OS X 10.5 이상 (Intel 64 비트)
 
-## ダウンロード
+## 다운로드
 
-[Toast Cloud](http://docs.cloud.toast.com/ko/Download/)でiOS-Unity-Mac SDKをダウンロードできます。
-
-```
-[DOCUMENTS] > [Download] > [Analytics > Log & Crash Search] > [iOS/Mac SDK]をクリック
-```
-
-## インストール
-
-### 構成
-
-iOS/Mac SDKは次のように構成されています。
+[Toast Cloud](http://docs.cloud.toast.com/ko/Download/)에서 iOS-Unity-Mac SDK를 받을 수 있습니다.
 
 ```
-docs/                       ; iOS/Mac SDKドキュメント
-libs/iOS                    ; iOS SDKライブラリ
-libs/Mac OS X               ; Mac SDKライブラリ
-sample/LogNCrashiOSSample   ; iOS SDKサンプル
-sample/LogNCrashMacSample   ; Mac SDKサンプル
+[DOCUMENTS] > [Download] > [Analytics > Log & Crash Search] > [iOS/Mac SDK] 클릭
 ```
 
-### libs
+## 설치
 
-- iOS
-	- iOS用のlogncrash framework
-- Mac OS X
-	- Mac OS X用のlogncrash framework
-- Unity
-	- Unity用のlogncrash framework
-	- Unity packageを含む
+### 구성
 
-### サンプル説明
+iOS/Mac SDK는 다음와 같이 구성되어 있습니다.
 
-一緒に提供されるsample/について説明します。
+```
+docs/                       ; iOS/Mac SDK 문서
+libs/iOS                    ; iOS SDK 라이브러리
+libs/Mac OS X               ; Mac SDK 라이브러리
+sample/LogNCrashiOSSample   ; iOS SDK 샘플
+sample/LogNCrashMacSample   ; Mac SDK 샘플
+```
+
+### 샘플 설명
+
+같이 제공되는 sample/ 에 대해 설명합니다.
 - iOS
 
-1. sample/LogNCrashiOSSample/LogNCrashiOSSample.xcodeprojをXCodeで開きます。
-2. ViewController.mを開いてアプリケーションキー、収集サーバーのアドレスを修正します。バージョン、ログソース、ログタイプなどを変更すると、検索に役立ちます。
-3. 実行します。
-4. TLCLog Initボタンを押して開始します。
-5. Send Info、Send Debug、Send Warn、Send Fatal、Send Errorボタンをクリックしてログを送信します。
-6. Send crashボタンを押して、クラッシュログを送信します。
+1. sample/LogNCrashiOSSample/LogNCrashiOSSample.xcodeproj를 XCode로 엽니다.
+2. ViewController.m을 열어서 앱키, 수집서버 주소를 수정해 줍니다. 버전, 로그 소스, 로그 타입 등을 수정하면 검색에 도움이 됩니다.
+3. 실행합니다.
+4. TLCLog Init 버튼 눌러 시작합니다.
+5. Send Info, Send Debug, Send Warn, Send Fatal, Send Error 버튼을 눌러 로그를 전송 합니다.
+6. Send crash 버튼을 눌러 크래시 로그를 전송합니다.
 
 - Mac OS X
 
-1. sample/LogNCrashMacSample/LogNCrashMacSample.xcodeprojをXCodeで開きます。
-2. AppDelegate.mdを開いてアプリケーションキー、収集サーバーのアドレスを修正します。
-3. 実行します。
-4. initログが送信されたことを確認します。
+1. sample/LogNCrashMacSample/LogNCrashMacSample.xcodeproj를 XCode로 엽니다.
+2. AppDelegate.md을 열어서 앱키, 수집서버 주소를 수정해 줍니다.
+3. 실행합니다.
+4. init 로그가 전송 되었는지 확인 합니다.
 
-## 使用例
+## 사용 예
 
 - iOS
 
-1. 「Frameworks」にLogNCrashSDK.frameworkとCrashReporter.frameworkを追加します。
-2. 「Build Phases」の「Link Binary With Libraries」の項目に、以下のシステムのフレームワークを追加します。
+1. “Frameworks”에 LogNCrashSDK.framework와 CrashReporter.framework를 추가합니다.
+2. “Build Phases”의 “Link Binary With Libraries” 항목에 아래 시스템 프레임워크를 추가합니다.
 	- UIKit.framework
 	- SystemConfiguration.framework
 	- CoreTelephony.framework
@@ -85,24 +75,24 @@ sample/LogNCrashMacSample   ; Mac SDKサンプル
 
 - Mac OS X
 
-1. 「Frameworks」にLogNCrashSDK.frameworkとCrashReporter.frameworkを追加します。
-2. 「Build Phases」の「Link Binary With Libraries」の項目に、以下のシステムのフレームワークを追加します。
+1. “Frameworks”에 LogNCrashSDK.framework와 CrashReporter.framework를 추가합니다.
+2. “Build Phases”의 “Link Binary With Libraries” 항목에 아래 시스템 프레임워크를 추가합니다.
 	- Cocoa.framework
 	- SystemConfiguration.framework
-3. /Library/FrameworksにLogNCrashSDK.frameworkとCrashReporter.frameworkをコピーします。
+3. /Library/Frameworks에 LogNCrashSDK.framework와 CrashReporter.framework를 복사합니다.
 
-- 提供されるTLCLog classを使用してログを送信します。
-	 - init:ofAppKey:withVersion:forUserId: を実行して、初期化します。
-	 - info:withMessage:, -debug:withMessage: などを使用して、logLevelログを収集サーバーに送信します。
-	- アプリのクラッシュが発生した場合、クラッシュログが収集サーバーに送信されます。
+- 제공되는 TLCLog class를 사용하여 로그를 전송 합니다.
+	- init:ofAppKey:withVersion:forUserId: 를 실행하여 초기화를 해줍니다.
+	- info:withMessage:, -debug:withMessage: 등을 사용하여 해당 logLevel 로그를 수집서버로 보냅니다.
+	- 앱 크래시가 발생하면 크래시 로그 수집 서버로 전송됩니다.
 
 ```
 NSString* appKey = @"5b10bc2ba2b80d99ff00a5c8bff3b5050d48dd797fe7ed1c1a857066c1bdb8e4"; // Project AppKey
 NSString* appVer= @"1.0";
-NSString* serverAddr = @"http://api-logncrash.cloud.toast.com"; //Log & Crash収集サーバーのアドレス
-NSString* userID = @"tester"; //ユーザーID
+NSString* serverAddr = @"http://api-logncrash.cloud.toast.com"; //Log & Crash 수집서버 주소
+NSString* userID = @"tester"; //사용자 ID
 
-//initの呼び出し時にcrash report自動送信
+//init 호출시 crash report 자동 전송
 [TLCLog init:serverAddr ofAppKey:appKey withVersion:appVer forUserId:userID];
 
 [TLCLog setCustomField:@"Test" forKey:@"DevelopmentStage" ];
@@ -110,15 +100,15 @@ NSString* userID = @"tester"; //ユーザーID
 [TLCLog debug:self.errorCode.text withMessage:self.msg.text atLocation:@"test loc"];
 ```
 
-## 詳細API List
+## 자세한 API List
 
-TLCLog classで提供する機能を説明します。
+TLCLog class에서 제공하는 기능들을 설명합니다.
 
-### ヘッダファイルを追加
+### 헤더 파일 추가
 
-TLCLog.hファイルを追加します。
+'TLCLog.h' 파일을 추가 합니다.
 
-### 初期化
+### 초기화
 
 ```
 (bool) init:(NSString *)server ofAppKey:(NSString*)appName withVersion:(NSString*)appVersion;
@@ -126,26 +116,37 @@ TLCLog.hファイルを追加します。
 (bool) init:(NSString *)server ofAppKey:(NSString*)appName withVersion:(NSString*)appVersion forUserId:(NSString*)userId enableSyncStart:(bool)flag;
 ```
 
-- TLCLogを初期化します。
-- TLCLog機能が正常に動作するためには、必ず呼び出す必要があります。
-- ユーザーごとの統計をご希望の場合、userIdは必ず入力する必要があります。
-- パラメータ
-	- server: 収集サーバーのアドレス
-	- appKey: アプリケーションキー
-	- version: アプリのバージョン
-	- userId: ユーザー ID
-	- enableSyncStart : trueの場合に発生したログは、startSendThreadが呼び出されるまでサーバーに送信せずに、キューに格納します。ただしCrashが発生した場合、ThreadLockを解除してログを送信します。
-- 戻り値
-	- userId: ユーザー ID
-	- 失敗時 false
+- TLCLog를 초기화 합니다.
+- TLCLog 기능이 제대로 동작하기 위해서는 반드시 호출되어야 합니다.
+- 사용자별 통계를 원하는 경우 userId는 반드시 입력해야 합니다.
+- 파라미터
+	- server: 수집서버 주소
+	- appKey: 앱키
+	- version: 앱 버전
+	- userId: 사용자 아이디
+	- enableSyncStart : true인 경우 발생한 로그들은 startSendThread가 호출되기 전까지 서버에 전송하지 않고, 큐에 저장합니다. 단 Crash가 발생한 경우 ThreadLock을 해제하고 로그를 전송합니다.
+- 반환값
+	- userId: 사용자 아이디
+	- 실패시 false
 
-### SendThreadロック解除
+### SendThread 잠금 해제
 
 ```
 		(void) startSendThread;
 ```
 
-### ログ送信
+- SendThread의 잠금 상태를 해제합니다.
+
+### Host 잠금 설정
+
+```
+	(void) enableHost;
+```
+
+- true  : ip address를 구하여 host 필드에 저장합니다.
+- false : ip address를 구하지 않습니다.
+
+### 로그 보내기
 
 ```
 (void) debug:(NSString*)errorCode withMessage:(NSString*)message;
@@ -163,13 +164,13 @@ TLCLog.hファイルを追加します。
 (void) warn:(NSString*)errorCode withMessage:(NSString*)message atLocation:(NSString*)location;
 ```
 
-- 指定したログレベルで収集サーバーにログを送信します。
-- パラメータ
-	- errorCode: エラーコード
-	- message: ログメッセージ
-	- location: エラー位置
+- 지정된 로그레벨로 수집서버에 로그를 보냅니다.
+- 파라미터
+	- errorCode: 에러코드
+	- message: 로그 메세지
+	- location: 에러 위치
 
-### カスタムキーを指定する
+### 커스텀 키 지정하기
 
 ```
 (void) setCustomField:(NSString*)value forKey:(NSString*)key;
@@ -177,67 +178,73 @@ TLCLog.hファイルを追加します。
 (void) removeCustomFieldForKey:(NSString*)key;
 ```
 
-- カスタムキーを追加/削除/全て削除機能を提供します。
-- カスタムキーに 「nil」を設定すると、設定値を無視し、値に「nil」を設定すると「 - 」に設定します。
-- カスタムキーは、大文字か小文字で始まり、大文字、小文字、数字、「 - 」、「 \_ 」のみを使用できます。 (^[a-zA-Z][a-zA-Z0-9-_]\*$)
-- カスタムキーは、大文字/小文字に関わらず、次の名前は使用できません。
+- 커스텀 키를 추가, 삭제, 전부 삭제 기능을 제공합니다.
+- 커스텀 키로 "nil"을 설정하면 설정 값을 무시하고, 값에 "nil"을 설정하면 "-"로 설정합니다.
+- 커스텀 키는 대소문자로 시작하고 대소문자, 숫자, '-', '\_'만 사용하실수 있습니다. (^[a-zA-Z][a-zA-Z0-9-_]\*$)
+- 커스텀 키는 대소문자 관계없이 다음 이름은 사용하실 수 없습니다.
 	- projectName, projectVersion, host, logType, logSource, sendTime, logTime, logLevel, UserID
 	- Platform, DeviceModel, NetworkType, Carrier, CountryCode, DmpData, errorCode, Location, body, SessionID
 
-### 重複除去モードの設定
+### 중복 제거 모드 설정
 
-2. 4.0以上のSDKから一般ログに重複除去ロジックが適用されました。
+2.4.0 이상 SDK 부터 일반 로그에 중복 제거 로직이 적용되었습니다.
 
-重複ログ機能がオンになっている場合、bodyとlogLevelの内容が同じログが発生した場合、送信しません。
+중복 로그 기능이 켜져있는 경우 body와 logLevel의 내용이 같은 로그가 발생하면 전송하지 않습니다.
 
 ```
 public static void setLogDeduplicate(bool enable)
 ```
 
-true : (Default値)重複除去ロジックを有効に<br>
-false : 重複除去ロジックを無効に
+true : (Default 값) 중복 제거 로직 활성화<br>
+false : 중복 제거 로직 비활성화
 
-### 基本設定管理
+### 기본 설정 관리
 
 ```
 (void) setUserId:(NSString*)userId;
 ```
 
-- ユーザーIDを設定します。
+- 사용자 아이디를 설정 합니다.
 
 ```
 (void) setLogType:(NSString*)logType;
 ```
 
-- ログタイプを設定します。
+- 로그 타입을 설정 합니다.
 
 ```
 (void) setLogSource:(NSString*) logSource;
 ```
 
-- ログソースを設定します。
+- 로그 소스를 설정 합니다.
 
-## 自動収集される情報
+## 자동수집되는 정보들
 
-以下の情報は、Log & Crash SDKによって自動的に収集され、Log & Crash Searchで確認できます。ログ送信時に情報収集ができない場合は、値を表示できない場合があります。  
+아래 정보들은 Log & Crash SDK에 의해 자동으로 수집되며, Log & Crash Search 에서 확인할 수 있습니다. 로그전송 시점에 정보수집이 불가능한 경우 값을 볼 수 없는 경우가 발생할 수 있습니다.  
 
 - iOS
-	\- Platform: iOSバージョン情報
-	\- DeviceModel:  iPhoneのモデル情報
-	\ - Carrier: ユーザーの通信サービスプロバイダー
-	\ - CountryCode: ユーザーの通信サービスプロバイダーのISO国名コード
-	\ - NetworkType: Wi-FiまたはCellular(ログ送信イベントの発生時に、ネットワークが使用できない場合は、「No Connection」)
+	\- Platform: iOS 버전 정보
+	\- DeviceModel: 아이폰 모델 정보
+	\- Carrier: 사용자의 텔레콤 서비스 제공자
+	\- CountryCode: 사용자의 텔레콤 서비스 제공자의 ISO 국가 코드
+	\- NetworkType: Wi-Fi 또는 Cellular (로그 전송이벤트 발생 시점에 네트워크 사용이 불가한 경우 "No Connection")
 - Mac OS X
-	\- Platform: Mac OS Xバージョン情報
-	\ - NetworkType: Wi-FiまたはCellular(ログ送信イベントの発生時に、ネットワークが使用できない場合は、「No Connection」)
+	\- Platform: Mac OS X 버전 정보
+	\- NetworkType: Wi-Fi 또는 Cellular (로그 전송이벤트 발생 시점에 네트워크 사용이 불가한 경우 "No Connection")
 
-## iOS Crashを解析
-- iOSで発生したCrashの場合、Crash情報がアドレス値に収集されるため、これを解析するためのSymbolファイルが必要です。
+## iOS Crash 해석하기
+- iOS에서 발생한 Crash의 경우 Crash 정보가 주소 값으로 수집되기 때문에 이를 해석하기 위한 Symbol 파일이 필요합니다.
 
-- Xcodeを実行して、Windows > Organizerをクリックします。
+- Xcode를 실행하고 Windows > Organizer를 클릭합니다.
 
-- 作成した結果をクリックした後、右クリックして、Show in Finderをクリックします。
+- 빌드한 결과물을 클릭한 뒤, 오른쪽 버튼을 클릭하여 Show in Finder로 클릭합니다.
 ![](http://static.toastoven.net/prod_logncrash/13.png)
 
-- 結果をクリックして、右クリックして、「パッケージの内容を表示」をクリックします。
+- 결과물을 클릭하고 오른쪽 버튼을 눌러 '패키지 내용보기'를 클릭합니다.
 ![](http://static.toastoven.net/prod_logncrash/14.png)
+
+- .dSYM을 .zip으로 압축하여 웹 콘솔 > Analytic > Log & Crash Search > Settings > 심볼 파일 탭에 등록합니다.
+
+## iOS Unity Crash 주의 사항
+
+- 심볼이 없어 해석되지 않은 Crash 로그는 일반 로그로 취급됩니다.

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=AppGuardOverview
+nation=ko
 ~~~~~~
 ## Security > AppGuard > Overview
 

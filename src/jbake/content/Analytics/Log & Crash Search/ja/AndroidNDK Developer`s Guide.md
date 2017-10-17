@@ -2,74 +2,74 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CAndroidNDKDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > AndroidNDK Developer's Guide
 
-Log & Crash AndroidNDK SDKはLog & Crash Search収集サーバーにログを送信する機能を提供します。  
-Log & Crash AndroidNDK SDKの特徴は次の通りです。  
+Log & Crash AndroidNDK SDK는 Log & Crash Search 수집 서버에 로그를 보내는 기능을 제공합니다.  
+Log & Crash AndroidNDK SDK 특·장점은 다음과 같습니다.  
 
-- ログを収集してサーバーに送信します。
-- アプリで発生したクラッシュログを収集サーバーに送信します。
-- Log & Crash Searchから送られたログの照会/検索ができます。
-- マルチスレッディング環境で動作します。
+- 로그를 수집 서버로 보냅니다.
+- 앱에서 발생한 크래시 로그를 수집 서버로 보냅니다.
+- Log & Crash Search 에서 전송된 로그를 조회 및 검색이 가능합니다.
+- 멀티 쓰레딩 환경에서 동작합니다.
 
-## 動作環境
+## 지원 환경
 
-- Android 2.3.3、API Level 10以上
-- AndroidNDK最新バージョン推奨
-- サポート ABI : armeabi、armeabi-v7a、x86
+- Android 2.3.3, API Level 10 이상
+- AndroidNDK 최신 버전 권장
+- 지원 ABI : armeabi, armeabi-v7a, x86
 
-## ダウンロード
+## 다운로드
 
-[Toast Cloud](http://docs.cloud.toast.com/ko/Download/)からAndroid SDKをダウンロードできます。
-
-```
-[DOCUMENTS] > [Download] > [Analytics > Log & Crash Search] > [AndroidNDK SDK]をクリック
-```
-
-## インストール
-
-### 構成
-
-AndroidNDK SDKは、次のように構成されています。
+[Toast Cloud](http://docs.cloud.toast.com/ko/Download/)에서 Android SDK를 받을 수 있습니다.
 
 ```
-docs/                       ; AndroidNDK SDKドキュメント
-include/toast/logncrash.h   ; C++ ヘッダファイル
+[DOCUMENTS] > [Download] > [Analytics > Log & Crash Search] > [AndroidNDK SDK] 클릭
+```
+
+## 설치
+
+### 구성
+
+AndroidNDK SDK는 다음과 같이 구성되어 있습니다.
+
+```
+docs/                       ; AndroidNDK SDK 문서
+include/toast/logncrash.h   ; C++ 해더 파일
 androidndk-sdk/
-    obj/                    ; AndroidNDK SDK Staticライブラリ
-    PrebuiltStaticLib.mk    ; Staticライブラリmkファイル
-    libs/                   ; AndroidNDK SDK Sharedライブラリ
-    PrebuiltSharedLib.mk    ; Sharedライブラリmkファイル
-androidndk-sdk-sample/      ; Android JNIサンプル
+    obj/                    ; AndroidNDK SDK Static 라이브러리
+    PrebuiltStaticLib.mk    ; Static 라이브러리 mk 파일
+    libs/                   ; AndroidNDK SDK Shared 라이브러리
+    PrebuiltSharedLib.mk    ; Shared 라이브러리 mk 파일
+androidndk-sdk-sample/      ; Android JNI 샘플
 ```
 
-### SDKサンプル
+### SDK 샘플
 
-一緒に提供されるandroidndk-sdk-sample/について説明します。
+같이 제공되는 androidndk-sdk-sample/에 대해 설명합니다.
 
-1. androidndk-sdk-sample/に移動します。
-2. 「<ndk_path >/ndk-build」でNDK部分をビルドします。
-3. EclipseでAndroid projectを開きます。
-4. AndroidNDKSample.javaを開いて発行されたアプリケーションキーに修正します。
-5. 実行します。
+1. androidndk-sdk-sample/로 이동합니다.
+2. <ndk_path>/ndk-build로 NDK 부분을 빌드합니다.
+3. Eclipse로 Android project를 불러옵니다.
+4. AndroidNDKSample.java를 열어 발급받은 앱키로 수정합니다.
+5. 실행합니다.
 
-クラッシュログをLog & Crash Searchで表示するにはシンボルファイルを追加する必要があります。
+크래시 로그를 Log & Crash Search에서 보기 위해서는 심볼 파일을 올려줘야 합니다.
 
-1. 「obj/local/<abi >/liblogncrashjni_sample.so」をzipに圧縮します。
-2. Toast Cloud Consoleで「Analytics - Log & Crash Search - Settings - シンボルファイル」に移動して、zipファイルを追加します。この時、androidndk-sdk-sampleと同じプロジェクトのバージョンで追加します。
-3. androidndk-sdk-sampleを実行して、クラッシュログを発生させます。
-	- クラッシュを発生させるために、「Initialize」ボタンを押して、「Test 2」ボタンを押します。
-	- Toast Cloud ConsoleでAnalytics - Log & Crash Search - Log Searchのクラッシュログが到着したことを確認して、「DmpData」フィールドにある「表示」をクリックして確認します。
-4. 「DmpData」フィールドの「表示」が動作しない場合は、次の事項をチェックする必要があります。
-	- クラッシュログとシンボル間でプロジェクトのバージョンが合っているか
-	- シンボルファイルを間違えていないか
+1. obj/local/<abi>/liblogncrashjni_sample.so를 zip으로 압축합니다.
+2. Toast Cloud Console에서 "Analytics - Log & Crash Search - Settings - 심볼 파일" 로 이동해서 압축된 zip 파일을 올립니다. 이때 androidndk-sdk-sample과 같은 프로젝트 버전으로 올려야 합니다.
+3. androidndk-sdk-sample 을 실행하여 크래시 로그를 발생시킵니다.
+	- 크래시를 발생시키 위해서 "Initialize" 버튼을 누르고 "Test 2" 버튼을 눌러 줍니다.
+	- Toast Cloud Console에서 Analytics - Log & Crash Search - Log Search 에 크래시 로그가 도착한 것을 확인하고 "DmpData" 필드에 있는 "보기"를 눌러 확인합니다.
+4. "DmpData" 필드 "보기"가 동작하지 않으면 다음 사항을 체크해야 합니다.
+	- 크래시 로그와 심볼 사이에 프로젝트 버전이 맞지 않는 경우
+	- 심볼 파일을 잘못 올린 경우
 
-## 使用例
+## 사용 예
 
-1.jni/Application.mkに次の内容を追加します。
+1.jni/Application.mk에 다음 내용을 추가합니다.
 
 ```
  ...
@@ -79,28 +79,28 @@ androidndk-sdk-sample/      ; Android JNIサンプル
  ...
 ```
 
-2.jni/Android.mkに次の内容を追加します。
+2.jni/Android.mk에 다음 내용을 추가합니다.
 
 ```
- ...
+...
  LOCAL_STATIC_LIBRARIES := logncrash_androidndk_static
  ...
  include $(LOCAL_PATH)/<androidndk_sdk_path>/androidndk-sdk/PrebuiltStaticLib.mk
 ```
 
-- Sharedライブラリを使用するには次のように宣言します。
+- Shared 라이브러리를 사용하시려먼 다음과 같이 선언합니다.
 
 ```
-  ...
+...
   LOCAL_SHARED_LIBRARIES := logncrash_androidndk
   ...
   include $(LOCAL_PATH)/<androidndk_sdk_path>/androidndk-sdk/PrebuiltSharedLib.mk
 ```
 
-3.toast/logncrash.hをインクルードして、ToastLog classを使用します。
+3.toast/logncrash.h 를 인클루드해 주고 ToastLog class를 사용합니다.
 
 ```
- ...
+...
  #include "toast/logncrash.h"
  ...
 
@@ -119,19 +119,19 @@ androidndk-sdk-sample/      ; Android JNIサンプル
      DestroyToastLog();
 ```
 
-4.「<ndk_path >/ndk-build」でNDK部分をビルドします。
+4.<ndk_path>/ndk-build로 NDK 부분을 빌드합니다.
 
-5.AndroidNDK SDKが正常に動作するためにAndroidManifest.xmlに以下のパーミッションを与える必要があります。
+5.AndroidNDK SDK가 정상적으로 동작하기 위해서 AndroidManifest.xml에 다음 퍼미션을 주어야 합니다.
 
 ```
- ...
+...
  <uses-permission android:name="android.permission.INTERNET"/>
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
  ...
 ```
 
-6.JNIライブラリを読み込みます。
+6.JNI 라이브러리를 불러옵니다.
 
 ```
 static {
@@ -139,7 +139,7 @@ static {
  }
 ```
 
-- Sharedライブラリを使用の際は、あらかじめliblogncrash_androidndk.soをロードする必要があります。
+- Shared 라이브러리를 사용하실 때에는 미리 liblogncrash_androidndk.so를 불러줘야 합니다.
 
 ```
 static {
@@ -148,14 +148,14 @@ static {
   }
 ```
 
-AndroidNDK SDKはJava Exceptionを処理することができません。 AndroidNDK SDKは、C++ Native codeのために作られているためです。  
-androidndk-sdk-sample/jni/Android.mkファイルとAndroidNDKに含まれている文書( 「<ndk_path >/docs/」)を参照してください。
+AndroidNDK SDK는 Java Exception을 처리할 수 없습니다. AndroidNDK SDK는 C++ Native code를 위해서 제작되었기 때문입니다.  
+androidndk-sdk-sample/jni/Android.mk 파일과 AndroidNDK에 포함된 문서(<ndk_path>/docs/)를 참조해 주세요.
 
 ## API List
 
-toast::logncrash::ToastLog classで提供している機能を説明します。
+toast::logncrash::ToastLog class에서 제공하는 기능들을 설명합니다.
 
-### ToastLogインスタンスの割り当て/解除
+### ToastLog 인스턴스 할당/해제
 
 ```
 toast::logncrash::ToastLog* GetToastLog();
@@ -163,11 +163,11 @@ toast::logncrash::ToastLog* GetToastLog();
 void DestroyToastLog();
 ```
 
-- ToastLog instanceを割り当てて解除します。
-- シングルトーン方式で1つのインスタンスのみが返されます。
-- 返されたToastLog instanceに対してdeleteをしないでください。削除するには、必ずDestroyToastLog()を呼び出してください。
+- ToastLog instance를 할당하고 해제합니다.
+- 싱글톤 방식으로 하나의 인스턴스만 반환됩니다.
+- 반환된 ToastLog instance에 대해서 delete를 하면 안됩니다. 제거하기 위해서는 반드시 DestroyToastLog()를 호출하셔야 합니다.
 
-### 初期化/解除
+### 초기화/해제
 
 ```
 #define LOGNCRASH_VERSION         "1.0.0"
@@ -198,37 +198,37 @@ int32_t initialize(
 void destroy();
 ```
 
-- ToastLogを初期化して解除します。
-- ToastLog機能が正常に動作するためには、必ずinitialize()を呼び出す必要があります。
-- パラメータ
-	- appKey：アプリケーションキー
-	- version：アプリバージョン
-	- collectorAddr：収集サーバーのアドレス
-		- Log & Crash収集サーバー：api-logncrash.cloud.toast.com
-	- collectorPort：収集サーバーポート
-	- logSource：ログソース
-	- logType：ログタイプ
-- clientHost：Hostを取得する方式
-		- true：ioctl方式を使用してclientからhostを取得
-		- false：serverから渡された値でhostを取得
-	- asyncStart：SendThreadをLockさせた状態で開始します。Lock状態でログが発生した場合、サーバーに送信せずにキューに格納して待機。Crashが発生したり、StartSendThread関数を実行した場合はLock解除。
-- initialize()の戻り値
-	- LOGNCRASH_LOG_OK：0、初期化に成功
-	- LOGNCRASH_LOG_ERROR：-1、内部エラーコード
-	- LOGNCRASH_LOG_ERROR_APPKEY：-2、アプリケーションキーが間違っている場合
-	- LOGNCRASH_LOG_ERROR_VERSION：-3、バージョンが間違っている場合
-	- LOGNCRASH_LOG_ERROR_ADDRESS：-4、収集サーバーのアドレスが間違っている場合
-	- LOGNCRASH_LOG_ERROR_PORT：-5、収集サーバーのポートが間違っている場合
+- ToastLog를 초기화하고 해제합니다.
+- ToastLog 기능이 제대로 동작하기 위해서는 반드시 initialize()가 호출되어야 합니다.
+- 파라미터
+	- appKey : 앱키
+	- version : 앱 버전
+	- collectorAddr : 수집서버 주소
+		- Log&Crash 수집서버 : api-logncrash.cloud.toast.com
+	- collectorPort : 수집서버 포트
+	- logSource : 로그 소스
+	- logType : 로그 타입
+  - clientHost : Host를 구하는 방식
+		- true : ioctl 방식을 사용하여 client에서 host를 구함
+		- false : server에서 전달된 값으로 host를 구함
+	- asyncStart : SendThread를 Lock시킨 상태로 시작.  Lock 상태에서 로그가 발생하는 경우 서버로 전송하지 않고 큐에 저장하며 대기. Crash가 발생하거나 StartSendThread 함수를 실행하는 경우 Lock 해제
+- initialize() 반환값
+	- LOGNCRASH_LOG_OK : 0, 초기화 성공
+	- LOGNCRASH_LOG_ERROR : -1, 내부 에러 코드
+	- LOGNCRASH_LOG_ERROR_APPKEY : -2, 앱키가 잘못된 경우
+	- LOGNCRASH_LOG_ERROR_VERSION : -3, 버전이 잘못된 경우
+	- LOGNCRASH_LOG_ERROR_ADDRESS : -4, 수집 서버 주소가 잘못된 경우
+	- LOGNCRASH_LOG_ERROR_PORT : -5, 수집 서버 포트가 잘못된 경우
 
-### SendThread Lock状態解除
+### SendThread Lock 상태 해제
 
 ```
   	void StartSendThread();
 ```
 
- - SendThreadを送信可能な状態に変更
+  - SendThread를 전송 가능 상태로 변경
 
-### ログ送信
+### 로그 보내기
 
 ```
 bool sendLog(
@@ -238,16 +238,16 @@ bool sendLog(
     const char* location = NULL);
 ```
 
-- 指定されたlogLevelでログを送信します。
-- パラメータ
-	- logLevel：送信logLevel.setLogLevel()で指定されたlogLevelよりも大きいlogLevelは送信ができません。
-	- message：送信するメッセージ
-	- errorCode：エラーコード。 NULLまたは ""を使えば送信されません。
-	- location：エラーの場所。 NULLまたは ""を使えば送信されません。
-- 戻り値
-	- 成功時true。
-	- logLevelが大きかったり、messageが空の場合はfalse。
-- 参照
+- 지정된 logLevel로 로그를 보냅니다.
+- 파라미터
+	- logLevel : 전송할 logLevel. setLogLevel()로 지정된 logLevel보다 큰 logLevel은 전송이 안됩니다.
+	- message : 전송할 메시지
+	- errorCode : 에러 코드. NULL이나 ""을 쓰면 전송되지 않습니다.
+	- location : 에러 위치. NULL이나 ""을 쓰면 전송되지 않습니다.
+- 반환값
+	- 성공시 true
+	- logLevel이 크거나, message가 비어있는 경우 false
+- 참고
 	- setLogLevel(), getLogLevel();
 
 ```
@@ -262,13 +262,13 @@ bool error(const char* message, const char* errorCode = NULL, const char* locati
 bool fatal(const char* message, const char* errorCode = NULL, const char* location = NULL);
 ```
 
-- 決められたDEBUG、INFO、WARN、ERROR、FATALログを送信します。
-- logLevelが固定されているという点以外はsendLog()と同じです。
-- 戻り値
-	- 成功時true。
-	- logLevelが大きかったり、messageが空の場合はfalse。
+- 정해진 DEBUG, INFO, WARN, ERROR, FATAL 로그를 보냅니다.
+- logLevel이 고정되어 있다는 점 이외에는 sendLog()와 같습니다.
+- 반환값
+	- 성공시 true
+	- logLevel이 크거나, message가 비어있는 경우 false
 
-### ログレベルを指定
+### 로그 레벨 지정하기
 
 ```
 typedef enum {
@@ -285,10 +285,10 @@ LogNCrashLogLevel getLogLevel();
 void setLogLevel(const LogNCrashLogLevel logLevel);
 ```
 
-- ToastLog instanceのlogLevelを取得するか、指定します。
-- ToastLogのデフォルトはLOGNCRASH_INFOです。したがってdebug()関数を使用するにはsetLogLevel(LOGNCRASH_DEBUG)に設定する必要があります。
+- ToastLog instance의 logLevel을 구하거나 지정합니다.
+- ToastLog 기본값은 LOGNCRASH_INFO입니다. 따라서 debug() 함수를 사용하시려면 setLogLevel(LOGNCRASH_DEBUG)로 설정해주셔야 합니다.
 
-### カスタムキーを指定
+### 커스텀 키 지정하기
 
 ```
 bool addCustomKey(const char* key, const char* value);
@@ -298,27 +298,27 @@ void removeCustomKey(const char* key);
 void clearCustomKeys();
 ```
 
-- カスタムキーを追加/削除/全て削除機能を提供します。
-- カスタムキーは、大文字か小文字で始まり、大文字と小文字、数字、「 - 」、「_」のみを使用できます。 ( [A-Za-z][A-Za-z0-9-_]* )
-- カスタムキーは、最大64文字です。
-- カスタムキーは、大文字と小文字に関わらず、次の名前は使用できません。
+- 커스텀 키를 추가, 삭제, 전부 삭제 기능을 제공합니다.
+- 커스텀 키는 대소문자로 시작하고 대소문자, 숫자, '-', '_'만 사용하실수 있습니다. ( [A-Za-z][A-Za-z0-9-_]* )
+- 커스텀 키는 최대 64 문자입니다.
+- 커스텀 키에 대소문자 관계없이 다음 이름은 사용하실 수 없습니다.
 	- projectname, projectversion, host, body, logsource, logtype
 	- logType, sendTime, logLevel, userId, platform
 	- dmpdata, dmpreport
-- addCustomKey()の戻り値
-	- 成功時true。
-	- key形式が合わない場合、追加失敗時false。
+- addCustomKey() 반환값
+	- 성공시 true
+	- key 형식이 맞지 않으면 추가 실패시 false
 
-### ホストタイプを指定
+### 호스트 타입 지정하기
 
 ```
 bool setHostMode(int mode);
 ```
 
-- modeが0の場合 : Private IPを取得しhostフィールドを入力します。 Private IPを取得するのに失敗した場合、Public IPにhostフィールドを入力します。
-- modeが1の場合 : Public IPにhostフィールドに入力します。
+- mode 가 0인 경우 : Private IP를 구하여 host 필드를 채웁니다. Private IP를 구하는데 실패 하면 Public IP로 host 필드를 채웁니다.
+- mode 가 1인 경우 : Public IP 로 host 필드를 채웁니다.
 
-### クラッシュ処理
+### 크래시 처리하기
 
 ```
 typedef enum {
@@ -343,27 +343,27 @@ void closeCrashCatcher();
 void setCrashCallback(const LogNCrashCallbackType cb, void* cbData = NULL);
 ```
 
-- クラッシュ処理を開始するか、終了します。
-- openCrashCatcherパラメータ
-	- bBackground : クラッシュレポーター動作方式を設定します。
-	- langType : クラッシュレポーターGUI言語を設定します。
-- openCrashCatcher戻り値
-	- 設定成功時true。
-	- 設定失敗時false。
-	- AndroidNDK SDKは端末の/sdcardディレクトリを使用します。端末に上記ディレクトリが存在しない場合、正しく動作しない場合があります。
+- 크래시 처리를 시작하거나 종료합니다.
+- openCrashCatcher 파라미터
+	- bBackground : 크래시 리포터 동작 방식 설정합니다.
+	- langType : 크래시 리포터 GUI 언어를 설정합니다.
+- openCrashCatcher 반환값
+	- 설정 성공시 true
+	- 설정 실패시 false
+	- AndroidNDK SDK는 단말의 /sdcard 디렉토리를 사용합니다. 단말에 위 디렉토리가 없으면 제대로 동작 안할수 있습니다.
 
-### 重複除去モードの設定
- - 2.4.0以上SDKから一般ログに重複除去ロジックが適用されました
- - 重複ログ機能がオンになっている場合、bodyとlogLevelの内容が同じログが発生した場合、送信しません。
+### 중복 제거 모드 설정
+  - 2.4.0 이상 SDK 부터 일반 로그에 중복 제거 로직이 적용되었습니다
+  - 중복 로그 기능이 켜져있는 경우 body와 logLevel의 내용이 같은 로그가 발생하면 전송하지 않습니다.
 
 ```
 public static void setDuplicate(bool enable)
 ```
- - true：(Default値)重複除去ロジックを有効にする。
+  - true : (Default 값 ) 중복 제거 로직 활성화
 
- - false：重複除去ロジックを無効にする。
+  - false : 중복 제거 로직 비활성화
 
-### その他の設定
+### 기타 설정
 
 ```
 const char* getUserId();
@@ -371,7 +371,7 @@ const char* getUserId();
 void setUserId(const char* userId);
 ```
 
-- ユーザーIDを取得するか、指定します。
+- 사용자 ID를 구하거나 지정합니다.
 
 ```
 void enableHostField();
@@ -379,7 +379,7 @@ void enableHostField();
 void disableHostField();
 ```
 
-- Hostフィールドを有効または無効にします。
+- Host 필드를 활성화하거나 비활성화합니다.
 
 ```
 void enablePlatformField();
@@ -387,4 +387,4 @@ void enablePlatformField();
 void disablePlatformField();
 ```
 
-- Platformフィールドを有効または無効にします。
+- Platform 필드를 활성화하거나 비활성화합니다.

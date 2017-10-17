@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CStandaloneDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity Standalone Developer's Guide
 

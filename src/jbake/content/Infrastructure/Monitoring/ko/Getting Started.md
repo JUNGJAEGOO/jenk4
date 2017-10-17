@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCInfra
 summary=TCInframonitorGetting
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Monitoring Guide
 

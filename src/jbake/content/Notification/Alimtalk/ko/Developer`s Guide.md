@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=AlimtalkDV's
+nation=ko
 ~~~~~~
 ## Notification > Alimtalk > Developer's Guide
 

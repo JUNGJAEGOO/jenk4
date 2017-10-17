@@ -1,3 +1,12 @@
+title=About
+date=2013-09-24
+type=page
+status=published
+big=TCOpensource
+summary=ToastUIEditorOverview
+nation=ja
+~~~~~~
+
 ## Open Source > ToastUI Editor > Overview
 
 ![toast ui editor](https://cloud.githubusercontent.com/assets/7088720/21300635/f64a1bd0-c5e8-11e6-8583-fbb8e6899b2f.png)

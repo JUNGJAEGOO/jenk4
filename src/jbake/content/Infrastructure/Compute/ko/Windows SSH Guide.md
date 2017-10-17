@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeWindowSSH
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Windows SSH Guide
 

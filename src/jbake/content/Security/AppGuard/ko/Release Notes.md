@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=AppGuardRelease
+nation=ko
 ~~~~~~
 ## Security > AppGuard > Release Notes
 

@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeOverview
 big=TCInfra
+nation=ko
 ~~~~~~
 
 <h2 id="infrastructure-compute-network-overview">Infrastructure &gt; Compute &amp; Network &gt; Overview</h2>

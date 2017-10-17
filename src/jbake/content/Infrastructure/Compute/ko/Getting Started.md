@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeGetting
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Getting Started
 

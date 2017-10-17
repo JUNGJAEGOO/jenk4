@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=AlimtalkGetting
+nation=ko
 ~~~~~~
 ## Notification > Alimtalk > Getting Started
 

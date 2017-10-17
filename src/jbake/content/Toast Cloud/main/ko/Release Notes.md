@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCoverview
 summary=TCRelease
+nation=ko
 ~~~~~~
 ## TOAST Cloud > Release Notes
 ### 2017.09.21 

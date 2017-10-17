@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=SecurityMonitoringRelease
+nation=ko
 ~~~~~~
 ## Security > Security Monitoring > Release Notes
 

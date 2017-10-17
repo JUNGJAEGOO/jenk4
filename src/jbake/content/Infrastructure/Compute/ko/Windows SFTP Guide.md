@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeWindowSFTP
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Windows SFTP Guide
 

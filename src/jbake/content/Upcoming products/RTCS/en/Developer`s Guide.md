@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=RTCSDV's
 ~~~~~~
 ## Upcoming Products > RTCS > Developer's Guide
 RTCS를 사용하기 위해 필요한 기본 지식과 API에 대해 설명합니다
@@ -27,12 +27,14 @@ RTCS를 사용하기 위해 필요한 기본 지식과 API에 대해 설명합�
 
 ### 멤버 채널
 가입을 위해서는 연결 URL을 요청할때 선 가입을 시켜주거나, 추후 가입시에 인증이 필요합니다. 채널명은 **member_** 로 시작합니다. 가입자를 아래와 같은 내용으로 조회가 가능합니다.
+
 ```
 {세션아이디:사용자정보}
 ```
 
 ### 출석 채널
 가입을 위해서는 연결 URL을 요청할때 선 가입을 시켜주거나, 추후 가입시에 인증이 필요합니다. 채널명은 **presence_** 로 시작합니다. 채널에 가입과 탈퇴하는 회원의 정보를 채널 가입들에게 broadcast를 해줍니다. 가입자 정보를 아래와 같은 내용으로 조회가 가능합니다.
+
 ```
 {세션아이디:사용자정보}
 ```
@@ -46,6 +48,7 @@ Webauth를 이용하여 채널 가입시에 인증 기능을 추가 할 수 있�
 WebAuth는 서비스 서버에 http **POST** 요청으로 전달되며 Body는 json형태로 전달됩니다. 응답코드 **200**이면 인증성공이다. 지정된 타임아웃은 **1,000ms** 이고 전송 성공/실패에 관계없이 재 요청하지 않습니다.
 
 [Body]
+
 ```
 {
     "time":"milliseconds",
@@ -93,6 +96,7 @@ WebAuth는 서비스 서버에 http **POST** 요청으로 전달되며 Body는 j
 
 ### 클라이언트 종료
 클라이언트가 종료 했을 때 Hook이 발생합니다. 지정한 Hook URL로 아래와 같은 데이터가 전송됩니다. **user** 키에 데이터는 접속 URL을 요청했을 때 전달해준 user 데이터입니다.
+
 ```
 {
     "time" : "milliseconds",
@@ -117,6 +121,7 @@ WebAuth는 서비스 서버에 http **POST** 요청으로 전달되며 Body는 j
 
 ### 채널 가입
 클라이언트에서 채널을 가입했을 때 Hook이 발생됩니다. 지정한 Hook URL로 아래와 같은 데이터가 전송됩니다. **user** 키에 데이터는 접속 URL을 요청했을 때 전달해준 user 데이터입니다.
+
 ```
 {
     "time" : "1352770998419",
@@ -141,6 +146,7 @@ WebAuth는 서비스 서버에 http **POST** 요청으로 전달되며 Body는 j
 
 ### 채널 탈퇴
 클라이언트에서 채널을 탈퇴했을 때 Hook이 발생됩니다. 지정한 Hook URL로 아래와 같은 데이터가 전송됩니다. **user** 키에 데이터는 접속 URL을 요청했을 때 전달해준 user 전송됩니다.
+
 ```
 {
     "time" : "1352770998419",
@@ -207,6 +213,7 @@ POST /v2/auth/{appkey}/access
 |via|String|클라이언트 타입을 구분하기 위한 식별자. 기본값은 browser|
 
 [response]
+
 ```
 {
    "url":"ttps://pub001-pusher.toast.com/socket.io/1/?app={appkey}&ts=1501588191&s=389ab4e5d444a9ce48d2edb05021747fada29df4&d=Og&t=1501588191521",
@@ -231,7 +238,7 @@ POST /v2/auth/{appkey}/access
 
 
 ### 채널 메시지 전달 요청
-채널에 가입된 클라이언트 들에게 메세지를 전달 할 수 있습니다.
+채널에 가입된 클라이언트 들에게 메세지를 전달합니다
 * 주의)
   * 메세지의 크기는 **1mb** 보다 작아야합니다.
   * 큰메세지를 보낼 경우 **413** 에러가 발생합니다..
@@ -272,6 +279,7 @@ POST /v2/event/{appkey}/channel
 |data|String or object|전달할 메세지 string 이나 json 모두 지원, 하지만 json도 string으로 전달하는게 안전하다.|
 
 [response]
+
 ```
 {"accepted":"{server_id}", "app":"{appkey}"}
 ```
@@ -309,6 +317,7 @@ GET /exists/{appkey}
 
 
 [response]
+
 ```
 {"occupied": Boolean}
 ```
@@ -328,7 +337,7 @@ GET /exists/{appkey}
 |503| 에러 |Server Maintenance | 서버가 점검 중인 경우 발생한다.|
 
 ### 채널에 가입된 세션 정보 조회
-채널에 가입된 세션의 목록을 조회 할 수 있습니다. 조회가 가능한 채널은 **presence** 와 **member** 채널입니다.
+채널에 가입된 세션의 목록을 조회합니다. 조회가 가능한 채널은 **presence** 와 **member** 채널입니다.
 
 [URL]
 
@@ -387,6 +396,7 @@ GET /v2/channel/{appkey}/count?channel={channel_name}
 
 
 [response]
+
 ```
 {"count":Number}
 ```
@@ -419,6 +429,7 @@ GET /v2/channel/{appkey}/count?channel={channel_name}
 
 #### Maven
 **pom.xml** 에 아래와 같이 추가합니다.
+
 ```
 <dependencies>
   <dependency>
@@ -431,6 +442,7 @@ GET /v2/channel/{appkey}/count?channel={channel_name}
 
 #### Gradle
 **build.gradle** 에 아래와 같이 추가합니다.
+
 ```
 compile ('io.socket:socket.io-client:1.0.0') {
   // excluding org.json which is provided by Android
@@ -444,6 +456,7 @@ compile ('io.socket:socket.io-client:1.0.0') {
 
 #### Swift Package Manager
 **Package.swift** 에 아래 디펜던시를 추가합니다
+
 ```
 import PackageDescription
 
@@ -457,11 +470,13 @@ let package = Package(
 
 ### Carthage
 **Cartfile** 에 아래와 같이 추가합니다.
+
 ```
 github "nuclearace/Starscream" ~> 8.0.4
 github "socketio/socket.io-client-swift" ~> 11.1.1 # Or latest version
 ```
 Run
+
 ```
 carthage update --platform ios,macosx
 ```
@@ -471,6 +486,7 @@ carthage update --platform ios,macosx
   - [https://cocoapods.org/pods/Socket.IO-Client-Swift](https://cocoapods.org/pods/Socket.IO-Client-Swift)
 
 프로젝트에서 **Podfile** 파일을 생성하고 **Socket.IO-Client-Swift** 를 추가합니다.
+
 ```
   use_frameworks!
 
@@ -480,27 +496,32 @@ carthage update --platform ios,macosx
 ```
 
   Install pods:
+  
 ```
   $ pod install
 ```  
   Import the module:
 
   Swift:
+  
 ```
   import SocketIO
 ```
 
   Objective-C:
+  
 ```
   @import SocketIO;
 ```  
 
 #### CocoaSeeds
 Add this line to your Seedfile:
+
 ````
 github "socketio/socket.io-client-swift", "v11.1.1", :files => "Source/*.swift" # Or latest version
 ````
 Run
+
 ```
 seed install.
 ```

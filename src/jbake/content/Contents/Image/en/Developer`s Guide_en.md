@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCcontents
+summary=IMAGEDV'sEN
 ~~~~~~
 Contents &gt; Image &gt; Developer's Guide
 ------------------------------------------

@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=APIGetting
 ~~~~~~
 ## Upcoming Products > API Gateway > Getting Started 
 
@@ -22,17 +22,17 @@ Console의 [Upcoming Products] > [API Gateway]를 선택한 후 [상품이용] �
 
 1.[API Gateway] > [API Setting] 를 클릭하여 API 설정 화면으로 이동합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_01.png)
+![image](http://static.toastoven.net/prod_apigateway/img_01.png)
 <center>[그림1] API 설정화면 이동</center>
 
 2.[New Domain] 버튼을 클릭하여 Domain 생성화면으로 이동합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_02.png)
+![image](http://static.toastoven.net/prod_apigateway/img_02.png)
 <center>[그림2] Domain 생성화면 이동</center>
 
 3.플러그인 없이 간단히 Domain Name, Domain Key, Target URL만 입력하고 [Save] 버튼을 클릭하여 도메인을 생성합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_03.png)
+![image](http://static.toastoven.net/prod_apigateway/img_03.png)
 <center>[그림3] Domain 생성</center>
 
 ### Endpoint 생성하기
@@ -41,12 +41,12 @@ Console의 [Upcoming Products] > [API Gateway]를 선택한 후 [상품이용] �
 
 1.생성한 Domain 우측 끝에 있는 [Setting] > [Endpoint]를 클릭하여 Endpoint 설정화면으로 이동합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_04.png)
+![image](http://static.toastoven.net/prod_apigateway/img_04.png)
 <center>[그림4] Endpoint 설정화면 이동</center>
 
 2.[New Endpoint] 버튼을 클릭하여 새 Endpoint를 만들고 Method는 GET, Path는 /hello로 설정하고 [Save] 버튼을 클릭합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_05.png)
+![image](http://static.toastoven.net/prod_apigateway/img_05.png)
 <center>[그림4] Endpoint 생성</center>
 
 ### Domain 복제하기 
@@ -54,12 +54,12 @@ Console의 [Upcoming Products] > [API Gateway]를 선택한 후 [상품이용] �
 
 1. Doamin 리스트 페이지에서 복제할 Domain의 [Setting] > [Clone from domain]을 클릭합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_gettingstarted_5.png)
+![image](http://static.toastoven.net/prod_apigateway/img_gettingstarted_5.png)
 <center>[그림5] 복제할 Doamin 선택</center>
 
 2. 복제할 Domain의 설정 정보를 입력한 후 저장합니다. 
 
-![](http://static.toastoven.net/prod_apigateway/img_gettingstarted_6.png)
+![image](http://static.toastoven.net/prod_apigateway/img_gettingstarted_6.png)
 <center>[그림6] 복제 Domain 설정</center>
 
 
@@ -68,7 +68,7 @@ swagger 파일을 import하여 domain을 등록하거나 등록된 domain을 swa
 
 #### Swagger Export
 1. Export할 도메인의 [Setting] > [Export swagger]를 클릭하면 swagger 파일이 다운로드 됩니다. (기본 파일명: export.json)
-![](http://static.toastoven.net/prod_apigateway/img_gettingstarted_7.png)
+![image](http://static.toastoven.net/prod_apigateway/img_gettingstarted_7.png)
 <center>[그림7] Domain Export</center>
 
 
@@ -200,18 +200,18 @@ swagger 파일을 import하여 domain을 등록하거나 등록된 domain을 swa
 	* URI_REWRITE: URL Rewrite 플러그인 설정 정보를 입력합니다.
 
 6. Import domain 버튼을 클릭하고 import할 swagger file을 추가합니다.
-![](http://static.toastoven.net/prod_apigateway/img_gettingstarted_8.png)
+![image](http://static.toastoven.net/prod_apigateway/img_gettingstarted_8.png)
 <center>[그림8] Domain Import</center>
 
 7. Import 버튼을 클릭하면 swagger file의 설정 정보대로 Domain이 등록됩니다.
-![](http://static.toastoven.net/prod_apigateway/img_gettingstarted_9.png)
+![image](http://static.toastoven.net/prod_apigateway/img_gettingstarted_9.png)
 <center>[그림9] Domain Import</center>
 
 ### API 배포하기
 
 Domain 목록 우측에 있는 [Deploy] 버튼을 눌러 API를 배포합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_06.png)
+![image](http://static.toastoven.net/prod_apigateway/img_06.png)
 <center>[그림7] API 배포</center>
 
 ### 생성한 API 테스트
@@ -229,18 +229,18 @@ hi!
 
 1.[API Gateway] > [Dashboard] 를 클릭하여 대시보드 화면으로 이동합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_07.png)
+![image](http://static.toastoven.net/prod_apigateway/img_07.png)
 <center>[그림8] 통계 대시보드 화면 이동</center>
 
 2.왼쪽 상단에 있는 달력 아이콘으로 API 사용 기간을 조작해서 API 사용 결과가 기간에 따라 달라지는 것을 확인해봅니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_08.png)
+![image](http://static.toastoven.net/prod_apigateway/img_08.png)
 <center>[그림9] 기간별 통계</center>
 
 3.Domain 목록을 클릭하여 Domain에 대한 상세한 통계를 확인합니다.
 
-![](http://static.toastoven.net/prod_apigateway/img_09.png)
+![image](http://static.toastoven.net/prod_apigateway/img_09.png)
 <center>[그림10] Domain별 통계</center>
 
-![](http://static.toastoven.net/prod_apigateway/img_10.png)
+![ ](http://static.toastoven.net/prod_apigateway/img_10.png)
 <center>[그림11] 상세 통계 정보</center>

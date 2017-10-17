@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CAndroidNDKDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > AndroidNDK Developer's Guide
 
@@ -23,7 +23,7 @@ Log & Crash AndroidNDK SDK 특·장점은 다음과 같습니다.
 
 ## 다운로드
 
-[Toast Cloud](http://docs.cloud.toast.com/en/Download/)에서 Android SDK를 받을 수 있습니다.
+[Toast Cloud](http://docs.cloud.toast.com/ko/Download/)에서 Android SDK를 받을 수 있습니다.
 
 ```
 [DOCUMENTS] > [Download] > [Analytics > Log & Crash Search] > [AndroidNDK SDK] 클릭

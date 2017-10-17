@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCobjectstorageGetting
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Object Storage > Getting Started
 

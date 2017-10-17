@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeNAS
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > NAS (Offline) User Guide
 ```

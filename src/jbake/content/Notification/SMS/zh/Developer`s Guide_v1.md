@@ -2,12 +2,13 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCNotification
+summary=SMSDV's v1
+nation=zh
 ~~~~~~
 ## Notification > SMS > Developer's Guide
 
-이전 버전보기 :   <select onchange="location.href=this.value"><option value="/en/Notification/SMS/en/Developer%60s%20Guide/">API v2.0</option><option selected value="/en/Notification/SMS/en/Developer%60s%20Guide_v1/">API v1.0</option></select>
+이전 버전보기 :   <select onchange="location.href=this.value"><option value="../../../Notification/SMS/ko/Developer%60s%20Guide.html">API v2.0</option><option selected value="../../../Notification/SMS/en/Developer%60s%20Guide_v1.html">API v1.0</option></select>
 
 ## SMS 발송
 <span style="color:red">[2017.11.23 Deprecated 예정]</span><br/>
@@ -117,6 +118,7 @@ summary=
 </table>
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "body": "{본문 내용}",
@@ -129,6 +131,7 @@ summary=
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -161,6 +164,7 @@ summary=
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "body": "{본문 내용}",
@@ -179,6 +183,7 @@ summary=
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -494,6 +499,7 @@ summary=
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "title": "{제목}",
@@ -508,6 +514,7 @@ summary=
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -605,6 +612,7 @@ summary=
 
 
 [Request body]
+
 ```
 {
   "fileName": "{파일 이름}",
@@ -614,6 +622,7 @@ summary=
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -647,6 +656,7 @@ summary=
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "title": "{제목}",
@@ -664,6 +674,7 @@ summary=
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -952,6 +963,7 @@ summary=
 
 
 #### 응답
+
 ```
 {
     "header": {
@@ -995,6 +1007,7 @@ summary=
 
 
 [Request body] 필수 값은 { }로 표시.
+
 ```
 {
     "body": "{본문 내용}",
@@ -1008,6 +1021,7 @@ summary=
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -1275,6 +1289,7 @@ Request URL은 템플릿 등록시 선택한 발송타입으로 선택하여 발
 ```
 
 [Response]
+
 ```
 {
   "header": {
@@ -1344,6 +1359,7 @@ Request URL은 템플릿 등록시 선택한 발송타입으로 선택하여 발
 ```
 
 [Response]
+
 ```
 {
   "header": {

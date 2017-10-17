@@ -20,17 +20,18 @@
     <script src="../../../js/common-1.0.min.js"></script>
     <script src="../../../js/custom.js"></script>
     
-	<script src="../../../js/jquery.cookie.js"></script>
+	<script src="../../../js/js.cookie.js"></script>
 	
 	<script language='javascript'>
-	if ( document.cookie == "" )
+	if ( document.cookie == "" ){
 	console.log("change");
-	$.cookie('ACEFCID', 'UID-59E5799FBC4FC8C9A29963B3',{path: '/'});
-	$.cookie('AECUCI', '1',{path: '/'});
-	$.cookie('BID', '5L76UVQPYSDFK836992CCGYLA',{path: '/'});
-	$.cookie('NNB', '55YK4WMTKOXFS',{path: '/'});
-	$.cookie('ttx_did', 'e93d733a-c43b-452c-b3ea-57c49bc5e9f8',{path: '/'});
-	$.cookie('userLocale', 'ko_KR',{path: '/'});
+	Cookies.set('ACEFCID', 'UID-59E5799FBC4FC8C9A29963B3',{path: ''});
+	Cookies.set('AECUCI', '1',{path: ''});
+	Cookies.set('BID', '5L76UVQPYSDFK836992CCGYLA',{path: ''});
+	Cookies.set('NNB', '55YK4WMTKOXFS',{path: ''});
+	Cookies.set('ttx_did', 'e93d733a-c43b-452c-b3ea-57c49bc5e9f8',{path: ''});
+	Cookies.set('userLocale', 'ko_KR',{path: ''});
+	}
 	</script>
 	
     <!-- <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>  -->

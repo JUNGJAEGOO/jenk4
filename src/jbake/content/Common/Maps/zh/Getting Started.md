@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCCommon
+summary=MapsGetting
 ~~~~~~
 ## Common > Maps > Getting Started
 
@@ -51,13 +51,13 @@ Maps 서비스를 사용하기 위해서는 Console에서 [Common] > [Maps]를 �
 API 호출에 대한 시간별/일별/월별 통계를 Maps API의 세부 API 별로 확인할 수 있습니다.
 <br>(10분 단위로 통계 데이터가 업데이트 됩니다.)
 
-![](http://static.toastoven.net/prod_maps/img_02.JPG)
+![image](http://static.toastoven.net/prod_maps/img_02.JPG)
 
 
 ### 종별코드 검색
 통합검색 API 사용 시 검색 옵션으로 사용 가능한 종별코드에 대하여 조회할 수 있습니다.
 
-![](http://static.toastoven.net/prod_maps/img_03.JPG)
+![image](http://static.toastoven.net/prod_maps/img_03.JPG)
 
 ### 서비스 비활성화
 Maps 서비스 사용을 중지하기 위해서는 Console에서 [Common] > [Maps]를 선택한 후 [이용 종료] 버튼을 클릭하여 서비스를 비활성화시킵니다.

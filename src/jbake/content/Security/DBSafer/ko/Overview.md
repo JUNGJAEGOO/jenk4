@@ -4,5 +4,6 @@ type=page
 status=published
 big=TCSecurity
 summary=DBSaferOverview
+nation=ko
 ~~~~~~
 ## Security > DBSafer > Overview

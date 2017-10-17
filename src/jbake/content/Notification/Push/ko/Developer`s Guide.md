@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=PushDV's
+nation=ko
 ~~~~~~
 ## Notification > Push > Developer's Guide > v2.0 API Reference
 이전 버전보기: <select onchange="location.href=this.value">

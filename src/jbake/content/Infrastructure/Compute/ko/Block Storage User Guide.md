@@ -4,6 +4,7 @@ type=page
 status=published
 summary=TCcomputeBlockStorage
 big=TCInfra
+nation=ko
 ~~~~~~
 ## Infrastructure > Compute & Network > Block Storage User Guide
 

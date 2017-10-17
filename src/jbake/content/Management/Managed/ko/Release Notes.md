@@ -4,6 +4,7 @@ type=page
 status=published
 big=Management
 summary=ManagementRelease
+nation=ko
 ~~~~~~
 ## Management > Managed > Release Notes
 

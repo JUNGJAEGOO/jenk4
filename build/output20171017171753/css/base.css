@@ -1,0 +1,287 @@
+body {
+    padding-top: 70px;
+}
+
+/*
+ * The code below adds some padding to the top of the current anchor target so
+ * that, when navigating to it, the header isn't hidden by the navbar at the
+ * top. This is especially complicated because we want to *remove* the padding
+ * after navigation so that hovering over the header shows the permalink icon
+ * correctly. Thus, we create a CSS animation to remove the extra padding after
+ * a second. We have two animations so that navigating to an anchor within the
+ * page always restarts the animation.
+ *
+ * See <https://github.com/mkdocs/mkdocs/issues/843> for more details.
+ */
+:target::before {
+    content: "";
+    display: block;
+    margin-top: -75px;
+    height: 75px;
+    pointer-events: none;
+    animation: 0s 1s forwards collapse-anchor-padding-1;
+}
+
+body.clicky :target::before {
+    animation-name: collapse-anchor-padding-2;
+}
+
+@keyframes collapse-anchor-padding-1 {
+    to {
+        margin-top: 0;
+        height: 0;
+    }
+}
+
+@keyframes collapse-anchor-padding-2 {
+    to {
+        margin-top: 0;
+        height: 0;
+    }
+}
+
+ul.nav li.main {
+    font-weight: bold;
+}
+
+div.col-md-3 {
+    padding-left: 0;
+}
+
+div.col-md-9 {
+    padding-bottom: 100px;
+}
+
+div.source-links {
+    float: right;
+}
+
+div.col-md-9 img {
+    max-width: 100%;
+}
+
+code {
+    padding: 1px 3px;
+    background: #f5f5f5;
+    border: solid 1px #ccc;
+    color: #333;
+}
+
+pre code {
+    background: transparent;
+    border: none;
+}
+
+a > code {
+    color: #2fa4e7;
+}
+
+a > code:hover, a > code:focus {
+    color: #157ab5;
+}
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+    position: static;
+}
+
+.bs-sidebar.well {
+    padding: 0;
+}
+
+/* First level of nav */
+.bs-sidenav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+    display: block;
+    padding: 5px 20px;
+    z-index: 1;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    border-right: 1px solid;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+    background-color: #e5e5e5;
+    border-right: 1px solid;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+    padding-top:    3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+
+.bs-sidebar li:NOT(.main) a {
+    padding-left: 30px;
+}
+
+.side_nav_left_wrapper {
+    float: inherit;
+    padding-right:0px;
+}
+
+.side-nav {
+	position: static;
+	height: auto;
+	width: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-sidebar.affix,
+    .bs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-sidebar.affix {
+        position: related; /* Undo the static from mobile first approach */
+        top: 110px;
+    }
+    .bs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-sidebar.affix-bottom .bs-sidenav,
+    .bs-sidebar.affix .bs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .side_nav_left_wrapper {
+    	float: right;
+    	padding-right:213px;
+    }
+    .side-nav {
+	position: fixed;
+	height: auto;
+	width: auto;
+    }
+}
+
+/* @media (min-width: 1200px) {
+    Widen the fixed sidebar again
+    .bs-sidebar.affix-bottom,
+    .bs-sidebar.affix {
+        width: 230px;
+    }
+
+} */
+
+.headerlink {
+    display: none;
+    padding-left: .5em;
+}
+
+h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .headerlink, h5:hover .headerlink, h6:hover .headerlink{
+    display:inline-block;
+}
+
+/* display submenu relative to parent*/
+.dropdown-submenu {
+    position: relative;
+}
+
+/* sub menu stlye */
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 4px 4px 4px;
+    -moz-border-radius: 0 4px 4px;
+    border-radius: 0 4px 4px 4px;
+}
+
+/* display sub menu on hover*/
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+/* little arrow */
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+/* little arrow of parent menu */
+.dropdown-submenu:hover>a:after {
+    border-left-color: #404040;
+}
+
+ul li code {
+    display: block;
+    overflow-x: auto;
+    color: #333;
+    -webkit-text-size-adjust: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* footer */
+.toast_footer{min-width:1024px;height:240px;background:#333}
+.toast_footer.sub_footer{height:200px;}
+.toast_footer .footer_inner{position:relative;padding:0 60px 0;font-family:'FontAwesome',NanumBarunGothic,'nb',sans-serif;font-size:12px;color:#fff}
+.toast_footer .footer_inner .f_logo{position:absolute;left:60px;top:50px;width:100px;height:38px;z-index:10}
+.toast_footer .footer_inner .f_info{position:relative;padding:56px 100px 0 139px}
+.toast_footer .footer_inner .lst_footer li{float:left}
+.toast_footer .footer_inner .lst_footer li a{font-size:14px;color:#777}
+.toast_footer .footer_inner .lst_footer li a:hover{text-decoration:underline;color:#ccc}
+.toast_footer .footer_inner .address{margin-top:36px;font-family:arial;font-size:14px;color:#555}
+.toast_footer .footer_inner .lst_footer:after{display:block;clear:both;content:''}
+.toast_footer .sel_brand{position:absolute;right:60px;top:42px;width:170px;height:40px;z-index:50}
+.toast_footer .bar{display:inline-block;padding-left:4px;margin-right:14px;width:11px;height:14px;border-right:1px solid #434343;vertical-align:top}
+.btn_brand,.lst_brand li a{position:relative;display:block;height:100%;font-size:14px;line-height:40px;color:#777;background:#2f2f2f;cursor:pointer}
+.btn_brand{font-family:arial}
+.btn_brand:hover,.btn_brand:focus,.btn_brand:active{color:#ccc;text-decoration:none}
+.btn_brand .ico{position:absolute;top:13px;right:13px;width:14px;height:14px;background-position:0 0}
+.sel_brand .lst_brand li a:hover{color:#ccc;text-decoration:none}
+.sel_brand.on .btn_brand .ico{top:19px;background-position:-18px 0}
+.lst_brand{display:none;position:absolute;bottom:40px;left:0;width:100%}
+.lst_brand li{width:100%;height:40px}
+.lst_brand li a{height:40px;background:#2f2f2f}
+.sel_brand.on .lst_brand{display:block}
+.sel_brand.on .btn_brand{background-position:0 -86px;text-decoration:none}
+.main_footer{background:#262626}
+.main_footer .bar{border-color:#373737}
+.main_footer .footer_inner .address{margin-top:26px}
+.f_address_info{margin-top:19px;max-width:805px;font-size:13px}
+.f_address_info li{color:#555;line-height:18px}
+.f_address_info li a{color:#555;text-decoration:underline}
+.f_address_info li a.mail{text-decoration:none}

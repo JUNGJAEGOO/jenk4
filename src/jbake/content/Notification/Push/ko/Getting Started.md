@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=PushGetting
+nation=ko
 ~~~~~~
 ## Notification > Push > Getting Started
 

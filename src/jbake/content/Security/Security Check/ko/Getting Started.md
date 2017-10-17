@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=SecurityCheckGetting
+nation=ko
 ~~~~~~
 ## Security > Security Check > Getting Started
 

@@ -4,7 +4,7 @@ type=page
 status=published
 big=TCoverview
 summary=TCGettingStarted
-parent=TOASTCloudGettingStarted
+nation=en
 ~~~~~~
 ## TOAST Cloud Getting Started
 

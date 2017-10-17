@@ -2,13 +2,14 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCNotification
+summary=PushDV's
+nation=ja
 ~~~~~~
 ## Notification > Push > Developer's Guide > v2.0 API Reference
 이전 버전보기: <select onchange="location.href=this.value">
-<option selected value="/ja/Notification/Push/ja/Developer%60s%20Guide">API v2.0</option>
-<option value="/ja/Notification/Push/ja/Developer%60s%20Guide%20v1.3">API v1.3</option></select>
+<option selected value="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</option>
+<option value="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</option></select>
 
 ## API 소개
 ### v2.0 API 소개
@@ -197,9 +198,9 @@ Content-Type: application/json;charset=UTF-8
 		"language": "ko",
 		"uid" : "User ID",
 		"token" : "Token",
-        "updateDateTime": "2017-08-12T01:04:18.000+09:00",
-        "adAgreementDateTime": "2017-08-12T01:04:19.000+09:00",
-        "nightAdAgreementDateTime": "2017-08-12T01:04:19.000+09:00"        
+        	"updateDateTime": "2017-08-12T01:04:18.000+09:00",
+        	"adAgreementDateTime": "2017-08-12T01:04:19.000+09:00",
+        	"nightAdAgreementDateTime": "2017-08-12T01:04:19.000+09:00"        
 	},
 	"header" : {
 		"isSuccessful" : true,
@@ -244,9 +245,9 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 		"language": "ko",
 		"uid" : "User ID",
 		"token" : "Token",
-        "updateDateTime": "2017-08-12T01:04:18.000+09:00",
-        "adAgreementDateTime": "2017-08-12T01:04:19.000+09:00",
-        "nightAdAgreementDateTime": "2017-08-12T01:04:19.000+09:00"
+        	"updateDateTime": "2017-08-12T01:04:18.000+09:00",
+        	"adAgreementDateTime": "2017-08-12T01:04:19.000+09:00",
+        	"nightAdAgreementDateTime": "2017-08-12T01:04:19.000+09:00"
 	}],
 	"header" : {
 		"isSuccessful" : true,
@@ -895,7 +896,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 	"days" : [
 		1,
 		15
-    ],
+    	],
  	"daysOfWeek": [
  		"SUNDAY",
  		"MONDAY"

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=PushOverview
+nation=ko
 ~~~~~~
 ## Notification > Push > Overview
 

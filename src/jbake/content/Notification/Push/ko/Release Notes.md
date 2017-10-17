@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=PushRelease
+nation=ko
 ~~~~~~
 ## Notification > Push > Release Notes
 

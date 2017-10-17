@@ -2,8 +2,9 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCNotification
+summary=EmailGetting
+nation=ja
 ~~~~~~
 ## Notification > Email > Getting Started
 

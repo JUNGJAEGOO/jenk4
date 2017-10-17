@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=L&CLogbackDV's
 ~~~~~~
 ## Analytics > Log&Crash Search > Logback Developer's Guide
 
@@ -20,7 +20,7 @@ Log & Crash Log4back SDK 특·장점은 다음과 같습니다.
 
 ## 다운로드
 
-[Toast Cloud](http://docs.cloud.toast.com/zh/Download/)에서 Logback SDK를 받을 수 있습니다.
+[Toast Cloud](http://docs.cloud.toast.com/ko/Download/)에서 Logback SDK를 받을 수 있습니다.
 
 ```
 [DOCUMENTS] > [Download] > [Analytics > Log & Crash Search] > [Logback SDK] 클릭

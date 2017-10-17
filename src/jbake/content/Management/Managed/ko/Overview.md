@@ -4,6 +4,7 @@ type=page
 status=published
 big=Management
 summary=ManagementOverview
+nation=ko
 ~~~~~~
 ## Management > Managed > Overview
 

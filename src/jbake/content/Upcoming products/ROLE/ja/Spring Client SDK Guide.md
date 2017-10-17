@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCUpcoming
+summary=ROLESpringClientSDK
 ~~~~~~
 ## Upcoming Products > ROLE > Spring Client SDK Developer's Guide
 
@@ -125,13 +125,13 @@ public Example {
 |Annotation|	Parent Annotation|	Key|	Value|	Description|	Required|
 |---|---|---|---|---|---|
 |@Authorization|	없음|	userId|	@AuthParam|	권한 체크를 할 User ID를 정의한다.|	Yes|
-|-|-|scopeId|	@AuthParam|	권한 체크를 할 Scope ID를 정의한다. 생략 시 기본값 ALL|	No|
+| | |scopeId|	@AuthParam|	권한 체크를 할 Scope ID를 정의한다. 생략 시 기본값 ALL|	No|
 |@AuthParam|	@Authorization|	type|	AuthParamType|	파라미터의 타입을 정의한다.|	Yes|
-|-|-|value|	String|	파라미터의 타입의 값을 정의한다.|	No|
+| | |value|	String|	파라미터의 타입의 값을 정의한다.|	No|
 
 |Enum|	Value|	Description|
 |---|---|---|
 |AuthParamType|	AuthParamType.STATIC|	@AuthParam 의 value 를 직접 사용한다.|
-|-|AuthParamType.PATH_VARIABLE|	@AuthParam 의 value 를 Path Variable 의 키로 사용하여 값을 얻어온다.|
-|-|AuthParamType.HEADER_PARAM|	@AuthParam 의 value 를 Header 의 키로 사용하여 값을 얻어온다.|
-|-|AuthParamType.QUERY_PARAM|	@AuthParam 의 value 를 Query Parameter 의 키로 사용하여 값을 얻어온다.|
+| |AuthParamType.PATH_VARIABLE|	@AuthParam 의 value 를 Path Variable 의 키로 사용하여 값을 얻어온다.|
+| |AuthParamType.HEADER_PARAM|	@AuthParam 의 value 를 Header 의 키로 사용하여 값을 얻어온다.|
+| |AuthParamType.QUERY_PARAM|	@AuthParam 의 value 를 Query Parameter 의 키로 사용하여 값을 얻어온다.|

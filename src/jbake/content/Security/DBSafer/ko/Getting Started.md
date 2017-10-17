@@ -4,5 +4,6 @@ type=page
 status=published
 big=TCSecurity
 summary=DBSaferGetting
+nation=ko
 ~~~~~~
 ## Security > DBSafer > Getting Started

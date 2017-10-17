@@ -2,8 +2,8 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCAnalytics
+summary=Operator`s GuideMarketing
 ~~~~~~
 ## Analytics > App Analytics > Marketing Guide
 
@@ -37,7 +37,7 @@ summary=
 - 이용자가 광고를 클릭하면 클릭 로그가 전송됩니다.
 - 스토어로 이동 후 설치를 완료하면 광고 매체를 식별할 수 있는 로그가 전송됩니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko1.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko1.png)
 
 **(2) Android 이외 스토어인 경우**
 
@@ -47,7 +47,7 @@ summary=
 - 예로 앱스토어의 경우 레퍼러를 포함하지 않기 때문에 광고 클릭 시 고유식별정보와 스토어 설치 시 생성된 고유식별정보를 매칭하여 광고로 유입된 이용자를 트래킹합니다.
 
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko2.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko2.png)
 
 ##### <Span style="color:#4B96E6">2) 3rd Party를 통해 광고를 집행하는 경우 </span>
 
@@ -56,7 +56,7 @@ summary=
 - TOAST Analytics에 3rd Party에서 발급한 앱 정보(앱/전환 ID)를 입력합니다.
 - 광고가 집행되면 Postback을 통해 수집된 정보로 이용자를 트래킹 할 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko3.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko3.png)
 
 
 ## 트래킹URL 발급
@@ -73,11 +73,11 @@ summary=
 #### <Span style="color:#4B96E6">1) 발급방법 </span>
 "앱 설정 → 마케팅 → 트래킹 URL발급" 메뉴에서 손쉽게 발급받을 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko4.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko4.png)
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko5.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko5.png)
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko6.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko6.png)
 
 
 
@@ -114,8 +114,8 @@ summary=
 "앱 설정 → 마케팅 → 채널등록" 메뉴에서 손쉽게 발급 받을 수 있습니다.
 
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko7.png)
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko8.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko7.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko8.png)
 
 
 ① 추가 버튼을 누른 후 추가할 채널명을 입력합니다.
@@ -146,7 +146,7 @@ summary=
 
 ##### <Span style="color:#4B96E6">1) 등록방법 </span>
 "앱 설정 → 마케팅 → 트래킹URL 발급" 메뉴에서 손쉽게 발급 받을 수 있습니다.
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko9.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko9.png)
 
 ① 추가 버튼을 누르면 하단에 입력창이 활성화됩니다.<br>
 ② 3rd Party Tracker와 OS, 앱/전환 ID, 라벨 정보를 입력합니다. <br>
@@ -159,19 +159,19 @@ TOAST Analytics에서는 현재 MAT, AppsFlyer, Google Adwords와의 연동이 �
 (1) MAT 앱 ID 확인
 - "APPLICATIONS > Mobile Apps > Details"에서 앱 ID를 확인할 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko10.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko10.png)
 
 
 (2) AppsFlyer 앱 ID 확인
 - "AppsFlyer > Dashboard > App" 에서 마우스 오버 시 앱ID를 확인할 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko11.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko11.png)
 
 
 (3) Google Adwords 전환 ID, 라벨 확인
 - "전환설정 > 추적방식설정"에서 전환 ID와 라벨을 확인할 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko12.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko12.png)
 
 
 ## 3rd Party Tracker Postback 설정
@@ -188,20 +188,20 @@ TOAST Analytics에서는 현재 MAT, AppsFlyer, Google Adwords와의 연동이 �
 Company Name은 Postback을 전송받을 3rd Party인 TOAST Analytics를 입력합니다.<br>
 Partner Type은 Technology Partner를 선택합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko13.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko13.png)
 
 
 (2) Postback URL 추가
 
 ① 등록한 파트너를 클릭 후 "Postbacks" 메뉴로 이동하여 Add Postback URL을 통해 Postback URL을 입력합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko14.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko14.png)
 
 
 각 상세 설정 정보는 아래와 같이 입력합니다.<br>
 ② Postback Name과 Partner Type을 입력합니다. <br>Name은 자유롭게 작성하고 Partner Type은 Technology Partner로 선택합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko15.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko15.png)
 
 
 ③ Template에서 유형, 파트너, Postback URL을 입력합니다.
@@ -209,7 +209,7 @@ Partner Type은 Technology Partner를 선택합니다.
 - 유형은 Postback URL을 선택하고 Partner는 사전 등록한 TOAST Analytics를 선택합니다.
 - Postback URL은 사전에 필요한 파라미터를 확인하여 미리 작성해 놓았습니다. (아래 URL 참조)
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko16.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko16.png)
 
 
 <Span style="color:#FF0000">
@@ -239,7 +239,7 @@ http://redirect-analytics.toast.com/postback/mat?aid=99716&package_nm={package_n
 
 <Span style="color:#FF0000">  주) 현재 TOAST Analytics에서는 Install 정보만 처리하고 있습니다. 다른 유형의 이벤트는 수집되지 않습니다.</span>
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko17.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko17.png)
 
 
 
@@ -259,7 +259,7 @@ http://redirect-analytics.toast.com/postback/mat?aid=99716&package_nm={package_n
 
 - **"환경설정 > 계정설정 > 자동태그 추가"**에서 도착 URL 자동태그 추가를 체크합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko18.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko18.png)
 
 ② 전환설정
 
@@ -267,7 +267,7 @@ http://redirect-analytics.toast.com/postback/mat?aid=99716&package_nm={package_n
 
 <span style="color:#FF0000">주) 전환이 앱 설치(처음 열 때)인 경우에만 구글애드워즈에서 Postback을 전송합니다. </span>
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko19.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko19.png)
 
 ③ Postback URL 설정
 
@@ -292,7 +292,7 @@ http://redirect-analytics.toast.com/postback/google?advertising_id={adid}&lat={l
 http://redirect-analytics.toast.com/postback/google?idfa={md5_advertising_id}&lat={lat}&click_url={click_url}&click_timestamp={click_ts}&trv_campaign_id={campaign_id}&video_id={video_id}&os=ios
 ```
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko20.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko20.png)
 
 ④ 추적방식 설정
 
@@ -301,7 +301,7 @@ http://redirect-analytics.toast.com/postback/google?idfa={md5_advertising_id}&la
 
 <span style="color:#FF0000">주) 해당 값은 TOAST Analytics에 입력 정보로 필요한 값입니다. </span>
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko21.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko21.png)
 <br>
 
 ##### <Span style="color:#4B96E6">2) TOAST Analytics 설정 </span>
@@ -313,7 +313,7 @@ TOAST Analytics에서는 3rd Party Tracker 연동 설정이 완료되면 실시�
 - 추가 버튼을 누른 후 3rd Party Tracker, OS, 전환ID, 라벨 정보를 입력합니다.
 - 전환ID와 라벨은 추적방식 설정에서 서버간 전환 피드 설정 시 확인된 값입니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko22.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko22.png)
 <br>
 ※ 등록이 완료되면 광고로 유입된 로그를 실시간으로 확인할 수 있습니다.
 
@@ -328,7 +328,7 @@ TOAST Analytics에서는 3rd Party Tracker 연동 설정이 완료되면 실시�
 
 <span style="color:#FF0000">주) 구글캠페인ID는 수정되지 않습니다.</span>
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko23.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko23.png)
 
 ## 페이스북 광고트래킹
 페이스북 광고 설정 시 딥링크에 레퍼러를 추가하여 이용자를 트래킹 할 수 있습니다.<br>
@@ -346,7 +346,7 @@ TOAST Analytics에서는 3rd Party Tracker 연동 설정이 완료되면 실시�
 - 트래킹URL 발급에서 채널을 디폴트로 등록된 Facebook으로 선택하면 딥링크가 발급됩니다.
 - 이후 작성할 내용은 기존 트래킹URL 발급과 동일하게 작성하면 됩니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko24.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko24.png)
 
 ##### <Span style="color:#4B96E6">2) 딥링크 테스트 </span>
 딥링크 테스트 전 페이스북 SDK 버전과 페이스북 설정 내용을 반드시 확인 후 진행하시기 바랍니다.
@@ -358,11 +358,11 @@ TOAST Analytics에서는 3rd Party Tracker 연동 설정이 완료되면 실시�
 ① "facebook for developers > Tools & Support > Ad Helpers" 페이지로 이동합니다.<br>
 ② "App Ads Helpers"에서 테스트할 앱을 선택합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko25.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko25.png)
 
 ③ 페이지 하단 "Developer Tools > DEEP LINK TESTER"에서 Test Deep Link를 선택합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko26.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko26.png)
 
 ④ "Test Deep Link"에서 SEND DEEP LINK에 발급받은 Deep Link를 입력합니다.
 
@@ -373,13 +373,13 @@ ex) appscheme://action?param1=val1&param2=val2&tafb=channel_216,path_1075,charge
 
 - OS별로 Send to iOS, Send to Android를 선택하면 딥링크가 전송됩니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko27.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko27.png)
 
 ⑤ 테스트 앱에 페이스북 알림 클릭 후 앱 설치, 앱 실행을 순서대로 진행합니다.
 
 - 페이스북 알림에서 딥링크 푸쉬를 클릭합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko28.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko28.png)
 
 - 테스트할 앱을 설치합니다.
 - 설치 후 앱을 실행하면 Deeplink 정보가 TA에 전송됩니다.
@@ -394,7 +394,7 @@ ex) appscheme://action?param1=val1&param2=val2&tafb=channel_216,path_1075,charge
 ① 마케팅 목표 설정
 - 앱 설치 늘리기 목표에 대해서만 트래킹이 가능합니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko29.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko29.png)
 
 ② 딥링크 등록
 
@@ -402,7 +402,7 @@ ex) appscheme://action?param1=val1&param2=val2&tafb=channel_216,path_1075,charge
 
 ex) appscheme://action?param1=val1&param2=val2&tafb=channel_216,path_1075,charge_NON
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko30.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko30.png)
 
 
 ## 포스트백 데이터 전송
@@ -421,7 +421,7 @@ TOAST Analytics에서 수집된 이벤트 로그를 전송받을 수 있습니�
 - 등록 후 이벤트 발생 후 실시간으로 유입 로그를 확인할 수 있습니다.
 - 파트너사 협의는 고객센터를 통해 개별 요청해 주시면 협의 후 등록할 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko31.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko31.png)
 
 ② 파트너사가 아닌 경우
 
@@ -431,7 +431,7 @@ TOAST Analytics에서 수집된 이벤트 로그를 전송받을 수 있습니�
 - 하단 Parameter Data 추가에서 전송받을 파라미터값을 선택 후 추가합니다.
 - 추가 후 실시간으로 유입된 로그가 전송됩니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko32.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko32.png)
 
 ##### <Span style="color:#4B96E6">2) 제공 데이터 포맷</span>
 
@@ -492,7 +492,7 @@ TOAST Analytics에서 수집된 이벤트 로그를 전송받을 수 있습니�
 - 이벤트와 파라미터1, 2를 선택 후 저장을 누르면 등록됩니다.
 - 등록된 이벤트는 "마케팅 > 이벤트" 페이지에서 확인할 수 있습니다.
 
-![](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko33.png)
+![image](https://raw.githubusercontent.com/ToastAnalytics/ToastAnalytics/master/docs/Developer/images/ko33.png)
 
 ##### <Span style="color:#4B96E6">2)등록 시 확인사항 </span>
 - 최대 10개까지 등록할 수 있습니다.

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCSecurity
 summary=SecurityCheckRelease
+nation=ko
 ~~~~~~
 ## Security > Security Check > Release Notes
 

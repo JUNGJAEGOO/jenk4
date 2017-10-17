@@ -1,3 +1,12 @@
+title=About
+date=2013-09-24
+type=page
+status=published
+big=TCOpensource
+summary=ToastHasteGetting
+nation=ja
+~~~~~~
+
 ## Open Source > Toast Haste > Overview
 
 # 빌드하기
@@ -46,6 +55,7 @@
 - Haste framework를 체크아웃 받으면, com.nhnent.haste.example.echoserver 패키지의 EchoServer 클래스의 main 함수를 통해서 Echo 서버를 실행할 수 있습니다.
 
 ### 1. GameServerBootstrap을 통한 서버 설정
+
 ```java
 public class EchoServer {
     private static final int PORT = 5056;
@@ -63,6 +73,7 @@ public class EchoServer {
 ```
 ### 2. EchoServerApplication 에서 ClientPeer를 생성하는 코드를 추가합니다. 
 - ClientPeer는 클라이언트가 접속할 때 생성되는 Peer 객체입니다.
+
 ```java
 public class EchoServerApplication extends ServerApplication {
     @Override
@@ -81,6 +92,7 @@ public class EchoServerApplication extends ServerApplication {
 ```
 ### 3. 실제 주고받는 데이터인 EchoMessage 클래스를 구현합니다. 
 - 데이터는 MessageBridge를 상속받아서 구현하면 FieldParameter 어노테이션을 이용해서 쉽게 구현할 수 있습니다.
+
 ```java
 public class EchoMessage extends MessageBridge {
     public static final short MESSAGE = 0;
@@ -94,6 +106,7 @@ public class EchoMessage extends MessageBridge {
 }
 ```
 ### 4. 실제 클라이언트와 데이터 송수신을 하는 EchoPeer 클래스를 구현합니다.
+
 ```java
 public class EchoPeer extends ClientPeer {
     private static final Logger logger = LoggerFactory.getLogger(EchoPeer.class);
@@ -122,6 +135,7 @@ public class EchoPeer extends ClientPeer {
 - Haste SDK for .NET를 체크아웃 받으면, Examples 폴더의 Haste.EchoClient 프로젝트를 통해서 Echo 클라이언트를 실행할 수 있습니다.
 
 ### 1. NetworkConnection 객체 생성 및 설정 객체 만들기
+
 ```csharp
 _connection = new NetworkConnection();
 _config = new ConnectionConfig
@@ -136,6 +150,7 @@ _config = new ConnectionConfig
     WarningQueueSize = 500,
 };
 _connection.Configure(_config);
+
 ```
 ### 2. NetworkConnection 객체에 응답 이벤트 등록하기 
 - ClientPeer는 클라이언트가 접속할 때 생성되는 Peer 객체입니다.
@@ -159,6 +174,7 @@ private static void OnResponseReceived(ResponseMessage response)
 }
 ```
 ### 3. 연결하기 및 응답 쓰레드 시작하기
+
 ```csharp
 IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5056);
 _connection.Connect(remoteEndPoint, new Version(0, 1, 0), null);
@@ -173,6 +189,7 @@ Thread receiveThread = new Thread(() =>
 receiveThread.Start();
 ```
 ### 4. 데이터 송신을 위한 메서드 만들기
+
 ```csharp
 const int MESSAGE_PARAM_CODE = 0;
 

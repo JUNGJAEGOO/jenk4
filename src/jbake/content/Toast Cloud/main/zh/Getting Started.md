@@ -5,6 +5,7 @@ status=published
 big=TCoverview
 summary=TCGettingStarted
 parent=TOASTCloudGettingStarted
+nation=zh
 ~~~~~~
 ## TOAST Cloud Getting Started
 

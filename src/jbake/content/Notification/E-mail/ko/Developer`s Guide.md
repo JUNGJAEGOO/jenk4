@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCNotification
 summary=EmailDV's
+nation=ko
 ~~~~~~
 ## Notification > Email > Developer's Guide
 

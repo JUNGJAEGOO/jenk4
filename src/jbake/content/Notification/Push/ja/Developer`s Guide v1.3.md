@@ -2,13 +2,14 @@ title=About
 date=2013-09-24
 type=page
 status=published
-big=
-summary=
+big=TCNotification
+summary=PushDV's v1.3
+nation=ja
 ~~~~~~
 ## v1.3 API Reference
 이전 버전보기: <select onchange="location.href=this.value">
-<option value="/ja/Notification/Push/ja/Developer%60s%20Guide">API v2.0</option>
-<option selected value="/ja/Notification/Push/ja/Developer%60s%20Guide%20v1.3">API v1.3</option></select>
+<option value="../../../Notification/Push/ko/Developer`s Guide.html">API v2.0</option>
+<option selected value="../../../Notification/Push/ko/Developer`s Guide v1.3.html">API v1.3</option></select>
 
 ### API 테스트
 
@@ -361,16 +362,16 @@ API v1.3 부터 공통 메시지 형식을 지원 한다. "content"에 아래 �
 |---|---|---|---|---|---|
 |title|	Android, <br/> iOS Watch, <br/> Tencent|	Optional, String|	data.title|	aps.alert.title|	title|
 |body|	Android, <br/> iOS, <br/> Tencent|	Optional, String|	data.body|	aps.alert.body|	body|
-|title-loc-key|	iOS|	Optional, String| - | aps.alert.title-loc-key| - |
-|title-loc-args|	iOS|	Optional, Array of Strings| - | aps.alert.title-loc-args	| - |
-|action-loc-key|	iOS|	Optional, String| - |aps.alert.action-loc-key	| - |
-|loc-key|	iOS|	Optional, String| - |aps.alert.loc-key	| - |
-|loc-args|	iOS|	Optional, Array of String	| - | aps.alert.loc-args	| - |
-|launch-image|	iOS|	Optional, String	| - | aps.alert.launch-image	| - |
-|badge|	iOS|	Optional, Number| - | aps.badge	| - |
+|title-loc-key|	iOS|	Optional, String|  | aps.alert.title-loc-key|  |
+|title-loc-args|	iOS|	Optional, Array of Strings|  | aps.alert.title-loc-args	|  |
+|action-loc-key|	iOS|	Optional, String|  |aps.alert.action-loc-key	|  |
+|loc-key|	iOS|	Optional, String|  |aps.alert.loc-key	|  |
+|loc-args|	iOS|	Optional, Array of String	|  | aps.alert.loc-args	|  |
+|launch-image|	iOS|	Optional, String	|  | aps.alert.launch-image	|  |
+|badge|	iOS|	Optional, Number|  | aps.badge	|  |
 |sound|	Android, <br/> iOS, <br/> Tencent|	Optional, String|	data.sound|	aps.sound|	custom_content.sound|
-|content-available|	iOS|	Optional, String	| - | aps.content-available	| - |
-|category|	iOS|	Optional, String	| - | aps.category	| - |
+|content-available|	iOS|	Optional, String	|  | aps.content-available	|  |
+|category|	iOS|	Optional, String	|  | aps.category	|  |
 
 그 외 사용자가 정의한 Word는 다음과 같이 Custom Key/Value 필드에 들어간다.
 
