@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=MobileDeviceGetting
+nation=en
 ~~~~~~
 ## Upcoming Products > Mobile Device Info > Getting Started
 

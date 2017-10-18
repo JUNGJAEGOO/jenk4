@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=WatchDogOverview
+nation=ja
 ~~~~~~
 ## Upcoming Products > WatchDog > Overview
 

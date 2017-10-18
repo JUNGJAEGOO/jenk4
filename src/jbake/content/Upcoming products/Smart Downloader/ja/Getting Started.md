@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=SmartDownloaderGetting
+nation=ja
 ~~~~~~
 ## Upcoming Products > Smart Downloader > Getting Started
 

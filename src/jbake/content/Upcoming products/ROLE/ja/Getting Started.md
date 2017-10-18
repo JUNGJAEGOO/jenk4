@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=ROLEGetting
+nation=ja
 ~~~~~~
 ## Upcoming Products > ROLE > Getting Started
 

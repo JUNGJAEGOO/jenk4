@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=APIGetting
+nation=ko
 ~~~~~~
 ## Upcoming Products > API Gateway > Getting Started 
 

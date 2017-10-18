@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=SmartDownloaderRelease
+nation=zh
 ~~~~~~
 ## Upcoming Products > Smart Downloader > Release Notes
 

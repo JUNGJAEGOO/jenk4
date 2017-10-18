@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CLog4jDV's
+nation=ja
 ~~~~~~
 ## Analytics > Log&Crash Search > Log4j Developer's Guide
 

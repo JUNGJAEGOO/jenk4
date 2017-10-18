@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CLogbackDV's
+nation=ja
 ~~~~~~
 ## Analytics > Log&Crash Search > Logback Developer's Guide
 

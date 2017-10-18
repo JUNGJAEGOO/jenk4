@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=MobileDeviceRelease
+nation=ja
 ~~~~~~
 ## Upcoming Products > Mobile Device Info > Release Notes
 

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=APIRelease
+nation=ja
 ~~~~~~
 ## Upcoming Products > API Gateway > Release Notes
 

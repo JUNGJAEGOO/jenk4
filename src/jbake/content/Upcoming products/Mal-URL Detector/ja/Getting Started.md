@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=Mal-URLGetting
+nation=ja
 ~~~~~~
 ##  Upcoming Products > Mal-URL Detector > Getting Started
 

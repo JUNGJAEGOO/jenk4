@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&C C# DV's
+nation=ja
 ~~~~~~
 ## Analytics > Log&Crash Search > C# Developer's Guide
 

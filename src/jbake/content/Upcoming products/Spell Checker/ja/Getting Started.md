@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=SpellGetting
+nation=ja
 ~~~~~~
 ## Upcoming Products > Spell Checker > Getting Started
 

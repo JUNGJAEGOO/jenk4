@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=SmartDownloaderDV's
+nation=ko
 ~~~~~~
 ## Upcoming Products > Smart Downloader > Developer's Guide
 

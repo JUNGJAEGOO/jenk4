@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=SpellDV's
+nation=ja
 ~~~~~~
 ## Upcoming Products> Spell Checker > Developer's Guide
 

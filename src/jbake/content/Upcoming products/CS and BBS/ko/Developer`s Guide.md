@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=CSDV's
+nation=ko
 ~~~~~~
 ## Upcoming Products > CS & BBS > Developer's Guide
 

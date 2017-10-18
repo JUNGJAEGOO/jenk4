@@ -4,6 +4,7 @@ type=page
 status=published
 big=
 summary=
+nation=zh
 ~~~~~~
 ## Upcoming Products > Deploy > Getting Started 
 

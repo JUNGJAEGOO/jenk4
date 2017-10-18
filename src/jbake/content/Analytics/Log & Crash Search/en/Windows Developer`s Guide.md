@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CWindowDV's
+nation=en
 ~~~~~~
 ## Analytics > Log&Crash Search > Windows Developer's Guide
 

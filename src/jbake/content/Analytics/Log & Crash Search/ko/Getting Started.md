@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CGetting
+nation=ko
 ~~~~~~
 ## Analytics > Log&Crash Search > Getting Started
 

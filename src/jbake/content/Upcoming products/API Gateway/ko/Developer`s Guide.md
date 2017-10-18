@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=CorporationsDV's
+nation=ko
 ~~~~~~
 ## Upcoming Products > Corporations Search > Developer's Guide 
 

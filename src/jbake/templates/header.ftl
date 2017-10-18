@@ -5,11 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
+			
         
         <link rel="shortcut icon" href="../../../nhnfavicon.ico">
+		
+		<title></title>
+			<!-- 타이틀 수정 스크립트 -->
 
-	      <title>Toast Cloud Document</title>
+		
+	      
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=Developer`s GuideErrorcode
+nation=ko
 ~~~~~~
 ## Analytics > App Analytics > Error Code
 

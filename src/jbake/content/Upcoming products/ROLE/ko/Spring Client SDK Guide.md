@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=ROLESpringClientSDK
+nation=ko
 ~~~~~~
 ## Upcoming Products > ROLE > Spring Client SDK Developer's Guide
 

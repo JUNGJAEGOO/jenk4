@@ -4,6 +4,7 @@ type=page
 status=published
 big=
 summary=
+nation=
 ~~~~~~
 Upcoming Products &gt; CS & BBS &gt; Developer's Guide
 ------------------------------------------------------

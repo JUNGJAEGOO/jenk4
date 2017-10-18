@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=DNSPlusGetting
+nation=ja
 ~~~~~~
 ## Upcoming Products > DNS+ > Getting Started
 

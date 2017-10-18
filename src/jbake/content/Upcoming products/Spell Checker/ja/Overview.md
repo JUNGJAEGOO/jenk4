@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=SpellOverview
+nation=ja
 ~~~~~~
 ## Upcoming Products > Spell Checker > Overview
 

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CAndroidunityDV's
+nation=ko
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity Android Developer's Guide
 

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=Developer`s GuideIosDV's
+nation=ja
 ~~~~~~
 ## Analytics > App Analytics > iOS Developer\`s Guide
 

@@ -30,7 +30,22 @@
 	Cookies.set('BID', '5L76UVQPYSDFK836992CCGYLA',{path: ''});
 	Cookies.set('NNB', '55YK4WMTKOXFS',{path: ''});
 	Cookies.set('ttx_did', 'e93d733a-c43b-452c-b3ea-57c49bc5e9f8',{path: ''});
-	Cookies.set('userLocale', 'ko_KR',{path: ''});
+	
+	var current_location_tmp = decodeURIComponent(window.location.pathname).split("/");
+	var tmp_nation = current_location_tmp[current_location_tmp.length-2];
+	if ( tmp_nation == "zh" ){
+	var result = "zh_CN";
+	}
+	else if( tmp_nation =="ko" ){
+	var result = "ko_KR";
+	}
+	else if( tmp_nation =="en" ){
+	var result = "en_US";
+	}
+	else if( tmp_nation =="ja" ){
+	var result = "ja_JP";
+	}
+	Cookies.set('userLocale', result,{path: ''});
 	}
 	</script>
 	
@@ -83,6 +98,12 @@
 	}
 	</script>
 
+		<script language='javascript'>
+		var x = document.getElementById("side_nav_right");
+		var y = x.getElementsByClassName("active");
+		var z = y[0].innerText;
+		document.title= z + " - Toast Cloud"
+		</script>
 	
      <!-- <script language='javascript'>
             var _AceGID=(function(){var Inf=['gtp18.acecounter.com','8080','AH2A40934468137','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();

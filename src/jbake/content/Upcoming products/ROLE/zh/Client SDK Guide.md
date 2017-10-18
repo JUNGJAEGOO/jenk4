@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=ROLEClientSDK
+nation=zh
 ~~~~~~
 ## Upcoming Products > ROLE > Client SDK Developer's Guide
 

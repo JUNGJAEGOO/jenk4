@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=ROLERelease
+nation=ja
 ~~~~~~
 ## Upcoming Products > ROLE > Release Notes
 

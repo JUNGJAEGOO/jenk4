@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=Developer`s GuideRelease
+nation=en
 ~~~~~~
 ## Analytics > App Analytics > Release Notes
 

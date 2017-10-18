@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=MobileDeviceDV's
+nation=ja
 ~~~~~~
 ## Upcoming Products > Mobile Device Info > Developer's Guide
 

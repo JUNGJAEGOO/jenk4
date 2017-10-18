@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CLinuxDV's
+nation=ko
 ~~~~~~
 ## Analytics > Log&Crash Search > Linux Developer's Guide
 

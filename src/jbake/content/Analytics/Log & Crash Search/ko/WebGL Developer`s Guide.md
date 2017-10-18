@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CWebGLDV's
+nation=ko
 ~~~~~~
 ## Analytics > Log&Crash Search > Unity WebGL Developer's Guide
 

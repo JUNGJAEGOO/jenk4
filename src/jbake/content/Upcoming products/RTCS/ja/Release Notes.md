@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=RTCSRelease
+nation=ja
 ~~~~~~
 ## Upcoming Products > RTCS > Release Notes
 

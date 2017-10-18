@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=CSOverview
+nation=ja
 ~~~~~~
 ## Upcoming Products > CS & BBS > Overview 
 

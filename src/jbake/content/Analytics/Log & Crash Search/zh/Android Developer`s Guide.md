@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CAndroidDV's
+nation=zh
 ~~~~~~
 ## Analytics > Log&Crash Search > Android Developer's Guide
 

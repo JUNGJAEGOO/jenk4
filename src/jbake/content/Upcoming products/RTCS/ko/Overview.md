@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=RTCSOverview
+nation=ko
 ~~~~~~
 ## Upcoming Products > RTCS > Overview
 RTCS는 쉽고 빠르게 Web, 모바일 앱, 데스크탑 어플리케이션과 같은 다양한 디바이스를 실시간으로 연결시켜주고 메세지를 주고 받을 수 있게 해주는 서비스입니다. RTCS를 이용해서 실시간 협업툴, 멀티플레이어 게임, 채팅, 리얼타임 대시보드와 같은 기능을 다양한 디바이스에서 쉽게 구현 가능합니다.

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=RTCSGetting
+nation=ja
 ~~~~~~
 ## Upcoming Products > RTCS > Getting Started
 ## 서비스 신청 방법

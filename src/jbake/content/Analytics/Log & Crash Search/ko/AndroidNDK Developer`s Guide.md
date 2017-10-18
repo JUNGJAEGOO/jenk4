@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CAndroidNDKDV's
+nation=ko
 ~~~~~~
 ## Analytics > Log&Crash Search > AndroidNDK Developer's Guide
 

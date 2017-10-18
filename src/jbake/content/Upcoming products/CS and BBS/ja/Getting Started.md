@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=CSGetting
+nation=ja
 ~~~~~~
 ## Upcoming Products > CS & BBS > Getting Started 
 

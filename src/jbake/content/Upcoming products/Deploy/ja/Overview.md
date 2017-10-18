@@ -4,6 +4,7 @@ type=page
 status=published
 big=
 summary=
+nation=ja
 ~~~~~~
 ## Upcoming Products > Deploy > Overview 
 

@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CLongstashDV's
+nation=en
 ~~~~~~
 ## Analytics > Log&Crash Search > Logstash Developer's Guide
 

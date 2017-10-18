@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=Developer`s GuideAndroidDV's
+nation=zh
 ~~~~~~
 ## Analytics > App Analytics > Android Developer\`s Guide
 

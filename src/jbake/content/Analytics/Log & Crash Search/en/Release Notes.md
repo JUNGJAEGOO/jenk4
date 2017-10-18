@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=L&CRelease
+nation=en
 ~~~~~~
 ## Analytics > Log&Crash Search > Release Notes
 

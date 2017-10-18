@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCAnalytics
 summary=Operator`s GuideGetting
+nation=ja
 ~~~~~~
 ## Analytics > App Analytics > Getting Started
 

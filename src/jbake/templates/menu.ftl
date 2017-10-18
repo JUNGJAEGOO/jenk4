@@ -18,7 +18,7 @@
 <!-- toast cloud main -->
           <ul class="nav navbar-nav">
             <#if content.big??><li class="<#if (content.big="TCoverview")>dropdown active<#else>dropdown</#if>"></#if>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">TOAST Cloud <b class="caret"></b></a>
               <ul class="dropdown-menu">
 				<#if content.summary??>
               <li class="<#if (content.summary="TCOverview")>active<#else></#if>"><a href="../../../Toast Cloud/main/${content.nation}/Overview.html">Overview</a></li>
@@ -208,85 +208,66 @@
     <ul class="dropdown-menu">
         
 <#if content.summary??>
-<li class="<#if (content.summary="TCGameOverview")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Overview.html">Overview</a></li>       
-<li class="<#if (content.summary="TCGameGetting")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Getting Started.html">Getting Started</a></li>
-</#if>
-        
-            
-  <li class="dropdown-submenu">
+<li class="<#if (content.summary="TCGamebaseOverview")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Overview.html">Overview</a></li>       
+<li class="<#if (content.summary="TCGamebaseGetting")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Getting Started.html">Getting Started</a></li>
+ <li class="dropdown-submenu">
     <a tabindex="-1" href="">Android Developer`s Guide</a>
-    <ul class="dropdown-menu">  
-<#if content.summary??>            
-<li class="<#if (content.summary="TCGameAos-started")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-started.html">Getting Started</a></li>       
-<li class="<#if (content.summary="TCGameAos-init")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-initialization.html">Initialization</a></li>       
-<li class="<#if (content.summary="TCGameAos-authen")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-authentication.html">Auth</a></li>        
-<li class="<#if (content.summary="TCGameAos-purchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-purchase.html">Purchase</a></li>      
-<li class="<#if (content.summary="TCGameAos-push")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-push.html">Push</a></li>       
-<li class="<#if (content.summary="TCGameAos-ui")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-ui.html">UI</a></li>
-</#if>
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
+    <ul class="dropdown-menu">
+<li class="<#if (content.summary="TCGamebaseAosGetting")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-started.html">Getting Started</a></li>
+<li class="<#if (content.summary="TCGamebaseAosInit")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-initialization.html">Initialization</a></li>
+<li class="<#if (content.summary="TCGamebaseAosAuth")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-authentication.html">Auth</a></li>
+<li class="<#if (content.summary="TCGamebaseAosPurchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-purchase.html">Purchase</a></li>
+<li class="<#if (content.summary="TCGamebaseAosPush")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-push.html">Push</a></li>
+<li class="<#if (content.summary="TCGamebaseAosUI")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/aos-ui.html">UI</a></li>
+	</ul>
+ </li>
+ 
+   <li class="dropdown-submenu">
     <a tabindex="-1" href="">iOS Developer`s Guide</a>
     <ul class="dropdown-menu">
-<#if content.summary??>         
-<li class="<#if (content.summary="TCGameIos-started")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-started.html">Getting Started</a></li>        
-<li class="<#if (content.summary="TCGameIos-init")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-initialization.html">Initialization</a></li>       
-<li class="<#if (content.summary="TCGameIos-authen")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-authentication.html">Auth</a></li>      
-<li class="<#if (content.summary="TCGameIos-purchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-purchase.html">Purchase</a></li>       
-<li class="<#if (content.summary="TCGameIos-push")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-push.html">Push</a></li>       
-<li class="<#if (content.summary="TCGameIos-ui")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-ui.html">UI</a></li>
-</#if>
-        
-    </ul>
-  </li>
-
-        
-            
+<li class="<#if (content.summary="TCGamebaseIosGetting")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-started.html">Getting Started</a></li>
+<li class="<#if (content.summary="TCGamebaseIosInit")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-initialization.html">Initialization</a></li>
+<li class="<#if (content.summary="TCGamebaseIosAuth")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-authentication.html">Auth</a></li>
+<li class="<#if (content.summary="TCGamebaseIosPurchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-purchase.html">Purchase</a></li>
+<li class="<#if (content.summary="TCGamebaseIosPush")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-push.html">Push</a></li>
+<li class="<#if (content.summary="TCGamebaseIosUI")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ios-ui.html">UI</a></li>
+	</ul>
+   </li>
+   
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Unity Developer`s Guide</a>
     <ul class="dropdown-menu">
-<#if content.summary??>               
-<li class="<#if (content.summary="TCGameUnity-started")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-started.html">Getting Started</a></li>       
-<li class="<#if (content.summary="TCGameUnity-init")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-initialization.html">Initialization</a></li>       
-<li class="<#if (content.summary="TCGameUnity-authen")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-authentication.html">Auth</a></li>       
-<li class="<#if (content.summary="TCGameUnity-purchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-purchase.html">Purchase</a></li>        
-<li class="<#if (content.summary="TCGameUnity-push")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-push.html">Push</a></li>        
-<li class="<#if (content.summary="TCGameUnity-ui")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-ui.html">UI</a></li>
-</#if>        
-    </ul>
+<li class="<#if (content.summary="TCGamebaseUnityGetting")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-started.html">Getting Started</a></li>
+<li class="<#if (content.summary="TCGamebaseUnityInit")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-initialization.html">Initialization</a></li>
+<li class="<#if (content.summary="TCGamebaseUnityAuth")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-authentication.html">Auth</a></li>
+<li class="<#if (content.summary="TCGamebaseUnityPurchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-purchase.html">Purchase</a></li>
+<li class="<#if (content.summary="TCGamebaseUnityPush")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-push.html">Push</a></li>
+<li class="<#if (content.summary="TCGamebaseUnityUI")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/unity-ui.html">UI</a></li>
+	</ul>
   </li>
+  
+<li class="<#if (content.summary="TCGamebaseServerDV's")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Server Developer's Guide.html">Server Developer's Guide</a></li>
 
-        
-            
-<li class=""><a href="../../../Game/Gamebase/${content.nation}/Server Developer`s Guide.html">Server Developer`s Guide</a></li>
-
-        
-            
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Operator Guide</a>
     <ul class="dropdown-menu">
         
-<#if content.summary??>            
-<li class="<#if (content.summary="TCGameOpr-indicator")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operating-indicator.html">Operating indicator</a></li>        
-<li class="<#if (content.summary="TCGameApp")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/app.html">App</a></li>        
-<li class="<#if (content.summary="TCGameOperation")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation.html">Operation</a></li>       
-<li class="<#if (content.summary="TCGamePush")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/push.html">Push</a></li>       
-<li class="<#if (content.summary="TCGameMember")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/member.html">Member</a></li>       
-<li class="<#if (content.summary="TCGameBan")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/ban.html">Ban</a></li>      
-<li class="<#if (content.summary="TCGamePurchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/purchase.html">Purchase(IAP)</a></li>       
-<li class="<#if (content.summary="TCGameManagement")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/management.html">Management</a></li>
-</#if>     
-    </ul>
+<li class="<#if (content.summary="TCGamebaseOpIndicator")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-indicator.html">Operating indicator</a></li>
+<li class="<#if (content.summary="TCGamebaseOpApp")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-app.html">App</a></li>
+<li class="<#if (content.summary="TCGamebaseOpOp")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-op.html">Operation</a></li>
+<li class="<#if (content.summary="TCGamebaseOpPush")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-push.html">Push</a></li>
+<li class="<#if (content.summary="TCGamebaseOpMember")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-member.html">Member</a></li>
+<li class="<#if (content.summary="TCGamebaseOpBan")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-ban.html">Ban</a></li>
+<li class="<#if (content.summary="TCGamebaseOpPurchase")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-purchase.html">Purchase(IAP)</a></li>
+<li class="<#if (content.summary="TCGamebaseOpManagement")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/operation-management.html">Management</a></li>
+	</ul>
   </li>
-<#if content.summary??>       
-<li class="<#if (content.summary="TCGameError-codes")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/error-codes.html">Error Codes</a></li>         
-<li class="<#if (content.summary="TCGameRelease")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Release Notes.html">Release Notes</a></li>
-</#if>   
+<li class="<#if (content.summary="TCGamebaseErrorcodes")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Error Codes.html">Error Codes</a></li>
+<li class="<#if (content.summary="TCGamebaseRelease")>active<#else></#if>"><a href="../../../Game/Gamebase/${content.nation}/Release Notes.html">Release Notes</a></li>
+</#if>
+        
+
+  
     </ul>
   </li>
 

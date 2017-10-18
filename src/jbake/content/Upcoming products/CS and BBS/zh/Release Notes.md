@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=CSRelease
+nation=zh
 ~~~~~~
 ## Upcoming Products > CS & BBS > Release Notes
 

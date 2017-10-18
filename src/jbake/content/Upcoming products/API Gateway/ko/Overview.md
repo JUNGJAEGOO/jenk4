@@ -4,6 +4,7 @@ type=page
 status=published
 big=TCUpcoming
 summary=CorporationsOverview
+nation=ko
 ~~~~~~
 ## Upcoming Products > Corporations Search > Overview 
 
