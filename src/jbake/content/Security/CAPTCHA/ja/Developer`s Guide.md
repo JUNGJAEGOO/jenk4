@@ -77,7 +77,7 @@ URL    https://api-captcha.cloud.toast.com/captcha/v1.0/keys/a9859757-5b5a-42d1-
 
 [Example Response]
 
-![](http://static.toastoven.net/prod_captcha/img_01.gif)
+![image](http://static.toastoven.net/prod_captcha/img_01.gif)
 
 ## CAPTCHA 확인
 

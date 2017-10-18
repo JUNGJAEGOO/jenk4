@@ -44,7 +44,7 @@ nation=zh
 + ### Game > Realtime multiplayer
 - [Unity SDK![inline-img-download](../../../download.png)](http://static.toastoven.net/prod_sdk_download/rtm/Realtime-multiplayer-2.0.3.unitypackage)
 - [Sample Code![inline-img-download](../../../download.png)](http://static.toastoven.net/prod_sdk_download/rtm/Hub-2.0.3.unitypackage)
-- [Mac Sample![inline-img-download](../../../download.png)](http://static.toastoven.net/prod_sdk_download/rtm/Realtime-multiplayer-Sample-MacUni.zip) [Windows Sample![inline-img-download](./download.png)](http://static.toastoven.net/prod_sdk_download/rtm/Realtime-multiplayer-Sample-Win.zip)
+- [Mac Sample![inline-img-download](../../../download.png)](http://static.toastoven.net/prod_sdk_download/rtm/Realtime-multiplayer-Sample-MacUni.zip) [Windows Sample![inline-img-download](../../../download.png)](http://static.toastoven.net/prod_sdk_download/rtm/Realtime-multiplayer-Sample-Win.zip)
 
 <br>
 

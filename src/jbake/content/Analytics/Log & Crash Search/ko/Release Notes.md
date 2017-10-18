@@ -26,9 +26,9 @@ nation=ko
 #### 버그수정
 * [SDK] initialize를 여러번 호출하는 경우 SessionID가 갱신 되는 문제 수정
 * [SDK] BackKey로 Activity를 종료한 경우, SDK에서 마지막 Activity 상태를 저장하고 있어 Activity가 메모리에서 해제 되지 않는 문제 수정
-    * 수정버전 : [toast-logncrash-android-2.6.4](/Download/#analytics-log-crash-search) / [toast-logncrash-unity-2.8.3](/Download/#analytics-log-crash-search)
+    * 수정버전 : [toast-logncrash-android-2.6.4](../../../Download/one/ko/Download.html#analytics-log-crash-search) / [toast-logncrash-unity-2.8.3](/Download/#analytics-log-crash-search)
 * [SDK] PLCrashReporter가 Crash File을 생성하지 못하는 경우, 'EMPTY CRASH FILE'을 DmpData에 넣어 전송하도록 수정
-    * 수정버전 : [toast-logncrash-ios-mac-sdk-2.6.7](/Download/#analytics-log-crash-search) [toast-logncrash-unity-2.8.3](/Download/#analytics-log-crash-search)
+    * 수정버전 : [toast-logncrash-ios-mac-sdk-2.6.7](../../../Download/one/ko/Download.html#analytics-log-crash-search) [toast-logncrash-unity-2.8.3](/Download/#analytics-log-crash-search)
 * [SDK] iOS SDK에서 Native Crash 발생 시, CrashStyle, SymMethod가 잘못 표기되는 문제 수정
 * [SDK] WebGL에서UserID가 설정되지 않던 문제 수정
 * [SDK] unity ios wrapper class에서 https 프로토콜이 지정되지 않던 문제 수정

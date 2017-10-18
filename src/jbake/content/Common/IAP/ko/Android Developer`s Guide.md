@@ -19,8 +19,8 @@ nation=ko
 
 |이름|참조|버전|라이선스|
 |---|---|---|---|
-|okhttp|http://square.github.io/okhttp/|1.5.4|Apache License 2.0|
-|gson|https://code.google.com/p/google-gson/|2.2.4|Apache License 2.0|
+|okhttp|http://square.github.io/okhttp/ |1.5.4| Apache License 2.0|
+|gson|https://code.google.com/p/google-gson/ |2.2.4| Apache License 2.0|
 
 ## Android Studio & Gradle 환경에서 사용하기
 

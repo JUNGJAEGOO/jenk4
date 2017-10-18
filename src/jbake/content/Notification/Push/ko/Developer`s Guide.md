@@ -17,6 +17,7 @@ nation=ko
 #### 추가
 - 상세한 resultMessage를 응답한다. API 호출 실패시, 문제가 되는 필드나 값을 리턴한다.
     - e.g. 잘 못된 메시지 아이디로 조회했을 경우, 다음과 같이 messageId 필드와 값을 resultMessage에 포함 시켜준다.
+	
 ```
 {
     "header" : {
@@ -43,8 +44,11 @@ nation=ko
     - 토큰 등록 API, channel 필드 삭제
     - 메시지 발송 API, target.type에서 'CHANNEL' 타입 삭제
     - 채널 API 삭제
+	
 ### 기본 정보
+
 #### Endpoint
+
 ```
 API Endpoint: https://api-push.cloud.toast.com
 메시지 수신/확인 여부 수집 Endpoint: https://collector-push.cloud.toast.com
@@ -53,6 +57,7 @@ API Endpoint: https://api-push.cloud.toast.com
 #### Secret Key
 - 콘솔에서 확인 가능하다.
 - Secret Key가 필요한 API를 호출할 때, 해더에 아래와 같이 설정해서 호출해야 한다.
+
 ```
 Header
 X-Secret-Key: [a-zA-Z0-9]{8}
@@ -496,19 +501,19 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 |---|---|---|---|---|---|
 |title|	Android, <br/> iOS Watch, <br/> Tencent|	Optional, String|	data.title|	aps.alert.title|	title|
 |body|	Android, <br/> iOS, <br/> Tencent|	Optional, String|	data.body|	aps.alert.body|	body|
-|title-loc-key|	iOS|	Optional, String| - | aps.alert.title-loc-key| - |
-|title-loc-args|	iOS|	Optional, Array of Strings| - | aps.alert.title-loc-args	| - |
-|action-loc-key|	iOS|	Optional, String| - |aps.alert.action-loc-key	| - |
-|loc-key|	iOS|	Optional, String| - |aps.alert.loc-key	| - |
-|loc-args|	iOS|	Optional, Array of String	| - | aps.alert.loc-args	| - |
-|launch-image|	iOS|	Optional, String	| - | aps.alert.launch-image	| - |
-|badge|	iOS|	Optional, Number| - | aps.badge	| - |
+|title-loc-key|	iOS|	Optional, String|  | aps.alert.title-loc-key|  |
+|title-loc-args|	iOS|	Optional, Array of Strings|  | aps.alert.title-loc-args	|  |
+|action-loc-key|	iOS|	Optional, String|  |aps.alert.action-loc-key	|  |
+|loc-key|	iOS|	Optional, String|  |aps.alert.loc-key	|  |
+|loc-args|	iOS|	Optional, Array of String	|  | aps.alert.loc-args	|  |
+|launch-image|	iOS|	Optional, String	|  | aps.alert.launch-image	|  |
+|badge|	iOS|	Optional, Number|  | aps.badge	|  |
 |sound|	Android, <br/> iOS, <br/> Tencent|	Optional, String|	data.sound|	aps.sound|	custom_content.sound|
-|content-available|	iOS|	Optional, String	| - | aps.content-available	| - |
-|category|	iOS|	Optional, String	| - | aps.category	| - |
-|mutable-content| iOS | Optional, String | - | aps.mutable-content | - |
-| messageDeliveryReceipt | Android, <br/>iOS, <br/> Tencent | Unnecessary | - | - | - |
-| messageDeliveryReceiptData | Android, <br/>iOS, <br/> Tencent | Unnecessary | - | - | - |
+|content-available|	iOS|	Optional, String	|  | aps.content-available	|  |
+|category|	iOS|	Optional, String	|  | aps.category	|  |
+|mutable-content| iOS | Optional, String |  | aps.mutable-content |  |
+| messageDeliveryReceipt | Android, <br/>iOS, <br/> Tencent | Unnecessary |  |  |  |
+| messageDeliveryReceiptData | Android, <br/>iOS, <br/> Tencent | Unnecessary |  |  |  |
 
 Reserved Word는 메시지 생성시 Platform 별로 알맞는 위치에 설정된다. 사용자가 임의로 데이터 타입과 위치등을 변경할 수 없다.
 그 외 사용자가 정의한 Word는 다음과 같이 Custom Key/Value 필드에 들어간다.
@@ -807,11 +812,11 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 | Field | Usage | Description |
 | - | - | - |
-| messageId | - | 실패한 메시지 아이디 |
-| messageIdString | - | 실패한 메시지 아이디 |
-| pushType | - | 'GCM', 'APNS', 'TENCENT' |
-| payload | - | 기기에 발송된 실제 메시지 내용 |
-| tokens | - | 발송한 실패한 수신자의 uid와 token |
+| messageId |  | 실패한 메시지 아이디 |
+| messageIdString |  | 실패한 메시지 아이디 |
+| pushType |  | 'GCM', 'APNS', 'TENCENT' |
+| payload |  | 기기에 발송된 실제 메시지 내용 |
+| tokens |  | 발송한 실패한 수신자의 uid와 token |
 
 #### 메시지 수신, 확인 통계 조회
 메시지 수신, 확인 수집(Message Delivery Receipt) 기능을 화성화 시키고, v1.4 이상 SDK를 적용하면 발송한 메시지에 대해 수신, 확인 정보를 확인할 수 있다.
@@ -940,7 +945,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 
 | Field | Usage | Description |
 | - | - | - |
-| schedules | - | 일시 (ISO 8601, e.g. YYYY-MM-DDThh:mm) |
+| schedules |  | 일시 (ISO 8601, e.g. YYYY-MM-DDThh:mm) |
 
 #### 예약 메시지 생성
 ##### Method, URL, Headers
@@ -1083,21 +1088,22 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 
 | Field | Usage | Description |
 | - | - | - |
-| reservationIdString | - | 예약 메시지 아이디 문자열 |
-| createdDateTime | - | 예약 메시지 등록 일시 (ISO 8601) |
-| updatedDateTime | - | 예약 메시지 수정 일시 (ISO 8601) |
-| completedDateTime | - | 예약 메시지 발송 완료 일시, 완료가 안되었다면 현재 시간 표시 (ISO 8601) |
-| reservationStatus | - | 'RESERVED', 'COMPLETED' |
-| schedules.scheduleId | - | 예약 메시지 발송 스케줄 아이디 |
-| schedules.scheduleIdString | - | 예약 메시지 발송 스케줄 아이디 문자열 |
-| schedules.reservationIdString | - | 예약 메시지 발송 스케줄이 속한 예약 메시지 아이디 문자열 |
-| schedules.deliveryDateTime | - | 예약 메시지 발송 일시 |
-| schedules.timezoneOffset | - | 예약 메시지 발송 타임존, 현지 시간 발송시 설정 |
-| schedules.scheduleStatus | - | 'READY', 'SENDING', 'CANCELED', 'DONE' 예약 메시지 발송 스케줄 상태 |
-| totalCount | - | 등록된 전체 예약 메시지 수 |
+| reservationIdString |  | 예약 메시지 아이디 문자열 |
+| createdDateTime |  | 예약 메시지 등록 일시 (ISO 8601) |
+| updatedDateTime |  | 예약 메시지 수정 일시 (ISO 8601) |
+| completedDateTime |  | 예약 메시지 발송 완료 일시, 완료가 안되었다면 현재 시간 표시 (ISO 8601) |
+| reservationStatus |  | 'RESERVED', 'COMPLETED' |
+| schedules.scheduleId |  | 예약 메시지 발송 스케줄 아이디 |
+| schedules.scheduleIdString |  | 예약 메시지 발송 스케줄 아이디 문자열 |
+| schedules.reservationIdString |  | 예약 메시지 발송 스케줄이 속한 예약 메시지 아이디 문자열 |
+| schedules.deliveryDateTime |  | 예약 메시지 발송 일시 |
+| schedules.timezoneOffset |  | 예약 메시지 발송 타임존, 현지 시간 발송시 설정 |
+| schedules.scheduleStatus |  | 'READY', 'SENDING', 'CANCELED', 'DONE' 예약 메시지 발송 스케줄 상태 |
+| totalCount |  | 등록된 전체 예약 메시지 수 |
 
 #### 단건 조회
 ##### Method, URL, Headers
+
 ```
 GET /push/v2.0/appkeys/{appkey}/reservations/{reservation-id}
 Content-Type: application/json;charset=UTF-8
@@ -1105,11 +1111,13 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 
 ##### Request Body
+
 ```
 없음
 ```
 
 #### Response Body
+
 ```json
 {
 	"header" : {
@@ -1164,6 +1172,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 
 #### 발송된 예약 메시지 조회
 ##### Method, URL, Headers
+
 ```
 GET /push/v2.0/appkeys/{appkey}/reservations/{reservation-id}/messages?pageIndex={pageIndex}&pageSize={pageSize}
 Content-Type: application/json;charset=UTF-8
@@ -1178,11 +1187,13 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 | pageSize | Optional, Number | 기본 값 25, 최대 값 100 |
 
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```
 {
 	"header" : {
@@ -1223,6 +1234,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ### 수정
 #### 예약 메시지 수정
 ##### Method, URL, Headers
+
 ```
 POST /push/v2.0/appkeys/{appkey}/reservations/{reservationId}
 Content-Type: application/json;charset=UTF-8
@@ -1230,6 +1242,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 
 ##### Request Body
+
 ```json
 {
 	"schedules" : [
@@ -1258,6 +1271,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 
 ##### Response Body
+
 ```json
 {
 	"header" : {
@@ -1271,6 +1285,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ### 삭제
 #### 예약 메시지 삭제
 ##### Method, URL, Headers
+
 ```
 DELETE /push/v2.0/appkeys/{appkey}/reservations?reservationIds={reservationId,}
 Content-Type: application/json;charset=UTF-8
@@ -1283,11 +1298,13 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 | reservationIds | Required, Number Array | ','로 구분, e.g. reservationIds=1,2 |
 
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
 	"header" : {
@@ -1303,6 +1320,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ### 생성
 #### 태그 생성
 ##### Method, URL, Headers
+
 ```
 POST /push/v2.0/appkeys/{appkey}/tags
 Content-Type: application/json;charset=UTF-8
@@ -1321,6 +1339,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 | tagName | Required, String | 태그 이름, 최대 길이 32 |
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1343,12 +1362,14 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 - 태그에 Uid를 추가(Append)하는 것으로, 기존에 있던 Uid를 추가하면 Uid의 태그는 늘어난다.
 - 한 Uid의 최대 태그 수는 16개다.
 ##### Method, URL, Headers
+
 ```
 POST /push/v2.0/appkeys/{appkey}/tags/{tag-id}/uids
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```json
 {
     "uids" : [
@@ -1362,6 +1383,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 | uids | Required, String Array | Uid 배열, 최대 길이 16, Uid 최대 길이 64 |
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1375,12 +1397,14 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 #### Uid에 태그 목록 설정
 - Uid의 태그를 교체(Replace)하는 것으로, 기존에 설정된 태그는 삭제되고 새로운 태그로 설정된다.
 ##### Method, URL, Headers
+
 ```
 POST /push/v2.0/appkeys/{appkey}/uids
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```json
 {
     "uid" :  "uid-01",
@@ -1392,6 +1416,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1405,17 +1430,20 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ### 조회
 #### 태그 목록 조회
 ##### Method, URL, Headers
+
 ```
 GET /push/v2.0/appkeys/{appkey}/tags
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1441,17 +1469,20 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 
 #### 태그 단건 조회
 ##### Method, URL, Headers
+
 ```
 GET /push/v2.0/appkeys/{appkey}/tags/{tag-id}
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1472,6 +1503,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 - 태그가 달린 Uid 목록을 조회한다.
 
 ##### Method, URL, Headers
+
 ```
 GET /push/v2.0/appkeys/{appkey}/tags/{tag-id}/uids?offsetUid={uid}&limit={limit}
 Content-Type: application/json;charset=UTF-8
@@ -1484,11 +1516,13 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 | limit | Optional, Number | 조회할 Uid 수 |
 
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1529,18 +1563,22 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 #### Uid 조회
 - 태그에 등록된 Uid를 조회한다.
 - 토큰 등록시 Contact(연락처)가 등록된다.
+
 ##### Method, URL, Headers
+
 ```
 GET /push/v2.0/appkeys/{appkey}/uids/{uid}
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
 "header" : {
@@ -1572,12 +1610,14 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ### 수정
 #### 태그 수정
 ##### Method, URL, Headers
+
 ```
 PUT /push/v2.0/appkeys/{appkey}/tags/{tag-id}
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```json
 {
     "tagName" :  "30대"
@@ -1585,6 +1625,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1598,17 +1639,20 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 ### 삭제
 #### 태그 삭제
 ##### Method, URL, Headers
+
 ```
 DELETE /push/v2.0/appkeys/{appkey}/tags/{tag-id}
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1622,6 +1666,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 #### Uid 삭제
 - Uid 삭제시 Contact, Token도 같이 삭제된다.
 ##### Method, URL, Headers
+
 ```
 DELETE /push/v2.0/appkeys/{appkey}/uids?uids={uid,}
 Content-Type: application/json;charset=UTF-8
@@ -1631,6 +1676,7 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 없음
 
 ##### Response Body
+
 ```json
 {
     "header" : {
@@ -1645,17 +1691,20 @@ X-Secret-Key: [a-zA-Z0-9]{8}
 - Tag와 Uid 관계만 삭제한다.
 - Contact, Token이 삭제되진 않는다.
 ##### Method, URL, Headers
+
 ```
 DELETE /push/v2.0/appkeys/{appkey}/tags/{tagId}/uids?uids={uid,}
 Content-Type: application/json;charset=UTF-8
 X-Secret-Key: [a-zA-Z0-9]{8}
 ```
 ##### Request Body
+
 ```
 없음
 ```
 
 ##### Response Body
+
 ```json
 {
     "header" : {

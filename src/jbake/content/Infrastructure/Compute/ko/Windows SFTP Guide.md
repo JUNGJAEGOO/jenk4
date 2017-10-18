@@ -60,7 +60,7 @@ WinSCP를 실행하고 로그인 정보를 등록합니다.
 [저장] 버튼을 클릭합니다.
 ```
 
-![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_04.jpg)
+![image](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_04.jpg)
 <center>[그림 3] [저장] 버튼 클릭</center>
 
 ## 서버 접속
@@ -72,7 +72,7 @@ WinSCP를 실행하고 로그인 정보를 등록합니다.
 [로그인] 버튼 클릭
 ```
 
-![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_05.jpg)
+![image](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_05.jpg)
 <center>[그림 4] 사이트 선택 및 [로그인] 버튼 클릭</center>
 
 호스트 키를 캐시에 추가합니다.
