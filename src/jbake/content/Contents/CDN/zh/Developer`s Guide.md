@@ -345,6 +345,7 @@ nation=zh
 |purgeList|	String|	X| | purge 항목 리스트 (여러 개를 입력할 경우 \\n 토큰으로 분리하여 입력해주세요, purgeType이 ALL인 경우 입력하지 않아도됩니다.) |
 
 [Sample json request]
+
 ```
 {
 	"domain": "sample.cdn.toastcloud.com",

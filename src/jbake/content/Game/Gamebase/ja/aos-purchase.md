@@ -4,143 +4,217 @@ type=page
 status=published
 big=TCGame
 summary=TCGamebaseAosPurchase
-nation=ja
+nation=ko
 ~~~~~~
-## Game > Leaderboard > Getting Started
+## Game > Gamebase > Android Developer's Guide > Purchase
 
-- Leaderboard 사용을 위해선 상품 이용 후 랭킹을 등록해야 합니다.
-- 상품 이용 후에는 게임의 랭킹정보 등록, 삭제 및 플레이어의 랭킹 정보 조회, 삭제를 할 수 있습니다.
+## Purchase
 
-## 사용 설정
+### Settings
 
-### 1. Leaderboard 서비스 활성화
+#### 1\. Store Console
 
-Console에서 [Game] > [Leaderboard]를 선택 후 [상품이용] 버튼 클릭 시 서비스가 활성화되고 관리화면으로 전환됩니다.
+*   다음 IAP 가이드를 참고하여 각 스토어에 앱을 등록 하고 어플리케이션 키를 발급받도록 합니다.
+*   [LINK [IAP > Store interlocking information]](http://docs.cloud.toast.com/ko/Common/IAP/ko/Store%20interlocking%20information/)
 
-![[그림 1 Leaderboard 서비스 활성화]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_1.JPG)
-<center>[그림 1 Leaderboard 서비스 활성화]</center>
+#### 2\. Register as Store's Tester
 
-### 2. API URL/AppKey
+*   결제 테스트를 위하여 스토어별로 다음과 같이 테스터로 등록합니다.
+    *   Google
+        *   [LINK [Android > 테스트 구매 설정]](https://developer.android.com/google/play/billing/billing_testing.html?hl=ko#billing-testing-test)
+    *   ONE store
+        *   [LINK [ONE store > 인앱결제 테스트]](https://github.com/ONE-store/inapp-sdk/wiki/IAP-Developer-Guide#%EC%9D%B8%EC%95%B1%EA%B2%B0%EC%A0%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8)
+        *   반드시 In-App 정보 - 테스트 버튼으로 샌드박스를 원하는 단말기 전화번호를 등록해서 테스트 해야 합니다.
+        *   테스트용 단말기는 USIM이 있어야 하고, 전화번호를 등록해야 합니다.(MDN)
+        *   **ONE store** 어플리케이션이 설치되어 있어야 합니다.
 
-서비스 활성화 후 접속 시 API URL 및 Appkey 값을 확인할 수 있습니다.
+#### 3\. TOAST Cloud Console
 
-![[그림 2 Leaderboard URL & AppKey 확인]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_2.JPG)
-<center>[그림 2 Leaderboard URL & AppKey 확인]</center>
+*   IAP 가이드를 참고하여 IAP 설정 및 상품등록을 합니다.
+    *   [LINK [IAP > Getting Started]](http://docs.cloud.toast.com/ko/Common/IAP/ko/Web%20Console/)
 
-## 각 탭 별 설명
+#### 4\. Download
 
-### [랭킹 설정]
+*   다운로드 받은 SDK의 **gamebase-adapter-purchase-iap** 폴더를 프로젝트에 추가합니다.
+    *   ONE Store 결제가 필요 없다면 **iap-tstore-x.x.x.jar**, **iap_tstore_plugin_vxx.xx.xx.jar** 파일은 삭제하셔도 됩니다.
+    *   반대로 ONE Store 결제를 하신다면 위의 jar파일은 반드시 프로젝트에 포함되어 빌드되어야 합니다.
 
-#### 1. 팩터 추가
+#### 5\. AndroidManifest.xml(ONE store only)
 
-1\) 서비스 활성화 후 팩터 정보를 추가해야 합니다. [Game] > [Leaderboard] > [랭킹 설정] > [+추가] 버튼을 클릭해 팩터를 등록합니다.
+*   ONE store 사용을 위해서는 다음 설정을 추가하여야 합니다.
 
-> [참고]
-> 팩터(Factor)는 [주기, 업데이트 기준, 정렬기준]의 묶은 단위입니다.
-> 최고점수 랭킹을 일간, 주간, 월간으로 사용하고 싶다면 팩터를 3가지를 만들어야 합니다.
+```
+<manifest>
+    ...
+    <application>
+    ...
+        <!-- [ONE store] Configurations begin -->
+        <meta-data android:name="iap:api_version" android:value="4" /> <!-- 버전 16.XX.XX의 경우, 4를 입력합니다. https://github.com/ONE-store/inapp-sdk/wiki/IAP-Developer-Guide#iapapi_version-%EC%84%A4%EC%A0%95 -->
+        <meta-data android:name="iap:plugin_mode" android:value="development" /> <!-- development:개발모드 / release:운영 -->
+        <!-- [ONE store] Configurations end -->
+    ...
+    </application>
+</manifest>
 
-![[그림 3 팩터 등록을 위하여 [+추가] 클릭]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_3.JPG)
-<center>[그림 3 팩터 등록을 위하여 [+추가] 클릭]</center>
+```
 
-2\) [+추가] 버튼을 클릭하면 그림 3과 같은 <팩터 추가> 팝업이 열립니다.
+#### 6\. Initialization
 
-![[그림 4 팩터 추가]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_4.JPG)
-<center>[그림 4 팩터 추가]</center>
+*   Gamebase 초기화시 configuration의 **setStoreCode()**를 호출합니다.
+*   **STORE_CODE**는 다음 값 중에서 선택합니다.
+    *   GG : Google
+    *   TS : ONE store
+    *   TEST : IAP 테스트용
 
-각 항목별 설명
+```
+String STORE_CODE = "GG";   // Google
 
-#### 팩터 이름
+TAPConfiguration configuration = new TAPConfiguration.Builder()
+        .setAppId(APP_ID)
+        .setAppVersion(APP_VERSION)
+        .setStoreCode(STORE_CODE)   // Store code를 반드시 선언합니다.
+        .build();
 
-- 랭킹을 구분할 이름이며 차후 팩터 검색에 사용될 수 있습니다.
+Gamebase.initialize(activity, configuration, new GamebaseDataCallback<LaunchingInfo>() {
+    @Override
+    public void onCallback(final LaunchingInfo data, GamebaseException exception) {
+        ...
+    }
+});
 
-#### 팩터 주기
+```
 
-- 랭킹의 초기화 기간을 의미하며 일간, 주간, 월간, 전체가 있습니다. 주기 또한 팩터 검색에 사용될 수 있으며 각 주기를 기준으로 유저들을 분류합니다.
+### Purchase Flow
 
-#### 랭킹 업데이트 기준
+아이템 구매는 다음과 같은 순서로 구현하시기 바랍니다.
 
-- Best Score : 최고 점수 등록. 사용자의 베스트 점수를 기록합니다.
-- Latest Score : 최신 점수 등록. 사용자의 가장 최근 점수를 기록합니다.
-- Accumulation Score : 누적 점수 등록. 사용자의 점수를 누적 합산해 등록합니다.
+1.  requestPurchase 를 호출하여 결제를 시도합니다.
+2.  결제가 성공하였다면 requestItemListOfNotConsumed 를 호출하여 미소비 결제내역을 확인합니다.
+3.  리턴된 미소비 결제내역 리스트에 값이 존재한다면 게임 클라이언트가 게임 서버에 Consume 을 요청합니다.
+4.  게임 서버는 IAP서버에 서버 API를 통해 Consume 을 요청합니다.
+5.  IAP서버에서 Consume이 성공하였다면 게임 서버가 게임 클라이언트에 아이템을 지급합니다.
 
-#### 정렬 기준
+스토어 결제는 성공하였으나 에러가 발생하여 정상 종료되지 못하는 경우가 있습니다. 로그인 완료 후 다음 두 API를 각각 호출하여 재처리 로직을 구현하시기 바랍니다.
 
-- Desc : 점수를 오름차순으로 정렬합니다.
-- Asc : 점수를 내림차순으로 정렬합니다.
+1.  미처리 아이템 배송 요청
 
-#### 동점자 처리
+    *   로그인이 성공하면 requestItemListOfNotConsumed 를 호출하여 미소비 결제내역을 확인합니다.
+    *   리턴된 미소비 결제내역 리스트에 값이 존재한다면 게임 클라이언트가 게임 서버에 Consume을 요청하여 아이템 지급 처리를 합니다.
+2.  결제 오류 재처리 시도
 
-- Priority First Ranking Get : 최초 랭킹 획득 우선. 동점인 경우 먼저 등록된 유저가 높은 등수로 기록됩니다.
-- Priority Latest Ranking Get : 최근 랭킹 획득 우선. 동점인 경우 나중에 등록된 유저가 높은 등수로 기록됩니다.
+    *   로그인이 성공하면 requestRetryTransaction 을 호출하여 미처리 내역에 대한 자동 재처리를 시도합니다.
+    *   리턴된 successList 에 값이 존재한다면 게임 클라이언트가 게임 서버에 Consume을 요청하여 아이템 지급 처리를 합니다.
+    *   리턴된 failList 에 값이 존재한다면 해당 값을 게임 서버나 Log&Crash 등을 통해 전송하여 데이터를 확보하고, 빌링 개발팀에 재처리 실패 원인을 문의합니다.
 
-#### 팩터 리셋 시간
+### Purchase Item
 
-- 팩터 별 초기화 시간을 의미합니다. 주기가 전체인 경우 초기화 되지 않아 큰 의미는 없습니다.
+구매하고자 하는 아이템의 itemSeq를 이용해 다음의 API를 호출하여 구매요청을 합니다.
+유저가 구매를 취소하는 경우 **GamebaseError.PURCHASE_USER_CANCELED** 에러가 리턴됩니다. 취소 처리를 해주시기 바랍니다.
 
-#### 팩터 주간 리셋 요일, 팩터 월간 리셋 일자
+```
+long itemSeq; // The itemSeq value can be got through the requestItemListPurchasable API.
 
-- 주간, 월간의 경우 초기화 될 요일, 일자를 선택해야합니다.
+Gamebase.Purchase.requestPurchase(activity, itemSeq, new GamebaseDataCallback<PurchasableReceipt>() {
+    @Override
+    public void onCallback(PurchasableReceipt data, GamebaseException exception) {
+        if (Gamebase.isSuccess(exception)) {
+            // Succeeded.
+        } else if(exception.getCode() == GamebaseError.PURCHASE_USER_CANCELED) {
+            // User canceled.
+        } else {
+            // To Purchase Item Failed cause of the error
+        }
+    }
+});
 
-#### 한계 유저 수
+```
 
-- 해당 팩터에 등록될 수 있는 최대 유저 수를 뜻합니다. 최대 1000만 명까지 입력할 수 있습니다.
+### Get a List of Purchasable Items
 
-#### 기타정보
+아이템 목록을 조회하기 위하여 다음의 API를 호출합니다. 콜백으로 리턴되는 Array 안에는 각 아이템들에 대한 정보가 담겨 있습니다.
 
-- 팩터의 extra 데이터로 필요 시 입력합니다.
+```
+Gamebase.Purchase.requestItemListPurchasable(activity, new GamebaseDataCallback<List<PurchasableItem>>() {
+    @Override
+    public void onCallback(List<PurchasableItem> data, GamebaseException exception) {
+        if (Gamebase.isSuccess(exception)) {
+            // Succeeded.
+        } else {
+            // Failed.
+            Log.e(TAG, "Request item list failed- "
+                    + "errorCode: " + exception.getCode()
+                    + "errorMessage: " + exception.getMessage());
+        }
+    }
+});
 
-> 팩터ID는 팩터 추가 시 자동으로 지정됩니다.
+```
 
-#### 2. 팩터 검색
+### Get a List of Non-Consumed Items
 
-1\) 검색 조건이 팩터 이름일 시 이름에 검색어가 포함된 팩터를 검색합니다.
-![[그림 5-1 검색 기준 팩터 이름]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_11.JPG)
+아이템을 구매는 하였지만, 정상적으로 아이템이 소비(배송, 지급)되었지 않은 **미소비 결제내역**을 요청합니다.
+해당 내역을 받은 경우에는 게임서버(아이템 서버)에 요청을 하여, 아이템을 배송(지급)하도록 처리하여야합니다.
 
-2\) 검색 조건이 팩터 주기일 시 선택 목록에 있는 주기로 검색합니다.
-![[그림 5-1 검색 기준 팩터 주기]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_12.JPG)
+*   다음 두가지 상황에서 호출해 주세요.
+    1.  결제 성공 후 아이템 Consume 처리 전 최종 확인을 위하여 호출.
+    2.  로그인 성공 후 Consume하지 못한 아이템이 남아있지는 않은지 확인 하기 위하여 호출.
 
-#### 3. 팩터 삭제
+```
+Gamebase.Purchase.requestItemListOfNotConsumed(activity, new GamebaseDataCallback<List<PurchasableReceipt>>() {
+    @Override
+    public void onCallback(List<PurchasableReceipt> data, GamebaseException exception) {
+        if (Gamebase.isSuccess(exception)) {
+            // Succeeded.
+        } else {
+            // Failed.
+            Log.e(TAG, "Request item list failed- "
+                    + "errorCode: " + exception.getCode()
+                    + "errorMessage: " + exception.getMessage());
+        }
+    }
+});
 
-1\) 삭제할 팩터들을 선택합니다.
-![[그림 6 랭킹 설정에서 삭제할 팩터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_5.JPG)
-<center>[그림 6 삭제할 팩터 선택]</center>
+```
 
-2\) 삭제 버튼을 클릭시 삭제 팝업이 나타납니다. 팩터는 삭제 시 복구할 수 없으니 신중히 삭제해야 합니다.
-![[그림 7 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_6.JPG)
-<center>[그림 7 삭제 팝업]</center>
+### Reprocess Failed Purchase Transaction
 
-### [랭킹 데이터]
+스토어 결제는 정상적으로 이루어졌지만, ToastCloud IAP 서버 검증 실패 등으로 인해 정상적으로 결제가 이뤄지지 않은 경우에, 해당 API를 이용하여 재처리를 시도합니다.
+최종적으로 결제가 성공한 내역을 바탕으로, 아이템 배송(지급)등의 API를 호출하여 처리를 해주어야합니다.
 
-#### 1. 유저 랭킹 조회
+```
+Gamebase.Purchase.requestRetryTransaction(activity, new GamebaseDataCallback<PurchasableRetryTransactionResult>() {
+    @Override
+    public void onCallback(PurchasableRetryTransactionResult data, GamebaseException exception) {
+        if (Gamebase.isSuccess(exception)) {
+            // Succeeded.
+        } else {
+            // Failed.
+            Log.e(TAG, "Request retry transaction failed- "
+                    + "errorCode: " + exception.getCode()
+                    + "errorMessage: " + exception.getMessage());
+        }
+    }
+});
 
-1\) 팩터 등록 후 유저 랭킹 조회 탭으로 가면 검색 기준 > 팩터 ID에 등록한 팩터들이 목록화 됩니다. 팩터 주기를 선택하면 각 주기에 맞는 팩터들이 선별됩니다.
-![[그림 8 랭킹 데이터 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_7.JPG)
-<center>[그림 8 랭킹 데이터 검색]</center>
+```
 
-2\) 검색 기준을 선택해 유저 정보를 검색합니다.
-![[그림 9 유저 정보 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_8.JPG)
-<center>[그림 9 유저 정보 검색]</center>
+### Error Handling
 
-각 항목별 설명
+| Error | Error Code | Notes |
+| --- | --- | --- |
+| PURCHASE_NOT_INITIALIZED | 4001 | Purchase 모듈이 초기화되지 않았습니다.<br>gamebase-adapter-purchase-iap 모듈을 프로젝트에 추가 했는지 확인해주세요. |
+| PURCHASE_USER_CANCELED | 4002 | 유저가 아이템 구매를 취소하였습니다. |
+| PURCHASE_NOT_FINISHED_PREVIOUS_PURCHASING | 4003 | 구매 로직이 아직 완료되지 않은 상태에서 API가 호출되었습니다. |
+| PURCHASE_NOT_ENOUGH_CASH | 4004 | 해당 스토어의 캐쉬가 부족하여 결제할 수 없습니다. |
+| PURCHASE_NOT_SUPPORTED_MARKET | 4010 | 지원하지 않는 스토어입니다.<br> 선택 가능한 스토어는 GG(Google), TS(ONE Store), TEST 입니다. |
+| PURCHASE_EXTERNAL_LIBRARY_ERROR | 4201 | IAP 라이브러리 에러입니다.<br> DetailCode를 확인하세요. |
+| PURCHASE_UNKNOWN_ERROR | 4999 | 정의되지 않은 구매 에러입니다.<br> 전체 로그를 Gamebase 개발팀에 전달하여 에러상황을 문의해 주세요. |
 
-#### 주기 설정
-- 지난 주기 : 이전 주기의 랭킹 정보를 기준으로 검색합니다.
-- 현재 주기 : 현재 주기의 랭킹 정보를 기준으로 검색합니다.
+*   전체 에러코드 참조 : [LINK [Entire Error Codes]](../error-codes#client-sdk)
 
-#### 랭킹 설정
-- 조회할 유저의 랭킹 범위를 정합니다. 상위 50명, 상위 100명, 특정범위 지정 기능을 제공합니다.
+**PURCHASE_EXTERNAL_LIBRARY_ERROR**
 
-#### 사용자 ID
-- 해당 팩터 내에 검색하고자 하는 사용자 ID를 입력합니다. 사용자가 없는 경우 조회되지 않습니다.
-
-#### 2. 유저 랭킹 삭제
-
-1\) 조회 후 삭제할 유저를 선택합니다.
-![[그림 10 삭제할 유저 데이터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_9.JPG)
-<center>[그림 10 삭제할 유저 데이터 선택]</center>
-
-2\) Scores & Ranks 삭제 버튼을 누르면 삭제 여부를 묻는 팝업이 뜹니다. 삭제 후 취소가 불가능하니 신중히 삭제해야 합니다.
-![[그림 11 유저 랭킹 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_10.JPG)
-<center>[그림 11 유저 랭킹 삭제 팝업]</center>
-
-※ 개발과 관련된 api 정보는 [Developer's Guide](/Game/Leaderboard/ko/Developer%60s%20Guide/) 를 참조해주세요.
+*   이 에러는 IAP 모듈에서 발생한 에러입니다.
+*   exception.getDetailCode() 를 통해 IAP 에러 코드를 확인하여야 합니다.
+*   IAP 에러코드는 다음 문서를 참고하시기 바랍니다.
+*   [LINK [IAP > Error Code Guide > Client API 에러 타입]](http://docs.cloud.toast.com/ko/Common/IAP/ko/Error%20Code/#client-api)

@@ -136,8 +136,8 @@
   <li class="dropdown-submenu">
     <a tabindex="-1" href="">Developer`s Guide</a>
     <ul class="dropdown-menu">
-        <#if content.summary??>
-		<li class="<#if (content.summary="Developer`s GuideAndroidDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/${content.nation}/Android Developer's Guide.html">Android Developer`s Guide</a></li>          
+        <#if content.summary??> 
+		<li class="<#if (content.summary="Developer`s GuideAndroidDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/${content.nation}/Android Developer`s Guide.html">Android Developer`s Guide</a></li>          
 		<li class="<#if (content.summary="Developer`s GuideIosDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/${content.nation}/iOS Developer`s Guide.html">iOS Developer`s Guide</a></li>        
 		<li class="<#if (content.summary="Developer`s GuideUnityDV's")>active<#else></#if>"><a href="../../../Analytics/App Analytics/${content.nation}/Unity Developer`s Guide.html">Unity Developer`s Guide</a></li>       
 		<li class="<#if (content.summary="Developer`s GuideErrorcode")>active<#else></#if>"><a href="../../../Analytics/App Analytics/${content.nation}/Error Code.html">Error Code</a></li>          

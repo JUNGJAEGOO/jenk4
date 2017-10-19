@@ -12,7 +12,7 @@ nation=zh
 |---|---|---|
 |S_SUCCESS|	0x0000 (0)|	API 호출이 성공하였습니다.|
 |W_ALREADY_INITIALIZED|	0x1000 (4096)|	SDK가 이미 초기화된 이후 다시 초기화 함수(initializeSDK)를 호출하면 발생합니다.|
-|E_GOOGLE_PLAY_SERVICE_ERROR|	0x2000 (8192)|	(Android Only) Google Play Service 관련 에러입니다. <br/> GoogleApiAvailability의 isGooglePlayServicesAvailable함수의 결과가 실패하는 경우 발생합니다. <br/> 자세한 내용은 Google 문서(https://goo.gl/x1kYig)를 참고하세요.|
+|E_GOOGLE_PLAY_SERVICE_ERROR|	0x2000 (8192)|	(Android Only) Google Play Service 관련 에러입니다. <br/> GoogleApiAvailability의 isGooglePlayServicesAvailable함수의 결과가 실패하는 경우 발생합니다. <br/> 자세한 내용은 Google 문서(https://goo.gl/x1kYig) 를 참고하세요.|
 |E_UNSUPPORTED_ANDROID_VERSION|	0x2001 (8193)|	(Android Only) Android API Level 9 이하인 경우 발생합니다. Toast Analytics SDK는 API Level 10 이상을 지원합니다.|
 |E_NOT_INITIALIZED|	0x8000 (32768)|	SDK가 초기화 되지 않은 상태에서 API를 호출하면 발생합니다. initializeSDK를 먼저 호출해야 합니다.|
 |E_INVALID_PARAMS|	0x8002 (32770)|	유효하지 않은 Parameter를 호출하면 발생합니다. Parameter를 확인하세요.|

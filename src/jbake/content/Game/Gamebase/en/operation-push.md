@@ -4,143 +4,78 @@ type=page
 status=published
 big=TCGame
 summary=TCGamebaseOpPush
-nation=en
+nation=ko
 ~~~~~~
-## Game > Leaderboard > Getting Started
+## Game > Gamebase > Operator Guide > Push
 
-- Leaderboard 사용을 위해선 상품 이용 후 랭킹을 등록해야 합니다.
-- 상품 이용 후에는 게임의 랭킹정보 등록, 삭제 및 플레이어의 랭킹 정보 조회, 삭제를 할 수 있습니다.
+앱 이용자에게 푸시 알림을 전송합니다.
+Gamebase 내부적으로 TOAST Cloud PUSH 상품을 사용하고 있습니다.
 
-## 사용 설정
+## Push
 
-### 1. Leaderboard 서비스 활성화
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Push1_1.1.png)
 
-Console에서 [Game] > [Leaderboard]를 선택 후 [상품이용] 버튼 클릭 시 서비스가 활성화되고 관리화면으로 전환됩니다.
+Gamebase를 통해 발송한 푸시 내역 및 발송 예정 내역을 조회할 수 있습니다.
+발송 예정 내역에 있는 리스트들은 상세조회를 통해 예약 전송을 취소할 수 있습니다.
 
-![[그림 1 Leaderboard 서비스 활성화]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_1.JPG)
-<center>[그림 1 Leaderboard 서비스 활성화]</center>
+### Detail Push
 
-### 2. API URL/AppKey
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Push2_1.1.png) 전체 리스트에서 푸시를 선택하면 전송된 푸시의 상세 내역을 조회할 수 있습니다.
+예약발송 상세화면에서는 푸시의 예상 발송시간을 확인할 수 있습니다. 예약발송은 현재는 취소만 가능하며 예약발송 메시지에 대한 수정기능은 추후 제공 될 예정입니다.
 
-서비스 활성화 후 접속 시 API URL 및 Appkey 값을 확인할 수 있습니다.
+### Register Push
 
-![[그림 2 Leaderboard URL & AppKey 확인]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_2.JPG)
-<center>[그림 2 Leaderboard URL & AppKey 확인]</center>
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Push3_1.1.png)
 
-## 각 탭 별 설명
+#### (1) 메시지 타입
 
-### [랭킹 설정]
+> [INFO]
+> 한국 정보통신망보호법 준수를 위하여 제공해 드리는 기능입니다.
+> 푸시 발송시 정보성이 아닌 경우에는 '(광고)'로 메시지가 시작해야 하며 메시지에 연락처와 수신철회방법이 포함되어 전송되어야 합니다.
 
-#### 1. 팩터 추가
+*   정보성 : 입력된 메시지만 푸시로 발송됩니다. 한국이 아닌 유저에게는 정보성으로 전송하시면 됩니다.
+*   홍보성 : 입력된 메시지에 '(광고)' 머리말이 붙고 추가 입력된 연락처와 수신철회방법이 함께 발송됩니다. 전체 발송과 같은 광고성 푸시의 경우 국내에서는 정보통신망보호법 준수를 위하여 꼭 '홍보성'으로 발송하셔야 합니다.
 
-1\) 서비스 활성화 후 팩터 정보를 추가해야 합니다. [Game] > [Leaderboard] > [랭킹 설정] > [+추가] 버튼을 클릭해 팩터를 등록합니다.
+> <font color="red">[WARNING]</font>
+> 홍보성 선택 후 입력 메시지에 '(광고)'문구를 입력하시면 중복으로 입력되므로 주의하세요.
 
-> [참고]
-> 팩터(Factor)는 [주기, 업데이트 기준, 정렬기준]의 묶은 단위입니다.
-> 최고점수 랭킹을 일간, 주간, 월간으로 사용하고 싶다면 팩터를 3가지를 만들어야 합니다.
+#### (2) 발송 대상
 
-![[그림 3 팩터 등록을 위하여 [+추가] 클릭]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_3.JPG)
-<center>[그림 3 팩터 등록을 위하여 [+추가] 클릭]</center>
+푸시 메시지를 발송할 대상을 선택합니다.
 
-2\) [+추가] 버튼을 클릭하면 그림 3과 같은 <팩터 추가> 팝업이 열립니다.
+*   전체발송 : OS별로 선택이 가능합니다. 선택한 OS를 사용하는 사용자는 모두 푸시를 수신하게 됩니다.
+*   특정회원 발송 : 특정회원에게만 푸시메시지를 전송하고자 할 때 선택합니다. 입력된 User ID로 푸시토큰을 등록한 단말기에 푸시를 발송합니다.
+*   그룹 발송 : 메시지 발송을 원하는 User 리스트를 파일로 등록합니다. 그룹발송은 1회 최대 10,000명까지 가능합니다.
 
-![[그림 4 팩터 추가]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_4.JPG)
-<center>[그림 4 팩터 추가]</center>
+#### (3) 발송 타입
 
-각 항목별 설명
+발송 주기를 선택합니다.
 
-#### 팩터 이름
+*   즉시 발송 : 등록 즉시 푸시 메시지를 발송합니다.
+*   예약 발송 : 예약한 시간에 푸시 메시지를 발송합니다.
 
-- 랭킹을 구분할 이름이며 차후 팩터 검색에 사용될 수 있습니다.
+추후 반복발송(daily, weekly, monthly)과 Loacl Time 기준 발송등의 기능이 추가로 제공될 예정입니다.
 
-#### 팩터 주기
+#### (4) 대상 국가
 
-- 랭킹의 초기화 기간을 의미하며 일간, 주간, 월간, 전체가 있습니다. 주기 또한 팩터 검색에 사용될 수 있으며 각 주기를 기준으로 유저들을 분류합니다.
+푸시 메시지 발송할 국가를 선택합니다.
 
-#### 랭킹 업데이트 기준
+*   전체 국가 : 모든 사용자에게 발송
+*   일부 국가 : 선택한 국가의 사용자에게만 발송.
+    추가하고자 하는 국가코드를 입력하면 자동으로 완성되어 입력됩니다. 입력하고자 하는 국가코드가 없는 경우 관리자에게 문의바랍니다.
 
-- Best Score : 최고 점수 등록. 사용자의 베스트 점수를 기록합니다.
-- Latest Score : 최신 점수 등록. 사용자의 가장 최근 점수를 기록합니다.
-- Accumulation Score : 누적 점수 등록. 사용자의 점수를 누적 합산해 등록합니다.
+> [INFO]
+> 국가 판단 기준
+> 사용자의 **USIM 국가코드** 기준으로 판단하며 USIM이 없을 경우 **Device**에 설정되어 있는 국가를 기준으로 푸시메시지가 노출됩니다.
 
-#### 정렬 기준
+#### (5) 발송 메시지
 
-- Desc : 점수를 오름차순으로 정렬합니다.
-- Asc : 점수를 내림차순으로 정렬합니다.
+사용자에게 노출할 푸시 메시지를 입력합니다.
+다국어 지원을 위해 여러개의 언어로 등록 가능하며, 입력한 언어 이외의 언어를 사용하는 사용자에게는 기본 언어로 선택된 언어가 노출됩니다. 오른쪽의 **'+'**버튼을 클릭하면 언어 추가가 가능하며 원하는 언어가 없는 경우 담당자에게 연락을 주시면 새로운 언어 추가가 가능합니다.
 
-#### 동점자 처리
-
-- Priority First Ranking Get : 최초 랭킹 획득 우선. 동점인 경우 먼저 등록된 유저가 높은 등수로 기록됩니다.
-- Priority Latest Ranking Get : 최근 랭킹 획득 우선. 동점인 경우 나중에 등록된 유저가 높은 등수로 기록됩니다.
-
-#### 팩터 리셋 시간
-
-- 팩터 별 초기화 시간을 의미합니다. 주기가 전체인 경우 초기화 되지 않아 큰 의미는 없습니다.
-
-#### 팩터 주간 리셋 요일, 팩터 월간 리셋 일자
-
-- 주간, 월간의 경우 초기화 될 요일, 일자를 선택해야합니다.
-
-#### 한계 유저 수
-
-- 해당 팩터에 등록될 수 있는 최대 유저 수를 뜻합니다. 최대 1000만 명까지 입력할 수 있습니다.
-
-#### 기타정보
-
-- 팩터의 extra 데이터로 필요 시 입력합니다.
-
-> 팩터ID는 팩터 추가 시 자동으로 지정됩니다.
-
-#### 2. 팩터 검색
-
-1\) 검색 조건이 팩터 이름일 시 이름에 검색어가 포함된 팩터를 검색합니다.
-![[그림 5-1 검색 기준 팩터 이름]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_11.JPG)
-
-2\) 검색 조건이 팩터 주기일 시 선택 목록에 있는 주기로 검색합니다.
-![[그림 5-1 검색 기준 팩터 주기]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_12.JPG)
-
-#### 3. 팩터 삭제
-
-1\) 삭제할 팩터들을 선택합니다.
-![[그림 6 랭킹 설정에서 삭제할 팩터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_5.JPG)
-<center>[그림 6 삭제할 팩터 선택]</center>
-
-2\) 삭제 버튼을 클릭시 삭제 팝업이 나타납니다. 팩터는 삭제 시 복구할 수 없으니 신중히 삭제해야 합니다.
-![[그림 7 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_6.JPG)
-<center>[그림 7 삭제 팝업]</center>
-
-### [랭킹 데이터]
-
-#### 1. 유저 랭킹 조회
-
-1\) 팩터 등록 후 유저 랭킹 조회 탭으로 가면 검색 기준 > 팩터 ID에 등록한 팩터들이 목록화 됩니다. 팩터 주기를 선택하면 각 주기에 맞는 팩터들이 선별됩니다.
-![[그림 8 랭킹 데이터 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_7.JPG)
-<center>[그림 8 랭킹 데이터 검색]</center>
-
-2\) 검색 기준을 선택해 유저 정보를 검색합니다.
-![[그림 9 유저 정보 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_8.JPG)
-<center>[그림 9 유저 정보 검색]</center>
-
-각 항목별 설명
-
-#### 주기 설정
-- 지난 주기 : 이전 주기의 랭킹 정보를 기준으로 검색합니다.
-- 현재 주기 : 현재 주기의 랭킹 정보를 기준으로 검색합니다.
-
-#### 랭킹 설정
-- 조회할 유저의 랭킹 범위를 정합니다. 상위 50명, 상위 100명, 특정범위 지정 기능을 제공합니다.
-
-#### 사용자 ID
-- 해당 팩터 내에 검색하고자 하는 사용자 ID를 입력합니다. 사용자가 없는 경우 조회되지 않습니다.
-
-#### 2. 유저 랭킹 삭제
-
-1\) 조회 후 삭제할 유저를 선택합니다.
-![[그림 10 삭제할 유저 데이터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_9.JPG)
-<center>[그림 10 삭제할 유저 데이터 선택]</center>
-
-2\) Scores & Ranks 삭제 버튼을 누르면 삭제 여부를 묻는 팝업이 뜹니다. 삭제 후 취소가 불가능하니 신중히 삭제해야 합니다.
-![[그림 11 유저 랭킹 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_10.JPG)
-<center>[그림 11 유저 랭킹 삭제 팝업]</center>
-
-※ 개발과 관련된 api 정보는 [Developer's Guide](/Game/Leaderboard/ko/Developer%60s%20Guide/) 를 참조해주세요.
+> <font color="blue">[TIP]</font>
+> 푸시 메시지를 발송했는데 단말기에 오지 않아요.
+> 대부분의 경우 사용자의 PUSH Token을 등록하지 않은 경우입니다. 사용자의 PUSH Token이 등록되었는지 확인해주세요.
+> - [LINK [AOS > Register PUSH]](../aos-push/#2-register-push)
+> - [LINK [iOS > Register PUSH]](../ios-push/#2-register-push)
+> - [LINK [Unity > Register PUSH]](../unity-push/#2-register-push)

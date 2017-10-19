@@ -4,143 +4,180 @@ type=page
 status=published
 big=TCGame
 summary=TCGamebaseIosInit
-nation=en
+nation=ko
 ~~~~~~
-## Game > Leaderboard > Getting Started
+## Game > Gamebase > iOS Developer's Guide > Initialization
 
-- Leaderboard 사용을 위해선 상품 이용 후 랭킹을 등록해야 합니다.
-- 상품 이용 후에는 게임의 랭킹정보 등록, 삭제 및 플레이어의 랭킹 정보 조회, 삭제를 할 수 있습니다.
+## Initialization
 
-## 사용 설정
+### Import Header File
 
-### 1. Leaderboard 서비스 활성화
+먼저 Gamebase 헤더 파일을 앱으로 가져와야 합니다.
+AppDelegate.h등 Gamebase기능을 초기화할 곳에서 다음의 헤더 파일을 가져옵니다.
 
-Console에서 [Game] > [Leaderboard]를 선택 후 [상품이용] 버튼 클릭 시 서비스가 활성화되고 관리화면으로 전환됩니다.
+```
+#import <Gamebase/Gamebase.h>
 
-![[그림 1 Leaderboard 서비스 활성화]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_1.JPG)
-<center>[그림 1 Leaderboard 서비스 활성화]</center>
+```
 
-### 2. API URL/AppKey
+### Configuration Settings
 
-서비스 활성화 후 접속 시 API URL 및 Appkey 값을 확인할 수 있습니다.
+Gamebase 초기화시 TCGBConfiguration 객체를 통해 Gamebase 설정을 변경할 수 있습니다.
 
-![[그림 2 Leaderboard URL & AppKey 확인]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_2.JPG)
-<center>[그림 2 Leaderboard URL & AppKey 확인]</center>
+| API | Mandatory(M) / Optional(O) | 기능 설명 |
+| --- | --- | --- |
+| configurationWithAppID:appVersion: | M | TCGBConfiguration의 appID와 appVersion을 설정합니다.<br>업데이트, 점검에 해당하는지 여부는 게임 버전으로 판단합니다.<br>게임 버전을 지정해 주세요. |
+| enablePopup: | O | **[UI]**<br>시스템 점검, 유저 밴 등 유저가 게임을 플레이 할 수 없는 상황에서 팝업 등을 통해 사유를 표시해야 할 필요가 있습니다.<br>**YES**로 설정하는 경우 Gamebase가 해당 상황에서 정보 팝업을 자동으로 표시합니다.<br>기본값은 **NO** 입니다.<br>**NO** 상태에서는 Launching 결과를 통해 정보를 획득하여 자체 UI를 구현하여 게임을 플레이 할 수 없는 이유를 표시해주시기 바랍니다. |
+| enableLaunchingStatusPopup: | O | **[UI]**<br>Launching결과에 따라 로그인 할 수 없는 상태에서(주로 점검 상태가 해당됩니다.) Gamebase가 자동으로 팝업을 표시할지 여부를 변경할 수 있습니다.<br>**enablePopup:YES** 상태에서만 동작합니다.<br>기본값은 **YES**입니다. |
+| enableBanPopup: | O | **[UI]**<br>유저가 이용 제재를 당한 상태일때 Gamebase가 자동으로 제재 사유를 팝업으로 표시할지 여부를 변경할 수 있습니다.<br>**enablePopup:** 상태에서만 동작합니다.<br>기본값은 **YES**입니다. |
 
-## 각 탭 별 설명
+### Debug Mode
 
-### [랭킹 설정]
+*   Gamebase는 warning 및 error 로그만을 표시합니다.
+*   개발에 참고하기 위해 시스템 로그를 켜기 위해서는 **[TCGBGamebase setDebugMode:YES]**를 호출해 주시기 바랍니다.
 
-#### 1. 팩터 추가
+> <font color="red">[WARNING]</font>
+> 
+> 게임을 **RELEASE** 할 때는 반드시 소스코드에서 setDebugMode: 호출을 제거하거나 파라메터를 NO로 바꿔 빌드하세요.
 
-1\) 서비스 활성화 후 팩터 정보를 추가해야 합니다. [Game] > [Leaderboard] > [랭킹 설정] > [+추가] 버튼을 클릭해 팩터를 등록합니다.
+### Initialize
 
-> [참고]
-> 팩터(Factor)는 [주기, 업데이트 기준, 정렬기준]의 묶은 단위입니다.
-> 최고점수 랭킹을 일간, 주간, 월간으로 사용하고 싶다면 팩터를 3가지를 만들어야 합니다.
+**application:didFinishLaunchingWithOptions:** 메소드에서, 다음과 같이 초기화를 진행합니다.
 
-![[그림 3 팩터 등록을 위하여 [+추가] 클릭]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_3.JPG)
-<center>[그림 3 팩터 등록을 위하여 [+추가] 클릭]</center>
+> <font color="red">[WARNING]</font>
+> 
+> Gamebase초기화를 위한 **initializeWithConfiguration:launchOptions:completion:** 메서드의 호출은 **application:didFinishLaunchingWithOptions:** 외에서도 호출이 가능합니다.
 
-2\) [+추가] 버튼을 클릭하면 그림 3과 같은 <팩터 추가> 팝업이 열립니다.
+> <font color="red">[WARNING]</font>
+> 
+> **initializeWithConfiguration:launchOptions:completion:** 메서드는 호출되지 않은 상태에서의 다른 Gamebase API 호출에 대해서는 정상작동을 보장하지 않습니다.
 
-![[그림 4 팩터 추가]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_4.JPG)
-<center>[그림 4 팩터 추가]</center>
+1.  **TCGBConfiguration** 객체를 생성하여, 각 property를 설정합니다.
+2.  설정된 **TCGBConfiguration**객체를 사용하여, **initializeWithConfiguration:launchOptions:completion:**을 호출합니다.
+3.  **completion** block으로 받은 **TCGBError** 객체를 확인하여 성공여부를 판단하며, 초기화가 실패하였을 경우에는 재시도를 할 수 있도록 합니다.
 
-각 항목별 설명
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSString *projectID = @"T0aStC1d";
+    NSString *gameAppVersion = @"1.2";
 
-#### 팩터 이름
+    TCGBConfiguration *configuration = [TCGBConfiguration configurationWithAppID:projectID appVersion:gameAppVersion];
+    [configuration enablePopup:YES];
+    [configuration enableLaunchingStatusPopup:YES];
+    [configuration enableBanPopup:YES];
 
-- 랭킹을 구분할 이름이며 차후 팩터 검색에 사용될 수 있습니다.
+    [TCGBGamebase initializeWithConfiguration:configuration launchOptions:launchOptions completion:^(id launchingData, TCGBError *error) {
+        if ([TCGBGamebase isSuccessWithError:error] == YES) {
+            // Gamebase Initialization is Succeeded
+        }
+    }];
+}
 
-#### 팩터 주기
+```
 
-- 랭킹의 초기화 기간을 의미하며 일간, 주간, 월간, 전체가 있습니다. 주기 또한 팩터 검색에 사용될 수 있으며 각 주기를 기준으로 유저들을 분류합니다.
+### Launching Status
 
-#### 랭킹 업데이트 기준
+Gamebase initialize 호출 결과로 런칭 상태를 확인 할 수 있습니다.
+런칭 상태는 Gamebase 초기화 이후에 호출되어야합니다.
 
-- Best Score : 최고 점수 등록. 사용자의 베스트 점수를 기록합니다.
-- Latest Score : 최신 점수 등록. 사용자의 가장 최근 점수를 기록합니다.
-- Accumulation Score : 누적 점수 등록. 사용자의 점수를 누적 합산해 등록합니다.
+```
+- (void)myMethodAfterGamebaseInitialized {
+    TCGBLaunchingStatus launchingStatus = [TCGBLaunching launchingStatus];
 
-#### 정렬 기준
+    // You can check whether if Gamebase was initialized or not using this launchingStatus
+    if (launchingStatus == 0) {
+        NSLog(@"Service is not initialized.");
+    }
 
-- Desc : 점수를 오름차순으로 정렬합니다.
-- Asc : 점수를 내림차순으로 정렬합니다.
+    // After Initialize Complete
+    if (launchingStatus == INSPECTING_SERVICE) {
+        NSLog(@"Service in Maintenance");
+    } else if (launchingStatus == IN_SERVICE) {
+        NSLog(@"Service in Service");
+    } else {
+        ...
+    }
+}
 
-#### 동점자 처리
+```
 
-- Priority First Ranking Get : 최초 랭킹 획득 우선. 동점인 경우 먼저 등록된 유저가 높은 등수로 기록됩니다.
-- Priority Latest Ranking Get : 최근 랭킹 획득 우선. 동점인 경우 나중에 등록된 유저가 높은 등수로 기록됩니다.
+### Launching Status Code
 
-#### 팩터 리셋 시간
+| Status | Code | Description |
+| --- | --- | --- |
+| IN_SERVICE | 200 | 정상 서비스 중 |
+| RECOMMEND_UPDATE | 201 | 업데이트 권장 |
+| IN_SERVICE_BY_QA_WHITE_LIST | 202 | 점검 중이지만 QA 유저 서비스 가능 |
+| REQUIRE_UPDATE | 300 | 업데이트 필수 |
+| BLOCKED_USER | 301 | 접속 차단 유저 |
+| TERMINATED_SERVICE | 302 | 서비스 종료 |
+| INSPECTING_SERVICE | 303 | 서비스 점검 중 |
+| INSPECTING_ALL_SERVICES | 304 | 전체 서비스 점검 중 |
+| INTERNAL_SERVER_ERROR | 500 | 내부 서버 에러 |
 
-- 팩터 별 초기화 시간을 의미합니다. 주기가 전체인 경우 초기화 되지 않아 큰 의미는 없습니다.
+## Lifecycle Event
 
-#### 팩터 주간 리셋 요일, 팩터 월간 리셋 일자
+iOS의 App Event를 관리하기 위하여 아래에 명기된 **UIApplicationDelegate** protocol을 구현해야합니다.
 
-- 주간, 월간의 경우 초기화 될 요일, 일자를 선택해야합니다.
+### OpenURL Event
 
-#### 한계 유저 수
+**application:openURL:sourceApplication:annotation:** 메소드를 호출하여 Switching App을 사용한 인증 시, 각 IDP들의 인증용 SDK에서 필요한 동작을 하도록 알려줍니다.
 
-- 해당 팩터에 등록될 수 있는 최대 유저 수를 뜻합니다. 최대 1000만 명까지 입력할 수 있습니다.
+> <font color="red">[WARNING]</font>
+> 
+> UIApplicationDelegate의 **application:openURL:options:**를 이미 Overriding 했다면, **application:openURL:sourceApplication:annotation:**이 호출되지 않을 수 있습니다.
 
-#### 기타정보
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    return [TCGBGamebase application:application didFinishLaunchingWithOptions:launchOptions];
+}
 
-- 팩터의 extra 데이터로 필요 시 입력합니다.
+```
 
-> 팩터ID는 팩터 추가 시 자동으로 지정됩니다.
+### DidBecomeActive Event
 
-#### 2. 팩터 검색
+**applicationDidBecomeActive:** 메소드를 호출하여, App이 활성화 되었는지 여부를 각 IDP의 인증용 SDK에서 필요한 동작을 하도록 알려줍니다.
 
-1\) 검색 조건이 팩터 이름일 시 이름에 검색어가 포함된 팩터를 검색합니다.
-![[그림 5-1 검색 기준 팩터 이름]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_11.JPG)
+```
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [TCGBGamebase applicationDidBecomeActive:application];
+}
 
-2\) 검색 조건이 팩터 주기일 시 선택 목록에 있는 주기로 검색합니다.
-![[그림 5-1 검색 기준 팩터 주기]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_12.JPG)
+```
 
-#### 3. 팩터 삭제
+### DidEnterBackground Event
 
-1\) 삭제할 팩터들을 선택합니다.
-![[그림 6 랭킹 설정에서 삭제할 팩터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_5.JPG)
-<center>[그림 6 삭제할 팩터 선택]</center>
+**applicationDidEnterBackground** 메소드를 호출하여, App이 Background로 전환되었는지 알려주어야 합니다.
 
-2\) 삭제 버튼을 클릭시 삭제 팝업이 나타납니다. 팩터는 삭제 시 복구할 수 없으니 신중히 삭제해야 합니다.
-![[그림 7 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_6.JPG)
-<center>[그림 7 삭제 팝업]</center>
+```
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [TCGBGamebase applicationDidEnterBackground:application];
+}
 
-### [랭킹 데이터]
+```
 
-#### 1. 유저 랭킹 조회
+### WillEnterForeground Event
 
-1\) 팩터 등록 후 유저 랭킹 조회 탭으로 가면 검색 기준 > 팩터 ID에 등록한 팩터들이 목록화 됩니다. 팩터 주기를 선택하면 각 주기에 맞는 팩터들이 선별됩니다.
-![[그림 8 랭킹 데이터 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_7.JPG)
-<center>[그림 8 랭킹 데이터 검색]</center>
+**applicationWillEnterForeground** 메소드를 호출하여, App이 Foreground로 전환된다는 것을 알려주어야 합니다.
 
-2\) 검색 기준을 선택해 유저 정보를 검색합니다.
-![[그림 9 유저 정보 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_8.JPG)
-<center>[그림 9 유저 정보 검색]</center>
+```
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    [TCGBGamebase applicationWillEnterForeground:application];
+}
 
-각 항목별 설명
+```
 
-#### 주기 설정
-- 지난 주기 : 이전 주기의 랭킹 정보를 기준으로 검색합니다.
-- 현재 주기 : 현재 주기의 랭킹 정보를 기준으로 검색합니다.
+### Error Handling
 
-#### 랭킹 설정
-- 조회할 유저의 랭킹 범위를 정합니다. 상위 50명, 상위 100명, 특정범위 지정 기능을 제공합니다.
+| Error | Error Code | Notes |
+| --- | --- | --- |
+| TCGB_ERROR_NOT_INITIALIZED | 1 | Gamebase 초기화가 되어있지 않습니다. |
+| TCGB_ERROR_NOT_LOGGED_IN | 2 | 로그인이 필요합니다. |
+| TCGB_ERROR_INVALID_PARAMETER | 3 | 잘못된 파라미터입니다. |
+| TCGB_ERROR_INVALID_JSON_FORMAT | 4 | JSON 포맷 에러입니다. |
+| TCGB_ERROR_USER_PERMISSION | 5 | 권한이 없습니다. |
+| TCGB_ERROR_NOT_SUPPORTED | 10 | 지원하지 않는 기능입니다. |
+| TCGB_ERROR_NOT_SUPPORTED_IOS | 12 | iOS에서 지원하지 않는 기능입니다. |
 
-#### 사용자 ID
-- 해당 팩터 내에 검색하고자 하는 사용자 ID를 입력합니다. 사용자가 없는 경우 조회되지 않습니다.
-
-#### 2. 유저 랭킹 삭제
-
-1\) 조회 후 삭제할 유저를 선택합니다.
-![[그림 10 삭제할 유저 데이터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_9.JPG)
-<center>[그림 10 삭제할 유저 데이터 선택]</center>
-
-2\) Scores & Ranks 삭제 버튼을 누르면 삭제 여부를 묻는 팝업이 뜹니다. 삭제 후 취소가 불가능하니 신중히 삭제해야 합니다.
-![[그림 11 유저 랭킹 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_10.JPG)
-<center>[그림 11 유저 랭킹 삭제 팝업]</center>
-
-※ 개발과 관련된 api 정보는 [Developer's Guide](/Game/Leaderboard/ko/Developer%60s%20Guide/) 를 참조해주세요.
+*   전체 에러코드 참조 : [LINK [Entire Error Codes]](../error-codes#client-sdk)

@@ -40,6 +40,7 @@ API 이용 시 요청 파라미터로 사용하는 Account를 얻어오기 위�
 Token은 Object Storage 의 RESTful API사용을 위해 발급받아야 하는 인증키입니다. 외부로 공개 설정하지 않은 Container나 Object들은 이 Token을 가지고 요청을 하며 그렇지 않은 경우 접근할 수 없습니다. Token은 Account 별로 관리됩니다.
 
 [Method, URL]
+
 ```
 POST   https://api-compute.cloud.toast.com/identity/v2.0/tokens
 ```
@@ -125,6 +126,7 @@ POST   https://api-compute.cloud.toast.com/identity/v2.0/tokens
 Object Storage에 파일을 올리기 위해서는 반드시 Container를 생성합니다.
 
 [Method, URL]
+
 ```
 PUT   https://api-storage.cloud.toast.com/v1/{Account}/{Container}
 X-Auth-Token: {Token ID}
@@ -202,6 +204,7 @@ X-Container-Read: .r:*
 읽기 권한을 공개로 설정한 후에는 wget 등의 명령을 사용하여 Token 없이 조회가 되는지 확인 할 수 있습니다.
 
 [Verification Example]
+
 ```
 GET https://api-storage.cloud.toast.com/v1/{Account}/{Container}/{Object}
 
@@ -350,6 +353,7 @@ X-Auth-Token: {Token ID}
 ### Object 지우기
 
 [Method, URL]
+
 ```
 DELETE   https://api-storage.cloud.toast.com/v1/{Account}/{Container}/{Object}
 X-Auth-Token: {Token ID}

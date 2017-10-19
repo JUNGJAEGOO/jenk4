@@ -84,10 +84,10 @@ IAP 서비스는 다음 그림과 같이 IAP SDK, User Application Server, IAP S
 
 | Step | Description |
 | ---------- | ----------- |
-| [1] | 결제 사용자 ID를 등록합니다. 결제 사용자는 개발사에서 사용자를 식별하고 아이템을 지급하는 대상이며<br>Google play나 App Store 계정이 아닙니다.<br>**[참조]** <br>API Step<br>Android : InternalInAppPurchase.InAppPurchase.registerUserId<br>iOS : TIAPurchase registerUserId: error: |
-| [2] | 클라이언트에서 결제를 요청합니다.<br>**[참조]** <br>API Step<br>Android : InternalInAppPurchase..InAppPurchases.requestPurchase<br>iOS : TIAPurchase startPurchaseWithViewController: itemId: completionHandler |
+| [1] | 결제 사용자 ID를 등록합니다. 결제 사용자는 개발사에서 사용자를 식별하고 아이템을 지급하는 대상이며<br>Google play나 App Store 계정이 아닙니다.<br> **[참조]** <br>API Step<br>Android : InternalInAppPurchase.InAppPurchase.registerUserId<br>iOS : TIAPurchase registerUserId: error: |
+| [2] | 클라이언트에서 결제를 요청합니다.<br> **[참조]** <br>API Step<br>Android : InternalInAppPurchase..InAppPurchases.requestPurchase<br>iOS : TIAPurchase startPurchaseWithViewController: itemId: completionHandler |
 | [3]<br>[3-1] | 스토어에서 결제를 진행합니다. |
-| [4] | 스토어에서 결제를 마치고 결제결과를 전달받습니다.<br>전달받은 결과를 이용해 User Application Server에서 item consume 진행을 합니다.<br>**[주의]** <br>Build in model 인 경우User Application Server가 없는 경우<br>애플리케이션 서버가 존재 하지 않는 모델은 결제소비를 클라이언트에서 직접 검증 할 수 있으나, <br/> 보안 상의 이슈로 인해 Server To Server로 결제소비후 아이템에 대한 권한을 부여하는 것을 강력 권장 합니다. |
+| [4] | 스토어에서 결제를 마치고 결제결과를 전달받습니다.<br>전달받은 결과를 이용해 User Application Server에서 item consume 진행을 합니다.<br> **[주의]** <br>Build in model 인 경우User Application Server가 없는 경우<br>애플리케이션 서버가 존재 하지 않는 모델은 결제소비를 클라이언트에서 직접 검증 할 수 있으나, <br/> 보안 상의 이슈로 인해 Server To Server로 결제소비후 아이템에 대한 권한을 부여하는 것을 강력 권장 합니다. |
 | [4-1]<br>[4-2] | 스토어에서 전달받은 결과를 통해 IAP Server에 Consume 요청을 합니다. |
 | [5] | Consume을 성공하면 사용자에게 item을 전달합니다. |
 | [6] | 결제를 완료합니다. |

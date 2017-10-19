@@ -39,9 +39,9 @@ nation=zh
 Google Play 개발자 콘솔 메뉴의 [애플리케이션 - 서비스 및 API] 선택
 ```
 
-![](http://static.toastoven.net/prod_iap/iap_8.jpg)
+![image](http://static.toastoven.net/prod_iap/iap_8.jpg)
 
-> [참고]  
+> [참고]  <br>
 > [Android Developers - 인앱 결제 관리](http://developer.android.com/google/play/billing/billing_admin.html)
 
 ### Google API 개발자 콘솔에서 OAuth 클라이언트 정보 확인
@@ -53,7 +53,7 @@ Google Play 개발자 콘솔과 동일한 계정으로 Google API 콘솔에 프�
 3) Refresh Token  
 ```
 
-> [참고]  
+> [참고]  <br>
 > [Android Developers - Authorization](https://developers.google.com/identity/protocols/OAuth2WebServer)
 
 <br/>
@@ -261,7 +261,7 @@ IAP Android SDK의 다운로드 받고 원스토어 연동을 위해서는 추�
   * iap:plugin_mode: 개발(development), 운영(release)
 ```
 
-> [참고]  
+> [참고] <br> 
 > [원스토어 개발자 센터 개발도구](http://dev.onestore.co.kr/devpoc/reference/view/Tools)
 
 <br/>
@@ -272,7 +272,7 @@ IAP Android SDK의 다운로드 받고 원스토어 연동을 위해서는 추�
 > [원스토어 Reference](http://dev.onestore.co.kr/devpoc/support/news/noticeView.omp?noticeId=26472)
 
 <br/>
-> [참고]  
+> [참고]  <br>
 > [네이버 앱스토어 영업 양수도 관련 서비스 주요 변경사항](http://cafe.naver.com/naverappdev/10658)
 
 ## 애플 앱스토어

@@ -13,7 +13,7 @@ nation=ko
 
 ## 서비스별 카테고리 전체 리스트 가져오기
 
-#### Request
+### Request
 
 [URL]
 
@@ -60,7 +60,7 @@ GET http://toastchannel.cloud.toast.com/api/v1/services/{serviceCode}/categories
 
 ## 카테고리 코드의 하위 카테고리 리스트 가져오기
 
-#### Request
+### Request
 
 [URL]
 
@@ -108,7 +108,7 @@ GET http://toastchannel.cloud.toast.com/api/v1/services/{serviceCode}/categories
 
 ## FAQ 리스트 조회하기
 
-#### Request
+### Request
 
 [URL]
 
@@ -166,7 +166,7 @@ GET http://toastchannel.cloud.toast.com/api/v1/services/{serviceCode}/categories
 
 ## FAQ 단일 조회하기
 
-#### Request
+### Request
 
 [URL]
 
@@ -217,7 +217,7 @@ GET http://toastchannel.cloud.toast.com/api/v1/services/{serviceCode}/categories
 
 ## FAQ 공지사항 리스트 조회하기
 
-#### Request
+### Request
 
 [URL]
 
@@ -272,7 +272,7 @@ GET http://toastchannel.cloud.toast.com/api/v1/services/{serviceCode}/notices?la
 
 ## 공지사항 단일 조회하기
 
-#### Request
+### Request
 
 [URL]
 
@@ -320,7 +320,7 @@ GET http://toastchannel.cloud.toast.com/api/v1/services/{serviceCode}/notices/{n
 
 ## 문의 등록하기
 
-#### Request
+### Request
 
 [URL]
 
@@ -372,7 +372,7 @@ GET http://toastchannel.cloud.toast.comsimplecs.cloud.toast.com/api/v1/services/
 
 ## 안내문구 가져오기
 
-#### Request
+### Request
 
 [URL]
 

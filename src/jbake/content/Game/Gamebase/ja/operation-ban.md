@@ -4,143 +4,159 @@ type=page
 status=published
 big=TCGame
 summary=TCGamebaseOpBan
-nation=ja
+nation=ko
 ~~~~~~
-## Game > Leaderboard > Getting Started
+## Game > Gamebase > Operator Guide > Ban
 
-- Leaderboard 사용을 위해선 상품 이용 후 랭킹을 등록해야 합니다.
-- 상품 이용 후에는 게임의 랭킹정보 등록, 삭제 및 플레이어의 랭킹 정보 조회, 삭제를 할 수 있습니다.
+앱을 부당하게 사용하거나 어뷰징을 하는 유저에 대하여 앱의 진입을 제한할 수 있는 이용 정지 기능을 제공합니다.
+이용정지된 유저가 다시 로그인하거나 세션복구를 하는 경우에 이용정지 팝업이 노출되어 게임이용이 제한됩니다.
 
-## 사용 설정
+이용정지 등록은 Gamebase Console을 통해 수동으로 등록하거나 AppGuard를 사용하는 경우 패턴등록을 이용하여 자동으로 등록할 수 있습니다. [LINK [AppGuard 연동하기]](../ban/#appguard)
 
-### 1. Leaderboard 서비스 활성화
+## Ban
 
-Console에서 [Game] > [Leaderboard]를 선택 후 [상품이용] 버튼 클릭 시 서비스가 활성화되고 관리화면으로 전환됩니다.
+이용정지 이력을 조회하거나 이용 정지 등록, 이미 이용정지 중인 사용자의 이용정지해제가 가능합니다.
 
-![[그림 1 Leaderboard 서비스 활성화]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_1.JPG)
-<center>[그림 1 Leaderboard 서비스 활성화]</center>
+### Search Banned User
 
-### 2. API URL/AppKey
+검색조건에 맞는 이용정지/이용정지해제 사용자 목록을 조회합니다.
 
-서비스 활성화 후 접속 시 API URL 및 Appkey 값을 확인할 수 있습니다.
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban1_1.0.png)
 
-![[그림 2 Leaderboard URL & AppKey 확인]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_2.JPG)
-<center>[그림 2 Leaderboard URL & AppKey 확인]</center>
+**검색조건**
 
-## 각 탭 별 설명
+*   등록일 : (필수) 이용정지 등록일을 구간을 선택. (From~TO)
+*   유저 ID : 이용정지/이용정지해제 된 Gamebase User ID 입력
+*   상태 : (필수) 원하는 이용정지상태 선택(이용정지/이용정지해제). 두가지 모두 선택은 불가능하며 한가지만 필수로 선택해야 합니다.
+*   템플릿 : 이용정지 등록에 사용한 특정 템플릿을 선택하여 조회.
+*   등록시스템 : 이용정지 등록한 시스템을 선택하여 조회. 다중선택 가능.
+    *   콘솔 : Gamebase Console을 통하여 등록
+    *   앱가드 : AppGuard 연동으로 자동등록
+    *   외부서버 : 앱을 운영하는 서버 또는 기타 다른 외부 서버에 의해서 등록
+    *   기타 : 앞의 경우를 제외한 나머지 이용 정지 등록(API 직접호출 등)
 
-### [랭킹 설정]
+> [INFO]
+> 이용정지 등록을 보다 쉽게 하기 위해서 사용자에게 노출할 메시지를 다국어로 입력하여 재사용이 가능하도록 템플릿을 제공합니다.
+> 템플릿이 등록된 경우에만 이용정지 등록이 가능합니다.
+> [LINK [템플릿 등록하기]](../ban/#template)
 
-#### 1. 팩터 추가
+**검색결과**
 
-1\) 서비스 활성화 후 팩터 정보를 추가해야 합니다. [Game] > [Leaderboard] > [랭킹 설정] > [+추가] 버튼을 클릭해 팩터를 등록합니다.
+*   유저ID : 이용정지 USer ID
+*   기간 : 이용정지 기간. 영구정지인 경우 '영구정지'로 노출.
+*   템플릿 : 이용정지 등록에 사용한 템플릿.
+*   사유 : 이용정지 등록시에 운영자가 입력한 사유. 해당 사유는 사용자에게 노출되지 않고 운영 이력으로만 확인 가능합니다.
+*   등록자/등록일 : 이용정지 등록한 운영자 계정 / 이용정지 등록일
+*   해제사유 : 이용정지 해제시에 운영자가 등록한 사유. 해당 사유는 사용자에게 노출되지 않고 운영 이력으로만 확인 가능합니다.
+*   해제등록자/해제등록일 : 이용정지 해제한 운영자 계정 / 이용정지 해제일
+*   해제 : 이용정지 상태인 사용자는 검색목록에서 이용정지해제가 가능하도록 '이용해제'버튼이 노출된다. 버튼을 클릭하면 이용정지해제사유를 입력하는 팝업이 노출되고, 이용정지 해제 사유 입력하고 저장버튼을 클릭하면 이용정지해제가 가능하다.
+*   상태
+    *   <font color="white" style="background-color:#FB8F37">이용정지</font> : 유저가 현재 앱에 접속할 수 없는 상태
+    *   <font color="white" style="background-color:#A1A1A1">이용정지(기간 만료)</font> : 유저의 이용 정지 기간이 끝났으나 현재 로그인을 하지 않은 상태. 유저 재접속 시 해제(기간 만료)로 상태가 변경됨.
+    *   <font color="white" style="background-color:#88C637">해제</font> : 운영자에 의해서 유저의 이용 정지가 해제된 상태.
+    *   <font color="white" style="background-color:#2AB1A6">해제(기간 만료)</font> : 이용 정지 기간이 끝난 이후 자연스럽게 이용 정지가 해제된 상태.
 
-> [참고]
-> 팩터(Factor)는 [주기, 업데이트 기준, 정렬기준]의 묶은 단위입니다.
-> 최고점수 랭킹을 일간, 주간, 월간으로 사용하고 싶다면 팩터를 3가지를 만들어야 합니다.
+> <font color="blue">[TIP]</font>
+> '파일 다운로드'버튼을 클릭하면 검색결과를 '*.csv' 파일로 저장할 수 있습니다.
 
-![[그림 3 팩터 등록을 위하여 [+추가] 클릭]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_3.JPG)
-<center>[그림 3 팩터 등록을 위하여 [+추가] 클릭]</center>
+### Register Ban
 
-2\) [+추가] 버튼을 클릭하면 그림 3과 같은 <팩터 추가> 팝업이 열립니다.
+이용정지 조회 화면에서 '등록'버튼을 클릭하면 이용정지 등록이 가능합니다.
 
-![[그림 4 팩터 추가]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_4.JPG)
-<center>[그림 4 팩터 추가]</center>
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban2_1.0.png)
 
-각 항목별 설명
+#### (1) 유저 ID
 
-#### 팩터 이름
+이용 정지를 등록할 Gamebase User ID를 입력합니다. 한번에 다수의 유저 등록이 가능하며, 등록방법은 아래 두가지 방법을 제공합니다.
 
-- 랭킹을 구분할 이름이며 차후 팩터 검색에 사용될 수 있습니다.
+*   사용자 입력 : 등록할 유저ID를 입력창에 직접 입력 후 'Enter'키를 누르거나 '추가'버튼을 클릭합니다. User ID 유효성을 검사하므로 유효하지 않은 User ID는 입력이 불가능합니다.
+*   일괄 등록 : csv파일만 업로드 가능하며 예시파일은 console화면에서 다운로드 받을 수 있습니다. 일괄 등록은 1회 최대 10,000명까지 등록 가능합니다.
+    ![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban4_1.0.png)
 
-#### 팩터 주기
+> <font color="blue">[TIP]</font>
+> 일괄등록을 이용하여 이용정지 등록 진행 중 실패하는 경우 팝업이 노출되고, 해당 팝업에서 'Download'버튼을 클릭하면 실패 유저 리스트를 파일로 다운로드 받을 수 있습니다.
+> ![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban5_1.0.png)
 
-- 랭킹의 초기화 기간을 의미하며 일간, 주간, 월간, 전체가 있습니다. 주기 또한 팩터 검색에 사용될 수 있으며 각 주기를 기준으로 유저들을 분류합니다.
+#### (2) 기간
 
-#### 랭킹 업데이트 기준
+유저의 이용 정지 기간을 설정합니다. 이용정지는 등록되는 시점부터 이용정지가 됩니다.
 
-- Best Score : 최고 점수 등록. 사용자의 베스트 점수를 기록합니다.
-- Latest Score : 최신 점수 등록. 사용자의 가장 최근 점수를 기록합니다.
-- Accumulation Score : 누적 점수 등록. 사용자의 점수를 누적 합산해 등록합니다.
+*   영구 이용 정지 : 영구 이용정지를 위해 선택합니다.
+*   기간 지정 : 얼마동안 이용정지를 진행할지 일(day)과 시간(hour)을 입력합니다. '예상 만료 시간'정보로 유저의 이용 정지 기간을 미리 확인하실 수 있습니다.
 
-#### 정렬 기준
+#### (3) 사유
 
-- Desc : 점수를 오름차순으로 정렬합니다.
-- Asc : 점수를 내림차순으로 정렬합니다.
+유저의 이용 정지를 등록하게 된 사유를 입력합니다.
+해당 사유는 사용자에게 노출되지 않고 운영 이력으로만 확인 가능합니다.
 
-#### 동점자 처리
+#### (4) 노출 메시지
 
-- Priority First Ranking Get : 최초 랭킹 획득 우선. 동점인 경우 먼저 등록된 유저가 높은 등수로 기록됩니다.
-- Priority Latest Ranking Get : 최근 랭킹 획득 우선. 동점인 경우 나중에 등록된 유저가 높은 등수로 기록됩니다.
+유저에게 노출할 이용 정지 메시지를 입력합니다.
+이용정지 등록을 보다 쉽게 하기 위해서 사용자에게 노출할 메시지를 다국어로 입력하여 재사용이 가능하도록 템플릿을 제공합니다. 미리 등록한 템플릿을 선택하여 등록합니다.
 
-#### 팩터 리셋 시간
+> <font color="red">[WARNING]</font>
+> 노출메시지의 템플릿이 등록된 경우에만 이용정지 등록이 가능합니다.
+> 템플릿을 등록하지 않은 경우 [BAN]-[템플릿]메뉴에서 템플릿 등록을 먼저 진행하세요.
+> [LINK [템플릿 등록하기]](../ban/#template)
 
-- 팩터 별 초기화 시간을 의미합니다. 주기가 전체인 경우 초기화 되지 않아 큰 의미는 없습니다.
+### Release Ban
 
-#### 팩터 주간 리셋 요일, 팩터 월간 리셋 일자
+이용정지 조회 화면에서 '해제'버튼을 클릭하면 이용정지 해제가 가능합니다.
 
-- 주간, 월간의 경우 초기화 될 요일, 일자를 선택해야합니다.
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban3_1.2.png)
 
-#### 한계 유저 수
+#### (1) 해제 사유
 
-- 해당 팩터에 등록될 수 있는 최대 유저 수를 뜻합니다. 최대 1000만 명까지 입력할 수 있습니다.
+유저의 이용 정지 해제를 진행하게 되는 사유를 입력합니다.
+해당 사유는 사용자에게 노출되지 않고 운영 이력으로만 확인 가능합니다.
 
-#### 기타정보
+#### (2) 유저 ID
 
-- 팩터의 extra 데이터로 필요 시 입력합니다.
+이용 정지를 해제할 Gamebase User ID를 입력합니다. 한번에 다수의 유저 등록이 가능하며, 등록방법은 아래 두가지 방법을 제공합니다.
 
-> 팩터ID는 팩터 추가 시 자동으로 지정됩니다.
+*   사용자 입력 : 등록할 유저ID를 입력창에 직접 입력 후 'Enter'키를 누르거나 '추가'버튼을 클릭합니다. User ID 유효성을 검사하므로 유효하지 않은 User ID나 이용정지상태가 아닌 USer ID는 입력이 불가능합니다.
+*   일괄 등록 : csv파일만 업로드 가능하며 예시파일은 console화면에서 다운로드 받을 수 있습니다. 일괄 등록은 1회 최대 10,000명까지 등록 가능합니다.
+    ![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban6_1.0.png)
 
-#### 2. 팩터 검색
+> <font color="blue">[TIP]</font>
+> 일괄등록을 이용하여 이용정지 해제 진행 중 실패하는 경우 팝업이 노출되고, 해당 팝업에서 'Download'버튼을 클릭하면 실패 유저 리스트를 파일로 다운로드 받을 수 있습니다.
+> ![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Ban7_1.0.png)
 
-1\) 검색 조건이 팩터 이름일 시 이름에 검색어가 포함된 팩터를 검색합니다.
-![[그림 5-1 검색 기준 팩터 이름]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_11.JPG)
+## Template
 
-2\) 검색 조건이 팩터 주기일 시 선택 목록에 있는 주기로 검색합니다.
-![[그림 5-1 검색 기준 팩터 주기]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_12.JPG)
+이용정지 유저에게 노출할 메시지를 다국어로 입력하여 재사용이 가능하도록 템플릿을 제공합니다. 언어별로 등록 가능하며 이용 정지 유저에게는 디바이스에 설정 된 언어를 기준으로 이용 정지 메시지가 노출됩니다.
 
-#### 3. 팩터 삭제
+### Search
 
-1\) 삭제할 팩터들을 선택합니다.
-![[그림 6 랭킹 설정에서 삭제할 팩터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_5.JPG)
-<center>[그림 6 삭제할 팩터 선택]</center>
+등록된 템플릿 목록 조회 및 검색이 가능합니다.
+새로운 템플릿 등록과 등록된 템플릿의 항목 수정만 가능하며, 등록된 템플릿의 삭제는 불가능합니다.
 
-2\) 삭제 버튼을 클릭시 삭제 팝업이 나타납니다. 팩터는 삭제 시 복구할 수 없으니 신중히 삭제해야 합니다.
-![[그림 7 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_6.JPG)
-<center>[그림 7 삭제 팝업]</center>
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Template1_1.1.png)
 
-### [랭킹 데이터]
+*   목록에서 노출메시지는 '기본언어'로 설정된 메시지가 노출됩니다.
 
-#### 1. 유저 랭킹 조회
+### Register Template
 
-1\) 팩터 등록 후 유저 랭킹 조회 탭으로 가면 검색 기준 > 팩터 ID에 등록한 팩터들이 목록화 됩니다. 팩터 주기를 선택하면 각 주기에 맞는 팩터들이 선별됩니다.
-![[그림 8 랭킹 데이터 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_7.JPG)
-<center>[그림 8 랭킹 데이터 검색]</center>
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_Template2_1.1.png)
 
-2\) 검색 기준을 선택해 유저 정보를 검색합니다.
-![[그림 9 유저 정보 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_8.JPG)
-<center>[그림 9 유저 정보 검색]</center>
+#### (1) 이름
 
-각 항목별 설명
+이용정지 등록시 리스트에 노출할 템플릿의 이름을 입력합니다.
 
-#### 주기 설정
-- 지난 주기 : 이전 주기의 랭킹 정보를 기준으로 검색합니다.
-- 현재 주기 : 현재 주기의 랭킹 정보를 기준으로 검색합니다.
+#### (2) 노출 메시지
 
-#### 랭킹 설정
-- 조회할 유저의 랭킹 범위를 정합니다. 상위 50명, 상위 100명, 특정범위 지정 기능을 제공합니다.
+이용 정지 유저에게 보여줄 메시지를 입력합니다.
+다국어 지원을 위해 여러개의 언어로 등록 가능하며, 입력한 언어 이외의 언어를 사용하는 사용자에게는 기본 언어로 선택된 언어가 노출됩니다. 오른쪽의 **'+'**버튼을 클릭하면 언어 추가가 가능하며 원하는 언어가 없는 경우 담당자에게 연락을 주시면 새로운 언어 추가가 가능합니다.
 
-#### 사용자 ID
-- 해당 팩터 내에 검색하고자 하는 사용자 ID를 입력합니다. 사용자가 없는 경우 조회되지 않습니다.
+## AppGuard
 
-#### 2. 유저 랭킹 삭제
+> <font color="red">[WARNING]</font>
+> TOAST Cloud Appguard 상품을 사용하는 경우에만 이용 가능합니다.
 
-1\) 조회 후 삭제할 유저를 선택합니다.
-![[그림 10 삭제할 유저 데이터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_9.JPG)
-<center>[그림 10 삭제할 유저 데이터 선택]</center>
+![image alt](http://static.toastoven.net/prod_gamebase/Operators_Guide/Console_Ban_AppGuard1_1.0.png)
 
-2\) Scores & Ranks 삭제 버튼을 누르면 삭제 여부를 묻는 팝업이 뜹니다. 삭제 후 취소가 불가능하니 신중히 삭제해야 합니다.
-![[그림 11 유저 랭킹 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_10.JPG)
-<center>[그림 11 유저 랭킹 삭제 팝업]</center>
+*   연동여부 : 앱가드에 의해 탐지 및 제재된 사용자를 자동으로 Gamebase 이용정지 유저로 등록하고자 하는 경우에 활성화합니다.
+*   탐지/제재 종류별로 '자동이용정지'를 원하는 경우에 'ON'을 선택하여 '사용자 노출메시지'와 '이용정지기간'을 입력하여 '저장'버튼을 클릭하면 적용됩니다.
 
-※ 개발과 관련된 api 정보는 [Developer's Guide](/Game/Leaderboard/ko/Developer%60s%20Guide/) 를 참조해주세요.
+> [INFO]
+> 앱가드 연동으로 이용정지가 자동으로 등록된 경우 등록시스템에 '앱가드'로 등록됩니다.

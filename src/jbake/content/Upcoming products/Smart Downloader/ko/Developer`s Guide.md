@@ -38,6 +38,7 @@ DLCPublisher는 하나의 실행파일(윈도우즈 용 exe)로 제공되며 게
 각 폴더에는 원본 파일들이 zip 압축된 형태로 저장이 된다.
 
 메타파일의 내용은 다음과 같이 저장된다. (위의 예제는 약 50개의 파일이지만, 필요한 부분만 보여주기 위해 일부 생략되었다. )
+
 ```
 {
     // 메타파일의 헤더 영역
@@ -202,7 +203,7 @@ SmartDLUnitySkin.StopDownload();
 
 ```
 
-### **Smart Downloader Error Code**
+#### **Smart Downloader Error Code**
 
 다음은 Smart Downloader Error Code에 대한 값 및 설명이다.
 

@@ -25,39 +25,40 @@ TOAST Cloud Maps API는 팅크웨어 좌표를 사용합니다. 축약해서 TW 
 ##### 추가적인 TOAST Cloud Maps API 사용법은 해당 <a href="http://developers1.inavi.com:8086?key=19b6272o5" target="_blank" rel="nofollow">링크</a>를 참조 하시기 바랍니다.  
 
 |API 명|Parameter				|Returns		| 설명			|
-|:------:|:------------------------:|:---------------:|:---------------:|
-|THINKMAP.initMap(map_div_name, twX, twY, level, init_cb, arrange_type, map_type)|map_div : String<br>지도를 담을 div 태그 ID||지도를 사용하기 위해서 최초에 반드시 호출해야 하는 초기화 함수입니다.|
-||twX : Number	<br>지도 초기화 TW X 좌표|||
-||twY : Number	<br>지도 초기화 TW Y 좌표|||
-||level : Number	<br>지도 초기화 Level<br>- 일반지도 : 1~13<br>- 항공지도 : 1~13|||
-||init_cb : function()<br>지도 초기화 이후 호출되는 콜백함수|||
-||arrange_type : Number	<br>지도 레이어 정렬방식<br>1 : 중앙정렬방식(resize효과 있음)<br>2 : 전체로딩방식(resize효과 없음)<br> 3 : 우상단정렬방식(resize효과 있음)|||
-||map_type : String	<br>지도 타입 설정<br>'i' : 일반맵<br>'a' : 항공맵<br>'s' : 요약맵<br>'m' : 모바일|||
-|THINKMAP.imageMap()|||지도를 일반 지도로 전환합니다.|
-|THINKMAP.aerialMap()|||지도를 항공 지도로 전환합니다.|
-|THINKMAP.setAerialHybrid(active)|active : Boolean<br>항공주기 표시 여부  <br>true : 지도위에 항공주기를 표출   <br>false : 지도위에 항공주기 표출안함||지도 위에 항공지도 주기 표출여부를 설정합니다.|
-|THINKMAP.addMapListener(event_name, func_cb)|event_name : String<br> 지도에 등록할 이벤트 이름<br>'movestart'<br>- 지도가 움직이기 시작했을 때<br>'move'<br> - 지도가 움직일 때<br>'moveend'<br>- 지도 움직임이 끝났을 때<br>'zoomend'<br>- 지도가 확대, 축소가 끝났을 때<br>'mouseover'<br>- 지도위에 마우스가 들어왔을 때<br>'mouseout'<br>- 지도에서 마우스가 나갔을 때<br> 'mousemove'<br>- 지도에서 마우스가 움직일 때||지도에 이벤트를 등록합니다.<br>(지도에 관련된 이벤트, 확대/축소, 움직임 등)|
-||func_cb : function()<br>	지도에서 이벤트가 발생했을 때 호출되는 콜백 함수<br>(콜백함수에 매개변수로 Map 객체가 전달됩니다)|||
-|THINKMAP.removeMapListener(event_name)|event_name : String<br> 지도에 제거할 이벤트 이름<br>'movestart'<br>- 지도가 움직이기 시작했을 때<br>'move'<br> - 지도가 움직일 때<br>'moveend'<br>- 지도 움직임이 끝났을 때<br>'zoomend'<br>- 지도가 확대, 축소가 끝났을 때<br>'mouseover'<br>- 지도위에 마우스가 들어왔을 때<br>'mouseout'<br>- 지도에서 마우스가 나갔을 때<br> 'mousemove'<br>- 지도에서 마우스가 움직일 때||지도에 등록한 이벤트를 제거합니다. <br>THINKMAP.addMapListener 메소드로 등록한 event_name에 해당하는 모든 콜백함수를 삭제하므로 주의가 필요합니다.|
-|THINKMAP.createMarker(twX, twY, width, height, iconUrl, [param])|twX : Number	<br>Marker 객체 위치 TW X 좌표	||Marker 객체를 생성합니다. <br>생성한 Marker 객체를 지도에 표출하기 위해서는 THINKMAP.addMarker 메소드로 지도에 Marker 객체를 추가해야합니다.|
-||twY : Number	<br>Marker 객체 위치 TW Y 좌표|||
-||width : Number <br>Marker 이미지 너비|||
-||height : Number <br>Marker 이미지의 높이|||
-||iconURL : String <br>Marker 이미지의 URL|||
-||param : String <br>Marker 객체의 사용자 변수|||
-|THINKMAP.addMarker(marker)|marker : Marker<br>지도에 추가할 대상 Marker 객체||지도에 Marker 객체를 추가합니다.|
-|THINKMAP.featureDrawing(draw_type, style, func_cb)|draw_type : String<br>사용자가 그릴 Feature 객체 타입<br>'lineDraw' : 선<br>'polygonDraw' : 다각형<br> 'regularPolygonDraw' :   형태가 정해진 다각형||사용자가 지도에 마우스로 Polyline, Polygon을 직접 그릴 수 있는 그리기모드로 전환합니다.<br>지도 마우스 클릭 시 객체 그리기가 시작되고 마우스를 더블클릭하면 그리기가 완료됩니다. <br>그리기 완료 시 콜백함수로 그려진 Feature 객체를 넘겨줍니다. |
-||style : Object<br> Polygon, Polyline의 스타일을 지정하기 위한 Object<br>strokeColor : 선 색<br>- 'red', '#fff123' <br> strokeWidth : 선 두께<br> - 10<br>strokeDashstyle : 선 스타일<br> strokeOpacity : 선 투명도<br>fillColor : 채우기 색<br>fillOpacity : 채우기 투명도|||
-||func_cb : function()<br>사용자가 지도를 더블클릭하여<br>Feature 객체 그리기가 완료되었을 때 호출되는 콜백함수|||
-|THINKMAP.featureDrawingCancel()|||지도에 사용자가 마우스로 Polyline, Polygon을 직접 그릴 수 있는 그리기모드를 종료합니다. |
+|------|------------------------|---------------|---------------|
+|THINKMAP.initMap(map_div_name, twX, twY, level, init_cb, arrange_type, map_type)|map_div : String<br>지도를 담을 div 태그 ID| |지도를 사용하기 위해서 최초에 반드시 호출해야 하는 초기화 함수입니다.|
+| |twX : Number	<br>지도 초기화 TW X 좌표| | |
+| |twY : Number	<br>지도 초기화 TW Y 좌표| | |
+| |level : Number	<br>지도 초기화 Level<br>- 일반지도 : 1~13<br>- 항공지도 : 1~13| | |
+| |init_cb : function()<br>지도 초기화 이후 호출되는 콜백함수| | |
+| |arrange_type : Number	<br>지도 레이어 정렬방식<br>1 : 중앙정렬방식(resize효과 있음)<br>2 : 전체로딩방식(resize효과 없음)<br> 3 : 우상단정렬방식(resize효과 있음)| | |
+| |map_type : String	<br>지도 타입 설정<br>'i' : 일반맵<br>'a' : 항공맵<br>'s' : 요약맵<br>'m' : 모바일| | |
+|THINKMAP.imageMap()| | |지도를 일반 지도로 전환합니다.|
+|THINKMAP.aerialMap()| | |지도를 항공 지도로 전환합니다.|
+|THINKMAP.setAerialHybrid(active)|active : Boolean<br>항공주기 표시 여부  <br>true : 지도위에 항공주기를 표출   <br>false : 지도위에 항공주기 표출안함| |지도 위에 항공지도 주기 표출여부를 설정합니다.|
+|THINKMAP.addMapListener(event_name, func_cb)|event_name : String<br> 지도에 등록할 이벤트 이름<br>'movestart'<br>- 지도가 움직이기 시작했을 때<br>'move'<br> - 지도가 움직일 때<br>'moveend'<br>- 지도 움직임이 끝났을 때<br>'zoomend'<br>- 지도가 확대, 축소가 끝났을 때<br>'mouseover'<br>- 지도위에 마우스가 들어왔을 때<br>'mouseout'<br>- 지도에서 마우스가 나갔을 때<br> 'mousemove'<br>- 지도에서 마우스가 움직일 때| |지도에 이벤트를 등록합니다.<br>(지도에 관련된 이벤트, 확대/축소, 움직임 등)|
+| |func_cb : function()<br>	지도에서 이벤트가 발생했을 때 호출되는 콜백 함수<br>(콜백함수에 매개변수로 Map 객체가 전달됩니다)| | |
+|THINKMAP.removeMapListener(event_name)|event_name : String<br> 지도에 제거할 이벤트 이름<br>'movestart'<br>- 지도가 움직이기 시작했을 때<br>'move'<br> - 지도가 움직일 때<br>'moveend'<br>- 지도 움직임이 끝났을 때<br>'zoomend'<br>- 지도가 확대, 축소가 끝났을 때<br>'mouseover'<br>- 지도위에 마우스가 들어왔을 때<br>'mouseout'<br>- 지도에서 마우스가 나갔을 때<br> 'mousemove'<br>- 지도에서 마우스가 움직일 때| |지도에 등록한 이벤트를 제거합니다. <br>THINKMAP.addMapListener 메소드로 등록한 event_name에 해당하는 모든 콜백함수를 삭제하므로 주의가 필요합니다.|
+|THINKMAP.createMarker(twX, twY, width, height, iconUrl, [param])|twX : Number	<br>Marker 객체 위치 TW X 좌표	| |Marker 객체를 생성합니다. <br>생성한 Marker 객체를 지도에 표출하기 위해서는 THINKMAP.addMarker 메소드로 지도에 Marker 객체를 추가해야합니다.|
+| |twY : Number	<br>Marker 객체 위치 TW Y 좌표| | |
+| |width : Number <br>Marker 이미지 너비| | |
+| |height : Number <br>Marker 이미지의 높이| | |
+| |iconURL : String <br>Marker 이미지의 URL| | |
+| |param : String <br>Marker 객체의 사용자 변수| | |
+|THINKMAP.addMarker(marker)|marker : Marker<br>지도에 추가할 대상 Marker 객체| |지도에 Marker 객체를 추가합니다.|
+|THINKMAP.featureDrawing(draw_type, style, func_cb)|draw_type : String<br>사용자가 그릴 Feature 객체 타입<br>'lineDraw' : 선<br>'polygonDraw' : 다각형<br> 'regularPolygonDraw' :   형태가 정해진 다각형| |사용자가 지도에 마우스로 Polyline, Polygon을 직접 그릴 수 있는 그리기모드로 전환합니다.<br>지도 마우스 클릭 시 객체 그리기가 시작되고 마우스를 더블클릭하면 그리기가 완료됩니다. <br>그리기 완료 시 콜백함수로 그려진 Feature 객체를 넘겨줍니다. |
+| |style : Object<br> Polygon, Polyline의 스타일을 지정하기 위한 Object<br>strokeColor : 선 색<br>- 'red', '#fff123' <br> strokeWidth : 선 두께<br> - 10<br>strokeDashstyle : 선 스타일<br> strokeOpacity : 선 투명도<br>fillColor : 채우기 색<br>fillOpacity : 채우기 투명도| | |
+| |func_cb : function()<br>사용자가 지도를 더블클릭하여<br>Feature 객체 그리기가 완료되었을 때 호출되는 콜백함수| | |
+|THINKMAP.featureDrawingCancel()| | |지도에 사용자가 마우스로 Polyline, Polygon을 직접 그릴 수 있는 그리기모드를 종료합니다. |
 |THINKMAP.tw_Wgs84(twX, twY)|twX : Number<br> 변환할 TW X 좌표|coord : Object<br>변환된 WGS84 좌표|TW 좌표를 WGS84 좌표로 변환합니다. |
-||twY : Number<br> 변환할 TW Y 좌표<br>|- coord.curx : WGS84 X 좌표||
-|||- coord.cury  : WGS84 Y 좌표||
+| |twY : Number<br> 변환할 TW Y 좌표<br>|- coord.curx : WGS84 X 좌표| |
+| | |- coord.cury  : WGS84 Y 좌표| |
 |THINKMAP.wgs84_Tw(wgs_lon, wgs_lat)|wgs_lon : Number<br>변환할 WGS84 경도 좌표|coord : Object<br>변환된 TW 좌표 |WGS84 좌표를 TW 좌표로 변환합니다.|
-||wgs_lat : Number<br>변환할 WGS84 위도 좌표|- coord.curx  : TW X 좌표||
-|||- coord.cury  : TW Y 좌표 ||
+| |wgs_lat : Number<br>변환할 WGS84 위도 좌표|- coord.curx  : TW X 좌표| |
+| | |- coord.cury  : TW Y 좌표 | |
 
 #### TOAST Cloud Maps API 사용하기
+
 ```
 // 지도 사용을 위한 js 파일을 선언 합니다.
 <script type="text/javascript" src="https://api-maps.cloud.toast.com/maps/js/v1.0/map.js"></script>

@@ -239,10 +239,10 @@ false : 중복 제거 로직 비활성화
 - Xcode를 실행하고 Windows > Organizer를 클릭합니다.
 
 - 빌드한 결과물을 클릭한 뒤, 오른쪽 버튼을 클릭하여 Show in Finder로 클릭합니다.
-![](http://static.toastoven.net/prod_logncrash/13.png)
+![image1](http://static.toastoven.net/prod_logncrash/13.png)
 
 - 결과물을 클릭하고 오른쪽 버튼을 눌러 '패키지 내용보기'를 클릭합니다.
-![](http://static.toastoven.net/prod_logncrash/14.png)
+![image2](http://static.toastoven.net/prod_logncrash/14.png)
 
 - .dSYM을 .zip으로 압축하여 웹 콘솔 > Analytic > Log & Crash Search > Settings > 심볼 파일 탭에 등록합니다.
 

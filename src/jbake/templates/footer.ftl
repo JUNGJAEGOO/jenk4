@@ -67,7 +67,7 @@
         </script>
 		
 		<script language='javascript'>
-		$("h2,h3").attr("id", function (arr) {
+		$("h2,h3").attr("id", function (arr) {   // h2,h3 태그들에 id 순차적으로 부여
 			return arr;
 		});
 		</script>
@@ -102,7 +102,7 @@
 		var x = document.getElementById("side_nav_right");
 		var y = x.getElementsByClassName("active");
 		var z = y[0].innerText;
-		document.title= z + " - Toast Cloud"
+		document.title= z + " - TOAST Cloud"
 		</script>
 	
      <!-- <script language='javascript'>

@@ -303,9 +303,9 @@ GameAnalytics.traceEvent("STAGE", "STAGE_BOSS_VICTORY", "DRAGON_VALLEY", "BOSS_M
 
 * traceEvent로 발생한 Log는 "ToastAnalytics > 커스텀이벤트"에서 아래와 같이 조회됩니다.
 
-![](http://static.toastoven.net/prod_analytics/image015.png)
+![a](http://static.toastoven.net/prod_analytics/image015.png)
 
-![](http://static.toastoven.net/prod_analytics/image016.png)
+![b](http://static.toastoven.net/prod_analytics/image016.png)
 
 
 ## 페이스북 설치 추적

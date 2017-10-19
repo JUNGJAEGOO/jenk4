@@ -4,143 +4,159 @@ type=page
 status=published
 big=TCGame
 summary=TCGamebaseAosInit
-nation=en
+nation=ko
 ~~~~~~
-## Game > Leaderboard > Getting Started
+## Game > Gamebase > Android Developer's Guide > Initialization
 
-- Leaderboard 사용을 위해선 상품 이용 후 랭킹을 등록해야 합니다.
-- 상품 이용 후에는 게임의 랭킹정보 등록, 삭제 및 플레이어의 랭킹 정보 조회, 삭제를 할 수 있습니다.
+## Initialization
 
-## 사용 설정
+### Activate the Application
 
-### 1. Leaderboard 서비스 활성화
+앱의 Lifecycle 관리를 위해 앱이 활성화 되었음을 Gamebase SDK에 알립니다.
+**Application#onCreate()**에서 **Gamebase#activeApp(Context)**을 호출합니다.
 
-Console에서 [Game] > [Leaderboard]를 선택 후 [상품이용] 버튼 클릭 시 서비스가 활성화되고 관리화면으로 전환됩니다.
+```
+public class GamebaseApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
 
-![[그림 1 Leaderboard 서비스 활성화]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_1.JPG)
-<center>[그림 1 Leaderboard 서비스 활성화]</center>
+        Gamebase.activeApp(getApplicationContext());
+    }
+}
 
-### 2. API URL/AppKey
+```
 
-서비스 활성화 후 접속 시 API URL 및 Appkey 값을 확인할 수 있습니다.
+### Configuration Settings
 
-![[그림 2 Leaderboard URL & AppKey 확인]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_2.JPG)
-<center>[그림 2 Leaderboard URL & AppKey 확인]</center>
+Gamebase 초기화시 GamebaseConfiguration.Builder 객체를 통해 Gamebase 설정을 변경할 수 있습니다.
 
-## 각 탭 별 설명
+| API | Mandatory(M) / Optional(O) | 기능 설명 |
+| --- | --- | --- |
+| build() | **M** | 설정을 마친 Builder를 Configuration 객체로 변환합니다.<br> **Gamebase.initialize()** API에서 필요로 합니다. |
+| setAppId(String appId) | **M** | TOAST Cloud Project로 발급받은 AppId 를 입력합니다. |
+| setAppVersion(String appVersion) | **M** | 업데이트, 점검에 해당하는지 여부는 게임 버전으로 판단합니다.<br>게임 버전을 지정해 주세요. |
+| setAppName(String appName) | O | Payco 로그인/로그아웃 시 화면에 표시될 게임의 이름을 지정합니다.<br>설정하지 않은 경우, AndroidManifest.xml 파일의 application 노드에서 android:label 값을 가져와서 사용합니다. |
+| enablePopup(boolean enable) | O | **[UI]**<br>시스템 점검, 유저 밴 등 유저가 게임을 플레이 할 수 없는 상황에서 팝업 등을 통해 사유를 표시해야 할 필요가 있습니다.<br> **true**로 설정하는 경우 Gamebase가 해당 상황에서 정보 팝업을 자동으로 표시합니다.<br>기본값은 **false** 입니다.<br> **false** 상태에서는 Launching 결과를 통해 정보를 획득하여 자체 UI를 구현하여 게임을 플레이 할 수 없는 이유를 표시해주시기 바랍니다. |
+| enableLaunchingStatusPopup(boolean enable) | O | **[UI]**<br>Launching결과에 따라 로그인 할 수 없는 상태에서(주로 점검 상태가 해당됩니다.) Gamebase가 자동으로 팝업을 표시할지 여부를 변경할 수 있습니다.<br> **enablePopup(true)** 상태에서만 동작합니다.<br>기본값은 **true**입니다. |
+| enableBanPopup(boolean enable) | O | **[UI]**<br>유저가 이용 제재를 당한 상태일때 Gamebase가 자동으로 제재 사유를 팝업으로 표시할지 여부를 변경할 수 있습니다.<br> **enablePopup(true)** 상태에서만 동작합니다.<br>기본값은 **true**입니다. |
+| setStoreCode(String storeCode) | O | **[Purchase]**<br>결제(Purchase 모듈)를 사용하신다면 어떤 마켓을 사용하는지 설정해야 합니다.<br>Parameter는 Purchase문서를 참고해 주세요. |
+| setFCMSenderId(String senderId) | O | **[Push]**<br>Google Notification(FCM, GCM)을 통해 Push를 사용하는 경우 senderId값을 설정해야 합니다. |
+| setTencentAccessKey(String accessKey)<br>setTencentAccessId(String accessId) | O | **[Push]**<br>Tencent Push모듈을 사용하는 경우, AccessKey 및 AccessId 값을 설정해야 합니다. |
 
-### [랭킹 설정]
+### Debug Mode
 
-#### 1. 팩터 추가
+*   Gamebase는 warning 및 error 로그만을 표시합니다.
+*   개발에 참고하기 위해 시스템 로그를 켜기 위해서는 **Gamebase.setDebugMode(true)**를 호출해 주시기 바랍니다.
 
-1\) 서비스 활성화 후 팩터 정보를 추가해야 합니다. [Game] > [Leaderboard] > [랭킹 설정] > [+추가] 버튼을 클릭해 팩터를 등록합니다.
+> <font color="red">[WARNING]</font>
+> 
+> 게임을 **RELEASE** 할 때는 반드시 소스코드에서 setDebugMode 호출을 제거하거나 파라메터를 false로 바꿔 빌드하세요.
 
-> [참고]
-> 팩터(Factor)는 [주기, 업데이트 기준, 정렬기준]의 묶은 단위입니다.
-> 최고점수 랭킹을 일간, 주간, 월간으로 사용하고 싶다면 팩터를 3가지를 만들어야 합니다.
+### Initialize
 
-![[그림 3 팩터 등록을 위하여 [+추가] 클릭]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_3.JPG)
-<center>[그림 3 팩터 등록을 위하여 [+추가] 클릭]</center>
+**Activity#onCreate(Bundle)**에서 **Gamebase#initialize(Activity, GamebaseConfiguration, GamebaseDataCallback)**을 호출하여 Gamebase SDK 초기화를 진행합니다.
+또한 Gamebase의 정상적인 동작을 위해 반드시 **Activity#onActivityResult(int, int, Intent)**에서 **Gamebase.onActivityResult(int, int, Intent)**를 호출합니다.
 
-2\) [+추가] 버튼을 클릭하면 그림 3과 같은 <팩터 추가> 팝업이 열립니다.
+```
+public class MainActivity extends AppCompatActivity {
+    ...
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-![[그림 4 팩터 추가]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_4.JPG)
-<center>[그림 4 팩터 추가]</center>
+        /**
+         * Gamebase Configuration.
+         */
+        GamebaseConfiguration configuration =
+                        new GamebaseConfiguration.Builder()
+                                .setAppId("T0aStC1d")
+                                .setAppVersion("1.0.0")
+                                .enableLaunchingStatusPopup(true)
+                                .build();
+        /**
+         * Gamebase Initialize.
+         */
+        Gamebase.initialize(activity, configuration, new GamebaseDataCallback<LaunchingInfo>() {
+            @Override
+            public void onCallback(final LaunchingInfo data, GamebaseException exception) {
+                if (Gamebase.isSuccess(exception)) {
+                    // 런칭 상태를 확인합니다.
+                    LaunchingStatus status = data.getStatus();
+                    if (status.isPlayable()) {
+                        // 게임 플레이
+                    } else {
+                        // 점검 또는 앱을 업데이트 해야합니다.
+                    }
+                } else {
+                    // 초기화에 실패하면 Gamebase SDK를 이용할 수 없습니다.
+                    // 에러를 노출 후 게임을 재시작 또는 종료해야합니다.
+                    Log.e(TAG, "Initialize failed- "
+                            + "errorCode: " + exception.getCode()
+                            + "errorMessage: " + exception.getMessage());
+                }
+            }
+        });
 
-각 항목별 설명
+        /**
+         * Show gamebase debug message.
+         * set 'false' when build RELEASE.
+         */
+        Gamebase.setDebugMode(true);
+        ...
+    }
+    ...
 
-#### 팩터 이름
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
-- 랭킹을 구분할 이름이며 차후 팩터 검색에 사용될 수 있습니다.
+        /**
+         * Pass onActivityResult event to the Gamebase.
+         */
+        Gamebase.onActivityResult(requestCode, resultCode, data);
+        ...
+    }
+}
 
-#### 팩터 주기
+```
 
-- 랭킹의 초기화 기간을 의미하며 일간, 주간, 월간, 전체가 있습니다. 주기 또한 팩터 검색에 사용될 수 있으며 각 주기를 기준으로 유저들을 분류합니다.
+### Launching Status
 
-#### 랭킹 업데이트 기준
+Gamebase#initialize 호출 결과로 런칭 상태를 확인 할 수 있습니다.
 
-- Best Score : 최고 점수 등록. 사용자의 베스트 점수를 기록합니다.
-- Latest Score : 최신 점수 등록. 사용자의 가장 최근 점수를 기록합니다.
-- Accumulation Score : 누적 점수 등록. 사용자의 점수를 누적 합산해 등록합니다.
+```
+Gamebase.initialize(activity, configuration, new GamebaseDataCallback<LaunchingInfo>() {
+    @Override
+    public void onCallback(final LaunchingInfo data, GamebaseException exception) {
+        if (Gamebase.isSuccess(exception)) {
+            // 런칭 상태를 확인합니다.
+            LaunchingStatus status = data.getStatus();
+            int statusCode = status.getCode();
+            switch (statusCode) {
+                case LaunchingStatus.INSPECTING_SERVICE:
+                    // 점검중...
+                    break;
+                ...
+            }
+            ...
+        }
+        ...
+    }
+});
 
-#### 정렬 기준
+```
 
-- Desc : 점수를 오름차순으로 정렬합니다.
-- Asc : 점수를 내림차순으로 정렬합니다.
+### Launching Status Code
 
-#### 동점자 처리
-
-- Priority First Ranking Get : 최초 랭킹 획득 우선. 동점인 경우 먼저 등록된 유저가 높은 등수로 기록됩니다.
-- Priority Latest Ranking Get : 최근 랭킹 획득 우선. 동점인 경우 나중에 등록된 유저가 높은 등수로 기록됩니다.
-
-#### 팩터 리셋 시간
-
-- 팩터 별 초기화 시간을 의미합니다. 주기가 전체인 경우 초기화 되지 않아 큰 의미는 없습니다.
-
-#### 팩터 주간 리셋 요일, 팩터 월간 리셋 일자
-
-- 주간, 월간의 경우 초기화 될 요일, 일자를 선택해야합니다.
-
-#### 한계 유저 수
-
-- 해당 팩터에 등록될 수 있는 최대 유저 수를 뜻합니다. 최대 1000만 명까지 입력할 수 있습니다.
-
-#### 기타정보
-
-- 팩터의 extra 데이터로 필요 시 입력합니다.
-
-> 팩터ID는 팩터 추가 시 자동으로 지정됩니다.
-
-#### 2. 팩터 검색
-
-1\) 검색 조건이 팩터 이름일 시 이름에 검색어가 포함된 팩터를 검색합니다.
-![[그림 5-1 검색 기준 팩터 이름]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_11.JPG)
-
-2\) 검색 조건이 팩터 주기일 시 선택 목록에 있는 주기로 검색합니다.
-![[그림 5-1 검색 기준 팩터 주기]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_12.JPG)
-
-#### 3. 팩터 삭제
-
-1\) 삭제할 팩터들을 선택합니다.
-![[그림 6 랭킹 설정에서 삭제할 팩터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_5.JPG)
-<center>[그림 6 삭제할 팩터 선택]</center>
-
-2\) 삭제 버튼을 클릭시 삭제 팝업이 나타납니다. 팩터는 삭제 시 복구할 수 없으니 신중히 삭제해야 합니다.
-![[그림 7 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_6.JPG)
-<center>[그림 7 삭제 팝업]</center>
-
-### [랭킹 데이터]
-
-#### 1. 유저 랭킹 조회
-
-1\) 팩터 등록 후 유저 랭킹 조회 탭으로 가면 검색 기준 > 팩터 ID에 등록한 팩터들이 목록화 됩니다. 팩터 주기를 선택하면 각 주기에 맞는 팩터들이 선별됩니다.
-![[그림 8 랭킹 데이터 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_7.JPG)
-<center>[그림 8 랭킹 데이터 검색]</center>
-
-2\) 검색 기준을 선택해 유저 정보를 검색합니다.
-![[그림 9 유저 정보 검색]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_8.JPG)
-<center>[그림 9 유저 정보 검색]</center>
-
-각 항목별 설명
-
-#### 주기 설정
-- 지난 주기 : 이전 주기의 랭킹 정보를 기준으로 검색합니다.
-- 현재 주기 : 현재 주기의 랭킹 정보를 기준으로 검색합니다.
-
-#### 랭킹 설정
-- 조회할 유저의 랭킹 범위를 정합니다. 상위 50명, 상위 100명, 특정범위 지정 기능을 제공합니다.
-
-#### 사용자 ID
-- 해당 팩터 내에 검색하고자 하는 사용자 ID를 입력합니다. 사용자가 없는 경우 조회되지 않습니다.
-
-#### 2. 유저 랭킹 삭제
-
-1\) 조회 후 삭제할 유저를 선택합니다.
-![[그림 10 삭제할 유저 데이터 선택]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod2_9.JPG)
-<center>[그림 10 삭제할 유저 데이터 선택]</center>
-
-2\) Scores & Ranks 삭제 버튼을 누르면 삭제 여부를 묻는 팝업이 뜹니다. 삭제 후 취소가 불가능하니 신중히 삭제해야 합니다.
-![[그림 11 유저 랭킹 삭제 팝업]](http://static.toastoven.net/prod_leaderboardv2/user_console_mod_10.JPG)
-<center>[그림 11 유저 랭킹 삭제 팝업]</center>
-
-※ 개발과 관련된 api 정보는 [Developer's Guide](/Game/Leaderboard/ko/Developer%60s%20Guide/) 를 참조해주세요.
+| Status | Code | Description |
+| --- | --- | --- |
+| IN_SERVICE | 200 | 정상 서비스 중 |
+| RECOMMEND_UPDATE | 201 | 업데이트 권장 |
+| IN_SERVICE_BY_QA_WHITE_LIST | 202 | 점검 중이지만 QA 유저 서비스 가능 |
+| REQUIRE_UPDATE | 300 | 업데이트 필수 |
+| BLOCKED_USER | 301 | 접속 차단 유저 |
+| TERMINATED_SERVICE | 302 | 서비스 종료 |
+| INSPECTING_SERVICE | 303 | 서비스 점검 중 |
+| INSPECTING_ALL_SERVICES | 304 | 전체 서비스 점검 중 |
+| INTERNAL_SERVER_ERROR | 500 | 내부 서버 에러 |
